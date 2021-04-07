@@ -14,6 +14,7 @@ module.exports = {
     siteUrl: "https://testing-strapi-gatsby-build.netlify.app",
   },
   plugins: [
+    `gatsby-plugin-sass`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-react-helmet`,
@@ -23,6 +24,14 @@ module.exports = {
       options: {
         name: `assets`,
         path: `${__dirname}/src/assets/`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        trackingIds: [
+          "G-0J0X0PC2C5" // Google Analytics / GA
+        ],
       },
     },
     {
