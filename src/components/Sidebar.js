@@ -1,9 +1,20 @@
 import React from "react"
 import Links from "../constants/links"
-import SocialLinks from "../constants/socialLinks"
-import { FaTimes } from "react-icons/fa"
-const Sidebar = () => {
-  return <h2>sidebar component</h2>
+
+const Sidebar = ({toggleSideBar, isOpen}) => {
+  return (
+    <>
+      <div className={`sidebar  ${isOpen? "show-sidebar" : ""}`}>
+        <div className="side-container container-fluid"  onClick={toggleSideBar}>
+          <Links styleClass="sidebar-links"/>
+          <div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+      </div>
+    </>
+  )
 }
 
 export default Sidebar

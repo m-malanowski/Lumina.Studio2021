@@ -11,26 +11,25 @@ const data = [
   {
     id: 1,
     icon: <FaFacebookSquare className="social-icon"></FaFacebookSquare>,
+    name: 'Facebook',
     url: "https://www.twitter.com",
   },
   {
     id: 2,
     icon: <FaLinkedin className="social-icon"></FaLinkedin>,
+    name: 'Behance',
     url: "https://www.twitter.com",
   },
   {
     id: 3,
     icon: <FaDribbbleSquare className="social-icon"></FaDribbbleSquare>,
+    name: 'Linkedin',
     url: "https://www.twitter.com",
   },
   {
     id: 4,
     icon: <FaBehanceSquare className="social-icon"></FaBehanceSquare>,
-    url: "https://www.twitter.com",
-  },
-  {
-    id: 5,
-    icon: <FaTwitterSquare className="social-icon"></FaTwitterSquare>,
+    name: 'Dribble',
     url: "https://www.twitter.com",
   },
 ]
@@ -39,6 +38,7 @@ const links = data.map(link => {
     <li key={link.id}>
       <a href={link.url} className="social-link">
         {link.icon}
+        {link.name}
       </a>
     </li>
   )

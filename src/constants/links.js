@@ -3,27 +3,32 @@ import { Link } from "gatsby"
 const data = [
   {
     id: 1,
-    text: "home",
+    text: "główna",
     url: "/",
   },
   {
     id: 2,
-    text: "about",
+    text: "portfolio",
     url: "/about/",
   },
   {
     id: 3,
-    text: "projects",
-    url: "/projects/",
+    text: "usługi",
+    url: "/uslugi/",
   },
   {
     id: 4,
-    text: "blog",
+    text: "o agencji",
     url: "/blog/",
   },
   {
     id: 5,
-    text: "contact",
+    text: "blog",
+    url: "/contact/",
+  },
+  {
+    id: 6,
+    text: "kontakt",
     url: "/contact/",
   },
 ]
