@@ -29,7 +29,7 @@ const data = [
   {
     id: 4,
     icon: <FaBehanceSquare className="social-icon"></FaBehanceSquare>,
-    name: 'Dribble',
+    name: 'Dribbble',
     url: "https://www.twitter.com",
   },
 ]
@@ -37,7 +37,7 @@ const links = data.map(link => {
   return (
     <li key={link.id}>
       <a href={link.url} className="social-link">
-        {link.icon}
+        {/*{link.icon}*/}
         {link.name}
       </a>
     </li>

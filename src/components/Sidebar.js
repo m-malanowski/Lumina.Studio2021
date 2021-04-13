@@ -1,5 +1,6 @@
 import React from "react"
 import Links from "../constants/links"
+import Socials from "../constants/socialLinks"
 
 const Sidebar = ({toggleSideBar, isOpen}) => {
   return (
@@ -7,11 +8,20 @@ const Sidebar = ({toggleSideBar, isOpen}) => {
       <div className={`sidebar  ${isOpen? "show-sidebar" : ""}`}>
         <div className="side-container container-fluid"  onClick={toggleSideBar}>
           <Links styleClass="sidebar-links"/>
-          <div>
-            <div></div>
-            <div></div>
+          <div className="sidebar-bottom">
+            <div className="sidebar-address">
+              <ul>
+                <li>Królewiecka 21b</li>
+                <li>82-300 Elbląg</li>
+                <br/>
+                <li>Hello@lumina.studio</li>
+              </ul>
+            </div>
+            <div className="sidebar-socials">
+              <Socials/>
+            </div>
           </div>
-        </div>
+        </div>  
       </div>
     </>
   )
