@@ -19,12 +19,12 @@ const data = [
   {
     id: 4,
     text: "o agencji",
-    url: "/blog/",
+    url: "/about/",
   },
   {
     id: 5,
     text: "blog",
-    url: "/contact/",
+    url: "/blog/",
   },
   {
     id: 6,

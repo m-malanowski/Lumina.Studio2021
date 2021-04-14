@@ -14,7 +14,7 @@ const Sidebar = ({toggleSideBar, isOpen}) => {
                 <li>Królewiecka 21b</li>
                 <li>82-300 Elbląg</li>
                 <br/>
-                <li>Hello@lumina.studio</li>
+                <li><a href="mailto:hello@lumina.studio" className="link link--kale">hello@lumina.studio</a></li>
               </ul>
             </div>
             <div className="sidebar-socials">
