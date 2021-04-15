@@ -13,7 +13,7 @@ const Footer = () => {
             <li>Królewiecka 21B</li>
             <li>82-300 Elbląg</li>
             <br/>
-            <li className="show-on-map">Zobacz na mapie</li>
+            <li className="show-on-map link link--kale">Zobacz na mapie</li>
 
           </ul>
 
@@ -24,7 +24,7 @@ const Footer = () => {
             <li>Buforowa 101A</li>
             <li>52-131 Wrocław</li>
             <br/>
-            <li className="show-on-map">Zobacz na mapie</li>
+            <li className="show-on-map link link--kale">Zobacz na mapie</li>
           </ul>
 
           <div>

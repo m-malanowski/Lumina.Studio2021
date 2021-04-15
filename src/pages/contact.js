@@ -15,7 +15,7 @@ const contact = () => {
           <div className="pc-second-element">
             <h5>Kontakt</h5>
             <span>Zadzwoń <br/> +(48) 000 000 000</span>
-            <h5 className="mt-3"><a href="mailto:hello@lumina.studio" className="link link--kale">hello@lumina.studio</a></h5>
+            <h5 className="mt-3"><a href="mailto:hello@lumina.studio">hello@lumina.studio</a></h5>
             <button type="button" className="mt-3 button outline footer-button">Wyślij wiadomość</button>
           </div>
         </div>

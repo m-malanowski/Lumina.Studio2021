@@ -5,6 +5,7 @@ import ArticlesSlider from "../components/ArticlesSlider"
 import Layout from "../components/Layout"
 import { graphql } from "gatsby"
 import Blogs from "../components/Blogs"
+import LowerFooter from "../components/LowerFooter"
 // ...GatsbyImageSharpFluid
 
 const Blog = () => {
@@ -24,7 +25,7 @@ const Blog = () => {
         </div>
         <ArticlesSlider/>
       </main>
-      <Footer/>
+      <LowerFooter/>
     </>
   )
 }

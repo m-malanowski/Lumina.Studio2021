@@ -1,6 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Footer from "../components/Footer"
+import MainScene2 from "../components/MainScene2"
 // import Layout from "../components/Layout"
 // import Hero from "../components/Hero"
 // import Services from "../components/Services"
@@ -11,7 +12,7 @@ export default () => {
   return (
     <>
       <main className="index-page container-fluid">
-
+          <MainScene2/>
       </main>
       <Footer/>
     </>

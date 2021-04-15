@@ -6,7 +6,7 @@ const Footer = () => {
       <footer className="container-fluid">
         <h5>Kontakt</h5>
         <span>Zadzwoń <br/> +(48) 000 000 000</span>
-        <h5 className="mt-3"><a href="mailto:hello@lumina.studio" className="link link--kale">hello@lumina.studio</a></h5>
+        <h5 className="mt-3"><a href="mailto:hello@lumina.studio" >hello@lumina.studio</a></h5>
         <button type="button" className="mt-3 button outline footer-button">Wyślij wiadomość</button>
         <div className="footer-bottom">
           <h3 className="motto">Studio for <br/> ambitious <br/> brands</h3>
@@ -17,7 +17,7 @@ const Footer = () => {
             <li>Królewiecka 21B</li>
             <li>82-300 Elbląg</li>
             <br/>
-            <li className="show-on-map">Zobacz na mapie</li>
+            <li className="show-on-map link link--kale">Zobacz na mapie</li>
 
           </ul>
 
@@ -28,7 +28,7 @@ const Footer = () => {
             <li>Buforowa 101A</li>
             <li>52-131 Wrocław</li>
             <br/>
-            <li className="show-on-map">Zobacz na mapie</li>
+            <li className="show-on-map link link--kale">Zobacz na mapie</li>
           </ul>
 
           <div>
