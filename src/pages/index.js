@@ -12,7 +12,15 @@ export default () => {
   return (
     <>
       <main className="index-page container-fluid">
-          <MainScene2/>
+          {/*<MainScene2/>*/}
+        <div className="main-container">
+          <h2>Design creates <em>culture</em>. Culture shapes <em>values</em>. <br/> Values determine <em>the future</em></h2>
+        </div>
+        <div class="bg-circles">
+          <div className="blurry-circle bc-1"></div>
+          <div className="blurry-circle bc-2"></div>
+          <div className="blurry-circle bc-3"></div>
+        </div>
       </main>
       <Footer/>
     </>
