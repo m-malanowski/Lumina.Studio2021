@@ -7,7 +7,7 @@ const Sidebar = ({toggleSideBar, isOpen}) => {
     <>
       <div className={`sidebar  ${isOpen? "show-sidebar" : ""}`}>
         <div className="side-container container-fluid"  onClick={toggleSideBar}>
-          <div class="bg-circles">
+          <div className="bg-circles">
             <div className="blurry-circle bc-2"/>
           </div>
           <Links styleClass="sidebar-links"/>

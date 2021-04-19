@@ -1,5 +1,6 @@
 import React from "react"
 import SocialLinks from "../constants/socialLinks"
+import arrow from "../assets/icons/right-arrow.svg"
 const Footer = () => {
   return (
     <>
@@ -17,8 +18,8 @@ const Footer = () => {
             <li>Królewiecka 21B</li>
             <li>82-300 Elbląg</li>
             <br/>
-            <li className="show-on-map link link--kale">Zobacz na mapie</li>
-
+            {/*<li className="show-on-map link link--kale">Zobacz na mapie</li>*/}
+            <li className="footer-arrow"><a href=""><p className="show-on-map">Zobacz na mapie</p> <img height="20" src={arrow} alt="" /></a></li>
           </ul>
 
           <ul>
@@ -28,7 +29,9 @@ const Footer = () => {
             <li>Buforowa 101A</li>
             <li>52-131 Wrocław</li>
             <br/>
-            <li className="show-on-map link link--kale">Zobacz na mapie</li>
+            {/*<li className="show-on-map link link--kale">Zobacz na mapie</li>*/}
+            <li className="footer-arrow"><a href=""><p className="show-on-map">Zobacz na mapie</p> <img height="20" src={arrow} alt="" /></a></li>
+
           </ul>
 
           <div>
@@ -36,7 +39,6 @@ const Footer = () => {
             <SocialLinks/>
           </div>
         </div>
-
       </footer>
     </>
   )
