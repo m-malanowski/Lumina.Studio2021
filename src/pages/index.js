@@ -39,8 +39,12 @@ export default () => {
           </div>
         </section>
 
-        <section className="section-skew-marquee">
-
+        <section className="section-skew-marquee break-out">
+          <div className="marquee-container">
+            <div><span className="marquee-span">Branding | Branding | Branding | Branding | </span></div>
+            <div><span className="marquee-span">Webdesign | Webdesign | Webdesign | Webdesign |  </span></div>
+            <div><span className="marquee-span">Visual identity | Visual identity | Visual identity | </span></div>
+          </div>
         </section>
 
         <section className="section-main-services">
@@ -85,7 +89,7 @@ export default () => {
           </div>
         </section>
 
-        <section className="section-marquee">
+        <section className="section-marquee break-out">
           <div className="marquee-container">
             <div><span>Together | Together | Together | Together | </span></div>
             <div><span>Work | Work | Work | Work | Work | Work | Work | </span></div>

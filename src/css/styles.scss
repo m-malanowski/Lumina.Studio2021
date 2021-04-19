@@ -122,7 +122,8 @@
 }
 
 body {
-  background-color: var(--clr-black);
+  //background-color: var(--clr-black);
+  background-color: rgba(0,0,0,.95);
   //color: var(--clr-grey-4);
   color: var(--clr-white);
   line-height: 1.5;
@@ -132,6 +133,20 @@ body {
   //margin-top: 5rem;
   overflow-x: hidden !important;
   counter-reset: services;
+}
+body::before {
+  background-image: url(../assets/grain.png);
+  background-size: 180px 180px;
+  background-repeat: repeat;
+  content: "";
+  height: 300%;
+  left: -50%;
+  opacity: .2;
+  position: fixed;
+  top: -100%;
+  width: 300%;
+  animation: grain 6s steps(10) infinite;
+  z-index: -1;
 }
 
 ul {
@@ -227,7 +242,7 @@ h1.page-title em, h2.page-title em {
 
 /*
 ===============
-Container Fluid
+Container Fluid & Breake Out
 ===============
 */
 .container-fluid, .container-sm, .container-md, .container-lg, .container-xl {
@@ -252,6 +267,13 @@ Container Fluid
     margin-right: auto;
     margin-left: auto;
   }
+}
+.break-out{
+  width: 100vw;
+  left: calc(-1 * (100vw - 100%) / 2);
+  position: relative;
+  //background-color: red;
+  height: 100px;
 }
 
 /*
@@ -565,6 +587,7 @@ Page Index
     color: var(--clr-secondary);
     background: transparent;
     font-family: var(--ff-primary);
+    mix-blend-mode: difference;
   }
 }
 
@@ -745,12 +768,56 @@ SECTIONS ________________________ SECTIONS
 ===============
 */
 
+.section-skew-marquee{
+  padding: 10rem 0 40rem 0;
+  .marquee-span{
+    font-size: calc(25px + (100 - 25) * ((100vw - 320px) / (1900 - 320)));
+    width: max-content;
+    text-transform: uppercase;
+    line-height: 1.2;
+  }
+  .marquee-container>div:nth-of-type(1){
+    background: transparent;
+    border-top: 2px solid var(--clr-white);
+    padding: 1rem;
+    width: max-content;
+    span{
+      color: transparent;
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: var(--clr-white);
+    }
+  }
+  .marquee-container>div:nth-of-type(2){
+    background: transparent;
+    border-top: 2px solid var(--clr-white);
+    padding: 1rem;
+    width: max-content;
+    span{
+      color: var(--clr-secondary);
+    }
+  }
+  .marquee-container>div:nth-of-type(3){
+    background: transparent;
+    border-top: 2px solid var(--clr-white);
+    border-bottom: 2px solid var(--clr-white);
+    padding: 1rem;
+    width: max-content;
+    span{
+      color: var(--clr-white);
+    }
+  }
+}
+
+
+
+
 .section-marquee{
   padding-top: 7.5rem;
   padding-bottom: 30rem;
   .marquee-container{
-    position: absolute;
-    left: -2.5%;
+    //position: absolute;
+    //left: -2.5%;
+    transform: translateX(-2%);
 
     font-size: calc(25px + (80 - 25) * ((100vw - 320px) / (1900 - 320)));
     text-transform: uppercase;
@@ -1024,6 +1091,38 @@ LINKS HOVER EFFECT
 }
 
 
+@keyframes grain {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  10% {
+    transform: translate(-5%, -10%);
+  }
+  20% {
+    transform: translate(-15%, 5%);
+  }
+  30% {
+    transform: translate(7%, -25%);
+  }
+  40% {
+    transform: translate(-5%, 25%);
+  }
+  50% {
+    transform: translate(-15%, 10%);
+  }
+  60% {
+    transform: translate(15%, 0);
+  }
+  70% {
+    transform: translate(0, 15%);
+  }
+  80% {
+    transform: translate(3%, 35%);
+  }
+  90% {
+    transform: translate(-10%, 10%);
+  }
+}
 /*
 ===============
 Outline  Button
