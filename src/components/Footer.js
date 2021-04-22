@@ -6,7 +6,7 @@ const Footer = () => {
     <>
       <footer className="container-fluid">
         <h5>Kontakt</h5>
-        <span>Zadzwoń <br/> +(48) 000 000 000</span>
+        <span className="subsec-title">Zadzwoń <br/>   +(48) 123 456 789    </span>
         <h5 className="mt-3"><a href="mailto:hello@lumina.studio" >hello@lumina.studio</a></h5>
         <button type="button" className="mt-3 button outline footer-button">Wyślij wiadomość</button>
         <div className="footer-bottom">

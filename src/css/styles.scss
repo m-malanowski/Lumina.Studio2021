@@ -112,18 +112,27 @@
 }
 
 ::-moz-selection {
-  background: var(--clr-black);
+  //background: var(--clr-black);
+  background:  transparent;
   color: var(--clr-secondary);
 }
 
 ::selection {
-  background: var(--clr-black);
+  //background: var(--clr-black);
+  background:  transparent;
   color: var(--clr-secondary);
 }
 
 body {
   //background-color: var(--clr-black);
   background-color: rgba(0,0,0,.95);
+  //background-image: url("../assets/mesh-gradient(1).png");
+  //background-position: top left;
+  //background-repeat: no-repeat;
+  //background-size: cover;
+
+
+  //background-color: var(--clr-white);
   //color: var(--clr-grey-4);
   color: var(--clr-white);
   line-height: 1.5;
@@ -230,6 +239,14 @@ em {
   background: var(--clr-secondary);
   font-style: normal;
 }
+em.em{
+  font-style: italic;
+  font-family: var(--ff-primary);
+  background: transparent;
+  color: var(--clr-white);
+  font-weight: bold;
+  padding-right: .25rem;
+}
 
 em.em-bt {
   font-family: var(--ff-secondary);
@@ -238,6 +255,16 @@ em.em-bt {
 
 h1.page-title em, h2.page-title em {
   color: #698fbb;
+}
+
+.subsec-title{
+  font-family: var(--ff-secondary);
+  font-size: calc(25px + (120 - 25) * ((100vw - 320px) / (1900 - 320)));
+  text-transform: uppercase;
+  max-width: 60%;
+  &.w-100{
+    max-width: 100% !important;
+  }
 }
 
 /*
@@ -273,7 +300,8 @@ Container Fluid & Breake Out
   left: calc(-1 * (100vw - 100%) / 2);
   position: relative;
   //background-color: red;
-  height: 100px;
+;
+  //height: 100px;
 }
 
 /*
@@ -506,8 +534,9 @@ Pages
 
 .pc-description, .pc-scroll {
   font-size: calc(25px + (35 - 25) * ((100vw - 320px) / (1900 - 320)));
-  text-transform: uppercase;
-  line-height: 1.9;
+  //text-transform: uppercase;
+
+  line-height: 1.5;
   font-family: var(--ff-secondary);
 }
 
@@ -575,20 +604,51 @@ Page Index
 
 .main-container{
   display: flex;
-  justify-content: center;
-  align-items: center;
+  //flex-wrap: wrap;
+  //justify-content: center;
+  //justify-content:  space-between;
+  //align-items: center;
   height: 100vh;
   h2{
     font-family: var(--ff-secondary);
     font-size: calc(25px + (120 - 25) * ((100vw - 320px) / (1900 - 320)));
-    text-align: center;
+    //font-size: calc(25px + (160 - 25) * ((100vw - 320px) / (1900 - 320)));
+    //text-align: center;
+    //word-spacing: 400px;
+    text-transform: uppercase;
+    span{
+      //margin-left: 300px;
+    }
+    //span:before{
+    //  display: inline-block;
+    //  content: ' ';
+    //  margin-right: 5rem;
+    //  background-image: url('../assets/icons/light-single.svg');
+    //  background-size: 120px 120px;
+    //  height: 120px;
+    //  width: 120px;
+    //}
   }
   em{
     color: var(--clr-secondary);
     background: transparent;
     font-family: var(--ff-primary);
     mix-blend-mode: difference;
+    font-style: italic;
+    text-transform: lowercase;
   }
+  h3{
+    font-size: calc(25px + (55 - 25) * ((100vw - 320px) / (1900 - 320))) !important;
+  }
+  //h3{
+  //  //color: var(--clr-secondary);
+  //  font-family: var(--ff-primary);
+  //  font-size: calc(25px + (80 - 25) * ((100vw - 320px) / (1900 - 320))) !important;
+  //  border: 1px solid var(--clr-white);
+  //  //text-align: center;
+  //  border-radius: 50%;
+  //  display: table-cell
+  //}
 }
 
 /*
@@ -646,7 +706,12 @@ Sidebar
 ===============
 */
 .sidebar {
-  background: var(--clr-black);
+  //background: var(--clr-black);
+  background-image: url("../assets/mesh-gradient(1).png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
   position: fixed;
   top: 0;
   left: 0;
@@ -723,7 +788,7 @@ footer {
   padding: 5rem 0;
 
   span {
-    font-size: calc(25px + (100 - 25) * ((100vw - 320px) / (1900 - 320)));
+    font-size: calc(25px + (80 - 25) * ((100vw - 320px) / (1900 - 320)));
     line-height: 1.125;
     text-transform: uppercase;
   }
@@ -767,9 +832,158 @@ footer {
 SECTIONS ________________________ SECTIONS
 ===============
 */
+.section-main-works{
+  //height: 80vh;
+  //background: rgba(255,255,255,.8);
+  //z-index: -100;
+  //
+  .hr{
+    width: 100%;
+    position: absolute;
+  }
+  padding: 10rem 0;
+  .main-works{
+    padding-top: 5rem;
+  }
+  .single-work-container{
+    border-bottom: 2px solid var(--clr-white);
+    &:nth-of-type(1){
+      border-top: 2px solid var(--clr-white);
+    }
+  }
+  .single-work{
+    display: flex;
+    justify-content: space-between;
+    //border-bottom-width: 100vw;
+    padding: 5rem 0;
+    .sw-left{
+      h3{
+        font-size: calc(25px + (60 - 25) * ((100vw - 320px) / (1900 - 320)));
+        line-height: 1.2;
+      }
+      //text-transform: uppercase;
+    }
+    .sw-right{
+      display: flex;
+      justify-content: space-between;
+      max-width: 25%;
+      align-items: flex-start;
+      p{
+        margin-right: 5rem;
+        font-size: calc(20px + (35 - 20) * ((100vw - 320px) / (1900 - 320)));
+        line-height: 1.2;
+      }
+      svg{
+
+
+      }
+    }
+    img{
+      -webkit-transition: transform .3s;
+      transform: rotate(0deg);
+    }
+
+    &:hover{
+      //temporary
+      cursor: pointer;
+      img{
+        //opacity: 0.8;
+        //transform: translate(15%, -15%);
+        transform: rotate(45deg);
+        transition: .3s;
+        transition-timing-function: ease-in-out;
+      }
+    }
+  }
+}
+.section-main-container::before{
+  //background-image: url("../assets/mesh-gradient(1).png");
+  //background-position: center;
+  //background-repeat: no-repeat;
+  //background-size: cover;
+  //background-size: 180px 180px;
+  //background-repeat: repeat;
+
+  content: " ";
+  height: 100%;
+  width: 120%;
+  left: -10%;
+  z-index: -1;
+  //opacity: .2;
+  position: absolute;
+  //top: -100%;
+  //width: 300%;
+}
+
+.section-main-container{
+
+  .main-container-marquee{
+    //flex: 0 0 100%;
+    //transform: rotate(90deg);
+    //transform-origin: left ;
+    margin-bottom: 2.5rem;
+    position: absolute;
+    width: max-content;
+    align-self: flex-end;
+    mix-blend-mode: difference;
+    //background: var(--clr-white);
+    //color: var(--clr-black);
+    span{
+      //font-family: var(--ff-primary);
+      font-size: calc(25px + (35 - 25) * ((100vw - 320px) / (1900 - 320)));
+      //font-size: 18px;
+      line-height: 1.2;
+      text-transform: uppercase;
+      //font-style: italic;
+      padding: 0 .5rem;
+    }
+    .marquee-span span:after{
+      display: inline-block;
+      content: ' ';
+      margin-left: 1.5rem;
+      background-image: url('../assets/icons/clover.svg');
+      background-size: 30px 30px;
+      height: 30px;
+      width: 30px;
+    }
+  }
+  .tag-container{
+    align-self: center;
+    //word-spacing: 600px;
+    display: flex;
+    flex-direction: column;
+    h3{
+      font-size: 35px;
+    }
+  }
+  .scroll-down{
+    align-self: center;
+  }
+}
+
+.section-main-about{
+  //padding: 10rem 0;
+  position: relative;
+  //margin-top: 2.15rem;
+  //margin: 15rem 0;
+  max-width: 80%;
+  margin: 15rem auto ;
+
+  p{
+    //text-indent: calc(25px + (400 - 25) * ((100vw - 320px) / (1900 - 320)));;
+    //width: 80%;
+    text-align: center;
+  }
+  h5{
+    position: absolute;
+    left: 0;
+    top: .8rem;
+  }
+}
+
 
 .section-skew-marquee{
-  padding: 10rem 0 40rem 0;
+  padding: 10rem 0 10rem 0;
   .marquee-span{
     font-size: calc(25px + (100 - 25) * ((100vw - 320px) / (1900 - 320)));
     width: max-content;
@@ -793,7 +1007,13 @@ SECTIONS ________________________ SECTIONS
     padding: 1rem;
     width: max-content;
     span{
-      color: var(--clr-secondary);
+      //color: var(--clr-secondary);
+      //color: var(--clr-secondary);
+      color: var(--clr-white);
+
+      //color: transparent;
+      //-webkit-text-stroke-width: 1px;
+      //-webkit-text-stroke-color: var(--clr-white);
     }
   }
   .marquee-container>div:nth-of-type(3){
@@ -803,17 +1023,18 @@ SECTIONS ________________________ SECTIONS
     padding: 1rem;
     width: max-content;
     span{
-      color: var(--clr-white);
+      //color: var(--clr-white);
+
+      color: transparent;
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: var(--clr-white);
     }
   }
 }
 
-
-
-
 .section-marquee{
   padding-top: 7.5rem;
-  padding-bottom: 30rem;
+  padding-bottom: 15rem;
   .marquee-container{
     //position: absolute;
     //left: -2.5%;
@@ -854,7 +1075,7 @@ SECTIONS ________________________ SECTIONS
     .worldwide-container{
       text-align: center;
       h2{
-        font-size: calc(25px + (100 - 25) * ((100vw - 320px) / (1900 - 320)));
+        font-size: calc(25px + (90 - 25) * ((100vw - 320px) / (1900 - 320)));
         text-transform: uppercase;
         line-height: 1.2;
         z-index: 100;
@@ -876,9 +1097,12 @@ SECTIONS ________________________ SECTIONS
     }
 }
 
-
 .section-main-services{
   padding: 5rem 0 15rem 0;
+  .pc-description{
+    max-width: 65%;
+    margin-top: 5rem;
+  }
   .main-services-container{
     display: flex;
     justify-content: space-between;
@@ -909,10 +1133,19 @@ SECTIONS ________________________ SECTIONS
      a{
        display: flex;
        justify-content: space-between;
+       opacity: 1;
+       -webkit-transition: opacity .3s;
+        img{
+          -webkit-transition: transform .3s;
+          transform: rotate(0deg);
+        }
        &:hover{
          opacity: 0.8;
          img{
-           transform: translate(15%, -15%);
+           //transform: translate(15%, -15%);
+           transform: rotate(45deg);
+           transition: .3s;
+           transition-timing-function: ease-in-out;
          }
        }
      }
@@ -943,10 +1176,10 @@ SECTIONS ________________________ SECTIONS
 LINKS HOVER EFFECT
 ===============
 */
-.blurry-circle, .bg-circles{
+.blurry-circle, .bg-circles-main, .bg-circles-section{
   position: absolute;
 }
-.bg-circles{
+.bg-circles-main{
   top: 0;
   left: 0;
   width: 100vw;
@@ -964,7 +1197,7 @@ LINKS HOVER EFFECT
 .bc-1{
   filter: blur(50px);
   background-image: linear-gradient(225deg,#ceff00, #90b300);
-  top: 300px;
+  top: 100px;
   right: -140px;
   width: 375px;
   height: 375px;
@@ -973,10 +1206,10 @@ LINKS HOVER EFFECT
 .bc-2{
   filter: blur(50px);
   background-image: radial-gradient(99% 100%,#ceff00 0,#90b300 100%);
-  top: 550px;
+  top: 450px;
   right: 30%;
-  width: 560px;
-  height: 560px;
+  width: 520px;
+  height: 520px;
 
   -webkit-animation-delay: 1s;
   animation-delay: 1s;
@@ -988,6 +1221,20 @@ LINKS HOVER EFFECT
 .bc-3{
   left: -187px;
   top: 80px;
+  width: 280px;
+  height: 280px;
+  filter: blur(50px);
+  background-image: linear-gradient(225deg,#ceff00,#90b300);
+
+  -webkit-animation-duration: 3.5s;
+  animation-duration: 3.5s;
+  -webkit-animation-delay: .5s;
+  animation-delay: .5s;
+}
+
+.bc-4{
+  left: 1500px;
+  top: -80px;
   width: 280px;
   height: 280px;
   filter: blur(50px);
@@ -1224,5 +1471,69 @@ Nav  Icon
 
   & div {
     transform: scale(0);
+  }
+}
+
+
+
+
+.brand {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+  max-width: 60px;
+  margin-top: 15rem;
+  margin-right: 4rem;
+  left: 70%;
+  top: 45%;
+
+  img {
+    display: block;
+    //border-radius: 50%;
+    //width: 100%;
+  }
+
+  .brand-label {
+    transition: all 0.2s ease-in-out;
+
+    svg {
+      position: absolute;
+      left: -90%;
+      top: -90%;
+      height: 280%;
+      width: 280%;
+      pointer-events: none;
+      animation-name: rotate;
+      animation-duration: 15s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+      animation-play-state: paused;
+
+      text {
+        font-family: var(--ff-secondary);
+        font-size: 22px;
+        //letter-spacing: 1.375px;
+        //font-variation-settings: "wght" 650;
+        fill: var(--clr-secondary);
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  &:hover {
+    .brand-label svg {
+      animation-play-state: running;
+    }
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0);
   }
 }
