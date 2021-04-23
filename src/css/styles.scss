@@ -260,7 +260,7 @@ h1.page-title em, h2.page-title em {
 .subsec-title{
   font-family: var(--ff-secondary);
   font-size: calc(25px + (120 - 25) * ((100vw - 320px) / (1900 - 320)));
-  text-transform: uppercase;
+  //text-transform: uppercase;
   max-width: 60%;
   &.w-100{
     max-width: 100% !important;
@@ -612,22 +612,6 @@ Page Index
   h2{
     font-family: var(--ff-secondary);
     font-size: calc(25px + (120 - 25) * ((100vw - 320px) / (1900 - 320)));
-    //font-size: calc(25px + (160 - 25) * ((100vw - 320px) / (1900 - 320)));
-    //text-align: center;
-    //word-spacing: 400px;
-    text-transform: uppercase;
-    span{
-      //margin-left: 300px;
-    }
-    //span:before{
-    //  display: inline-block;
-    //  content: ' ';
-    //  margin-right: 5rem;
-    //  background-image: url('../assets/icons/light-single.svg');
-    //  background-size: 120px 120px;
-    //  height: 120px;
-    //  width: 120px;
-    //}
   }
   em{
     color: var(--clr-secondary);
@@ -640,15 +624,7 @@ Page Index
   h3{
     font-size: calc(25px + (55 - 25) * ((100vw - 320px) / (1900 - 320))) !important;
   }
-  //h3{
-  //  //color: var(--clr-secondary);
-  //  font-family: var(--ff-primary);
-  //  font-size: calc(25px + (80 - 25) * ((100vw - 320px) / (1900 - 320))) !important;
-  //  border: 1px solid var(--clr-white);
-  //  //text-align: center;
-  //  border-radius: 50%;
-  //  display: table-cell
-  //}
+
 }
 
 /*
@@ -790,7 +766,7 @@ footer {
   span {
     font-size: calc(25px + (80 - 25) * ((100vw - 320px) / (1900 - 320)));
     line-height: 1.125;
-    text-transform: uppercase;
+    //text-transform: uppercase;
   }
 }
 
@@ -930,21 +906,26 @@ SECTIONS ________________________ SECTIONS
     //color: var(--clr-black);
     span{
       //font-family: var(--ff-primary);
-      font-size: calc(25px + (35 - 25) * ((100vw - 320px) / (1900 - 320)));
+      font-size: calc(25px + (25 - 25) * ((100vw - 320px) / (1900 - 320)));
       //font-size: 18px;
       line-height: 1.2;
       text-transform: uppercase;
       //font-style: italic;
       padding: 0 .5rem;
+      display: flex;
+      align-items: center;
     }
     .marquee-span span:after{
       display: inline-block;
       content: ' ';
-      margin-left: 1.5rem;
-      background-image: url('../assets/icons/clover.svg');
-      background-size: 30px 30px;
-      height: 30px;
-      width: 30px;
+      margin-left: 1.25rem;
+      width: 50px;
+
+      border-bottom: solid 1px #fff;
+
+      //background-image: url('../assets/icons/clover.svg');
+      //background-size: 30px 30px;
+      //height: 30px;
     }
   }
   .tag-container{
@@ -954,6 +935,12 @@ SECTIONS ________________________ SECTIONS
     flex-direction: column;
     h3{
       font-size: 35px;
+    }
+    p{
+      padding-top: 1.5rem;
+      max-width: 35%;
+      font-size: calc(18px + (20 - 18) * ((100vw - 320px) / (1900 - 320)));
+      line-height: 1.5;
     }
   }
   .scroll-down{

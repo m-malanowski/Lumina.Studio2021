@@ -27,36 +27,31 @@ export default () => {
           <div className="main-container">
             {/*<h2>Design creates <em>culture</em>. Culture shapes <em>values</em>. <br/> Values determine <br/>  <em>the future</em></h2>*/}
             <div className="tag-container">
-              <h2>Individuals <br/> creates <br/> <em>the future</em></h2>
+              {/*<h2>Individuals <br/> creates <br/> <em>the future</em></h2>*/}
+              <h2>Street art <br/> chartreuse <br/> FASHION </h2>
+              <p> Twee snackwave 8-bit, microdosing craft beer bespoke distillery mumblecore salvia poke messenger bag. Synth banh mi flexitarian shoreditch, pork belly messenger bag. </p>
               {/*<h2>Design creates <em>culture</em>. <br/> Culture shapes values. <br/> Values determine   <em>the future</em></h2>*/}
-              {/*<h2>DIGITAL <br/> CREATIVE <br/> <span>AGENCY</span></h2>*/}
-              {/*<h3>Innovative  <br/> solusions <br/> for your <br/> <em>brand</em></h3>*/}
-
-              {/*<h2> Chicha  vexil lologist fashion axe palo santo  craft beer </h2>*/}
-              {/*<h2>fashion <br/> axe  palo <br/> santo</h2>*/}
-              {/*<h3>Innovative  <br/> solusions <br/> for your <br/> <em>brand</em></h3>*/}
-
             </div>
 
-            <div className="brand">
-              <a href="#" target="_blank">
-                <img
-                src={lightSingle} width="55" className="image-circle"
-                alt="Agencja interaktywna" />
-              </a>
-              <div className="brand-label">
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/1999/xlink" viewBox="0 0 300 300"
-                     aria-hidden="true">
-                  <defs>
-                    <path id="a" d="M90 150a60 60 0 01120 0 60 60 0 01-120 0" />
-                  </defs>
-                  <use xlinkHref="#a" fill="none" />
-                  <text>
-                    <textPath xlinkHref="#a"> Scroll down  &bull; Scroll down &bull; </textPath>
-                  </text>
-                </svg>
-              </div>
-            </div>
+            {/*<div className="brand">*/}
+            {/*  <a href="#" target="_blank">*/}
+            {/*    <img*/}
+            {/*    src={lightSingle} width="55" className="image-circle"*/}
+            {/*    alt="Agencja interaktywna" />*/}
+            {/*  </a>*/}
+            {/*  <div className="brand-label">*/}
+            {/*    <svg xmlns="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/1999/xlink" viewBox="0 0 300 300"*/}
+            {/*         aria-hidden="true">*/}
+            {/*      <defs>*/}
+            {/*        <path id="a" d="M90 150a60 60 0 01120 0 60 60 0 01-120 0" />*/}
+            {/*      </defs>*/}
+            {/*      <use xlinkHref="#a" fill="none" />*/}
+            {/*      <text>*/}
+            {/*        <textPath xlinkHref="#a"> Scroll down  &bull; Scroll down &bull; </textPath>*/}
+            {/*      </text>*/}
+            {/*    </svg>*/}
+            {/*  </div>*/}
+            {/*</div>*/}
 
             {/*<div className="scroll-down">*/}
             {/*  <img src={lightSingle} width="50" alt="" />*/}
@@ -66,11 +61,11 @@ export default () => {
               <div><span className="marquee-span"> <span>Branding</span> <span>Web design</span> <span>Visual identity</span>  <span>Social media</span>  <span>Welcome</span><span>Elo Elo 3-2-0</span>  <span>Cześć</span><span>Ciao!</span><span>Benvenuto</span><span>Guten Morgen</span><span>Bon dia</span><span>Bonjour</span></span></div>
             </div>
           </div>
-          {/*<div className="bg-circles-main">*/}
-          {/*  <div className="blurry-circle bc-1"/>*/}
-          {/*  /!*<div className="blurry-circle bc-2"></div>*!/*/}
-          {/*  <div className="blurry-circle bc-3"/>*/}
-          {/*</div>*/}
+          <div className="bg-circles-main">
+            <div className="blurry-circle bc-1"/>
+            {/*<div className="blurry-circle bc-2"></div>*/}
+            <div className="blurry-circle bc-3"/>
+          </div>
         </section>
 
         <section className="section-skew-marquee break-out">
