@@ -6,7 +6,7 @@ const ServicesSlider = (props) => {
   const [sliderRef] = useKeenSlider({ slidesPerView: 3, spacing: 15 })
 
   return (
-    <div ref={sliderRef} className="keen-slider">
+    <div ref={sliderRef} className="keen-slider square-slider">
       <div className="keen-slider__slide number-slide1 service-slide">
         <h5>01</h5>
         <div className="ss-bottom">

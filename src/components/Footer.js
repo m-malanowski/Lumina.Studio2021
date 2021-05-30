@@ -1,14 +1,19 @@
 import React from "react"
 import SocialLinks from "../constants/socialLinks"
 import arrow from "../assets/icons/right-arrow.svg"
+import orbitFooter from "../assets/icons/orbitFooter.png"
 const Footer = () => {
   return (
     <>
       <footer className="container-fluid">
-        <h5>Kontakt</h5>
-        <span className="subsec-title">Zadzwoń <br/>   +(48) 123 456 789    </span>
-        <h5 className="mt-3"><a href="mailto:hello@lumina.studio" >hello@lumina.studio</a></h5>
-        <button type="button" className="mt-3 button outline footer-button">Wyślij wiadomość</button>
+        <div className="footer-top">
+          {/*<h5><em>Nawiąż</em> kontakt</h5>*/}
+          <span className="subsec-title">Zadzwoń <br/>   +(48) 123 456 789    </span>
+          <h5 className="mt-3"><a href="mailto:hello@lumina.studio" >hello@lumina.studio</a></h5>
+          <button type="button" className="mt-3 button outline footer-button">Wyślij wiadomość</button>
+          <img className="orbit" width="400" src={orbitFooter} alt="" />
+        </div>
+
         <div className="footer-bottom">
           <h3 className="motto">Studio for <br/> ambitious <br/> brands</h3>
           <ul>
