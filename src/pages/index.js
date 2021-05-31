@@ -5,7 +5,11 @@ import starSm from "../assets/icons/starSmall.svg"
 import arrow from "../assets/icons/right-arrow.svg"
 import orbitProcess from "../assets/icons/orbitProcess.png"
 import orbitAbout from "../assets/icons/orbitAbout.png";
-import orbitFooter from "../assets/icons/orbitFooter.png";
+import orbitMain from "../assets/icons/orbitMain.png";
+import handDown from "../assets/icons/handDown.svg"
+import thumbUp from "../assets/icons/thumbUp.svg"
+import arrowDown from "../assets/icons/arrowDown.svg"
+
 
 
 import mickeyMain from "../assets/imgs/mickey-main3.gif"
@@ -35,22 +39,33 @@ export default () => {
           {/*<MainScene3/>*/}
         <section className="section-main-container">
           <div className="main-container">
-
+            <h2 className="subsec-title">
+              <span>wayfarers glossier</span>
+              <span>knausgaard</span>
+              <span>Shoreditch</span>
+            </h2>
+            <p>Adaptogen cardigan pop-up mumblecore, wolf scenester jianbing small batch chartreuse typewriter edison bulb pug etsy</p>
+            <img className="orbit" width="900" src={orbitMain} alt="" />
           </div>
+          <div className="scroll-down">
+            {/*<img width="100" src={arrowDown} alt="" />*/}
+            {/*<img width="100" src={arrowDown} alt="" />*/}
+            <img width="100" src={arrowDown} alt="" />
+            {/*<img width="150" src={handDown} alt="" />*/}
+          </div>
+        </section>
 
           {/*<div className="bg-circles-main">*/}
           {/*  <div className="blurry-circle bc-1"/>*/}
           {/*  /!*<div className="blurry-circle bc-2"></div>*!/*/}
           {/*  <div className="blurry-circle bc-3"/>*/}
           {/*</div>*/}
-          
-        </section>
 
         <section className="section-marquee break-out">
           <div className="marquee-container">
             <div className="first-tape"><span> <span>Together</span> <span>Together</span> <span>Together</span> <span>Together</span> <span>Together</span> </span></div>
             {/*<div className="second-tape"><span>Work | Work | Work | Work | Work | Work | Work | </span></div>*/}
-            <div className="third-tape"><span> <span>Lumina</span>    <span>Lumina</span> <span>Lumina</span> <span>Lumina</span>  <span>Lumina</span>   </span></div>
+            {/*<div className="third-tape"><span> <span>Lumina</span>    <span>Lumina</span> <span>Lumina</span> <span>Lumina</span>  <span>Lumina</span>   </span></div>*/}
           </div>
         </section>
 
@@ -65,7 +80,7 @@ export default () => {
                 <img className="orbit" width="800" src={orbitAbout} alt="" />
               </div>
               <div className="ss-body-second">
-                <p>Distillery type write brunch wayfarers letter press hammock meggings food truck hell o edison bulb forage. Man on the polaroid thundercats hashtae subway tile. </p>
+                <p>Distillery type write brunch wayfarers letter press hammock meggings food truck <em>hell o edison bulb forage</em>. Man on the polaroid thundercats hashtae subway tile. </p>
                 <span>Who we are</span>
               </div>
             </div>
@@ -101,10 +116,11 @@ export default () => {
         <section className="section-marquee break-out">
           <div className="marquee-container">
             <div className="first-tape"><span> <span>Together</span> <span>Together</span> <span>Together</span> <span>Together</span> <span>Together</span> </span></div>
-            <div className="second-tape"><span>Work | Work | Work | Work | Work | Work | Work | </span></div>
+            {/*<div className="second-tape"><span> <span>Work</span> <span>Work</span> <span>Work</span> <span>Work</span> <span>Work</span><span>Work</span><span>Work</span> </span></div>*/}
             <div className="third-tape"><span> <span>Lumina</span>    <span>Lumina</span> <span>Lumina</span> <span>Lumina</span>  <span>Lumina</span>   </span></div>
           </div>
         </section>
+
 
         <section className="section-main-works">
           <div>
@@ -161,20 +177,23 @@ export default () => {
                   </div>
                 </div>
               </div>
-
             </div>
           </div>
         </section>
+        {/*<img width="200" src={handDown} alt="" />*/}
+        {/*<img className="hand" width="200" src={thumbUp} alt="" />*/}
 
         <section className="section-marquee break-out">
           <div className="marquee-container">
             {/*<div className="first-tape"><span> <span>Together</span> <span>Together</span> <span>Together</span> <span>Together</span> <span>Together</span> </span></div>*/}
-            <div className="second-tape"><span>Work | Work | Work | Work | Work | Work | Work | </span></div>
+            <div className="second-tape"><span> <span>Work</span> <span>Work</span> <span>Work</span> <span>Work</span> <span>Work</span> <span>Work</span> <span>Work</span></span></div>
             <div className="third-tape"><span> <span>Lumina</span>    <span>Lumina</span> <span>Lumina</span> <span>Lumina</span>  <span>Lumina</span>   </span></div>
           </div>
         </section>
 
         <section className="section-main-process">
+
+
           <div className="">
             <div className="subsec-header">
               <h5 className="">03.</h5>
@@ -386,7 +405,7 @@ export default () => {
         <section className="section-marquee break-out">
           <div className="marquee-container">
             <div className="first-tape"><span> <span>Together</span> <span>Together</span> <span>Together</span> <span>Together</span> <span>Together</span> </span></div>
-            <div className="second-tape"><span>Work | Work | Work | Work | Work | Work | Work | </span></div>
+            <div className="second-tape"><span> <span>Work</span> <span>Work</span> <span>Work</span> <span>Work</span> <span>Work</span> <span>Work</span> <span>Work</span></span></div>
             {/*<div className="third-tape"><span> <span>Lumina</span>    <span>Lumina</span> <span>Lumina</span> <span>Lumina</span>  <span>Lumina</span>   </span></div>*/}
           </div>
         </section>

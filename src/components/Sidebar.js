@@ -1,6 +1,7 @@
 import React from "react"
 import Links from "../constants/links"
 import Socials from "../constants/socialLinks"
+import orbitMain from "../assets/icons/orbitMain.png";
 
 const Sidebar = ({toggleSideBar, isOpen}) => {
   return (
@@ -10,6 +11,8 @@ const Sidebar = ({toggleSideBar, isOpen}) => {
           {/*<div className="bg-circles">*/}
           {/*  <div className="blurry-circle bc-2"/>*/}
           {/*</div>*/}
+          <img className="orbit" width="900" src={orbitMain} alt="" />
+
           <Links styleClass="sidebar-links"/>
           <div className="sidebar-bottom">
             <div className="sidebar-address">
