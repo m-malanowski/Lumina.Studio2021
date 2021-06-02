@@ -8,7 +8,7 @@ const data = [
   },
   {
     id: 2,
-    text: "portfolio",
+    text: "studio",
     url: "/about/",
   },
   {
@@ -18,8 +18,8 @@ const data = [
   },
   {
     id: 4,
-    text: "o agencji",
-    url: "/about/",
+    text: "portfolio",
+    url: "/portfolio/",
   },
   {
     id: 5,

@@ -9,7 +9,7 @@ import LowerFooter from "../components/LowerFooter"
 import orbitAbout from "../assets/icons/orbitAbout.png"
 import handDown from "../assets/icons/handDown.svg"
 // ...GatsbyImageSharpFluid
-const About = () => {
+const Services = () => {
   return (
     <>
       <main className="services-page container-fluid">
@@ -55,4 +55,4 @@ const About = () => {
 )
 }
 
-export default About
+export default Services

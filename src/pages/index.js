@@ -9,7 +9,7 @@ import orbitMain from "../assets/icons/orbitMain.png";
 import handDown from "../assets/icons/handDown.svg"
 import thumbUp from "../assets/icons/thumbUp.svg"
 import arrowDown from "../assets/icons/arrowDown.svg"
-
+import serviceStickers from "../assets/icons/serviceStickers.svg"
 
 
 import mickeyMain from "../assets/imgs/mickey-main3.gif"
@@ -64,7 +64,7 @@ export default () => {
         <section className="section-marquee break-out">
           <div className="marquee-container">
             <div className="first-tape"><span> <span>Together</span> <span>Together</span> <span>Together</span> <span>Together</span> <span>Together</span> </span></div>
-            {/*<div className="second-tape"><span>Work | Work | Work | Work | Work | Work | Work | </span></div>*/}
+            <div className="second-tape"><span> <span>Work</span> <span>Work</span> <span>Work</span> <span>Work</span> <span>Work</span><span>Work</span><span>Work</span> </span></div>
             {/*<div className="third-tape"><span> <span>Lumina</span>    <span>Lumina</span> <span>Lumina</span> <span>Lumina</span>  <span>Lumina</span>   </span></div>*/}
           </div>
         </section>
@@ -104,14 +104,19 @@ export default () => {
               </div>
             </div>
 
+            <div>
+              <img className="service-stickers" width="100%" src={serviceStickers} alt="" />
+            </div>
+
           </div>
+
         </section>
 
         {/*<section className="">*/}
         {/*  <ServicesSlider/>*/}
         {/*</section>*/}
 
-        <Worldwide/>
+
 
         <section className="section-marquee break-out">
           <div className="marquee-container">

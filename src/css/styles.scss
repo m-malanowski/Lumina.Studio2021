@@ -724,9 +724,9 @@ Services Page
 
 .services-page, .blog-page, .contact-page {
   //border: 2px solid white;
-  &.container-fluid {
-    padding-left: 0 !important;
-  }
+  //&.container-fluid {
+  //  padding-left: 0 !important;
+  //}
 }
 .scroll-down-pages{
   text-align: center;
@@ -959,6 +959,48 @@ SECTIONS ________________________ SECTIONS
   }
 }
 
+.section-about-container {
+  position: relative;
+  h2{
+    max-width: 100%;
+  }
+  p{
+    font-size: 18px;
+    text-transform: uppercase;
+    max-width: 35%;
+    align-self: flex-end;
+  }
+  span{
+    display: inline-block;
+    line-height: 0;
+  }
+  span:nth-of-type(2){
+    text-indent: 250px;
+  }
+  .orbit{
+    position: absolute;
+    top: 15%;
+    right: 5%;
+  }
+  .scroll-down {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    img{
+      padding-right: 1rem;
+    }
+  }
+  .main-container {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    //align-content: center;
+    justify-content: center;
+  }
+}
+
+
+
 
 .section-main-container {
   position: relative;
@@ -998,6 +1040,11 @@ SECTIONS ________________________ SECTIONS
   flex-direction: column;
   //align-content: center;
   justify-content: center;
+}
+
+.service-stickers{
+  width: 100%;
+  height: auto;
 }
 
 .section-main-about {
@@ -1712,7 +1759,8 @@ Nav  Icon
 
 .nav-icon {
   z-index: 10000 !important;
-  margin: 1em;
+  //margin: 1em;
+  margin-left: 1em;
   width: 40px;
 
   &:after,
