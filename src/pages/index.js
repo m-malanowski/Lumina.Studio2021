@@ -64,7 +64,7 @@ export default () => {
         <section className="section-marquee break-out">
           <div className="marquee-container">
             <div className="first-tape"><span> <span>Together</span> <span>Together</span> <span>Together</span> <span>Together</span> <span>Together</span> </span></div>
-            <div className="second-tape"><span> <span>Work</span> <span>Work</span> <span>Work</span> <span>Work</span> <span>Work</span><span>Work</span><span>Work</span> </span></div>
+            {/*<div className="second-tape"><span> <span>Work</span> <span>Work</span> <span>Work</span> <span>Work</span> <span>Work</span><span>Work</span><span>Work</span> </span></div>*/}
             {/*<div className="third-tape"><span> <span>Lumina</span>    <span>Lumina</span> <span>Lumina</span> <span>Lumina</span>  <span>Lumina</span>   </span></div>*/}
           </div>
         </section>
@@ -121,8 +121,8 @@ export default () => {
         <section className="section-marquee break-out">
           <div className="marquee-container">
             <div className="first-tape"><span> <span>Together</span> <span>Together</span> <span>Together</span> <span>Together</span> <span>Together</span> </span></div>
-            {/*<div className="second-tape"><span> <span>Work</span> <span>Work</span> <span>Work</span> <span>Work</span> <span>Work</span><span>Work</span><span>Work</span> </span></div>*/}
-            <div className="third-tape"><span> <span>Lumina</span>    <span>Lumina</span> <span>Lumina</span> <span>Lumina</span>  <span>Lumina</span>   </span></div>
+            <div className="second-tape"><span> <span>Work</span> <span>Work</span> <span>Work</span> <span>Work</span> <span>Work</span><span>Work</span><span>Work</span> </span></div>
+            {/*<div className="third-tape"><span> <span>Lumina</span>    <span>Lumina</span> <span>Lumina</span> <span>Lumina</span>  <span>Lumina</span>   </span></div>*/}
           </div>
         </section>
 
@@ -217,9 +217,9 @@ export default () => {
                   <h3>Briefieng</h3>
                   <p>Pok pok live-edge biodiesel gluten-free, dison bulb cornhole. Woke hashtag actually cloud bread listicle letterpress.</p>
                   <div className="learn-more sw-right">
-                    <a href="#">Sprawdź więcej</a>
+                    <a href="#">Sprawdź</a>
                     <span/>
-                    <img width="30" src={arrow} alt="" />
+                    <a href="#">więcej</a>
                   </div>
                 </div>
 
@@ -227,9 +227,9 @@ export default () => {
                   <h3>Design</h3>
                   <p>Pok pok live-edge biodiesel gluten-free, godard knausgaard chia venmo edison bulb cornhole. Woke hashtag actually cloud bread listicle letterpress.</p>
                   <div className="learn-more sw-right">
-                    <a href="#">Sprawdź więcej</a>
+                    <a href="#">Sprawdź</a>
                     <span/>
-                    <img width="30" src={arrow} alt="" />
+                    <a href="#">więcej</a>
                   </div>
                 </div>
 
@@ -237,9 +237,9 @@ export default () => {
                   <h3>Implementation</h3>
                   <p>Pok pok live-edge biodiesel gluten-free, godard knausgaard craft beer wolf succulents chia venmo edison bulb cornhole. Woke hashtag actually cloud bread listicle letterpress.</p>
                   <div className="learn-more sw-right">
-                    <a href="#">Sprawdź więcej</a>
+                    <a href="#">Sprawdź</a>
                     <span/>
-                    <img width="30" src={arrow} alt="" />
+                    <a href="#">więcej</a>
                   </div>
                 </div>
 
@@ -411,7 +411,7 @@ export default () => {
           <div className="marquee-container">
             <div className="first-tape"><span> <span>Together</span> <span>Together</span> <span>Together</span> <span>Together</span> <span>Together</span> </span></div>
             <div className="second-tape"><span> <span>Work</span> <span>Work</span> <span>Work</span> <span>Work</span> <span>Work</span> <span>Work</span> <span>Work</span></span></div>
-            {/*<div className="third-tape"><span> <span>Lumina</span>    <span>Lumina</span> <span>Lumina</span> <span>Lumina</span>  <span>Lumina</span>   </span></div>*/}
+            <div className="third-tape"><span> <span>Lumina</span>    <span>Lumina</span> <span>Lumina</span> <span>Lumina</span>  <span>Lumina</span>   </span></div>
           </div>
         </section>
 
