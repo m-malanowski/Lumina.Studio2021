@@ -39,7 +39,7 @@ const About = () => {
         </section>
 
         <section>
-          <div className="page-content">
+          <div className="">
             <div className="subsec-body">
               <div className="ss-body-first">
               </div>

@@ -9,7 +9,7 @@ const Portfolio = () => {
   return (
     <>
       <main className="services-page container-fluid">
-        <section className="section-main-works">
+        <section className="page-content section-main-works">
           <div>
             <div className="subsec-header">
               <h5 className="">02.</h5>
