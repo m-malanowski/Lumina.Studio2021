@@ -8,7 +8,7 @@ const data = [
   },
   {
     id: 2,
-    text: "studio",
+    text: "Studio",
     url: "/about/",
   },
   {
@@ -18,7 +18,7 @@ const data = [
   },
   {
     id: 4,
-    text: "portfolio",
+    text: "realizacje",
     url: "/portfolio/",
   },
   {
@@ -36,7 +36,7 @@ const data = [
 const tempLinks = data.map(link => {
   return (
     <li key={link.id}>
-      <Link to={link.url}>{link.text}</Link>
+      <Link className="link link--kale" to={link.url}>{link.text}</Link>
     </li>
   )
 })

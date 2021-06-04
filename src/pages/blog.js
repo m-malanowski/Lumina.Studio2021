@@ -13,17 +13,15 @@ import ServicesSlider from "../components/ServicesSlider"
 const Blog = () => {
   return (
     <>
-      <main className="services-page container-fluid">
+      <main className="blog-page container-fluid">
         <div className="page-content">
-          {/*<div className="pc-first-element">*/}
-          {/*  <h2 className="page-name">Usługi</h2>*/}
-          {/*</div>*/}
-          {/*<div className="pc-second-element">*/}
-          {/*  <p className="pc-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A illo ipsum iusto neque nisi nobis repellendus veniam. <em>Aspernatur beatae enim iste nihil odio officia omnis</em> quasi quisquam, repudiandae, saepe voluptate! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam asperiores aspernatur at aut deserunt enim error eum id in modi nostrum numquam perspiciatis recusandae.</p>*/}
-          {/*  <div className="pc-scroll">*/}
-          {/*    <p>Scroll</p>*/}
-          {/*  </div>*/}
-          {/*</div>*/}
+
+          <div className="subsec-header">
+            <h5 className="">01.</h5>
+            <h2 className="subsec-title">Blog</h2>
+          </div>
+
+
           <div className="subsec-body">
             {/*<div className="ss-body-first"/>*/}
             <div className="ss-body-second">

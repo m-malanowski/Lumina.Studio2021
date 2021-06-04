@@ -15,7 +15,7 @@ import serviceStickers from "../assets/icons/serviceStickers.svg"
 import Worldwide from "../components/Worldwide"
 import aboutServiceStar1 from "../assets/icons/aboutServiceStar1.svg"
 import aboutServiceStar2 from "../assets/icons/aboutServiceStar2.svg"
-
+// import memoji from "../assets/icons/giphy.gif"
 
 // ...GatsbyImageSharpFluid
 const About = () => {
@@ -54,7 +54,7 @@ const About = () => {
         <section className="about-page-process">
           <div className="subsec-header">
             <h5 className="">02.</h5>
-            <h2 className="subsec-title">Our Vision</h2>
+            <h2 className="subsec-title">Our <br/> Vision</h2>
           </div>
           <div className="about-process-single mt-5">
             <div>
@@ -102,13 +102,13 @@ const About = () => {
 
         <div>
           <img className="service-stickers" width="100%" src={serviceStickers} alt="" />
+          {/*<img className="service-stickers" width="100%" src={memoji} alt="" />*/}
         </div>
-
 
         <section className="about-page-process">
           <div className="subsec-header">
             <h5 className="">03.</h5>
-            <h2 className="subsec-title">Our services</h2>
+            <h2 className="subsec-title">Our <br/> services</h2>
           </div>
 
           <div className="about-page-services">
@@ -203,8 +203,6 @@ const About = () => {
             <div className="third-tape"><span> <span>Lumina</span>    <span>Lumina</span> <span>Lumina</span> <span>Lumina</span>  <span>Lumina</span>   </span></div>
           </div>
         </section>
-
-
       </main>
       <LowerFooter/>
     </>

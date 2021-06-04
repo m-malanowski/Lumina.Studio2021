@@ -4,70 +4,77 @@ import { graphql } from "gatsby"
 import Title from "../components/Title"
 import Image from "gatsby-image"
 import arrow from "../assets/icons/right-arrow.svg"
+import LowerFooter from "../components/LowerFooter"
+import carra from "../assets/imgs/carra.jpg"
+import drewstal from "../assets/imgs/drewstal.jpg"
+import adwokat from "../assets/imgs/adwokat.jpg"
+
 // ...GatsbyImageSharpFluid
 const Portfolio = () => {
   return (
     <>
-      <main className="services-page container-fluid">
-        <section className="page-content section-main-works">
-          <div>
+      <main className="works-page container-fluid">
+        <section className="page-content works-page-container">
+
             <div className="subsec-header">
-              <h5 className="">02.</h5>
+              <h5 className="">01.</h5>
               <h2 className="subsec-title">Works</h2>
             </div>
-            <div className="subsec-body">
-              {/*<div className="ss-body-first"/>*/}
-              <div className="ss-body-second">
-                <p>Iceland hell of XOXO post-ironic, next level skateboard scenester cornhole tacos distillery. <em>Slow-carb tofu wolf, ennui gastropub four</em> dollar toast direct trade narwhal post-ironic blog tilde fanny pack disrupt. Fingerstache you probably haven't heard of them synth 90's.</p>
-                <span>Things we made</span>
-              </div>
-            </div>
-            <div className="main-works-container">
+
+            <div className="main-works-container mt-5">
               <div className="single-work">
-                <div>
-                  <h5>01/</h5>
-                  <h3>Carra</h3>
+                <div className="singe-work-left">
+                  <p>Webdesign, strategy</p>
+                  <h2>Radca Tomczak</h2>
+                  <p>01.</p>
                 </div>
-                <div>
-                  <p>Gluten-free skateboard YOLO, fam semiotics deep v selfies farm-to-table asymmetrical vice fashion axe tacos pug helvetica. Tote bag before they sold out bespoke, health goth food truck chillwave copper mug quinoa poke bitters. Brooklyn la croix microdosing.</p>
-                  <div className="learn-more sw-right">
-                    <a href="#">Sprawdź więcej</a>
-                    <img width="30" src={arrow} alt="" />
+
+                <img width="100%" src={carra} alt="" />
+
+                <div className="singe-work-right">
+                  <div className="learn-more">
+                    <a href="/single-project">
+                      <span>Sprawdź</span>
+                      <span/>
+                      <span>Więcej</span>
+                    </a>
                   </div>
                 </div>
               </div>
 
               <div className="single-work">
-                <div>
-                  <h5>02/</h5>
-                  <h3>Radca Prawny Tomczak</h3>
+                <div className="singe-work-left">
+                  <p>Webdesign</p>
+                  <h2>Drewstal</h2>
+                  <p>02.</p>
                 </div>
-                <div>
-                  <p>Gluten-free skateboard YOLO, fam semiotics deep v selfies farm-to-table asymmetrical vice fashion axe tacos pug helvetica. Tote bag before they sold out bespoke, health goth food truck chillwave copper mug quinoa poke bitters. Brooklyn la croix microdosing.</p>
-                  <div className="learn-more sw-right">
-                    <a href="#">Sprawdź więcej</a>
-                    <img width="30" src={arrow} alt="" />
+
+                <img width="100%" src={drewstal} alt="" />
+
+                <div className="singe-work-right">
+                  <div className="learn-more">
+                    <a href="/single-project">
+                      <span>Sprawdź</span>
+                      <span/>
+                      <span>Więcej</span>
+                    </a>
                   </div>
                 </div>
               </div>
 
-              <div className="single-work">
-                <div>
-                  <h5>03/</h5>
-                  <h3>Adwokat Mikulak</h3>
-                </div>
-                <div>
-                  <p>Gluten-free skateboard YOLO, fam semiotics deep v selfies farm-to-table asymmetrical vice fashion axe tacos pug helvetica. Tote bag before they sold out bespoke, health goth food truck chillwave copper mug quinoa poke bitters. Brooklyn la croix microdosing.</p>
-                  <div className="learn-more sw-right">
-                    <a href="#">Sprawdź więcej</a>
-                    <img width="30" src={arrow} alt="" />
-                  </div>
-                </div>
-              </div>
+
             </div>
+        </section>
+
+        <section className="section-marquee break-out">
+          <div className="marquee-container">
+            <div className="first-tape"><span> <span>Together</span> <span>Together</span> <span>Together</span> <span>Together</span> <span>Together</span> </span></div>
+            <div className="second-tape"><span> <span>Work</span> <span>Work</span> <span>Work</span> <span>Work</span> <span>Work</span><span>Work</span><span>Work</span> </span></div>
+            <div className="third-tape"><span> <span>Lumina</span>    <span>Lumina</span> <span>Lumina</span> <span>Lumina</span>  <span>Lumina</span>   </span></div>
           </div>
         </section>
       </main>
+      <LowerFooter/>
     </>
   )
 }

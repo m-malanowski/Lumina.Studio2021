@@ -9,8 +9,8 @@ const Footer = () => {
         <div className="footer-top">
           {/*<h5><em>Nawiąż</em> kontakt</h5>*/}
           <span className="subsec-title">Zadzwoń <br/>   +(48) 123 456 789    </span>
-          <h5 className="mt-3"><a href="mailto:hello@lumina.studio" >hello@lumina.studio</a></h5>
-          <button type="button" className="mt-3 button outline footer-button">Wyślij wiadomość</button>
+          <h5 className="mt-3"><a href="mailto:hello@lumina.studio">hello@lumina.studio</a></h5>
+          <button type="button" className="mt-4 button outline footer-button">Wyślij wiadomość</button>
           <img className="orbit" width="400" src={orbitFooter} alt="" />
         </div>
 
@@ -18,13 +18,18 @@ const Footer = () => {
           <h3 className="motto">Studio for <br/> ambitious <br/> brands</h3>
           <ul>
             <h4>Elbląg</h4>
-            <li>hello@lumina.studio</li>
-            <li>+(48) 000 000 000 </li>
+            <li>
+              <a href="" className="social-link link link--kale">
+                hello@lumina.studio
+              </a>
+            </li>
+            <li> +(48) 506 870 672 </li>
             <li>Królewiecka 21B</li>
             <li>82-300 Elbląg</li>
-            <br/>
-            {/*<li className="show-on-map link link--kale">Zobacz na mapie</li>*/}
-            <li className="footer-arrow"><a href=""><p className="show-on-map">Zobacz na mapie</p> <img height="20" src={arrow} alt="" /></a></li>
+            <li className="learn-more sw-right show-on-map">
+              <a href="#" className="mr-3">Zobacz na mapie</a>
+              <img width="23" src={arrow} alt="" />
+            </li>
           </ul>
 
           <ul>
@@ -33,10 +38,10 @@ const Footer = () => {
             <li>+(48) 000 000 000 </li>
             <li>Buforowa 101A</li>
             <li>52-131 Wrocław</li>
-            <br/>
-            {/*<li className="show-on-map link link--kale">Zobacz na mapie</li>*/}
-            <li className="footer-arrow"><a href=""><p className="show-on-map">Zobacz na mapie</p> <img height="20" src={arrow} alt="" /></a></li>
-
+            <li className="learn-more sw-right show-on-map">
+              <a href="#" className="mr-3">Zobacz na mapie</a>
+              <img width="23" src={arrow} alt="" />
+            </li>
           </ul>
 
           <div>

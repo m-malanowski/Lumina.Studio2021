@@ -1,6 +1,8 @@
 import React from "react"
 
 import SocialLinks from "../constants/socialLinks"
+import arrow from "../assets/icons/right-arrow.svg"
+import orbitFooter from "../assets/icons/orbitFooter.png"
 const Footer = () => {
   return (
     <>
@@ -13,8 +15,10 @@ const Footer = () => {
             <li>+(48) 000 000 000 </li>
             <li>Królewiecka 21B</li>
             <li>82-300 Elbląg</li>
-            <br/>
-            <li className="show-on-map link link--kale">Zobacz na mapie </li>
+            <li className="learn-more sw-right show-on-map">
+              <a href="#" className="mr-3">Sprawdź więcej</a>
+              <img width="23" src={arrow} alt="" />
+            </li>
 
           </ul>
 
@@ -24,8 +28,10 @@ const Footer = () => {
             <li>+(48) 000 000 000 </li>
             <li>Buforowa 101A</li>
             <li>52-131 Wrocław</li>
-            <br/>
-            <li className="show-on-map link link--kale">Zobacz na mapie </li>
+            <li className="learn-more sw-right show-on-map">
+              <a href="#" className="mr-3">Sprawdź więcej</a>
+              <img width="23" src={arrow} alt="" />
+            </li>
           </ul>
 
           <div>

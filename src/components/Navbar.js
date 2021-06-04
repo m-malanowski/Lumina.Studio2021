@@ -16,7 +16,7 @@ const Navbar = ({ toggleSideBar, isOpen }) => {
         <div className="btn-wrapper">
           <button type="button" className="button outline">Rozpocznij projekt</button>
         </div>
-        <img src={contrast} width="38"  alt="Zmien kontrast" />
+        {/*<img src={contrast} width="38"  alt="Zmien kontrast" />*/}
         <button type="button" className="toggle-btn" onClick={toggleSideBar} aria-label="menu-button">
           <div className={`nav-icon ${isOpen? "transformed" : ""}`}>
             <div/>

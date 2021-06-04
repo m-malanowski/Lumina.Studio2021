@@ -35,7 +35,7 @@ const data = [
 ]
 const links = data.map(link => {
   return (
-    <li key={link.id}>
+    <li key={link.id} className="social-links">
       <a href={link.url} className="social-link link link--kale">
         {/*{link.icon}*/}
         {link.name}
