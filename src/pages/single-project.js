@@ -1,5 +1,6 @@
 import React from "react"
 import Footer from "../components/Footer"
+import orbitSingleProject from "../assets/icons/orbitSingleProject.png"
 
 import Layout from "../components/Layout"
 import { graphql } from "gatsby"
@@ -10,7 +11,9 @@ import malva2 from "../assets/imgs/malva2.png"
 
 import arrowDown from "../assets/icons/arrowDown.svg"
 import ServicesSlider from "../components/ServicesSlider"
-import orbitAboutPage from "../assets/icons/orbitAboutPage.png"
+import arrow from "../assets/icons/right-arrow.svg"
+import orbitMain from "../assets/icons/orbitMainView.png"
+import Worldwide from "../components/Worldwide"
 // ...GatsbyImageSharpFluid
 
 const Blog = () => {
@@ -18,6 +21,7 @@ const Blog = () => {
     <>
       <main className="single-project-page container-fluid">
         <div className="page-content">
+          <img className="orbit" width="700" src={orbitSingleProject} alt="" />
 
           <div className="subsec-header">
             {/*<h5 className="">01.</h5>*/}
@@ -41,30 +45,74 @@ const Blog = () => {
               <h5 className="">01.</h5>
               <h2 className="subsec-title">Główny widok</h2>
             </div>
-            <img className="orbit" width="900" src={malva} alt="" />
+            <img className="" width="900" src={malva} alt="" />
 
             <div className="subsec-header">
               <h5 className="">02.</h5>
               <h2 className="subsec-title">About</h2>
             </div>
-            <img className="orbit" width="900" src={malva2} alt="" />
+            <img className="" width="900" src={malva2} alt="" />
           </div>
 
-          <div className="subsec-header">
-            <h5 className="">03.</h5>
-            <h2 className="subsec-title">Więcej <br/> projektów</h2>
-          </div>
+          <section className="section-more-projects">
+            <div className="subsec-header">
+              <h5 className="">03.</h5>
+              <h2 className="subsec-title">Więcej <br/> projektów</h2>
+            </div>
+
+            <div className="more-projects-single mt-5">
+              <div className="more-left">
+                <span>2019</span>
+                <h5>Antyegzekucja</h5>
+              </div>
+              <p className="more-right"> Webdesign, Banding </p>
+            </div>
+
+            <div className="more-projects-single ">
+              <div className="more-left">
+                <span>2020</span>
+                <h5>Carra</h5>
+              </div>
+              <p className="more-right"> Webdesign, Strategy </p>
+            </div>
+
+            <div className="more-projects-single ">
+              <div className="more-left">
+                <span>2020</span>
+                <h5>Radca prawny tomczak</h5>
+              </div>
+              <p className="more-right"> Webdesign, Branding </p>
+            </div>
+
+            <div className="more-projects-single ">
+              <div className="more-left">
+                <span>2021</span>
+                <h5>Antyegzekucja</h5>
+              </div>
+              <p className="more-right"> Webdesign  </p>
+            </div>
+
+            {/*<div className="learn-more">*/}
+            {/*  <a href="/portfolio">*/}
+            {/*    <span>Sprawdź</span>*/}
+            {/*    <span/>*/}
+            {/*    <span>Więcej</span>*/}
+            {/*  </a>*/}
+            {/*</div>*/}
+
+          </section>
         </div>
 
-        {/*<section className="section-marquee break-out">*/}
-        {/*  <div className="marquee-container">*/}
-        {/*    <div className="first-tape"><span> <span>Together</span> <span>Together</span> <span>Together</span> <span>Together</span> <span>Together</span> </span></div>*/}
-        {/*    <div className="second-tape"><span> <span>Work</span> <span>Work</span> <span>Work</span> <span>Work</span> <span>Work</span><span>Work</span><span>Work</span> </span></div>*/}
-        {/*    <div className="third-tape"><span> <span>Lumina</span>    <span>Lumina</span> <span>Lumina</span> <span>Lumina</span>  <span>Lumina</span>   </span></div>*/}
-        {/*  </div>*/}
-        {/*</section>*/}
+        <section className="section-marquee break-out">
+          <div className="marquee-container">
+            <div className="first-tape"><span> <span>Together</span> <span>Together</span> <span>Together</span> <span>Together</span> <span>Together</span> </span></div>
+            <div className="second-tape"><span> <span>Work</span> <span>Work</span> <span>Work</span> <span>Work</span> <span>Work</span><span>Work</span><span>Work</span> </span></div>
+            <div className="third-tape"><span> <span>Lumina</span>  <span>Lumina</span>   <span>Lumina</span> <span>Lumina</span> <span>Lumina</span>  <span>Lumina</span>   </span></div>
+          </div>
+        </section>
+
+
       </main>
-      {/*<LowerFooter />*/}
     </>
   )
 }

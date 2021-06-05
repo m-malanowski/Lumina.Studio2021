@@ -8,6 +8,7 @@ import LowerFooter from "../components/LowerFooter"
 import carra from "../assets/imgs/carra.jpg"
 import drewstal from "../assets/imgs/drewstal.jpg"
 import adwokat from "../assets/imgs/adwokat.jpg"
+import Worldwide from "../components/Worldwide"
 
 // ...GatsbyImageSharpFluid
 const Portfolio = () => {
@@ -73,6 +74,7 @@ const Portfolio = () => {
             <div className="third-tape"><span> <span>Lumina</span>    <span>Lumina</span> <span>Lumina</span> <span>Lumina</span>  <span>Lumina</span>   </span></div>
           </div>
         </section>
+        <Worldwide/>
       </main>
       <LowerFooter/>
     </>

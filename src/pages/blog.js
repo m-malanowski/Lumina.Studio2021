@@ -8,6 +8,7 @@ import Blogs from "../components/Blogs"
 import LowerFooter from "../components/LowerFooter"
 import arrowDown from "../assets/icons/arrowDown.svg"
 import ServicesSlider from "../components/ServicesSlider"
+import Worldwide from "../components/Worldwide"
 // ...GatsbyImageSharpFluid
 
 const Blog = () => {
@@ -43,11 +44,10 @@ const Blog = () => {
           <div className="marquee-container">
             <div className="first-tape"><span> <span>Together</span> <span>Together</span> <span>Together</span> <span>Together</span> <span>Together</span> </span></div>
             <div className="second-tape"><span> <span>Work</span> <span>Work</span> <span>Work</span> <span>Work</span> <span>Work</span><span>Work</span><span>Work</span> </span></div>
-            <div className="third-tape"><span> <span>Lumina</span>    <span>Lumina</span> <span>Lumina</span> <span>Lumina</span>  <span>Lumina</span>   </span></div>
+            <div className="third-tape"><span> <span>Lumina</span>  <span>Lumina</span>  <span>Lumina</span> <span>Lumina</span> <span>Lumina</span>  <span>Lumina</span>   </span></div>
           </div>
         </section>
-
-
+        <Worldwide/>
       </main>
       <LowerFooter />
     </>

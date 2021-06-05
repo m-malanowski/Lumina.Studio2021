@@ -5,7 +5,7 @@ import starSm from "../assets/icons/starSmall.svg"
 import arrow from "../assets/icons/right-arrow.svg"
 import orbitProcess from "../assets/icons/orbitProcess.png"
 import orbitAbout from "../assets/icons/orbitAbout.png";
-import orbitMain from "../assets/icons/orbitMain.png";
+import orbitMain from "../assets/icons/orbitMainView.png";
 import handDown from "../assets/icons/handDown.svg"
 import thumbUp from "../assets/icons/thumbUp.svg"
 import arrowDown from "../assets/icons/arrowDown.svg"
@@ -26,6 +26,8 @@ import Footer from "../components/Footer"
 import MainScene3 from "../components/MainScene3"
 import SocialLinks from "../constants/socialLinks"
 import ServicesSlider from "../components/ServicesSlider"
+import orbitAboutPage from "../assets/icons/orbitAboutPage.png"
+import smallStar from "../assets/icons/smallStar.svg"
 // import Layout from "../components/Layout"
 // import Hero from "../components/Hero"
 // import Services from "../components/Services"
@@ -38,19 +40,32 @@ export default () => {
       <main className="index-page container-fluid">
           {/*<MainScene3/>*/}
         <section className="section-main-container">
+          {/*<div className="main-container">*/}
+          {/*  <h2 className="subsec-title">*/}
+          {/*    <span>wayfarers glossier</span>*/}
+          {/*    <span>knausgaard</span>*/}
+          {/*    <span>Shoreditch</span>*/}
+          {/*  </h2>*/}
+          {/*  <p>Adaptogen cardigan pop-up mumblecore, wolf scenester jianbing small batch chartreuse typewriter edison bulb pug etsy</p>*/}
+          {/*  <img className="orbit" width="900" src={orbitMain} alt="" />*/}
+          {/*</div>*/}
           <div className="main-container">
-            <h2 className="subsec-title">
-              <span>wayfarers glossier</span>
-              <span>knausgaard</span>
-              <span>Shoreditch</span>
-            </h2>
-            <p>Adaptogen cardigan pop-up mumblecore, wolf scenester jianbing small batch chartreuse typewriter edison bulb pug etsy</p>
+            <div>
+              <h5 className="">01.</h5>
+              <h2 className="subsec-title">
+                <span>meggings   </span>
+                <span>food truck</span>
+                <span>Shoreditch</span>
+              </h2>
+            </div>
+            <p className="mt-5">Adaptogen cardigan pop-up mumblecore, wolf scenester jianbing small batch chartreuse typewriter edison bulb pug etsy. Crucifix salvia stumptown fingerstache migas, snackwave mustache authentic ramps everyday carry forage skateboard taiyaki pop-up tumblr.</p>
             <img className="orbit" width="900" src={orbitMain} alt="" />
+            <img className="small-star" width="50" src={smallStar} alt="" />
           </div>
           <div className="scroll-down">
             {/*<img width="100" src={arrowDown} alt="" />*/}
             {/*<img width="100" src={arrowDown} alt="" />*/}
-            <img width="100" src={arrowDown} alt="" />
+            <img width="70" src={arrowDown} alt="" />
             {/*<img width="150" src={handDown} alt="" />*/}
           </div>
         </section>
@@ -64,7 +79,7 @@ export default () => {
         <section className="section-marquee break-out">
           <div className="marquee-container">
             <div className="first-tape"><span> <span>Together</span> <span>Together</span> <span>Together</span> <span>Together</span> <span>Together</span> </span></div>
-            {/*<div className="second-tape"><span> <span>Work</span> <span>Work</span> <span>Work</span> <span>Work</span> <span>Work</span><span>Work</span><span>Work</span> </span></div>*/}
+            <div className="second-tape"><span> <span>Work</span> <span>Work</span> <span>Work</span> <span>Work</span> <span>Work</span><span>Work</span><span>Work</span> </span></div>
             {/*<div className="third-tape"><span> <span>Lumina</span>    <span>Lumina</span> <span>Lumina</span> <span>Lumina</span>  <span>Lumina</span>   </span></div>*/}
           </div>
         </section>
@@ -72,7 +87,7 @@ export default () => {
         <section className="section-main-about">
           <div className="main-about-container">
             <div className="subsec-header">
-              <h5 className="">01.</h5>
+              <h5 className="">02.</h5>
               <h2 className="subsec-title">About</h2>
             </div>
             <div className="subsec-body">
@@ -80,7 +95,7 @@ export default () => {
                 <img className="orbit" width="800" src={orbitAbout} alt="" />
               </div>
               <div className="ss-body-second">
-                <p>Distillery type write brunch wayfarers letter press hammock meggings food truck <em>hell o edison bulb forage</em>. Man on the polaroid thundercats hashtae subway tile. </p>
+                <p>Distillery type write brunch wayfarers letter press hammock meggings food truck hell o edison  bulb forage. Man on the   <em> polaroid </em> thundercats hashtae subway tile. </p>
                 <span>Who we are</span>
               </div>
             </div>
@@ -109,7 +124,6 @@ export default () => {
             </div>
 
           </div>
-
         </section>
 
         {/*<section className="">*/}
@@ -121,70 +135,134 @@ export default () => {
         <section className="section-marquee break-out">
           <div className="marquee-container">
             <div className="first-tape"><span> <span>Together</span> <span>Together</span> <span>Together</span> <span>Together</span> <span>Together</span> </span></div>
-            <div className="second-tape"><span> <span>Work</span> <span>Work</span> <span>Work</span> <span>Work</span> <span>Work</span><span>Work</span><span>Work</span> </span></div>
+            {/*<div className="second-tape"><span> <span>Work</span> <span>Work</span> <span>Work</span> <span>Work</span> <span>Work</span><span>Work</span><span>Work</span> </span></div>*/}
             {/*<div className="third-tape"><span> <span>Lumina</span>    <span>Lumina</span> <span>Lumina</span> <span>Lumina</span>  <span>Lumina</span>   </span></div>*/}
           </div>
         </section>
 
-
-        <section className="section-main-works">
+        <section className="section-more-projects">
           <div>
             <div className="subsec-header">
-              <h5 className="">02.</h5>
+              <h5 className="">03.</h5>
               <h2 className="subsec-title">Works</h2>
             </div>
-            <div className="subsec-body">
-              {/*<div className="ss-body-first"/>*/}
-              <div className="ss-body-second">
-                <p>Iceland hell of XOXO post-ironic, next level skateboard scenester cornhole tacos distillery. <em>Slow-carb tofu wolf, ennui gastropub four</em> dollar toast direct trade narwhal post-ironic blog tilde fanny pack disrupt. Fingerstache you probably haven't heard of them synth 90's.</p>
-                <span>Things we made</span>
-              </div>
-            </div>
-            <div className="main-works-container">
-              <div className="single-work">
-                <div>
-                  <h5>01/</h5>
-                  <h3>Carra</h3>
-                </div>
-                <div>
-                  <p>Gluten-free skateboard YOLO, fam semiotics deep v selfies farm-to-table asymmetrical vice fashion axe tacos pug helvetica. Tote bag before they sold out bespoke, health goth food truck chillwave copper mug quinoa poke bitters. Brooklyn la croix microdosing.</p>
-                  <div className="learn-more sw-right">
-                    <a href="#">Sprawdź więcej</a>
-                    <img width="30" src={arrow} alt="" />
-                  </div>
-                </div>
-              </div>
+            {/*<div className="subsec-body">*/}
+            {/*  /!*<div className="ss-body-first"/>*!/*/}
+            {/*  <div className="ss-body-second">*/}
+            {/*    <p>Iceland hell of XOXO post-ironic, next level skateboard scenester cornhole tacos distillery. <em>Slow-carb tofu wolf, ennui gastropub four</em> dollar toast direct trade narwhal post-ironic blog tilde fanny pack disrupt. Fingerstache you probably haven't heard of them synth 90's.</p>*/}
+            {/*    <span>Things we made</span>*/}
+            {/*  </div>*/}
+            {/*</div>*/}
 
-              <div className="single-work">
-                <div>
-                  <h5>02/</h5>
-                  <h3>Radca Prawny Tomczak</h3>
-                </div>
-                <div>
-                  <p>Gluten-free skateboard YOLO, fam semiotics deep v selfies farm-to-table asymmetrical vice fashion axe tacos pug helvetica. Tote bag before they sold out bespoke, health goth food truck chillwave copper mug quinoa poke bitters. Brooklyn la croix microdosing.</p>
-                  <div className="learn-more sw-right">
-                    <a href="#">Sprawdź więcej</a>
-                    <img width="30" src={arrow} alt="" />
-                  </div>
-                </div>
+            <div className="more-projects-single mt-5">
+              <div className="more-left">
+                <span>2019</span>
+                <h5>Antyegzekucja</h5>
               </div>
-
-              <div className="single-work">
-                <div>
-                  <h5>03/</h5>
-                  <h3>Adwokat Mikulak</h3>
-                </div>
-                <div>
-                  <p>Gluten-free skateboard YOLO, fam semiotics deep v selfies farm-to-table asymmetrical vice fashion axe tacos pug helvetica. Tote bag before they sold out bespoke, health goth food truck chillwave copper mug quinoa poke bitters. Brooklyn la croix microdosing.</p>
-                  <div className="learn-more sw-right">
-                    <a href="#">Sprawdź więcej</a>
-                    <img width="30" src={arrow} alt="" />
-                  </div>
-                </div>
-              </div>
+              <p className="more-right"> Webdesign, Banding </p>
             </div>
+
+            <div className="more-projects-single ">
+              <div className="more-left">
+                <span>2020</span>
+                <h5>Carra</h5>
+              </div>
+              <p className="more-right"> Webdesign, Strategy </p>
+            </div>
+
+            <div className="more-projects-single ">
+              <div className="more-left">
+                <span>2020</span>
+                <h5>Radca prawny tomczak</h5>
+              </div>
+              <p className="more-right"> Webdesign, Branding </p>
+            </div>
+
+            <div className="more-projects-single ">
+              <div className="more-left">
+                <span>2021</span>
+                <h5>Antyegzekucja</h5>
+              </div>
+              <p className="more-right"> Webdesign  </p>
+            </div>
+
+            <div className="more-projects-single ">
+              <div className="more-left">
+                <span>2021</span>
+                <h5>Coś tam</h5>
+              </div>
+              <p className="more-right"> Webdesign  </p>
+            </div>
+
+          </div>
+
+          <div className="learn-more">
+            <a href="/portfolio">
+              <span>Zobacz</span>
+              <span/>
+              <span>Wszystkie</span>
+            </a>
           </div>
         </section>
+
+        {/*<section className="section-main-works">*/}
+        {/*  <div>*/}
+        {/*    <div className="subsec-header">*/}
+        {/*      <h5 className="">03.</h5>*/}
+        {/*      <h2 className="subsec-title">Works</h2>*/}
+        {/*    </div>*/}
+        {/*    <div className="subsec-body">*/}
+        {/*      /!*<div className="ss-body-first"/>*!/*/}
+        {/*      <div className="ss-body-second">*/}
+        {/*        <p>Iceland hell of XOXO post-ironic, next level skateboard scenester cornhole tacos distillery. <em>Slow-carb tofu wolf, ennui gastropub four</em> dollar toast direct trade narwhal post-ironic blog tilde fanny pack disrupt. Fingerstache you probably haven't heard of them synth 90's.</p>*/}
+        {/*        <span>Things we made</span>*/}
+        {/*      </div>*/}
+        {/*    </div>*/}
+        {/*    <div className="main-works-container">*/}
+        {/*      <div className="single-work">*/}
+        {/*        <div>*/}
+        {/*          <h5>01/</h5>*/}
+        {/*          <h3>Carra</h3>*/}
+        {/*        </div>*/}
+        {/*        <div>*/}
+        {/*          <p>Gluten-free skateboard YOLO, fam semiotics deep v selfies farm-to-table asymmetrical vice fashion axe tacos pug helvetica. Tote bag before they sold out bespoke, health goth food truck chillwave copper mug quinoa poke bitters. Brooklyn la croix microdosing.</p>*/}
+        {/*          <div className="learn-more sw-right">*/}
+        {/*            <a href="#">Sprawdź więcej</a>*/}
+        {/*            <img width="30" src={arrow} alt="" />*/}
+        {/*          </div>*/}
+        {/*        </div>*/}
+        {/*      </div>*/}
+
+        {/*      <div className="single-work">*/}
+        {/*        <div>*/}
+        {/*          <h5>02/</h5>*/}
+        {/*          <h3>Radca Prawny Tomczak</h3>*/}
+        {/*        </div>*/}
+        {/*        <div>*/}
+        {/*          <p>Gluten-free skateboard YOLO, fam semiotics deep v selfies farm-to-table asymmetrical vice fashion axe tacos pug helvetica. Tote bag before they sold out bespoke, health goth food truck chillwave copper mug quinoa poke bitters. Brooklyn la croix microdosing.</p>*/}
+        {/*          <div className="learn-more sw-right">*/}
+        {/*            <a href="#">Sprawdź więcej</a>*/}
+        {/*            <img width="30" src={arrow} alt="" />*/}
+        {/*          </div>*/}
+        {/*        </div>*/}
+        {/*      </div>*/}
+
+        {/*      <div className="single-work">*/}
+        {/*        <div>*/}
+        {/*          <h5>03/</h5>*/}
+        {/*          <h3>Adwokat Mikulak</h3>*/}
+        {/*        </div>*/}
+        {/*        <div>*/}
+        {/*          <p>Gluten-free skateboard YOLO, fam semiotics deep v selfies farm-to-table asymmetrical vice fashion axe tacos pug helvetica. Tote bag before they sold out bespoke, health goth food truck chillwave copper mug quinoa poke bitters. Brooklyn la croix microdosing.</p>*/}
+        {/*          <div className="learn-more sw-right">*/}
+        {/*            <a href="#">Sprawdź więcej</a>*/}
+        {/*            <img width="30" src={arrow} alt="" />*/}
+        {/*          </div>*/}
+        {/*        </div>*/}
+        {/*      </div>*/}
+        {/*    </div>*/}
+        {/*  </div>*/}
+        {/*</section>*/}
         {/*<img width="200" src={handDown} alt="" />*/}
         {/*<img className="hand" width="200" src={thumbUp} alt="" />*/}
 
@@ -197,16 +275,14 @@ export default () => {
         </section>
 
         <section className="section-main-process">
-
-
           <div className="">
             <div className="subsec-header">
-              <h5 className="">03.</h5>
+              <h5 className="">04.</h5>
               <h2 className="subsec-title">Process</h2>
             </div>
             <div className="subsec-body">
               <div className="ss-body-second">
-                <p>Distillery type write brunch wayfarers letter press <em>hammock meggings food</em> truck hell o edison . Man on the polaroid subway tile. </p>
+                <p>Distillery type write brunch wayfarers letter press hammockmeggings  food truck hell o tomy edison  <em>on the polaroid.  </em> Man osubway tile. </p>
                 <span>How we do</span>
 
                 <img className="orbit" width="600" src={orbitProcess} alt="" />
@@ -216,30 +292,36 @@ export default () => {
                 <div className="single-process">
                   <h3>Briefieng</h3>
                   <p>Pok pok live-edge biodiesel gluten-free, dison bulb cornhole. Woke hashtag actually cloud bread listicle letterpress.</p>
-                  <div className="learn-more sw-right">
-                    <a href="#">Sprawdź</a>
-                    <span/>
-                    <a href="#">więcej</a>
+                  <div className="learn-more">
+                    <a href="/single-project">
+                      <span>Sprawdź</span>
+                      <span/>
+                      <span>Więcej</span>
+                    </a>
                   </div>
                 </div>
 
                 <div className="single-process">
                   <h3>Design</h3>
                   <p>Pok pok live-edge biodiesel gluten-free, godard knausgaard chia venmo edison bulb cornhole. Woke hashtag actually cloud bread listicle letterpress.</p>
-                  <div className="learn-more sw-right">
-                    <a href="#">Sprawdź</a>
-                    <span/>
-                    <a href="#">więcej</a>
+                  <div className="learn-more">
+                    <a href="/single-project">
+                      <span>Sprawdź</span>
+                      <span/>
+                      <span>Więcej</span>
+                    </a>
                   </div>
                 </div>
 
                 <div className="single-process">
                   <h3>Implementation</h3>
                   <p>Pok pok live-edge biodiesel gluten-free, godard knausgaard craft beer wolf succulents chia venmo edison bulb cornhole. Woke hashtag actually cloud bread listicle letterpress.</p>
-                  <div className="learn-more sw-right">
-                    <a href="#">Sprawdź</a>
-                    <span/>
-                    <a href="#">więcej</a>
+                  <div className="learn-more">
+                    <a href="/single-project">
+                      <span>Sprawdź</span>
+                      <span/>
+                      <span>Więcej</span>
+                    </a>
                   </div>
                 </div>
 
@@ -404,14 +486,77 @@ export default () => {
         {/*    </ul>*/}
         {/*  </div>*/}
         {/*</section>*/}
+        <section className="section-more-projects">
+          <div>
+            <div className="subsec-header">
+              <h5 className="">03.</h5>
+              <h2 className="subsec-title">Works</h2>
+            </div>
+            {/*<div className="subsec-body">*/}
+            {/*  /!*<div className="ss-body-first"/>*!/*/}
+            {/*  <div className="ss-body-second">*/}
+            {/*    <p>Iceland hell of XOXO post-ironic, next level skateboard scenester cornhole tacos distillery. <em>Slow-carb tofu wolf, ennui gastropub four</em> dollar toast direct trade narwhal post-ironic blog tilde fanny pack disrupt. Fingerstache you probably haven't heard of them synth 90's.</p>*/}
+            {/*    <span>Things we made</span>*/}
+            {/*  </div>*/}
+            {/*</div>*/}
 
+            <div className="more-projects-single mt-5">
+              <div className="more-left">
+                <span>2019</span>
+                <h5>Antyegzekucja</h5>
+              </div>
+              <p className="more-right"> Webdesign, Banding </p>
+            </div>
+
+            <div className="more-projects-single ">
+              <div className="more-left">
+                <span>2020</span>
+                <h5>Carra</h5>
+              </div>
+              <p className="more-right"> Webdesign, Strategy </p>
+            </div>
+
+            <div className="more-projects-single ">
+              <div className="more-left">
+                <span>2020</span>
+                <h5>Radca prawny tomczak</h5>
+              </div>
+              <p className="more-right"> Webdesign, Branding </p>
+            </div>
+
+            <div className="more-projects-single ">
+              <div className="more-left">
+                <span>2021</span>
+                <h5>Antyegzekucja</h5>
+              </div>
+              <p className="more-right"> Webdesign  </p>
+            </div>
+
+            <div className="more-projects-single ">
+              <div className="more-left">
+                <span>2021</span>
+                <h5>Coś tam</h5>
+              </div>
+              <p className="more-right"> Webdesign  </p>
+            </div>
+
+          </div>
+
+          <div className="learn-more">
+            <a href="/portfolio">
+              <span>Zobacz</span>
+              <span/>
+              <span>Wszystkie</span>
+            </a>
+          </div>
+        </section>
         <Worldwide/>
 
         <section className="section-marquee break-out">
           <div className="marquee-container">
             <div className="first-tape"><span> <span>Together</span> <span>Together</span> <span>Together</span> <span>Together</span> <span>Together</span> </span></div>
             <div className="second-tape"><span> <span>Work</span> <span>Work</span> <span>Work</span> <span>Work</span> <span>Work</span> <span>Work</span> <span>Work</span></span></div>
-            <div className="third-tape"><span> <span>Lumina</span>    <span>Lumina</span> <span>Lumina</span> <span>Lumina</span>  <span>Lumina</span>   </span></div>
+            <div className="third-tape"><span> <span>Lumina</span>    <span>Lumina</span> <span>Lumina</span> <span>Lumina</span>  <span>Lumina</span>  <span>Lumina</span>   </span></div>
           </div>
         </section>
 

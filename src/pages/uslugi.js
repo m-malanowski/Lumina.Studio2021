@@ -8,6 +8,7 @@ import Image from "gatsby-image"
 import LowerFooter from "../components/LowerFooter"
 import orbitAbout from "../assets/icons/orbitAbout.png"
 import handDown from "../assets/icons/handDown.svg"
+import Worldwide from "../components/Worldwide"
 // ...GatsbyImageSharpFluid
 const Services = () => {
   return (
@@ -20,7 +21,7 @@ const Services = () => {
           </div>
 
           <div className="subsec-body">
-            {/*<div className="ss-body-first"/>*/}
+            <div className="ss-body-first"/>
             <div className="ss-body-second">
               <p>Iceland hell of XOXO post-ironic, next level skateboard scenester cornhole tacos distillery. Slow-carb tofu wolf, <em> ennui gastropub four</em> dollar toast direct trade narwhal post-ironic blog tilde fanny pack disrupt. Fingerstache you probably haven't heard of them synth 90's.</p>
               <span>Things we made</span>
@@ -44,7 +45,7 @@ const Services = () => {
           </div>
         </section>
 
-
+        <Worldwide/>
       </main>
       <LowerFooter/>
     </>
