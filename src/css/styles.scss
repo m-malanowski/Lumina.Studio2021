@@ -1107,7 +1107,7 @@ footer {
   padding: 5rem 0;
 
   .motto {
-    font-size: calc(25px + (30 - 25) * ((100vw - 320px) / (1900 - 320)));
+    font-size: calc(25px + (35 - 25) * ((100vw - 320px) / (1900 - 320)));
   }
 
   span {
@@ -1131,7 +1131,7 @@ footer {
   }
 
   h5 {
-    font-size: calc(25px + (30 - 25) * ((100vw - 320px) / (1900 - 320)));
+    font-size: calc(25px + (35 - 25) * ((100vw - 320px) / (1900 - 320)));
   }
 
   .orbit {
@@ -1927,7 +1927,7 @@ SECTIONS ________________________ SECTIONS
       a {
         //margin-left: auto;
         display: flex;
-        color: #8e8e8e;
+        //color: #8e8e8e;
 
         span {
           //line-height: 0;
@@ -1939,6 +1939,12 @@ SECTIONS ________________________ SECTIONS
           //flex-grow: 1;
           margin: 0 1.25rem;
           align-self: center;
+          transition: .3s ease-in-out;
+        }
+        &:hover{
+          span:nth-of-type(2) {
+            border-top: 1px solid #ffffff;
+          }
         }
       }
     }

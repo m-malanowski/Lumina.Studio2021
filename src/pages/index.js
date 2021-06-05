@@ -205,66 +205,7 @@ export default () => {
           </div>
         </section>
 
-        {/*<section className="section-main-works">*/}
-        {/*  <div>*/}
-        {/*    <div className="subsec-header">*/}
-        {/*      <h5 className="">03.</h5>*/}
-        {/*      <h2 className="subsec-title">Works</h2>*/}
-        {/*    </div>*/}
-        {/*    <div className="subsec-body">*/}
-        {/*      /!*<div className="ss-body-first"/>*!/*/}
-        {/*      <div className="ss-body-second">*/}
-        {/*        <p>Iceland hell of XOXO post-ironic, next level skateboard scenester cornhole tacos distillery. <em>Slow-carb tofu wolf, ennui gastropub four</em> dollar toast direct trade narwhal post-ironic blog tilde fanny pack disrupt. Fingerstache you probably haven't heard of them synth 90's.</p>*/}
-        {/*        <span>Things we made</span>*/}
-        {/*      </div>*/}
-        {/*    </div>*/}
-        {/*    <div className="main-works-container">*/}
-        {/*      <div className="single-work">*/}
-        {/*        <div>*/}
-        {/*          <h5>01/</h5>*/}
-        {/*          <h3>Carra</h3>*/}
-        {/*        </div>*/}
-        {/*        <div>*/}
-        {/*          <p>Gluten-free skateboard YOLO, fam semiotics deep v selfies farm-to-table asymmetrical vice fashion axe tacos pug helvetica. Tote bag before they sold out bespoke, health goth food truck chillwave copper mug quinoa poke bitters. Brooklyn la croix microdosing.</p>*/}
-        {/*          <div className="learn-more sw-right">*/}
-        {/*            <a href="#">Sprawdź więcej</a>*/}
-        {/*            <img width="30" src={arrow} alt="" />*/}
-        {/*          </div>*/}
-        {/*        </div>*/}
-        {/*      </div>*/}
 
-        {/*      <div className="single-work">*/}
-        {/*        <div>*/}
-        {/*          <h5>02/</h5>*/}
-        {/*          <h3>Radca Prawny Tomczak</h3>*/}
-        {/*        </div>*/}
-        {/*        <div>*/}
-        {/*          <p>Gluten-free skateboard YOLO, fam semiotics deep v selfies farm-to-table asymmetrical vice fashion axe tacos pug helvetica. Tote bag before they sold out bespoke, health goth food truck chillwave copper mug quinoa poke bitters. Brooklyn la croix microdosing.</p>*/}
-        {/*          <div className="learn-more sw-right">*/}
-        {/*            <a href="#">Sprawdź więcej</a>*/}
-        {/*            <img width="30" src={arrow} alt="" />*/}
-        {/*          </div>*/}
-        {/*        </div>*/}
-        {/*      </div>*/}
-
-        {/*      <div className="single-work">*/}
-        {/*        <div>*/}
-        {/*          <h5>03/</h5>*/}
-        {/*          <h3>Adwokat Mikulak</h3>*/}
-        {/*        </div>*/}
-        {/*        <div>*/}
-        {/*          <p>Gluten-free skateboard YOLO, fam semiotics deep v selfies farm-to-table asymmetrical vice fashion axe tacos pug helvetica. Tote bag before they sold out bespoke, health goth food truck chillwave copper mug quinoa poke bitters. Brooklyn la croix microdosing.</p>*/}
-        {/*          <div className="learn-more sw-right">*/}
-        {/*            <a href="#">Sprawdź więcej</a>*/}
-        {/*            <img width="30" src={arrow} alt="" />*/}
-        {/*          </div>*/}
-        {/*        </div>*/}
-        {/*      </div>*/}
-        {/*    </div>*/}
-        {/*  </div>*/}
-        {/*</section>*/}
-        {/*<img width="200" src={handDown} alt="" />*/}
-        {/*<img className="hand" width="200" src={thumbUp} alt="" />*/}
 
         <section className="section-marquee break-out">
           <div className="marquee-container">
@@ -346,106 +287,6 @@ export default () => {
         {/*  </div>*/}
         {/*</section>*/}
 
-
-
-        {/*<section className="section-main-about">*/}
-        {/*  <div className="main-about-container">*/}
-        {/*    /!*<h5>Kim jesteśmy?</h5>*!/*/}
-        {/*    /!*<h2 className="section-title"><span>Czym się <br/></span> <span>zajmujemy</span></h2>*!/*/}
-        {/*    <p className="pc-description"> A illo ipsum iusto neque nisi nobis repellendus veniam. Aspernatur beatae enim iste nihil odio officia  saepe voluptate! Lorem ipsum dolor sit amet, consectetur adiping elit. Aliquam asperiores consectetur  sici:<br/> aspernatur at aut.</p>*/}
-        {/*    /!*<h5>O Lumina</h5>*!/*/}
-        {/*    <p className="mt-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem blanditiis dolores esse in quas quod ratione. Aut consequuntur eveniet facilis fuga illum, incidunt ipsam, iste labore nesciunt ratione saepe voluptatibus.</p>*/}
-        {/*    /!*<img src={starThin} width="350" alt="" />*!/*/}
-        {/*  </div>*/}
-        {/*</section>*/}
-
-        {/*<section className="section-main-squares break-out">*/}
-        {/*  <div className="grid-container">*/}
-        {/*    <div className="item1">1</div>*/}
-        {/*    <div className="item2">2</div>*/}
-        {/*    <div className="item3">3</div>*/}
-        {/*    <div className="item4">4</div>*/}
-        {/*    <div className="item5">5</div>*/}
-        {/*    <div className="item6">6</div>*/}
-        {/*    <div className="item7">7</div>*/}
-        {/*    <div className="item8">8</div>*/}
-        {/*  </div>*/}
-        {/*</section>*/}
-        {/*<section className="section-main-squares-2 break-out">*/}
-        {/*</section>*/}
-
-        {/*<section className="section-main-works">*/}
-        {/*  <div className="main-works-container">*/}
-        {/*    <h5>Nasz proces</h5>*/}
-        {/*    /!*<h2 className="subsec-title">Our latest projects</h2>*!/*/}
-        {/*    <div className="main-works">*/}
-        
-        {/*      <div className="single-work-container break-out">*/}
-        {/*        <div className="single-work container-fluid">*/}
-        {/*          /!*<hr/>*!/*/}
-        {/*          <div class="sw-left"><h3>Kogi mustache</h3></div>*/}
-        {/*          <div class="sw-right">*/}
-        {/*            <p> Visual identity, web design, branding </p>*/}
-        {/*            <img width="40" src={arrow} alt="" />*/}
-        {/*          </div>*/}
-        {/*        </div>*/}
-        {/*      </div>*/}
-        
-        {/*      <div className="single-work-container break-out">*/}
-        {/*        <div className="single-work container-fluid">*/}
-        {/*          /!*<hr/>*!/*/}
-        {/*          <div class="sw-left"><h3> Distillery glossier </h3></div>*/}
-        {/*          <div class="sw-right">*/}
-        {/*            <p> Visual identity, web design, branding </p>*/}
-        {/*            <img width="40" src={arrow} alt="" />*/}
-        {/*          </div>*/}
-        {/*        </div>*/}
-        {/*      </div>*/}
-        
-        {/*      <div className="single-work-container break-out">*/}
-        {/*        <div className="single-work container-fluid">*/}
-        {/*          /!*<hr/>*!/*/}
-        {/*          <div class="sw-left"><h3>Copper mug</h3></div>*/}
-        {/*          <div class="sw-right">*/}
-        {/*            <p> Visual identity, web design, branding </p>*/}
-        {/*            <img width="40" src={arrow} alt="" />*/}
-        {/*          </div>*/}
-        {/*        </div>*/}
-        {/*      </div>*/}
-        
-        {/*      <div className="single-work-container break-out">*/}
-        {/*        <div className="single-work container-fluid">*/}
-        {/*          /!*<hr/>*!/*/}
-        {/*          <div class="sw-left"><h3>Ramps vape </h3></div>*/}
-        {/*          <div class="sw-right">*/}
-        {/*            <p> Visual identity, web design, branding </p>*/}
-        {/*            <img width="40" src={arrow} alt="" />*/}
-        {/*          </div>*/}
-        {/*        </div>*/}
-        {/*      </div>*/}
-        
-        {/*    </div>*/}
-        {/*  </div>*/}
-        {/*</section>*/}
-
-
-        {/*<section>*/}
-        {/*  <div className="main-container-marquee break-out">*/}
-        {/*    <div><span className="marquee-span"> <span>Branding</span> <span>Web design</span> <span>Visual identity</span>  <span>Social media</span>  <span>Welcome</span><span>Elo Elo 3-2-0</span>  <span>Cześć</span><span>Ciao!</span><span>Benvenuto</span><span>Guten Morgen</span><span>Bon dia</span><span>Bonjour</span></span></div>*/}
-        {/*  </div>*/}
-        {/*</section>*/}
-
-
-        {/*<section className="section-skew-marquee break-out">*/}
-        {/*  <div className="marquee-container">*/}
-        {/*    /!*<div><span className="marquee-span">Branding  Branding  Branding  Branding </span></div>*!/*/}
-        {/*    <div><span className="marquee-span">Webdesign | Webdesign | Webdesign | Webdesign |  </span></div>*/}
-        {/*    <div><span className="marquee-span">Visual identity | Visual identity | Visual identity | </span></div>*/}
-        {/*    <div><span className="marquee-span">Usługi | Usługi | Usługi | Usługi |</span></div>*/}
-        {/*  </div>*/}
-        {/*</section>*/}
-
-
         {/*<section className="section-main-services">*/}
         {/*  <div className="main-services-container">*/}
         {/*    <ul>*/}
@@ -457,7 +298,7 @@ export default () => {
         {/*      <li className="main-ss"><a href=""><h5 >Technologie mobilne i webowe</h5> <img height="25" src={arrow} alt="" /></a></li>*/}
         {/*      <li className="main-ss"><a href=""><h5 >Sklepy internetowe</h5> <img height="25" src={arrow} alt="" /></a></li>*/}
         {/*    </ul>*/}
-
+        
         {/*    <ul>*/}
         {/*      <li><img src={starSm} width="50" alt="Agencja interaktywna" /></li>*/}
         {/*      <li><h4 className="break">Branding</h4></li>*/}
@@ -466,7 +307,7 @@ export default () => {
         {/*      <li className="main-ss"><a href=""><h5 >Content direction</h5> <img height="25" src={arrow} alt="" /></a></li>*/}
         {/*      <li className="main-ss"><a href=""><h5 >Brand experiences</h5> <img height="25" src={arrow} alt="" /></a></li>*/}
         {/*    </ul>*/}
-
+        
         {/*    <ul>*/}
         {/*      <li><img src={starSm} width="50" alt="Agencja interaktywna" /></li>*/}
         {/*      <li><h4>Visual identity</h4></li>*/}
@@ -474,7 +315,7 @@ export default () => {
         {/*      <li className="main-ss"><a href=""><h5 >strony www</h5> <img height="25" src={arrow} alt="" /></a></li>*/}
         {/*      <li className="main-ss"><a href=""><h5 >strony www</h5> <img height="25" src={arrow} alt="" /></a></li>*/}
         {/*    </ul>*/}
-
+        
         {/*    <ul>*/}
         {/*      <li><img src={starSm} width="50" alt="Agencja interaktywna" /></li>*/}
         {/*      <li><h4>Social media</h4></li>*/}
@@ -486,70 +327,64 @@ export default () => {
         {/*    </ul>*/}
         {/*  </div>*/}
         {/*</section>*/}
-        <section className="section-more-projects">
-          <div>
-            <div className="subsec-header">
-              <h5 className="">03.</h5>
-              <h2 className="subsec-title">Works</h2>
-            </div>
-            {/*<div className="subsec-body">*/}
-            {/*  /!*<div className="ss-body-first"/>*!/*/}
-            {/*  <div className="ss-body-second">*/}
-            {/*    <p>Iceland hell of XOXO post-ironic, next level skateboard scenester cornhole tacos distillery. <em>Slow-carb tofu wolf, ennui gastropub four</em> dollar toast direct trade narwhal post-ironic blog tilde fanny pack disrupt. Fingerstache you probably haven't heard of them synth 90's.</p>*/}
-            {/*    <span>Things we made</span>*/}
-            {/*  </div>*/}
-            {/*</div>*/}
 
-            <div className="more-projects-single mt-5">
-              <div className="more-left">
-                <span>2019</span>
-                <h5>Antyegzekucja</h5>
-              </div>
-              <p className="more-right"> Webdesign, Banding </p>
-            </div>
+        
+        {/*<section className="section-more-projects">*/}
+        {/*  <div>*/}
+        {/*    <div className="subsec-header">*/}
+        {/*      <h5 className="">03.</h5>*/}
+        {/*      <h2 className="subsec-title">Works</h2>*/}
+        {/*    </div>*/}
 
-            <div className="more-projects-single ">
-              <div className="more-left">
-                <span>2020</span>
-                <h5>Carra</h5>
-              </div>
-              <p className="more-right"> Webdesign, Strategy </p>
-            </div>
+        {/*    <div className="more-projects-single mt-5">*/}
+        {/*      <div className="more-left">*/}
+        {/*        <span>2019</span>*/}
+        {/*        <h5>Antyegzekucja</h5>*/}
+        {/*      </div>*/}
+        {/*      <p className="more-right"> Webdesign, Banding </p>*/}
+        {/*    </div>*/}
 
-            <div className="more-projects-single ">
-              <div className="more-left">
-                <span>2020</span>
-                <h5>Radca prawny tomczak</h5>
-              </div>
-              <p className="more-right"> Webdesign, Branding </p>
-            </div>
+        {/*    <div className="more-projects-single ">*/}
+        {/*      <div className="more-left">*/}
+        {/*        <span>2020</span>*/}
+        {/*        <h5>Carra</h5>*/}
+        {/*      </div>*/}
+        {/*      <p className="more-right"> Webdesign, Strategy </p>*/}
+        {/*    </div>*/}
 
-            <div className="more-projects-single ">
-              <div className="more-left">
-                <span>2021</span>
-                <h5>Antyegzekucja</h5>
-              </div>
-              <p className="more-right"> Webdesign  </p>
-            </div>
+        {/*    <div className="more-projects-single ">*/}
+        {/*      <div className="more-left">*/}
+        {/*        <span>2020</span>*/}
+        {/*        <h5>Radca prawny tomczak</h5>*/}
+        {/*      </div>*/}
+        {/*      <p className="more-right"> Webdesign, Branding </p>*/}
+        {/*    </div>*/}
 
-            <div className="more-projects-single ">
-              <div className="more-left">
-                <span>2021</span>
-                <h5>Coś tam</h5>
-              </div>
-              <p className="more-right"> Webdesign  </p>
-            </div>
+        {/*    <div className="more-projects-single ">*/}
+        {/*      <div className="more-left">*/}
+        {/*        <span>2021</span>*/}
+        {/*        <h5>Antyegzekucja</h5>*/}
+        {/*      </div>*/}
+        {/*      <p className="more-right"> Webdesign  </p>*/}
+        {/*    </div>*/}
 
-          </div>
+        {/*    <div className="more-projects-single ">*/}
+        {/*      <div className="more-left">*/}
+        {/*        <span>2021</span>*/}
+        {/*        <h5>Coś tam</h5>*/}
+        {/*      </div>*/}
+        {/*      <p className="more-right"> Webdesign  </p>*/}
+        {/*    </div>*/}
+        {/*  </div>*/}
+        {/*  <div className="learn-more">*/}
+        {/*    <a href="/portfolio">*/}
+        {/*      <span>Zobacz</span>*/}
+        {/*      <span/>*/}
+        {/*      <span>Wszystkie</span>*/}
+        {/*    </a>*/}
+        {/*  </div>*/}
+        {/*</section>*/}
 
-          <div className="learn-more">
-            <a href="/portfolio">
-              <span>Zobacz</span>
-              <span/>
-              <span>Wszystkie</span>
-            </a>
-          </div>
-        </section>
         <Worldwide/>
 
         <section className="section-marquee break-out">

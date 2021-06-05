@@ -29,8 +29,8 @@ const About = () => {
               <h5 className="">01.</h5>
               <h2 className="subsec-title">
                 <span>wayfaresers </span>
-                <span>hammock dan</span>
-                <span>Shoreditch</span>
+                <span>ham dan</span>
+                <span>Shore beers </span>
               </h2>
             </div>
             <img className="orbit" width="900" src={orbitAboutPage} alt="" />
