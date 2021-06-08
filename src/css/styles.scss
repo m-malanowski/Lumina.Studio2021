@@ -42,13 +42,13 @@
 
 @font-face {
   font-family: "ff-sec-medium";
-  src: url("../assets/fonts/Apercu Pro Medium.otf") format("truetype");
+  src: url("../assets/fonts/Moderat-Extended-Medium.ttf") format("truetype");
   font-display: swap;
 }
 
 @font-face {
   font-family: "ff-sec-regular";
-  src: url("../assets/fonts/Apercu Pro Regular.otf") format("truetype");
+  src: url("../assets/fonts/Moderat-Extended-Regular.ttf") format("truetype");
   font-display: swap;
 }
 
@@ -620,6 +620,7 @@ Pages
       left: 0;
       font-size: 18px;
       text-transform: uppercase;
+      font-family: var(--ff-secondary-medium);
     }
   }
 
@@ -1264,7 +1265,11 @@ SECTIONS ________________________ SECTIONS
     }
 
     span:nth-of-type(2) {
-      text-indent: 250px;
+      //text-indent: 250px;
+      text-indent: 150px;
+    }
+    span:nth-of-type(3) {
+      text-indent: 25px;
     }
 
     & > div {
@@ -1506,7 +1511,7 @@ SECTIONS ________________________ SECTIONS
   .orbit {
     position: absolute;
     top: 20%;
-    left: 20%;
+    left: 22.5%;
   }
 
   .small-star {
@@ -1518,7 +1523,7 @@ SECTIONS ________________________ SECTIONS
   .scroll-down {
     position: absolute;
     bottom: 0;
-    right: 0;
+    left: 0;
     //img {
     //  padding-right: 1rem;
     //}
@@ -1547,7 +1552,7 @@ SECTIONS ________________________ SECTIONS
 
   .orbit {
     position: absolute;
-    top: -10%;
+    top: -30%;
     right: -30%;
   }
 }
@@ -1772,7 +1777,7 @@ SECTIONS ________________________ SECTIONS
 }
 
 .section-worldwide {
-  margin: 20rem 0 0 0;
+  margin: 10rem 0 0 0;
   //padding: 15rem 0 5rem 0;
   display: flex;
   flex-direction: column;
@@ -1792,6 +1797,10 @@ SECTIONS ________________________ SECTIONS
       //color: var(--clr-secondary);
       font-size: calc(25px + (60 - 25) * ((100vw - 320px) / (1900 - 320)));
       font-style: italic;
+    }
+
+    .thumb-up{
+
     }
 
     .globe {

@@ -1,12 +1,15 @@
 import star from "../assets/icons/star.svg"
 import globe from "../assets/icons/globe.svg"
 import React from "react"
+import thumbUp from "../assets/icons/thumbUp.svg"
 const Worldwide = () => {
   return (
     <section className="section-worldwide">
       {/*<div className="bg-circles-section">*/}
       {/*  <div className="blurry-circle bc-4"/>*/}
       {/*</div>*/}
+      <img width="150" className="thumb-up" src={thumbUp} alt="" />
+
       <div className="worldwide-container">
         <img className="star" width="550" src={star} alt="Agencja interaktywna lumina studio" />
         <h2 className=" w-100">Lumina - studio</h2>

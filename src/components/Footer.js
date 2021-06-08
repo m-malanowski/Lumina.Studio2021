@@ -21,7 +21,6 @@ const Footer = () => {
 
         <div className="footer-bottom">
           <h3 className="motto">Studio for <br/> ambitious <br/> brands </h3>
-
           <ul>
             <h4>Wrocław</h4>
             {/*<li>Wrocław</li>*/}
@@ -34,7 +33,6 @@ const Footer = () => {
             {/*  <img width="23" src={arrow} alt="" />*/}
             {/*</li>*/}
           </ul>
-
           <ul>
             <h4>Elbląg</h4>
             {/*<li>Elbląg</li>*/}

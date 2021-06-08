@@ -1,6 +1,6 @@
 import React from "react"
 import Layout from "../components/Layout"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 import Title from "../components/Title"
 import Image from "gatsby-image"
 import arrow from "../assets/icons/right-arrow.svg"
@@ -34,11 +34,11 @@ const Portfolio = () => {
 
                 <div className="singe-work-right">
                   <div className="learn-more">
-                    <a href="/single-project">
+                    <Link className="" to="/single-project">
                       <span>Sprawdź</span>
                       <span/>
                       <span>Więcej</span>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -54,11 +54,11 @@ const Portfolio = () => {
 
                 <div className="singe-work-right">
                   <div className="learn-more">
-                    <a href="/single-project">
+                    <Link className="" to="/single-project">
                       <span>Sprawdź</span>
                       <span/>
                       <span>Więcej</span>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>

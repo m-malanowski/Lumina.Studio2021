@@ -17,9 +17,9 @@ const contact = () => {
               <div>
                 <h5 className="">01.</h5>
                 <h2 className="subsec-title">
-                  <span>succulents </span>
-                  <span>chiasimo</span>
-                  <span>venmo rimmini</span>
+                  <span>Napis do nas</span>
+                  <span>hello@</span>
+                  <span>lumina.studio</span>
                 </h2>
               </div>
               {/*<img className="orbit" width="900" src={orbitAboutPage} alt="" />*/}
