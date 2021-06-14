@@ -21,9 +21,48 @@ import orbitAboutPage from "../assets/icons/orbitAboutPage.png"
 import smallStar from "../assets/icons/smallStar.svg"
 import {motion} from "framer-motion";
 import {SplitText} from '../components/SplitText'
+import TriggerText from "../components/TriggerText"
 import { splitTextVariants, transition } from '../components/Variants'
+import SectionMarquee from "../components/SectionMarquee"
+// import Marquee from "react-fast-marquee";
+
 
 export default () => {
+  // const banner = {
+  //   animate: {
+  //     transition: {
+  //       delayChildren: 0.4,
+  //       staggerChildren: 0.1,
+  //     },
+  //   },
+  // };
+  // const letterAni = {
+  //   initial: { y: 400 },
+  //   animate: {
+  //     y: 0,
+  //     transition: {
+  //       ease: [0.6, 0.01, -0.05, 0.95],
+  //       duration: 1,
+  //     },
+  //   },
+  // };
+  // const AnimatedLetters = ({ title, disabled }) => (
+  //   <motion.span
+  //     className='row-title'
+  //     variants={disabled ? null : banner}
+  //     initial='initial'
+  //     animate='animate'>
+  //     {[...title].map((letter) => (
+  //       <motion.span
+  //         className='row-letter'
+  //         variants={disabled ? null : letterAni}>
+  //         {letter}
+  //       </motion.span>
+  //     ))}
+  //   </motion.span>
+  // );
+
+
   const schema = {
     "@context": "https://schema.org",
     "@type": "Organization",
@@ -45,8 +84,11 @@ export default () => {
       <main className="index-page container-fluid">
         <section className="section-main-container">
           <div className="main-container">
-            <div>
-              <h5 className="">01.</h5>
+            <div className="tag-container">
+              {/*<h5 className="">01.</h5>*/}
+
+              {/*<AnimatedLetters title="meggings footruck Shoredith" />*/}
+
               <h2 className="subsec-title">
                 {/*<span>meggings </span>*/}
                 {/*<span>foo truck</span>*/}
@@ -60,32 +102,39 @@ export default () => {
                 </SplitText>
               </h2>
             </div>
-            <p className="mt-5">Adaptogen cardigan pop-up mumblecore, wolf scenester jianbing small  typewriter edison bulb pug etsy. Crucifix salvia stumptown fingerstache migas, snackwave mustache authentic ramps everyday carry forage skateboard taiyaki  <em>pop-up tumblr</em>.</p>
+            {/*<p className="mt-5">Adaptogen cardigan pop-up mumblecore, wolf scenester jianbing small  typewriter edison bulb pug etsy. Crucifix salvia stumptown fingerstache migas, snackwave mustache authentic ramps everyday carry forage skateboard taiyaki  <em>pop-up tumblr</em>.</p>*/}
+
+            <div className="small-tag-container">
+              <TriggerText threshold=".5" delay=".5">
+              <p className="mt-5">
+                Adaptogen cardigan pop-up mumblecor. Ovia stumptown fingerstache migas, snackwave mustache authentic ramps everyday carry forage skateboard taiyaki >pop-up tumblr.
+              </p>
+              </TriggerText>
+            </div>
+
             <img className="orbit" width="900" src={orbitMain} alt="" />
-            <img className="small-star" width="50" src={smallStar} alt="" />
+            {/*<img className="small-star" width="50" src={smallStar} alt="" />*/}
           </div>
           <div className="scroll-down">
             {/*<img width="100" src={arrowDown} alt="" />*/}
             {/*<img width="100" src={arrowDown} alt="" />*/}
             {/*<img width="70" src={arrowDown} alt="" />*/}
-            <img width="150" src={handDown} alt="" />
+            <motion.img
+              width="150" src={handDown} alt="" />
           </div>
         </section>
 
-
-        <section className="section-marquee break-out">
-          <div className="marquee-container">
-            <div className="first-tape"><span> <span>Together</span> <span>Together</span> <span>Together</span> <span>Together</span> <span>Together</span> </span></div>
-            <div className="second-tape"><span> <span>Work</span> <span>Work</span> <span>Work</span> <span>Work</span> <span>Work</span><span>Work</span><span>Work</span> </span></div>
-            {/*<div className="third-tape"><span> <span>Lumina</span>    <span>Lumina</span> <span>Lumina</span> <span>Lumina</span>  <span>Lumina</span>   </span></div>*/}
-          </div>
-        </section>
+        <SectionMarquee firstTape={true} secondTape={true} thirdTape={false}/>
 
         <section className="section-main-about">
           <div className="main-about-container">
             <div className="subsec-header">
-              <h5 className="">02.</h5>
-              <h2 className="subsec-title">About</h2>
+              <TriggerText threshold=".5" delay=".5">
+                <h5 className="">02.</h5>
+              </TriggerText>
+              <TriggerText threshold=".5" delay=".5">
+                <h2 className="subsec-title">About</h2>
+              </TriggerText>
             </div>
             <div className="subsec-body">
               <div className="ss-body-first">
@@ -93,7 +142,7 @@ export default () => {
               </div>
               <div className="ss-body-second">
                 <p>Distillery type write brunch wayfarers letter press hammock meggings  bulb forage. Man on the   <em> polaroid </em> thundercats hashtae subway tile. </p>
-                <span>Who we are</span>
+                <span className="subsec-span">Who we are</span>
               </div>
             </div>
 
@@ -123,13 +172,7 @@ export default () => {
           </div>
         </section>
 
-        <section className="section-marquee break-out">
-          <div className="marquee-container">
-            <div className="first-tape"><span> <span>Together</span> <span>Together</span> <span>Together</span> <span>Together</span> <span>Together</span> </span></div>
-            {/*<div className="second-tape"><span> <span>Work</span> <span>Work</span> <span>Work</span> <span>Work</span> <span>Work</span><span>Work</span><span>Work</span> </span></div>*/}
-            {/*<div className="third-tape"><span> <span>Lumina</span>    <span>Lumina</span> <span>Lumina</span> <span>Lumina</span>  <span>Lumina</span>   </span></div>*/}
-          </div>
-        </section>
+        <SectionMarquee firstTape={true} secondTape={false} thirdTape={false}/>
 
         <section className="section-more-projects">
           <div>
@@ -189,15 +232,7 @@ export default () => {
           </div>
         </section>
 
-
-
-        <section className="section-marquee break-out">
-          <div className="marquee-container">
-            {/*<div className="first-tape"><span> <span>Together</span> <span>Together</span> <span>Together</span> <span>Together</span> <span>Together</span> </span></div>*/}
-            <div className="second-tape"><span> <span>Work</span> <span>Work</span> <span>Work</span> <span>Work</span> <span>Work</span> <span>Work</span> <span>Work</span></span></div>
-            <div className="third-tape"><span> <span>Lumina</span>    <span>Lumina</span> <span>Lumina</span> <span>Lumina</span>  <span>Lumina</span>   </span></div>
-          </div>
-        </section>
+        <SectionMarquee firstTape={false} secondTape={true} thirdTape={true}/>
 
         <section className="section-main-process">
           <div className="">
@@ -208,7 +243,7 @@ export default () => {
             <div className="subsec-body">
               <div className="ss-body-second">
                 <p>Distillery type write brunch wayfarers letter press hammock meggings  food truck hell o tomy edison  <em>on the polaroid.  </em> Man osubway tile. </p>
-                <span>How we do</span>
+                <span className="subsec-span">How we do</span>
 
                 <img className="orbit" width="600" src={orbitProcess} alt="" />
 
@@ -257,13 +292,7 @@ export default () => {
 
         <Worldwide/>
 
-        <section className="section-marquee break-out">
-          <div className="marquee-container">
-            <div className="first-tape"><span> <span>Together</span> <span>Together</span> <span>Together</span> <span>Together</span> <span>Together</span> </span></div>
-            <div className="second-tape"><span> <span>Work</span> <span>Work</span> <span>Work</span> <span>Work</span> <span>Work</span> <span>Work</span> <span>Work</span></span></div>
-            <div className="third-tape"><span> <span>Lumina</span>    <span>Lumina</span> <span>Lumina</span> <span>Lumina</span>  <span>Lumina</span>  <span>Lumina</span>   </span></div>
-          </div>
-        </section>
+        <SectionMarquee firstTape={true} secondTape={true} thirdTape={true}/>
 
       </main>
       <Footer/>
