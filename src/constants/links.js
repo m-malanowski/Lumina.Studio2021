@@ -1,11 +1,11 @@
 import React from "react"
 import { Link } from "gatsby"
 const data = [
-  {
-    id: 1,
-    text: "główna",
-    url: "/",
-  },
+  // {
+  //   id: 1,
+  //   text: "główna",
+  //   url: "/",
+  // },
   {
     id: 2,
     text: "Studio",

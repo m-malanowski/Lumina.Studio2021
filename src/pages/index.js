@@ -26,7 +26,6 @@ import { splitTextVariants, transition } from '../components/Variants'
 import SectionMarquee from "../components/SectionMarquee"
 // import Marquee from "react-fast-marquee";
 
-
 export default () => {
   // const banner = {
   //   animate: {
@@ -61,7 +60,6 @@ export default () => {
   //     ))}
   //   </motion.span>
   // );
-
 
   const schema = {
     "@context": "https://schema.org",
