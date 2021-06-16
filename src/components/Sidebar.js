@@ -44,7 +44,7 @@ const Sidebar = ({toggleSideBar, isOpen}) => {
       });
       staggerReveal(reveal1, reveal2);
       fadeInUp(info);
-      staggerText(line1, line2, line3, line4.current);
+      staggerText(line1.current, line2.current, line3.current, line4.current);
     }
   }, [isOpen]);
 
@@ -61,41 +61,46 @@ const Sidebar = ({toggleSideBar, isOpen}) => {
         <div className='container'>
           <div className='wrapper'>
             <div className='menu-links'>
+              {/*<Links styleClass="sidebar-links"/>*/}
               <nav>
                 <ul>
                   <li>
-                    <a
+                    <Link
                       onMouseEnter={e => handleHover(e)}
                       onMouseOut={e => handleHoverExit(e)}
-                      ref={el => (line1 = el)}
-                      href='/about'>
+                      onClick={toggleSideBar}
+                      ref={el => (line1.current = el)}
+                      to='/about'>
                       Nasze studio
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      onMouseEnter={e => handleHover(e)}
-                      onMouseOut={e => handleHoverExit(e)}
-                      ref={el => (line2 = el)}
-                      href='/about'>
-                      Usługi
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      onMouseEnter={e => handleHover(e)}
-                      onMouseOut={e => handleHoverExit(e)}
-                      ref={el => (line3 = el)}
-                      href='/about'>
-                      Blog
-                    </a>
+                    </Link>
                   </li>
                   <li>
                     <Link
                       onMouseEnter={e => handleHover(e)}
                       onMouseOut={e => handleHoverExit(e)}
+                      onClick={toggleSideBar}
+                      ref={el => (line2.current = el)}
+                      to='/uslugi'>
+                      Usługi
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      onMouseEnter={e => handleHover(e)}
+                      onMouseOut={e => handleHoverExit(e)}
+                      onClick={toggleSideBar}
+                      ref={el => (line3.current = el)}
+                      to='/blog'>
+                      Blog
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      onMouseEnter={e => handleHover(e)}
+                      onMouseOut={e => handleHoverExit(e)}
+                      onClick={toggleSideBar}
                       ref={el => (line4.current = el)}
-                      to='/about'>
+                      to='/contact'>
                       Kontakt
                     </Link>
                   </li>

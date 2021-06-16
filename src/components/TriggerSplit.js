@@ -1,7 +1,7 @@
 import React, { useEffect } from "react"
 import { motion, useAnimation } from "framer-motion"
 import { useInView } from "react-intersection-observer"
-import { commonVariants, splitTextVariants } from "../components/variants"
+import { commonVariants, splitTextVariants } from "../components/Variants"
 
 export function TriggerSplit({ children, threshold,  ...rest  }) {
   const { ref, inView, entry } = useInView({

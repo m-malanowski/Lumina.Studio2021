@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react"
-import Marquee from "react-fast-marquee"
 
 const SectionMarquee = ({ firstTape, secondTape, thirdTape }) => {
   const [playMarquee, setPlayMarquee] = useState(false)
@@ -41,8 +40,15 @@ const SectionMarquee = ({ firstTape, secondTape, thirdTape }) => {
 const FirstTape = ({ title }) => {
   return (
     <>
-      <div className="first-tape marquee animate">
-        <span className="marquee__inner"> <span>Together</span> <span>Together</span> <span>Together</span> <span>Together</span> <span>Together</span>  <span>Together</span>  </span>
+      <div className="first-tape-wrapper">
+        <div className="first-tape"
+             data-scroll
+             data-scroll-speed="2"
+             data-scroll-position="top"
+             data-scroll-direction="horizontal"
+        >
+          <span className="marquee__inner"> <span>Together</span> <span>Together</span> <span>Together</span> <span>Together</span> <span>Together</span>  <span>Together</span>  </span>
+        </div>
       </div>
     </>
   )

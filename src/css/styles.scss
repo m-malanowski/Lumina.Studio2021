@@ -1,6 +1,8 @@
 @import "abstracts/variables";
 @import "components/marquee";
 @import "components/hamburger";
+@import "components/locomotive-scroll.css";
+
 
 @font-face {
   font-family: "Schnyder M Light";
@@ -103,6 +105,8 @@ $move-final: calc(-50% + #{$offset});
 
 body {
   background-color: var(--clr-black);
+  overflow: hidden;
+
   //background-color: rgba(0, 0, 0, .98);
   //background-image: url("../assets/mesh-gradient(1).png");
   //background-position: top left;
@@ -117,7 +121,7 @@ body {
   //font-size: 1.125rem;
   font-size: 18px;
   //margin-top: 5rem;
-  overflow-x: hidden !important;
+  //overflow-x: hidden !important;
   counter-reset: services;
 }
 
@@ -574,6 +578,20 @@ Pages
   }
 }
 
+//#headline{
+//  opacity: 0;
+//  > div {
+//    opacity: 0;
+//    transform: translateY(0px);
+//  }
+//  div:nth-of-type(1){
+//    text-indent:  calc(100px + (300 - 100) * ((100vw - 320px) / (1900 - 320)));
+//  }
+//  &.is-reveal {
+//    opacity: 1;
+//  }
+//}
+
 .subsec-body {
   margin-top: 5rem;
   display: flex;
@@ -593,13 +611,34 @@ Pages
       font-size: calc(25px + (50 - 25) * ((100vw - 320px) / (1900 - 320)));
       //text-align: justify;
       font-family: var(--ff-secondary-medium);
-      text-indent: 300px;
+      text-indent: calc(100px + (300 - 100) * ((100vw - 320px) / (1900 - 320)));
       line-height: 1.2;
+
+      //span:first-of-type {
+      //  span{
+      //    text-indent: calc(100px + (300 - 100) * ((100vw - 320px) / (1900 - 320)));
+      //  }
+      //}
     }
+
+    //p.to-trigger{
+    //  opacity: 0;
+    //  > div {
+    //    opacity: 0;
+    //    transform: translateY(0px);
+    //  }
+    //  div:nth-of-type(1){
+    //    text-indent:  calc(100px + (300 - 100) * ((100vw - 320px) / (1900 - 320)));
+    //  }
+    //  &.is-reveal {
+    //    opacity: 1;
+    //  }
+    //}
 
     span.subsec-span {
       position: absolute;
       top: .8rem;
+      //top: 0;
       left: 0;
       font-size: 18px;
       text-transform: uppercase;
@@ -997,7 +1036,6 @@ Sidebar
 //}
 
 
-
 //.social-links{
 //  display: flex;
 //  padding: 0 .5em .5em 0;
@@ -1248,7 +1286,7 @@ SECTIONS ________________________ SECTIONS
 
   .main-container {
 
-    .tag-container{
+    .tag-container {
       span {
         display: inline-block;
         line-height: 0;
@@ -1258,14 +1296,15 @@ SECTIONS ________________________ SECTIONS
         //text-indent: 250px;
         text-indent: 150px;
       }
+
       span:nth-of-type(3) {
         text-indent: 25px;
       }
 
-        display: flex;
-        //justify-content: space-between;
-        //border: 2px solid white;
-        padding-top: 5rem;
+      display: flex;
+      //justify-content: space-between;
+      //border: 2px solid white;
+      padding-top: 5rem;
     }
 
     h5 {
@@ -1278,10 +1317,13 @@ SECTIONS ________________________ SECTIONS
     }
 
     h2 {
+      //text-transform: capitalize !important;
+      //max-width: 60%;
       //max-width: 80%;
       //line-height: 1;
       line-height: 0;
       font-size: calc(25px + (160 - 25) * ((100vw - 320px) / (1900 - 320)));
+
       span {
         font-family: var(--ff-secondary-medium);
       }
@@ -1300,15 +1342,17 @@ SECTIONS ________________________ SECTIONS
 
   .about-process-single {
 
-    .about-process-single-top > div{
+    .about-process-single-top > div {
       display: flex;
     }
-    .about-process-single-top{
+
+    .about-process-single-top {
       display: flex;
       //justify-items: center;
       justify-content: space-between;
       border-top: 1px solid rgba(255, 255, 255, .6);
       padding: 1rem 0;
+
       span {
         margin-right: 5rem;
         font-size: 18px;
@@ -1316,24 +1360,28 @@ SECTIONS ________________________ SECTIONS
         font-style: italic;
         align-self: flex-end;
       }
-      img:hover{
+
+      img:hover {
         cursor: pointer;
       }
+
       p {
         align-self: center;
         font-size: 18px;
         text-transform: uppercase;
-        &:hover{
+
+        &:hover {
           cursor: pointer;
         }
       }
     }
 
-    .about-process-single-bottom{
-      h5{
+    .about-process-single-bottom {
+      h5 {
         max-width: 70%;
       }
-      p{
+
+      p {
         font-size: 18px;
         color: #8e8e8e;
         margin-top: 2.5rem;
@@ -1497,7 +1545,8 @@ SECTIONS ________________________ SECTIONS
   h2 {
     max-width: 100%;
   }
-  .small-tag-container{
+
+  .small-tag-container {
     align-self: flex-end;
     max-width: 30%;
 
@@ -1505,9 +1554,12 @@ SECTIONS ________________________ SECTIONS
       font-size: 18px;
       //text-transform: uppercase;
       text-indent: 200px;
+      mix-blend-mode: difference;
+      position: relative;
+      z-index: 1;
       span:first-of-type {
         //text-indent: 250px;
-        span{
+        span {
           text-indent: 200px;
         }
       }
@@ -1526,7 +1578,7 @@ SECTIONS ________________________ SECTIONS
   .orbit {
     position: absolute;
     top: 20%;
-    left: 22.5%;
+    left: 35%;
   }
 
   .small-star {
@@ -1660,8 +1712,10 @@ SECTIONS ________________________ SECTIONS
     text-transform: uppercase;
     line-height: 1.2;
   }
-
-  .tapes-container > .first-tape {
+  .first-tape-wrapper{
+    transform: rotate(7deg);
+  }
+  .tapes-container .first-tape-wrapper > .first-tape {
     background: var(--clr-white);
     padding: 0 1rem;
     transform: rotate(7deg);
@@ -1768,7 +1822,7 @@ SECTIONS ________________________ SECTIONS
       font-style: italic;
     }
 
-    .thumb-up{
+    .thumb-up {
 
     }
 
@@ -1919,7 +1973,8 @@ SECTIONS ________________________ SECTIONS
           align-self: center;
           transition: .3s ease-in-out;
         }
-        &:hover{
+
+        &:hover {
           span:nth-of-type(2) {
             border-top: 1px solid #ffffff;
           }

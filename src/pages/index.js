@@ -1,30 +1,37 @@
-import React from "react"
-import globe from "../assets/icons/globe.svg"
-import star from "../assets/icons/star.svg"
-import starSm from "../assets/icons/starSmall.svg"
-import arrow from "../assets/icons/right-arrow.svg"
+import React, { useEffect, useRef, useState } from "react";
+import cn from "classnames";
+// import globe from "../assets/icons/globe.svg"
+// import star from "../assets/icons/star.svg"
+// import starSm from "../assets/icons/starSmall.svg"
+// import arrow from "../assets/icons/right-arrow.svg"
 import orbitProcess from "../assets/icons/orbitProcess.png"
 import orbitAbout from "../assets/icons/orbitAbout.png";
 import orbitMain from "../assets/icons/orbitMainView.png";
 import handDown from "../assets/icons/handDown.svg"
-import thumbUp from "../assets/icons/thumbUp.svg"
-import arrowDown from "../assets/icons/arrowDown.svg"
+// import thumbUp from "../assets/icons/thumbUp.svg"
+// import arrowDown from "../assets/icons/arrowDown.svg"
 import serviceStickers from "../assets/icons/serviceStickers.svg"
 import SEO from "../components/SEO"
 import { graphql } from "gatsby"
 import Worldwide from "../components/Worldwide"
 import Footer from "../components/Footer"
-import MainScene3 from "../components/MainScene3"
-import SocialLinks from "../constants/socialLinks"
-import ServicesSlider from "../components/ServicesSlider"
-import orbitAboutPage from "../assets/icons/orbitAboutPage.png"
-import smallStar from "../assets/icons/smallStar.svg"
+// import MainScene3 from "../components/MainScene3"
+// import SocialLinks from "../constants/socialLinks"
+// import ServicesSlider from "../components/ServicesSlider"
+// import orbitAboutPage from "../assets/icons/orbitAboutPage.png"
+// import smallStar from "../assets/icons/smallStar.svg"
 import {motion} from "framer-motion";
-import {SplitText} from '../components/SplitText'
+import { SplitText } from '../components/SplitText'
 import TriggerText from "../components/TriggerText"
+import { TriggerSplit } from "../components/TriggerSplit"
 import { splitTextVariants, transition } from '../components/Variants'
 import SectionMarquee from "../components/SectionMarquee"
 // import Marquee from "react-fast-marquee";
+// import gsap from "gsap";
+// import SplitText from "../utils/Split";
+// import useOnScreen from "../hooks/useOnScreen";
+
+
 
 export default () => {
   // const banner = {
@@ -60,6 +67,31 @@ export default () => {
   //     ))}
   //   </motion.span>
   // );
+  // const ref = useRef(null);
+  //
+  // const [reveal, setReveal] = useState(false);
+  // const onScreen = useOnScreen(ref);
+  //
+  // useEffect(() => {
+  //   if (onScreen) setReveal(onScreen);
+  // }, [onScreen]);
+  //
+  // useEffect(() => {
+  //   if (reveal) {
+  //     const split = new SplitText("#headline", { type: "lines" });
+  //
+  //     gsap.to(split.lines, {
+  //       duration: 3,
+  //       y: -20,
+  //       opacity: 1,
+  //       stagger: 0.2,
+  //       ease: "power4.out",
+  //       // onComplete: () => split.revert(),
+  //     });
+  //   }
+  // }, [reveal]);
+
+
 
   const schema = {
     "@context": "https://schema.org",
@@ -73,6 +105,7 @@ export default () => {
     //   "https://www.facebook.com/Radca-Prawny-Gda%C5%84sk-Micha%C5%82-Tomczak-110583451087567"
     // ]
   }
+
   return (
     <>
       <SEO title="LUMINA STUDIO | Agencja Interaktywna"
@@ -139,7 +172,23 @@ export default () => {
                 <img className="orbit" width="800" src={orbitAbout} alt="" />
               </div>
               <div className="ss-body-second">
-                <p>Distillery type write brunch wayfarers letter press hammock meggings  bulb forage. Man on the   <em> polaroid </em> thundercats hashtae subway tile. </p>
+                {/*<p ref={ref} id="headline" className={cn({ "is-reveal": reveal }, "to-trigger")}>Distillery type write brunch wayfarers letter press hammock meggings  bulb forage. Man on the polaroid thunder cats hashtae subway tile. </p>*/}
+                <p>
+                  {/*<TriggerSplit>*/}
+                    Cool Distillery type write brunch wayfarers letter press hammock meggings <em> polaroid </em>   bulb forage. Man on the polaroid thunder cats hashtae subway tile.
+                  {/*</TriggerSplit>*/}
+                </p>
+
+                {/*<p ref={ref} id="headline" className={cn({ "is-reveal": reveal }, "to-trigger")}>Distillery type write brunch wayfarers letter press hammock meggings  bulb forage. Man on the polaroid thunder cats hashtae subway tile. </p>*/}
+                {/*<p ref={ref} id="headline" className={cn({ "is-reveal": reveal }, "to-trigger")}>Distillery type write brunch wayfarers letter press hammock meggings  bulb forage. Man on the   <em> polaroid </em> thundercats hashtae subway tile. </p>*/}
+
+                {/*<br/><br/><br/>*/}
+                {/*<p ref={ref} id="headline" className={cn({ "is-reveal": reveal }, "to-trigger")}>*/}
+                {/*  Flirty Flowers is a blog about flowers and the floral designers who make*/}
+                {/*  them into art. Creativity and the art of ‘making’ require dialogue. The*/}
+                {/*  full purpose of the Flirty Flowers blog is to encourage and inspire. We*/}
+                {/*  value art, we value insight, and we value opinion.*/}
+                {/*</p>*/}
                 <span className="subsec-span">Who we are</span>
               </div>
             </div>

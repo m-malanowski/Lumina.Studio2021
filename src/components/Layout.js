@@ -5,6 +5,7 @@ import Navbar from "./Navbar"
 import Sidebar from "./Sidebar"
 // import Footer from "./Footer"
 import { layoutVariants, transition } from '../components/Variants'
+import Scroll from "./LocomotiveScroll"
 
 const Layout = ({ children, location }) => {
   const [isOpen, setIsOpen] = React.useState(false)
@@ -15,6 +16,7 @@ const Layout = ({ children, location }) => {
     <>
       <Navbar isOpen={isOpen} toggleSideBar={toggleSideBar} />
       <Sidebar isOpen={isOpen} toggleSideBar={toggleSideBar} />
+      <Scroll callbacks={location}  />
       <AnimatePresence initial={true} exitBeforeEnter>
         <motion.div
           location={location}
