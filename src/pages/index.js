@@ -1,12 +1,12 @@
-import React, { useEffect, useRef, useState } from "react";
-import cn from "classnames";
+import React, { useEffect, useRef, useState } from "react"
+import cn from "classnames"
 // import globe from "../assets/icons/globe.svg"
 // import star from "../assets/icons/star.svg"
 // import starSm from "../assets/icons/starSmall.svg"
 // import arrow from "../assets/icons/right-arrow.svg"
 import orbitProcess from "../assets/icons/orbitProcess.png"
-import orbitAbout from "../assets/icons/orbitAbout.png";
-import orbitMain from "../assets/icons/orbitMainView.png";
+import orbitAbout from "../assets/icons/orbitAbout.png"
+import orbitMain from "../assets/icons/orbitMainView.png"
 import handDown from "../assets/icons/handDown.svg"
 // import thumbUp from "../assets/icons/thumbUp.svg"
 // import arrowDown from "../assets/icons/arrowDown.svg"
@@ -20,17 +20,18 @@ import Footer from "../components/Footer"
 // import ServicesSlider from "../components/ServicesSlider"
 // import orbitAboutPage from "../assets/icons/orbitAboutPage.png"
 // import smallStar from "../assets/icons/smallStar.svg"
-import {motion} from "framer-motion";
-import { SplitText } from '../components/SplitText'
+import { motion } from "framer-motion"
+import { SplitText } from "../components/SplitText"
 import TriggerText from "../components/TriggerText"
+import TriggerLine from "../components/TriggerLine"
+import TriggerImg from "../components/TriggerImg"
 import { TriggerSplit } from "../components/TriggerSplit"
-import { splitTextVariants, transition } from '../components/Variants'
+import { splitTextVariants, transition } from "../components/Variants"
 import SectionMarquee from "../components/SectionMarquee"
 // import Marquee from "react-fast-marquee";
 // import gsap from "gsap";
 // import SplitText from "../utils/Split";
 // import useOnScreen from "../hooks/useOnScreen";
-
 
 
 export default () => {
@@ -92,12 +93,11 @@ export default () => {
   // }, [reveal]);
 
 
-
   const schema = {
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "Lumina Studio Agencja Interaktywna",
-    "alternateName": "Lumina Studio Agencja Interaktywna",
+    "alternateName": "Lumina Studio Agencja Interaktywna"
     // "url": "https://radcaprawnytomczak.pl",
     // "logo": "https://radcaprawnytomczak.pl/MichałTomczakRadcaPrawny.png",
     // "sameAs": [
@@ -129,33 +129,35 @@ export default () => {
                   animate="visible"
                   exit="hidden"
                   variants={splitTextVariants}>
-                   meggings footruck Shoredith
+                  meggings footruck Shoredith
                 </SplitText>
               </h2>
             </div>
             {/*<p className="mt-5">Adaptogen cardigan pop-up mumblecore, wolf scenester jianbing small  typewriter edison bulb pug etsy. Crucifix salvia stumptown fingerstache migas, snackwave mustache authentic ramps everyday carry forage skateboard taiyaki  <em>pop-up tumblr</em>.</p>*/}
 
-            <div className="small-tag-container">
-              <TriggerText threshold=".5" delay=".5">
-              <p className="mt-5">
-                Adaptogen cardigan pop-up mumblecor. Ovia stumptown fingerstache migas, snackwave mustache authentic ramps everyday carry forage skateboard taiyaki >pop-up tumblr.
-              </p>
-              </TriggerText>
-            </div>
-
-            <img className="orbit" width="900" src={orbitMain} alt="" />
+            {/*<div className="small-tag-container">*/}
+            {/*  <TriggerText threshold=".5" delay=".5">*/}
+            {/*    <p className="mt-5">*/}
+            {/*      Adaptogen cardigan pop-up mumblecor. Ovia stumptown fingerstache migas, snackwave mustache authentic ramps everyday carry forage skateboard taiyaki >pop-up tumblr.*/}
+            {/*    </p>*/}
+            {/*  </TriggerText>*/}
+            {/*</div>*/}
+            <TriggerImg>
+              <img className="orbit" width="900" src={orbitMain} alt="" />
+            </TriggerImg>
             {/*<img className="small-star" width="50" src={smallStar} alt="" />*/}
           </div>
           <div className="scroll-down">
             {/*<img width="100" src={arrowDown} alt="" />*/}
             {/*<img width="100" src={arrowDown} alt="" />*/}
             {/*<img width="70" src={arrowDown} alt="" />*/}
-            <motion.img
-              width="150" src={handDown} alt="" />
+            <TriggerImg>
+              <img width="125" src={handDown} alt="" />
+            </TriggerImg>
           </div>
         </section>
 
-        <SectionMarquee firstTape={true} secondTape={true} thirdTape={false}/>
+        <SectionMarquee firstTape={false} secondTape={false} thirdTape={false} firstTapeScroll={true} secondTapeScroll={true} />
 
         <section className="section-main-about">
           <div className="main-about-container">
@@ -169,16 +171,20 @@ export default () => {
             </div>
             <div className="subsec-body">
               <div className="ss-body-first">
-                <img className="orbit" width="800" src={orbitAbout} alt="" />
+                <TriggerImg>
+                  <img className="orbit" width="800" src={orbitAbout} alt="" />
+                </TriggerImg>
               </div>
               <div className="ss-body-second">
                 {/*<p ref={ref} id="headline" className={cn({ "is-reveal": reveal }, "to-trigger")}>Distillery type write brunch wayfarers letter press hammock meggings  bulb forage. Man on the polaroid thunder cats hashtae subway tile. </p>*/}
-                <p>
-                  {/*<TriggerSplit>*/}
-                    Cool Distillery type write brunch wayfarers letter press hammock meggings <em> polaroid </em>   bulb forage. Man on the polaroid thunder cats hashtae subway tile.
-                  {/*</TriggerSplit>*/}
-                </p>
-
+                <TriggerText threshold=".5" delay=".5">
+                  <p>
+                    {/*<TriggerSplit>*/}
+                    Cool Distillery type write brunch wayfa rers letter press hammock meggings <em> polaroid </em> bulb
+                    for age. Man on the polaroid thunder cats hashtae subway tile.
+                    {/*</TriggerSplit>*/}
+                  </p>
+                </TriggerText>
                 {/*<p ref={ref} id="headline" className={cn({ "is-reveal": reveal }, "to-trigger")}>Distillery type write brunch wayfarers letter press hammock meggings  bulb forage. Man on the polaroid thunder cats hashtae subway tile. </p>*/}
                 {/*<p ref={ref} id="headline" className={cn({ "is-reveal": reveal }, "to-trigger")}>Distillery type write brunch wayfarers letter press hammock meggings  bulb forage. Man on the   <em> polaroid </em> thundercats hashtae subway tile. </p>*/}
 
@@ -189,160 +195,277 @@ export default () => {
                 {/*  full purpose of the Flirty Flowers blog is to encourage and inspire. We*/}
                 {/*  value art, we value insight, and we value opinion.*/}
                 {/*</p>*/}
-                <span className="subsec-span">Who we are</span>
+                <TriggerText threshold=".5" delay=".5">
+                  <span className="subsec-span">Who we are</span>
+                </TriggerText>
               </div>
             </div>
 
             <div className="main-about-services">
-              <div>
-                <h3>Branding</h3>
-                <p>Pok pok live-edge biodiesel gluten-free, godard knausgaard craft beer wolf succulents chia venmo edison bulb cornhole. Woke hashtag actually cloud bread listicle letterpress.</p>
+              <div className="single-service">
+                <TriggerLine threshold=".5" delay=".5">
+                  <hr className="animated" />
+                </TriggerLine>
+
+                <TriggerText threshold=".5" delay="1.0">
+                  <h3>Branding</h3>
+                </TriggerText>
+                <TriggerText threshold=".5" delay="1.2">
+                  <p>Pok pok live-edge biodiesel gluten-free, godard knausgaard craft beer wolf succulents chia venmo
+                    edison bulb cornhole. Woke hashtag actually cloud bread listicle letterpress.</p>
+                </TriggerText>
               </div>
-              <div>
-                <h3>Web <br/> dev</h3>
-                <p>Pok pok live-edge biodiesel gluten-free, godard knausgaard craft beer wolf succulents chia venmo edison bulb cornhole. Woke hashtag actually cloud bread listicle letterpress.</p>
+              <div className="single-service">
+                <TriggerLine threshold=".5" delay=".5">
+                  <hr className="animated" />
+                </TriggerLine>
+                <TriggerText threshold=".5" delay="1.0">
+                  <h3>Web <br /> dev</h3>
+                </TriggerText>
+                <TriggerText threshold=".5" delay="1.2">
+                  <p>Pok pok live-edge biodiesel gluten-free, godard knausgaard craft beer wolf succulents chia venmo
+                    edison bulb cornhole. Woke hashtag actually cloud bread listicle letterpress.</p>
+                </TriggerText>
               </div>
-              <div>
-                <h3>Digital</h3>
-                <p>Pok pok live-edge biodiesel gluten-free, godard knausgaard craft beer wolf succulents chia venmo edison bulb cornhole. Woke hashtag actually cloud bread listicle letterpress.</p>
+              <div className="single-service">
+                <TriggerLine threshold=".5" delay=".5">
+                  <hr className="animated" />
+                </TriggerLine>
+                <TriggerText threshold=".5" delay="1.0">
+                  <h3>Digital</h3>
+                </TriggerText>
+                <TriggerText threshold=".5" delay="1.2">
+                  <p>Pok pok live-edge biodiesel gluten-free, godard knausgaard craft beer wolf succulents chia venmo
+                    edison bulb cornhole. Woke hashtag actually cloud bread listicle letterpress.</p>
+                </TriggerText>
               </div>
-              <div>
-                <h3>Social <br/> media</h3>
-                <p>Pok pok live-edge biodiesel gluten-free, godard knausgaard craft beer wolf succulents chia venmo edison bulb cornhole. Woke hashtag actually cloud bread listicle letterpress.</p>
+              <div className="single-service">
+                <TriggerLine threshold=".5" delay=".5">
+                  <hr className="animated" />
+                </TriggerLine>
+                <TriggerText threshold=".5" delay="1.0">
+                  <h3>Social <br /> media</h3>
+                </TriggerText>
+                <TriggerText threshold=".5" delay="1.2">
+                  <p>Pok pok live-edge biodiesel gluten-free, godard knausgaard craft beer wolf succulents chia venmo
+                    edison bulb cornhole. Woke hashtag actually cloud bread listicle letterpress.</p>
+                </TriggerText>
               </div>
             </div>
-
             <div>
               <img className="service-stickers" width="100%" src={serviceStickers} alt="" />
             </div>
-
           </div>
         </section>
 
-        <SectionMarquee firstTape={true} secondTape={false} thirdTape={false}/>
+        <SectionMarquee firstTape={false} secondTape={false} thirdTape={false} firstTapeScroll={true} />
 
         <section className="section-more-projects">
-          <div>
-            <div className="subsec-header">
+          <div className="subsec-header">
+            <TriggerText threshold=".5" delay=".5">
               <h5 className="">03.</h5>
+            </TriggerText>
+            <TriggerText threshold=".5" delay=".5">
               <h2 className="subsec-title">Works</h2>
-            </div>
-
-            <div className="more-projects-single mt-5">
-              <div className="more-left">
-                <span>2019</span>
-                <h5>Antyegzekucja</h5>
-              </div>
-              <p className="more-right"> Webdesign, Banding </p>
-            </div>
-
-            <div className="more-projects-single ">
-              <div className="more-left">
-                <span>2020</span>
-                <h5>Carra</h5>
-              </div>
-              <p className="more-right"> Webdesign, Strategy </p>
-            </div>
-
-            <div className="more-projects-single ">
-              <div className="more-left">
-                <span>2020</span>
-                <h5>Radca prawny tomczak</h5>
-              </div>
-              <p className="more-right"> Webdesign, Branding </p>
-            </div>
-
-            <div className="more-projects-single ">
-              <div className="more-left">
-                <span>2021</span>
-                <h5>Antyegzekucja</h5>
-              </div>
-              <p className="more-right"> Webdesign  </p>
-            </div>
-
-            <div className="more-projects-single ">
-              <div className="more-left">
-                <span>2021</span>
-                <h5>Coś tam</h5>
-              </div>
-              <p className="more-right"> Webdesign  </p>
-            </div>
-
+            </TriggerText>
           </div>
+
+          <div className="more-projects-single mt-5">
+            <TriggerLine threshold=".5" delay=".5">
+              <hr className="animated" />
+            </TriggerLine>
+            <div className="more-left">
+              <TriggerText threshold=".5" delay=".5">
+                <span>2019</span>
+              </TriggerText>
+              <TriggerText threshold=".5" delay=".5">
+                <h5>Antyegzekucja</h5>
+              </TriggerText>
+            </div>
+            <TriggerText threshold=".5" delay=".5">
+              <p className="more-right"> Webdesign, Banding </p>
+            </TriggerText>
+          </div>
+
+          <div className="more-projects-single ">
+            <TriggerLine threshold=".5" delay=".5">
+              <hr className="animated" />
+            </TriggerLine>
+            <div className="more-left">
+              <TriggerText threshold=".5" delay=".5">
+                <span>2020</span>
+              </TriggerText>
+              <TriggerText threshold=".5" delay=".5">
+                <h5>Carra</h5>
+              </TriggerText>
+            </div>
+            <TriggerText threshold=".5" delay=".5">
+              <p className="more-right"> Webdesign, Strategy </p>
+            </TriggerText>
+          </div>
+
+          <div className="more-projects-single ">
+            <TriggerLine threshold=".5" delay=".5">
+              <hr className="animated" />
+            </TriggerLine>
+            <div className="more-left">
+              <TriggerText threshold=".5" delay=".5">
+                <span>2020</span>
+              </TriggerText>
+              <TriggerText threshold=".5" delay=".5">
+                <h5>Radca prawny tomczak</h5>
+              </TriggerText>
+            </div>
+            <TriggerText threshold=".5" delay=".5">
+              <p className="more-right"> Webdesign, Branding </p>
+            </TriggerText>
+          </div>
+
+          <div className="more-projects-single ">
+            <TriggerLine threshold=".5" delay=".5">
+              <hr className="animated" />
+            </TriggerLine>
+            <div className="more-left">
+              <TriggerText threshold=".5" delay=".5">
+                <span>2021</span>
+              </TriggerText>
+              <TriggerText threshold=".5" delay=".5">
+                <h5>Antyegzekucja</h5>
+              </TriggerText>
+            </div>
+            <TriggerText threshold=".5" delay=".5">
+              <p className="more-right"> Webdesign </p>
+            </TriggerText>
+          </div>
+
+          <div className="more-projects-single ">
+            <TriggerLine threshold=".5" delay=".5">
+              <hr className="animated" />
+            </TriggerLine>
+            <div className="more-left">
+              <TriggerText threshold=".5" delay=".5">
+                <span>2021</span>
+              </TriggerText>
+              <TriggerText threshold=".5" delay=".5">
+                <h5>Odszkodowania</h5>
+              </TriggerText>
+            </div>
+            <TriggerText threshold=".5" delay=".5">
+              <p className="more-right"> Webdesign </p>
+            </TriggerText>
+          </div>
+
+          <TriggerLine threshold=".5" delay=".5">
+            <hr className="animated" />
+          </TriggerLine>
 
           <div className="learn-more">
             <a href="/portfolio">
               <span>Zobacz</span>
-              <span/>
+              <span />
               <span>Wszystkie</span>
             </a>
           </div>
         </section>
 
-        <SectionMarquee firstTape={false} secondTape={true} thirdTape={true}/>
+        <SectionMarquee firstTape={false} secondTape={true} thirdTape={true} secondTapeScroll={false} thirdTapeScroll={false}/>
 
         <section className="section-main-process">
           <div className="">
             <div className="subsec-header">
-              <h5 className="">04.</h5>
-              <h2 className="subsec-title">Process</h2>
+              <TriggerText threshold=".5" delay=".5">
+                <h5 className="">04.</h5>
+              </TriggerText>
+              <TriggerText threshold=".5" delay=".5">
+                <h2 className="subsec-title">Process</h2>
+              </TriggerText>
             </div>
             <div className="subsec-body">
               <div className="ss-body-second">
-                <p>Distillery type write brunch wayfarers letter press hammock meggings  food truck hell o tomy edison  <em>on the polaroid.  </em> Man osubway tile. </p>
-                <span className="subsec-span">How we do</span>
+                <TriggerText threshold=".5" delay=".5">
+                  <p>Distillery type write brunch wayfarers letter press hammock meggings food truck hell o tomy
+                    edison <em>on the polaroid. </em> Man osubway tile. </p>
+                </TriggerText>
+                <TriggerText threshold=".5" delay=".5">
+                  <span className="subsec-span">How we do</span>
+                </TriggerText>
 
-                <img className="orbit" width="600" src={orbitProcess} alt="" />
+                <TriggerImg>
+                  <img className="orbit" width="600" src={orbitProcess} alt="" />
+                </TriggerImg>
 
               </div>
               <div className="ss-body-first">
                 <div className="single-process">
-                  <h3>Briefieng</h3>
-                  <p>Pok pok live-edge biodiesel gluten-free, dison bulb cornhole. Woke hashtag actually cloud bread listicle letterpress.</p>
-                  <div className="learn-more">
-                    <a href="/single-project">
-                      <span>Sprawdź</span>
-                      <span/>
-                      <span>Więcej</span>
-                    </a>
-                  </div>
+                  <TriggerText threshold=".5" delay=".5">
+                    <h3>Briefieng</h3>
+                  </TriggerText>
+                  <TriggerText threshold=".5" delay=".5">
+                    <p>Pok pok live-edge biodiesel gluten-free, dison bulb cornhole. Woke hashtag actually cloud bread
+                      listicle letterpress.</p>
+                  </TriggerText>
+
+                  <TriggerText threshold=".5" delay=".5">
+                    <div className="learn-more">
+                      <a href="/single-project">
+                        <span>Sprawdź</span>
+                        <span />
+                        <span>Więcej</span>
+                      </a>
+                    </div>
+                  </TriggerText>
+
                 </div>
 
                 <div className="single-process">
-                  <h3>Design</h3>
-                  <p>Pok pok live-edge biodiesel gluten-free, godard knausgaard chia venmo edison bulb cornhole. Woke hashtag actually cloud bread listicle letterpress.</p>
-                  <div className="learn-more">
-                    <a href="/single-project">
-                      <span>Sprawdź</span>
-                      <span/>
-                      <span>Więcej</span>
-                    </a>
-                  </div>
+                  <TriggerText threshold=".5" delay=".5">
+                    <h3>Design</h3>
+                  </TriggerText>
+                  <TriggerText threshold=".5" delay=".5">
+                    <p>Pok pok live-edge biodiesel gluten-free, godard knausgaard chia venmo edison bulb cornhole. Woke
+                      hashtag actually cloud bread listicle letterpress.</p>
+                  </TriggerText>
+                  <TriggerText threshold=".5" delay=".5">
+                    <div className="learn-more">
+                      <a href="/single-project">
+                        <span>Sprawdź</span>
+                        <span />
+                        <span>Więcej</span>
+                      </a>
+                    </div>
+                  </TriggerText>
+
                 </div>
 
                 <div className="single-process">
-                  <h3>Implementation</h3>
-                  <p>Pok pok live-edge biodiesel gluten-free, godard knausgaard craft beer wolf succulents chia venmo edison bulb cornhole. Woke hashtag actually cloud bread listicle letterpress.</p>
-                  <div className="learn-more">
-                    <a href="/single-project">
-                      <span>Sprawdź</span>
-                      <span/>
-                      <span>Więcej</span>
-                    </a>
-                  </div>
+                  <TriggerText threshold=".5" delay=".5">
+                    <h3>Implementation</h3>
+                  </TriggerText>
+                  <TriggerText threshold=".5" delay=".5">
+                    <p>Pok pok live-edge biodiesel gluten-free, godard knausgaard craft beer wolf succulents chia venmo
+                      edison bulb cornhole. Woke hashtag actually cloud bread listicle letterpress.</p>
+                  </TriggerText>
+                  <TriggerText threshold=".5" delay=".5">
+                    <div className="learn-more">
+                      <a href="/single-project">
+                        <span>Sprawdź</span>
+                        <span />
+                        <span>Więcej</span>
+                      </a>
+                    </div>
+                  </TriggerText>
                 </div>
-
               </div>
             </div>
           </div>
         </section>
 
-        <Worldwide/>
+        <Worldwide />
 
-        <SectionMarquee firstTape={true} secondTape={true} thirdTape={true}/>
+        <SectionMarquee firstTape={true} secondTape={true} thirdTape={true} />
 
       </main>
-      <Footer/>
+      <Footer />
     </>
   )
 }
