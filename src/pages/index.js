@@ -390,7 +390,7 @@ export default () => {
                   <span className="subsec-span">How we do</span>
                 </TriggerText>
 
-                <TriggerImg>
+                <TriggerImg>I
                   <img className="orbit" width="600" src={orbitProcess} alt="" />
                 </TriggerImg>
 

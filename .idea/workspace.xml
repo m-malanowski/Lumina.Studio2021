@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ee694d7a-2567-4d80-bb6d-10629fa07e8c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/TriggerImg.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/TriggerLine.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SectionMarquee.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SectionMarquee.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/components/hamburger.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/components/hamburger.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/components/marquee.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/components/marquee.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/TriggerImg.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TriggerImg.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/css/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/styles.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
     </list>
@@ -87,7 +82,8 @@
       <workItem from="1623851188247" duration="1140000" />
       <workItem from="1623858416669" duration="2531000" />
       <workItem from="1623918103106" duration="3738000" />
-      <workItem from="1624187472888" duration="13628000" />
+      <workItem from="1624187472888" duration="14195000" />
+      <workItem from="1624218862224" duration="1311000" />
     </task>
     <servers />
   </component>
