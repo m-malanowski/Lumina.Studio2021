@@ -8,14 +8,11 @@ const TriggerText = ({children, delay, threshold}) => {
     threshold: threshold,
     triggerOnce: false
   });
-  const position = window.pageYOffset;
   const controls = useAnimation();
 
   useEffect(() => {
     if (inView) {
       controls.start("visible");
-      console.log(position)
-
     }
   }, [controls, inView]);
 
