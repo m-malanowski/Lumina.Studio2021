@@ -2,16 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ee694d7a-2567-4d80-bb6d-10629fa07e8c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/LocomotiveCall.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ProjectsSubsection.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/LocomotiveScroll.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LocomotiveScroll.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/TriggerImg.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TriggerImg.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/TriggerLine.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TriggerLine.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Worldwide.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Worldwide.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/css/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/styles.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
     </list>
@@ -91,7 +86,8 @@
       <workItem from="1623918103106" duration="3738000" />
       <workItem from="1624187472888" duration="14195000" />
       <workItem from="1624218862224" duration="10493000" />
-      <workItem from="1624266860271" duration="920000" />
+      <workItem from="1624266860271" duration="5582000" />
+      <workItem from="1624279925855" duration="65000" />
     </task>
     <servers />
   </component>

@@ -911,10 +911,32 @@ Page single project
     width: 100%;
   }
 
+  //.learn-more {
+  //  margin-top: 5rem;
+  //  display: flex;
+  //
+  //  a {
+  //    margin-left: auto;
+  //    display: flex;
+  //    color: #8e8e8e;
+  //
+  //    span {
+  //      //line-height: 0;
+  //    }
+  //
+  //    span:nth-of-type(2) {
+  //      border-top: 1px solid #8e8e8e;
+  //      width: 100px;
+  //      //flex-grow: 1;
+  //      margin: 0 1.25rem;
+  //      align-self: center;
+  //    }
+  //  }
+  //}
+
   .learn-more {
     margin-top: 5rem;
     display: flex;
-
     a {
       margin-left: auto;
       display: flex;
@@ -930,7 +952,28 @@ Page single project
         //flex-grow: 1;
         margin: 0 1.25rem;
         align-self: center;
+        transition: .3s ease-in-out;
       }
+
+      &:hover {
+        span:nth-of-type(2) {
+          border-top: 1px solid #ffffff;
+        }
+      }
+    }
+  }
+
+
+
+  .images {
+    position: relative;
+
+    img {
+      position: absolute;
+      height: 40vh;
+      opacity: 0;
+      z-index: -1;
+      transform: scale(.80);
     }
   }
 }

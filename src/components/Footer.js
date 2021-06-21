@@ -41,7 +41,11 @@ const Footer = () => {
             <ul>
               <h4>Wrocław</h4>
               {/*<li>Wrocław</li>*/}
-              <li>hello@lumina.studio</li>
+              <li>
+                <a href="" className="social-link link link--kale">
+                  hello@lumina.studio
+                </a>
+              </li>
               <li>+(48) 000 000 000 </li>
               <li>Buforowa 101A</li>
               <li>52-131 Wrocław</li>

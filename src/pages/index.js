@@ -13,6 +13,7 @@ import handDown from "../assets/icons/handDown.svg"
 import serviceStickers from "../assets/icons/serviceStickers.svg"
 import SEO from "../components/SEO"
 import { graphql } from "gatsby"
+import ProjectsSubsection from "../components/ProjectsSubsection"
 import Worldwide from "../components/Worldwide"
 import Footer from "../components/Footer"
 // import MainScene3 from "../components/MainScene3"
@@ -157,7 +158,8 @@ export default () => {
           </div>
         </section>
 
-        <SectionMarquee firstTape={false} secondTape={false} thirdTape={false} firstTapeScroll={true} secondTapeScroll={true} />
+        <SectionMarquee firstTape={false} secondTape={false} thirdTape={false} firstTapeScroll={true}
+                        secondTapeScroll={true} />
 
         <section className="section-main-about">
           <div className="main-about-container">
@@ -181,7 +183,7 @@ export default () => {
                   <p>
                     {/*<TriggerSplit>*/}
                     Cool Distillery type write brunch wayfa rers letter press hammock meggings <em> polaroid bulb </em>
-                    for age.  Man on the polaroid thunder cats hashtae subway tile.
+                    for age. Man on the polaroid thunder cats hashtae subway tile.
                     {/*</TriggerSplit>*/}
                   </p>
                 </TriggerText>
@@ -260,115 +262,10 @@ export default () => {
 
         <SectionMarquee firstTape={false} secondTape={false} thirdTape={false} firstTapeScroll={true} />
 
-        <section className="section-more-projects">
-          <div className="subsec-header">
-            <TriggerText threshold=".5" delay=".5">
-              <h5 className="">03.</h5>
-            </TriggerText>
-            <TriggerText threshold=".5" delay=".5">
-              <h2 className="subsec-title">Works</h2>
-            </TriggerText>
-          </div>
+        <ProjectsSubsection/>
 
-          <div className="more-projects-single mt-5">
-            <TriggerLine threshold=".5" delay=".5">
-              <hr className="animated" />
-            </TriggerLine>
-            <div className="more-left">
-              <TriggerText threshold=".5" delay=".5">
-                <span>2019</span>
-              </TriggerText>
-              <TriggerText threshold=".5" delay=".5">
-                <h5>Antyegzekucja</h5>
-              </TriggerText>
-            </div>
-            <TriggerText threshold=".5" delay=".5">
-              <p className="more-right"> Webdesign, Banding </p>
-            </TriggerText>
-          </div>
-
-          <div className="more-projects-single ">
-            <TriggerLine threshold=".5" delay=".5">
-              <hr className="animated" />
-            </TriggerLine>
-            <div className="more-left">
-              <TriggerText threshold=".5" delay=".5">
-                <span>2020</span>
-              </TriggerText>
-              <TriggerText threshold=".5" delay=".5">
-                <h5>Carra</h5>
-              </TriggerText>
-            </div>
-            <TriggerText threshold=".5" delay=".5">
-              <p className="more-right"> Webdesign, Strategy </p>
-            </TriggerText>
-          </div>
-
-          <div className="more-projects-single ">
-            <TriggerLine threshold=".5" delay=".5">
-              <hr className="animated" />
-            </TriggerLine>
-            <div className="more-left">
-              <TriggerText threshold=".5" delay=".5">
-                <span>2020</span>
-              </TriggerText>
-              <TriggerText threshold=".5" delay=".5">
-                <h5>Radca prawny tomczak</h5>
-              </TriggerText>
-            </div>
-            <TriggerText threshold=".5" delay=".5">
-              <p className="more-right"> Webdesign, Branding </p>
-            </TriggerText>
-          </div>
-
-          <div className="more-projects-single ">
-            <TriggerLine threshold=".5" delay=".5">
-              <hr className="animated" />
-            </TriggerLine>
-            <div className="more-left">
-              <TriggerText threshold=".5" delay=".5">
-                <span>2021</span>
-              </TriggerText>
-              <TriggerText threshold=".5" delay=".5">
-                <h5>Antyegzekucja</h5>
-              </TriggerText>
-            </div>
-            <TriggerText threshold=".5" delay=".5">
-              <p className="more-right"> Webdesign </p>
-            </TriggerText>
-          </div>
-
-          <div className="more-projects-single ">
-            <TriggerLine threshold=".5" delay=".5">
-              <hr className="animated" />
-            </TriggerLine>
-            <div className="more-left">
-              <TriggerText threshold=".5" delay=".5">
-                <span>2021</span>
-              </TriggerText>
-              <TriggerText threshold=".5" delay=".5">
-                <h5>Odszkodowania</h5>
-              </TriggerText>
-            </div>
-            <TriggerText threshold=".5" delay=".5">
-              <p className="more-right"> Webdesign </p>
-            </TriggerText>
-          </div>
-
-          <TriggerLine threshold=".5" delay=".5">
-            <hr className="animated" />
-          </TriggerLine>
-
-          <div className="learn-more">
-            <a href="/portfolio">
-              <span>Zobacz</span>
-              <span />
-              <span>Wszystkie</span>
-            </a>
-          </div>
-        </section>
-
-        <SectionMarquee firstTape={false} secondTape={true} thirdTape={true} secondTapeScroll={false} thirdTapeScroll={false}/>
+        <SectionMarquee firstTape={false} secondTape={true} thirdTape={true} secondTapeScroll={false}
+                        thirdTapeScroll={false} />
 
         <section className="section-main-process">
           <div className="">

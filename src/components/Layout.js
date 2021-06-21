@@ -16,7 +16,7 @@ const Layout = ({ children, location }) => {
     <>
       <Navbar isOpen={isOpen} toggleSideBar={toggleSideBar} />
       <Sidebar isOpen={isOpen} toggleSideBar={toggleSideBar} />
-      {/*<Scroll callbacks={location}  />*/}
+      <Scroll callbacks={location}  />
       <AnimatePresence initial={true} exitBeforeEnter>
         <motion.div
           location={location}
