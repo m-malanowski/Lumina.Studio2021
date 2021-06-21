@@ -105,7 +105,8 @@ $move-final: calc(-50% + #{$offset});
 
 body {
   background-color: var(--clr-black);
-  overflow: hidden;
+  //overflow: hidden;
+  overflow-x: hidden;
 
   //background-color: rgba(0, 0, 0, .98);
   //background-image: url("../assets/mesh-gradient(1).png");
@@ -1159,7 +1160,7 @@ Footer
 ===============
 */
 footer {
-  padding: 5rem 0;
+  padding: 5rem 0 2.5rem 0;
 
   .motto {
     font-size: calc(25px + (35 - 25) * ((100vw - 320px) / (1900 - 320)));
@@ -1217,7 +1218,7 @@ footer {
 
   display: flex;
   justify-content: space-between;
-  padding-top: 5rem;
+  padding-top: 10rem;
 
   .footer-arrow {
     a {

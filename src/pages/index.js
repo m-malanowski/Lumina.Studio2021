@@ -142,7 +142,7 @@ export default () => {
             {/*    </p>*/}
             {/*  </TriggerText>*/}
             {/*</div>*/}
-            <TriggerImg>
+            <TriggerImg delay={1}>
               <img className="orbit" width="900" src={orbitMain} alt="" />
             </TriggerImg>
             {/*<img className="small-star" width="50" src={smallStar} alt="" />*/}
@@ -151,7 +151,7 @@ export default () => {
             {/*<img width="100" src={arrowDown} alt="" />*/}
             {/*<img width="100" src={arrowDown} alt="" />*/}
             {/*<img width="70" src={arrowDown} alt="" />*/}
-            <TriggerImg>
+            <TriggerImg delay={1.2}>
               <img width="125" src={handDown} alt="" />
             </TriggerImg>
           </div>
@@ -180,8 +180,8 @@ export default () => {
                 <TriggerText threshold=".5" delay=".5">
                   <p>
                     {/*<TriggerSplit>*/}
-                    Cool Distillery type write brunch wayfa rers letter press hammock meggings <em> polaroid </em> bulb
-                    for age. Man on the polaroid thunder cats hashtae subway tile.
+                    Cool Distillery type write brunch wayfa rers letter press hammock meggings <em> polaroid bulb </em>
+                    for age.  Man on the polaroid thunder cats hashtae subway tile.
                     {/*</TriggerSplit>*/}
                   </p>
                 </TriggerText>
@@ -252,9 +252,9 @@ export default () => {
                 </TriggerText>
               </div>
             </div>
-            <div>
+            <TriggerImg threshold="0">
               <img className="service-stickers" width="100%" src={serviceStickers} alt="" />
-            </div>
+            </TriggerImg>
           </div>
         </section>
 
@@ -390,7 +390,7 @@ export default () => {
                   <span className="subsec-span">How we do</span>
                 </TriggerText>
 
-                <TriggerImg>I
+                <TriggerImg>
                   <img className="orbit" width="600" src={orbitProcess} alt="" />
                 </TriggerImg>
 

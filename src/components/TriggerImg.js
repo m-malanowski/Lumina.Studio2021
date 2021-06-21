@@ -4,7 +4,7 @@ import { motion, useAnimation } from "framer-motion";
 const TriggerText = ({children, threshold, delay}) => {
   const { ref, inView, entry } = useInView({
     /* Optional options */
-    threshold: .7,
+    threshold: threshold,
     // triggerOnce: false
   });
   const controls = useAnimation();
@@ -27,7 +27,7 @@ const TriggerText = ({children, threshold, delay}) => {
       exit="hidden"
       variants={{
         // visible: { opacity: 1, y: 0, clipPath: "circle(450% at 100% 100%)",
-        visible: { opacity: 1, transition: { delay: 1.2, duration: 1.2}
+        visible: { opacity: 1, transition: { delay, duration: 1.2}
         },
         hidden: { opacity: 0 }
         // hidden: { opacity: 0, y: -20, clipPath: "circle(16.2% at 48% 0)" }

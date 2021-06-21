@@ -4,6 +4,7 @@ import { useEffect } from "react"
 import LocomotiveScroll from "locomotive-scroll"
 
 import { scroll } from "../theme"
+import { useAnimation } from "framer-motion"
 
 const Scroll = callbacks => {
   useEffect(() => {
@@ -20,6 +21,14 @@ const Scroll = callbacks => {
     locomotiveScroll.on("scroll", func => {
       // Update `data-direction` with scroll direction.
       document.documentElement.setAttribute("data-direction", func.direction)
+       let position = window.pageYOffset
+      console.log(position)
+
+    })
+
+    locomotiveScroll.on("call", (fun, obj) =>  {
+      console.log("call", fun);
+      console.log(scroll.y)
     })
 
     return () => {

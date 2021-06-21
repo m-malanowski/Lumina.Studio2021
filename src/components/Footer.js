@@ -18,14 +18,18 @@ const Footer = () => {
             <TriggerText threshold=".5" delay=".5">
               <h5 className="mt-3"><a href="mailto:hello@lumina.studio">hello@lumina.studio</a></h5>
             </TriggerText>
-            <button type="button" className="mt-4 button outline footer-button">Wyślij wiadomość</button>
+            <TriggerText threshold=".5" delay=".5">
+              <button type="button" className="mt-5 button outline footer-button">Wyślij wiadomość</button>
+            </TriggerText>
 
             <TriggerImg>
               <img className="orbit" width="400" src={orbitFooter} alt="" />
             </TriggerImg>
           </div>
           <div className="footer-top-right">
-            <h5 className="">05.</h5>
+            <TriggerText threshold=".5" delay=".5">
+              <h5 className="">05.</h5>
+            </TriggerText>
           </div>
         </div>
 
@@ -33,7 +37,7 @@ const Footer = () => {
           <TriggerText threshold=".5" delay=".5">
             <h3 className="motto">Studio for <br/> ambitious <br/> brands </h3>
           </TriggerText>
-          <TriggerText threshold=".5" delay=".5">
+          <TriggerText threshold=".5" delay=".7">
             <ul>
               <h4>Wrocław</h4>
               {/*<li>Wrocław</li>*/}
@@ -47,7 +51,7 @@ const Footer = () => {
               {/*</li>*/}
             </ul>
           </TriggerText>
-          <TriggerText threshold=".5" delay=".5">
+          <TriggerText threshold=".5" delay=".9">
             <ul>
               <h4>Elbląg</h4>
               {/*<li>Elbląg</li>*/}
@@ -65,7 +69,7 @@ const Footer = () => {
               {/*</li>*/}
             </ul>
           </TriggerText>
-          <TriggerText threshold=".5" delay=".5">
+          <TriggerText threshold=".5" delay="1.1">
 
           <h4>Śledź nas</h4>
             {/*<li>Śledź nas</li>*/}
