@@ -229,6 +229,7 @@ em {
   font-family: var(--ff-primary);
   font-style: normal;
   margin-right: .5rem;
+  font-weight: bold;
   //color: transparent;
   //-webkit-text-stroke-width: 1px;
   //-webkit-text-stroke-color: var(--clr-secondary);
@@ -855,9 +856,10 @@ Page single project
 .section-more-projects {
   //margin: 0 0 0 10rem;
   position: relative;
-
+  padding: 5rem 0;
   .more-projects-single {
     position: relative;
+    mix-blend-mode: difference;
 
     .more-left {
       display: flex;
@@ -870,9 +872,11 @@ Page single project
         //line-height: 1.8;
         font-size: calc(25px + (18 - 25) * ((100vw - 320px) / (1900 - 320)));
         margin-right: 5rem;
+        mix-blend-mode: difference;
       }
 
       h5 {
+        mix-blend-mode: difference;
         align-self: center;
         font-size: 18px;
         text-transform: uppercase;
@@ -971,7 +975,7 @@ Page single project
     img {
       position: absolute;
       height: 40vh;
-      opacity: 0;
+      //opacity: 0;
       z-index: -1;
       transform: scale(.80);
     }
@@ -1203,7 +1207,7 @@ Footer
 ===============
 */
 footer {
-  padding: 5rem 0 2.5rem 0;
+  padding: 5rem 0 5rem 0;
 
   .motto {
     font-size: calc(25px + (35 - 25) * ((100vw - 320px) / (1900 - 320)));
@@ -1220,7 +1224,7 @@ footer {
   position: relative;
   display: flex;
   justify-content: space-between;
-
+  padding-bottom: 10rem;
   .footer-top-right {
     h5 {
       font-family: var(--ff-primary);
@@ -1235,8 +1239,8 @@ footer {
 
   .orbit {
     position: absolute;
-    right: 20%;
-    top: -20%;
+    right: 30%;
+    top: 0%;
   }
 }
 
@@ -1261,7 +1265,7 @@ footer {
 
   display: flex;
   justify-content: space-between;
-  padding-top: 10rem;
+  //padding-top: 10rem;
 
   .footer-arrow {
     a {
@@ -1650,7 +1654,7 @@ SECTIONS ________________________ SECTIONS
   .orbit {
     position: absolute;
     top: 25%;
-    left: 40%;
+    left: 35%;
   }
 
   .small-star {
@@ -1824,28 +1828,28 @@ SECTIONS ________________________ SECTIONS
   }
 }
 
-
 .section-marquee {
   margin: 15rem 0 15rem 0;
 
   .tapes-container {
     //position: absolute;
     //left: -2.5%;
-    transform: translateX(-2.5%);
+    transform: translateX(-10%);
     font-size: calc(25px + (80 - 25) * ((100vw - 320px) / (1900 - 320)));
     text-transform: uppercase;
     line-height: 1.2;
   }
 
   .first-tape-wrapper {
-    transform: rotate(7deg);
+    transform: rotate(6deg);
+    transform-origin: center ;
+
   }
 
   .tapes-container .first-tape-wrapper > .first-tape {
     background: var(--clr-white);
     padding: 0 1rem;
     //transform: rotate(7deg);
-    transform-origin: center center;
     width: max-content;
 
     span {
@@ -1856,13 +1860,14 @@ SECTIONS ________________________ SECTIONS
 
   .second-tape-wrapper {
     transform: rotate(-10deg) translateX(-10%);
+    transform-origin: center;
+
   }
 
   .tapes-container .second-tape-wrapper > .second-tape {
     background: var(--clr-secondary);
     padding: 0 1rem;
     //transform: rotate(-10deg);
-    transform-origin: center center;
     width: max-content;
 
     span {
@@ -1872,7 +1877,8 @@ SECTIONS ________________________ SECTIONS
   }
 
   .third-tape-wrapper{
-    transform: rotate(15deg);
+    transform: rotate(13deg);
+    transform-origin: center;
   }
 
   .tapes-container .third-tape-wrapper > .third-tape {
@@ -1881,7 +1887,6 @@ SECTIONS ________________________ SECTIONS
     border-bottom: 1px solid #ffffff;
 
     padding: 0 1rem;
-    transform-origin: center center;
     width: max-content;
 
     span {
@@ -1890,7 +1895,7 @@ SECTIONS ________________________ SECTIONS
     }
   }
 
-  .tapes-container > .third-tape {
+  .tapes-container .third-tape-wrapper > .third-tape {
     span {
       span:after {
         content: ' ';

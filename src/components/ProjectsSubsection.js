@@ -2,9 +2,10 @@ import React from "react";
 import { useEffect, useState, useRef } from "react";
 import TriggerText from "../components/TriggerText"
 import TriggerLine from "./TriggerLine"
-import { motion, useAnimation } from "framer-motion";
+import { motion, useAnimation, useMotionValue } from "framer-motion";
 
 const ImagePlaceholder = ({ position, color }) => {
+
   const controls = useAnimation();
 
   useEffect(() => {
@@ -27,58 +28,79 @@ const ImagePlaceholder = ({ position, color }) => {
 
   return (
     <motion.div
-      initial={{ opacity: 0 }}
+      initial={{ opacity: 1 }}
       animate={controls}
-      style={{ background: color, ...style }}
-      className="placeholder"
-    />
+      // style={{ background: color, ...style }}
+      style={{...style}}
+      className="images"
+    >
+      <img
+        src="https://firebasestorage.googleapis.com/v0/b/hashnode-tutorials.appspot.com/o/image-hover-tutorial%2Factivewear-3.jpg?alt=media&token=45174749-6fc9-4a23-b671-4fba4ca2d0f6"
+        alt="activewear" data-image="activewear" />
+      <img/>
+    </motion.div>
   );
 };
 
-
-
 const ProjectsSubsection = () => {
+  const x = useMotionValue(200)
+  const y = useMotionValue(200)
   const mouseInfo = useRef({
     now: { x: 0, y: 0 },
     prev: { x: 0, y: 0 },
     prevImage: { x: 0, y: 0 }
   }).current;
 
+  function handleMouse(event) {
+    x.set(event.pageX)
+    y.set(event.pageY)
+  }
+  const imagePositions = useRef([]);
 
-
+  imagePositions.current[1] = {
+    xOrigin: mouseInfo.prev.x,
+    yOrigin: mouseInfo.prev.y,
+    x: mouseInfo.now.x,
+    y: mouseInfo.now.y,
+  };
 
   return (
     <>
       <section className="section-more-projects"
                // onMouseMove={e => (mouseInfo.now = { x: e.pageX, y: e.pageY })}
-               onMouseMove={e => console.log(mouseInfo.now =  { x: e.pageX, y: e.pageY })}
+               // onMouseMove={e => console.log(mouseInfo.now =  { x: e.pageX, y: e.pageY })}
+               // onMouseMove={handleMouse}
       >
-        <div className="images">
-          <img
-            src="https://firebasestorage.googleapis.com/v0/b/hashnode-tutorials.appspot.com/o/image-hover-tutorial%2Factivewear-3.jpg?alt=media&token=45174749-6fc9-4a23-b671-4fba4ca2d0f6"
-            alt="activewear" data-image="activewear" />
-          <img
-            src="https://firebasestorage.googleapis.com/v0/b/hashnode-tutorials.appspot.com/o/image-hover-tutorial%2Fbeach-wear.jpg?alt=media&token=e21ab7bb-0ca3-4780-9243-25c0484e89a8"
-            alt="beachwear" data-image="beachwear" />
-          <img
-            src="https://firebasestorage.googleapis.com/v0/b/hashnode-tutorials.appspot.com/o/image-hover-tutorial%2Fdresses.jpg?alt=media&token=0cad3820-b2c9-43a0-8503-66eb81db7dab"
-            alt="dresses" data-image="dresses" />
-          <img
-            src="https://firebasestorage.googleapis.com/v0/b/hashnode-tutorials.appspot.com/o/image-hover-tutorial%2Fheels.jpg?alt=media&token=e8a42ce6-3242-4f27-9c24-404b3c0eaf15"
-            alt="heels" data-image="heels" />
-          <img
-            src="https://firebasestorage.googleapis.com/v0/b/hashnode-tutorials.appspot.com/o/image-hover-tutorial%2Fjoggers.jpg?alt=media&token=6ba10dcd-a0dd-4417-a4f8-ebe22c6c0ab6"
-            alt="joggers" data-image="joggers" />
-          <img
-            src="https://firebasestorage.googleapis.com/v0/b/hashnode-tutorials.appspot.com/o/image-hover-tutorial%2Fkimonos.jpg?alt=media&token=d15cc8fb-3757-4b1f-9db0-2e40256ec57e"
-            alt="kimonos" data-image="kimonos" />
-          <img
-            src="https://firebasestorage.googleapis.com/v0/b/hashnode-tutorials.appspot.com/o/image-hover-tutorial%2Ftops.jpg?alt=media&token=2166f492-082c-4d80-bfad-ed5eae3aff99"
-            alt="tops" data-image="tops" />
-          <img
-            src="https://firebasestorage.googleapis.com/v0/b/hashnode-tutorials.appspot.com/o/image-hover-tutorial%2Fsuits-and-tailoring.jpg?alt=media&token=89a1b2e6-f222-4d4a-83b2-0b224869d661"
-            alt="suits" data-image="suits" />
-        </div>
+        {/*<div className="images">*/}
+        {/*  <img*/}
+        {/*    src="https://firebasestorage.googleapis.com/v0/b/hashnode-tutorials.appspot.com/o/image-hover-tutorial%2Factivewear-3.jpg?alt=media&token=45174749-6fc9-4a23-b671-4fba4ca2d0f6"*/}
+        {/*    alt="activewear" data-image="activewear" />*/}
+        {/*  <img*/}
+        {/*    src="https://firebasestorage.googleapis.com/v0/b/hashnode-tutorials.appspot.com/o/image-hover-tutorial%2Fbeach-wear.jpg?alt=media&token=e21ab7bb-0ca3-4780-9243-25c0484e89a8"*/}
+        {/*    alt="beachwear" data-image="beachwear" />*/}
+        {/*  <img*/}
+        {/*    src="https://firebasestorage.googleapis.com/v0/b/hashnode-tutorials.appspot.com/o/image-hover-tutorial%2Fdresses.jpg?alt=media&token=0cad3820-b2c9-43a0-8503-66eb81db7dab"*/}
+        {/*    alt="dresses" data-image="dresses" />*/}
+        {/*  <img*/}
+        {/*    src="https://firebasestorage.googleapis.com/v0/b/hashnode-tutorials.appspot.com/o/image-hover-tutorial%2Fheels.jpg?alt=media&token=e8a42ce6-3242-4f27-9c24-404b3c0eaf15"*/}
+        {/*    alt="heels" data-image="heels" />*/}
+        {/*  <img*/}
+        {/*    src="https://firebasestorage.googleapis.com/v0/b/hashnode-tutorials.appspot.com/o/image-hover-tutorial%2Fjoggers.jpg?alt=media&token=6ba10dcd-a0dd-4417-a4f8-ebe22c6c0ab6"*/}
+        {/*    alt="joggers" data-image="joggers" />*/}
+        {/*  <img*/}
+        {/*    src="https://firebasestorage.googleapis.com/v0/b/hashnode-tutorials.appspot.com/o/image-hover-tutorial%2Fkimonos.jpg?alt=media&token=d15cc8fb-3757-4b1f-9db0-2e40256ec57e"*/}
+        {/*    alt="kimonos" data-image="kimonos" />*/}
+        {/*  <img*/}
+        {/*    src="https://firebasestorage.googleapis.com/v0/b/hashnode-tutorials.appspot.com/o/image-hover-tutorial%2Ftops.jpg?alt=media&token=2166f492-082c-4d80-bfad-ed5eae3aff99"*/}
+        {/*    alt="tops" data-image="tops" />*/}
+        {/*  <img*/}
+        {/*    src="https://firebasestorage.googleapis.com/v0/b/hashnode-tutorials.appspot.com/o/image-hover-tutorial%2Fsuits-and-tailoring.jpg?alt=media&token=89a1b2e6-f222-4d4a-83b2-0b224869d661"*/}
+        {/*    alt="suits" data-image="suits" />*/}
+        {/*</div>*/}
+
+        <ImagePlaceholder
+          // position={imagePositions}
+        />
 
 
         <div className="subsec-header">

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react"
 
-const SectionMarquee = ({ firstTape, secondTape, thirdTape, onScroll, firstTapeScroll, secondTapeScroll, thirdTapeScroll  }) => {
+const SectionMarquee = ({ firstTape, secondTape, thirdTape, onScroll, firstTapeScroll, secondTapeScroll, thirdTapeScroll, dataScrollPosition, dataScrollSpeed  }) => {
   const [playMarquee, setPlayMarquee] = useState(false)
 
   useEffect(() => {
@@ -16,17 +16,17 @@ const SectionMarquee = ({ firstTape, secondTape, thirdTape, onScroll, firstTapeS
           {
             firstTape && !firstTapeScroll
               ? (<FirstTape/>)
-              : ( firstTapeScroll ? ( <FirstTapeScroll/> ) : null)
+              : ( firstTapeScroll ? ( <FirstTapeScroll dataScrollPosition={dataScrollPosition} dataScrollSpeed={dataScrollSpeed}/> ) : null)
           }
           {
             secondTape && !secondTapeScroll
               ? (<SecondTape/>)
-              : ( secondTapeScroll ? ( <SecondTapeScroll/> ) : null)
+              : ( secondTapeScroll ? ( <SecondTapeScroll dataScrollPosition={dataScrollPosition} dataScrollSpeed={dataScrollSpeed}/> ) : null)
           }
           {
             thirdTape && !thirdTapeScroll
               ? (<ThirdTape/>)
-              : ( thirdTapeScroll ? ( <ThirdTapeScroll/> ) : null)
+              : ( thirdTapeScroll ? ( <ThirdTapeScroll dataScrollPosition={dataScrollPosition} dataScrollSpeed={dataScrollSpeed}/> ) : null)
           }
         </div>
       </section>
@@ -46,14 +46,14 @@ const FirstTape = () => {
   )
 }
 
-const FirstTapeScroll = () => {
+const FirstTapeScroll = ({dataScrollPosition, dataScrollSpeed}) => {
   return (
     <>
       <div className="first-tape-wrapper">
         <div className="first-tape"
              data-scroll
-             data-scroll-speed="2"
-             data-scroll-position="top"
+             data-scroll-speed="1"
+             data-scroll-position={dataScrollPosition}
              data-scroll-direction="horizontal"
         >
           <span className="marquee__inner"> <span>Together</span> <span>Together</span> <span>Together</span> <span>Together</span> <span>Together</span>  <span>Together</span>  </span>
@@ -75,14 +75,14 @@ const SecondTape = () => {
   )
 }
 
-const SecondTapeScroll = () => {
+const SecondTapeScroll = ({dataScrollPosition, dataScrollSpeed}) => {
   return (
     <>
       <div className="second-tape-wrapper">
         <div className="second-tape"
           data-scroll
-          data-scroll-speed="-1"
-          data-scroll-position="top"
+          data-scroll-speed="-2"
+          data-scroll-position={dataScrollPosition}
           data-scroll-direction="horizontal"
         >
           <span className="marquee__inner"> <span>Work</span> <span>Work</span>  <span>Work</span> <span>Work</span> <span>Work</span> <span>Work</span> <span>Work</span> <span>Work</span> </span>
@@ -104,16 +104,15 @@ const ThirdTape = () => {
   )
 }
 
-const ThirdTapeScroll = () => {
+const ThirdTapeScroll = ({dataScrollPosition, dataScrollSpeed}) => {
   return (
     <>
-      <div className="third-tape-wrapper"
-           data-scroll
-           data-scroll-speed="-1"
-           data-scroll-position="top"
-           data-scroll-direction="horizontal"
-      >
-        <div className="third-tape">
+      <div className="third-tape-wrapper">
+        <div className="third-tape"
+             data-scroll
+             data-scroll-speed="-1"
+             data-scroll-position={dataScrollPosition}
+             data-scroll-direction="horizontal">
           <span className="marquee__inner"> <span>Lumina</span>  <span>Lumina</span> <span>Lumina</span> <span>Lumina</span>  <span>Lumina</span>  <span>Lumina</span> </span>
         </div>
       </div>

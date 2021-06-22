@@ -254,9 +254,11 @@ export default () => {
                 </TriggerText>
               </div>
             </div>
-            <TriggerImg threshold="0">
+
+            <TriggerImg threshold="0" delay={1}>
               <img className="service-stickers" width="100%" src={serviceStickers} alt="" />
             </TriggerImg>
+
           </div>
         </section>
 
@@ -264,8 +266,8 @@ export default () => {
 
         <ProjectsSubsection/>
 
-        <SectionMarquee firstTape={false} secondTape={true} thirdTape={true} secondTapeScroll={false}
-                        thirdTapeScroll={false} />
+        <SectionMarquee firstTape={false} secondTape={true} thirdTape={true} secondTapeScroll={true}
+                        thirdTapeScroll={true} />
 
         <section className="section-main-process">
           <div className="">
@@ -359,7 +361,8 @@ export default () => {
 
         <Worldwide />
 
-        <SectionMarquee firstTape={true} secondTape={true} thirdTape={true} />
+        <SectionMarquee firstTape={false} secondTape={false} thirdTape={false} firstTapeScroll={true} secondTapeScroll={true}
+                        thirdTapeScroll={true} dataScrollPosition="bottom" dataScrollSpeed="-2"/>
 
       </main>
       <Footer />

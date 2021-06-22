@@ -35,7 +35,7 @@ const Footer = () => {
 
         <div className="footer-bottom">
           <TriggerText threshold=".5" delay=".5">
-            <h3 className="motto">Studio for <br/> ambitious <br/> brands </h3>
+            <h3 className="motto">Studio for <br/> ambitious <br/> <em>brands</em> </h3>
           </TriggerText>
           <TriggerText threshold=".5" delay=".7">
             <ul>
