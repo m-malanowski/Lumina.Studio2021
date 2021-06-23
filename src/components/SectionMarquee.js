@@ -110,7 +110,7 @@ const ThirdTapeScroll = ({dataScrollPosition, dataScrollSpeed}) => {
       <div className="third-tape-wrapper">
         <div className="third-tape"
              data-scroll
-             data-scroll-speed="-1"
+             data-scroll-speed={dataScrollSpeed}
              data-scroll-position={dataScrollPosition}
              data-scroll-direction="horizontal">
           <span className="marquee__inner"> <span>Lumina</span>  <span>Lumina</span> <span>Lumina</span> <span>Lumina</span>  <span>Lumina</span>  <span>Lumina</span> </span>

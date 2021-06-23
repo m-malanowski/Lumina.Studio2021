@@ -20,14 +20,14 @@ const Worldwide = () => {
       {/*<div className="bg-circles-section">*/}
       {/*  <div className="blurry-circle bc-4"/>*/}
       {/*</div>*/}
-      <img width="150" className="thumb-up" src={thumbUp} alt="" />
+      <img width="125" className="thumb-up" src={thumbUp} alt="" />
       <div className="worldwide-container">
         <motion.img
           // style={{elo}}
           // style={{
           //   rotate: scaleAnim,
           // }}
-          className="star" width="550" src={star} alt="Agencja interaktywna lumina studio" />
+          className="star" width="500" src={star} alt="Agencja interaktywna lumina studio" />
         <h2 className=" w-100">Lumina - studio</h2>
         <h3>worldwide</h3>
         <img className="globe" width="125" src={globe} alt="Agencja interaktywna lumina studio" />

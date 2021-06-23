@@ -8,7 +8,7 @@ const Footer = () => {
     <>
       <footer className="container-fluid">
         <div className="footer-bottom">
-          <h3 className="motto">Studio for <br/> ambitious <br/> brands</h3>
+          <h3 className="motto">Studio for <br/> ambitious <br/> <em>brands</em></h3>
 
           <ul>
             <h4>Wrocław</h4>

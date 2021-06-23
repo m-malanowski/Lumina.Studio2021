@@ -234,6 +234,9 @@ em {
   //-webkit-text-stroke-width: 1px;
   //-webkit-text-stroke-color: var(--clr-secondary);
 }
+button{
+  font-family: var(--ff-secondary);
+}
 
 em.em-bt {
   font-family: var(--ff-secondary);
@@ -421,6 +424,29 @@ nav {
     }
   }
 }
+.btn-wrapper{
+  button:hover {
+    color: var(--clr-black);
+    background: var(--clr-secondary);
+    border-color: var(--clr-secondary);
+    transition: all 0.2s linear;
+    //box-shadow: 0 0 5px var(--clr-secondary),
+    //0 0 25px var(--clr-secondary),
+    //0 0 50px var(--clr-secondary),
+    //0 0 200px var(--clr-secondary);
+    -moz-box-shadow:  0 5px var(--clr-secondary),
+    0 0 25px var(--clr-secondary),
+    0 0 50px var(--clr-secondary),
+    0 0 150px var(--clr-secondary);
+    -webkit-box-shadow: 0 5px var(--clr-secondary),
+    0 0 25px var(--clr-secondary),
+    0 0 50px var(--clr-secondary),
+    0 0 125px var(--clr-secondary);
+
+    //-webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+  }
+}
+
 
 .navbar-logo {
   color: var(--clr-white);
@@ -859,7 +885,7 @@ Page single project
   padding: 5rem 0;
   .more-projects-single {
     position: relative;
-    mix-blend-mode: difference;
+    //mix-blend-mode: difference;
 
     .more-left {
       display: flex;
@@ -967,12 +993,14 @@ Page single project
     }
   }
 
-
+  hr{
+    z-index: -1000;
+  }
 
   .images {
     position: relative;
 
-    img {
+    img, .main-img {
       position: absolute;
       height: 40vh;
       //opacity: 0;
@@ -981,7 +1009,13 @@ Page single project
     }
   }
 }
-
+.main-img {
+  position: absolute;
+  height: 40vh;
+  //opacity: 0;
+  z-index: -1;
+  transform: scale(.80);
+}
 /*
 ===============
 Services Page
@@ -1007,7 +1041,7 @@ Contact Page
 ===============
 */
 .contact-page {
-
+  padding-top: 15rem;
 }
 
 .section-contact-container {
@@ -1207,7 +1241,7 @@ Footer
 ===============
 */
 footer {
-  padding: 5rem 0 5rem 0;
+  padding: 5rem 0 2.5rem 0;
 
   .motto {
     font-size: calc(25px + (35 - 25) * ((100vw - 320px) / (1900 - 320)));
@@ -2404,8 +2438,8 @@ Outline  Button
 
   &.outline:hover {
     color: var(--clr-black);
-    background: var(--clr-white);
-    border-color: white;
+    //background: var(--clr-white);
+    //border-color: white;
     transition: all 0.2s linear;
   }
 

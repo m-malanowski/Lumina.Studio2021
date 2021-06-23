@@ -7,8 +7,7 @@ import TriggerImg from "../components/TriggerImg"
 const Footer = () => {
   return (
     <>
-
-      <footer className="container-fluid">
+      <footer className="container-fluid contact-page">
         <div className="footer-top">
           <div>
             {/*<h5><em>Nawiąż</em> kontakt</h5>*/}
@@ -26,18 +25,18 @@ const Footer = () => {
               <img className="orbit" width="400" src={orbitFooter} alt="" />
             </TriggerImg>
           </div>
-          <div className="footer-top-right">
-            <TriggerText threshold=".5" delay=".5">
-              <h5 className="">05.</h5>
-            </TriggerText>
-          </div>
+          {/*<div className="footer-top-right">*/}
+          {/*  <TriggerText threshold=".5" delay=".5">*/}
+          {/*    <h5 className="">05.</h5>*/}
+          {/*  </TriggerText>*/}
+          {/*</div>*/}
         </div>
 
         <div className="footer-bottom">
-          <TriggerText threshold=".5" delay=".5">
+          <TriggerText threshold="0" delay=".5">
             <h3 className="motto">Studio for <br/> ambitious <br/> <em>brands</em> </h3>
           </TriggerText>
-          <TriggerText threshold=".5" delay=".7">
+          <TriggerText threshold="0" delay=".7">
             <ul>
               <h4>Wrocław</h4>
               {/*<li>Wrocław</li>*/}
@@ -55,7 +54,7 @@ const Footer = () => {
               {/*</li>*/}
             </ul>
           </TriggerText>
-          <TriggerText threshold=".5" delay=".9">
+          <TriggerText threshold="0" delay=".9">
             <ul>
               <h4>Elbląg</h4>
               {/*<li>Elbląg</li>*/}
@@ -73,7 +72,7 @@ const Footer = () => {
               {/*</li>*/}
             </ul>
           </TriggerText>
-          <TriggerText threshold=".5" delay="1.1">
+          <TriggerText threshold="0" delay="1.1">
 
           <h4>Śledź nas</h4>
             {/*<li>Śledź nas</li>*/}

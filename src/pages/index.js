@@ -29,6 +29,7 @@ import TriggerImg from "../components/TriggerImg"
 import { TriggerSplit } from "../components/TriggerSplit"
 import { splitTextVariants, transition } from "../components/Variants"
 import SectionMarquee from "../components/SectionMarquee"
+import LowerFooter from "../components/LowerFooter"
 // import Marquee from "react-fast-marquee";
 // import gsap from "gsap";
 // import SplitText from "../utils/Split";
@@ -267,7 +268,7 @@ export default () => {
         <ProjectsSubsection/>
 
         <SectionMarquee firstTape={false} secondTape={true} thirdTape={true} secondTapeScroll={true}
-                        thirdTapeScroll={true} />
+                        thirdTapeScroll={true} dataScrollSpeed="2"/>
 
         <section className="section-main-process">
           <div className="">
@@ -359,13 +360,22 @@ export default () => {
           </div>
         </section>
 
-        <Worldwide />
+      {/*  <Worldwide />*/}
+
+      {/*  <SectionMarquee firstTape={false} secondTape={false} thirdTape={false} firstTapeScroll={true} secondTapeScroll={true}*/}
+      {/*                  thirdTapeScroll={true} dataScrollPosition="bottom" dataScrollSpeed="-2"/>*/}
+
+      {/*</main>*/}
+      {/*<Footer />*/}
 
         <SectionMarquee firstTape={false} secondTape={false} thirdTape={false} firstTapeScroll={true} secondTapeScroll={true}
-                        thirdTapeScroll={true} dataScrollPosition="bottom" dataScrollSpeed="-2"/>
+                        thirdTapeScroll={true} dataScrollPosition="bottom" dataScrollSpeed="2"/>
+
+        <Worldwide />
 
       </main>
-      <Footer />
+
+      <LowerFooter />
     </>
   )
 }
