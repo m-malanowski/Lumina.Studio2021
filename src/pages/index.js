@@ -127,12 +127,12 @@ export default () => {
                 <h2 className="subsec-title">
                   <span
                     data-scroll
-                    data-scroll-speed="-3"
+                    data-scroll-speed="-2"
                     data-scroll-direction="horizontal"
                   >Kreatywna</span>
                   <span
                     data-scroll
-                    data-scroll-speed="-1"
+                    data-scroll-speed="2"
                     data-scroll-direction="horizontal">Agencja</span>
                   <span
                     data-scroll
@@ -306,8 +306,8 @@ export default () => {
 
             <TriggerImg threshold="0" delay={1}>
               <img
-                // data-scroll
-                // data-scroll-speed="-1"
+                data-scroll
+                data-scroll-speed="-1"
                 // data-scroll-position="bottom"
                 className="service-stickers" width="100%" src={serviceStickers} alt="" />
             </TriggerImg>
@@ -403,7 +403,7 @@ export default () => {
                     <h3>Implementation</h3>
                     {/*<span>03</span>*/}
                   </TriggerText>
-                  <TriggerText threshold=".5" del ay=".5">
+                  <TriggerText threshold=".5" delay=".5">
                     <p>Pok pok live-edge biodiesel gluten-free, godard knausgaard craft beer wolf succulents chia venmo
                       edison bulb cornhole. Woke hashtag actually cloud bread listicle letterpress.</p>
                   </TriggerText>
