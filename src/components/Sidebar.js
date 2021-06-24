@@ -64,13 +64,23 @@ const Sidebar = ({toggleSideBar, isOpen}) => {
               {/*<Links styleClass="sidebar-links"/>*/}
               <nav>
                 <ul>
+                  {/*<li>*/}
+                  {/*  <Link*/}
+                  {/*    to='/about'*/}
+                  {/*    className={"social-link link link--kale link--kale-big"}*/}
+                  {/*  >*/}
+                  {/*    Nasze studio*/}
+                  {/*  </Link>*/}
+                  {/*</li>*/}
                   <li>
                     <Link
                       onMouseEnter={e => handleHover(e)}
                       onMouseOut={e => handleHoverExit(e)}
                       onClick={toggleSideBar}
                       ref={el => (line1.current = el)}
-                      to='/about'>
+                      to='/about'
+                      className={"social-link link link--kale"}
+                    >
                       Nasze studio
                     </Link>
                   </li>

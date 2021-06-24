@@ -21,6 +21,7 @@ import SectionMarquee from "../components/SectionMarquee"
 // import memoji from "../assets/icons/giphy.gif"
 import { motion } from "framer-motion"
 import SEO from "../components/SEO"
+import TriggerText from "../components/TriggerText"
 
 // ...GatsbyImageSharpFluid
 const About = () => {
@@ -65,8 +66,16 @@ const About = () => {
                 </SplitText>
               </h2>
             </div>
-            <img className="orbit" width="900" src={orbitAboutPage} alt="" />
-            <img className="small-star" width="50" src={smallStar} alt="" />
+            <img
+              data-scroll
+              data-scroll-speed="-2"
+              data-scroll-position="top"
+              className="orbit" width="900" src={orbitAboutPage} alt="" />
+            <img
+              data-scroll
+              data-scroll-speed="-3"
+              data-scroll-position="top"
+              className="small-star" width="50" src={smallStar} alt="" />
           </div>
         </section>
 
@@ -76,9 +85,14 @@ const About = () => {
               <div className="ss-body-first">
               </div>
               <div className="ss-body-second">
-                <p>Distillery type write brunch wayfarers letter ham mock meggings food truck <em> bulb forage</em>. Man
-                  on the polaroid thundercats hashtae subway tile. </p>
-                <span className="subsec-span">Who we are</span>
+                <TriggerText threshold="0" delay=".5">
+                  <p>Distillery type write brunch wayfarers letter ham mock meggings food truck <em> bulb forage</em>. Man
+                    on the polaroid thundercats hashtae subway tile. </p>
+                </TriggerText>
+
+                <TriggerText threshold="0" delay=".65">
+                  <span className="subsec-span">Kim jesteśmy</span>
+                </TriggerText>
               </div>
             </div>
           </div>
@@ -425,9 +439,10 @@ const About = () => {
           </div>
         </section>
 
+        {/*<SectionMarquee firstTape={true} secondTape={true} thirdTape={true} />*/}
 
-        <SectionMarquee firstTape={true} secondTape={true} thirdTape={true} />
-
+        <SectionMarquee firstTape={false} secondTape={false} thirdTape={false} firstTapeScroll={true} secondTapeScroll={true}
+                        thirdTapeScroll={true} dataScrollPosition="bottom" dataScrollSpeed="2"/>
 
         {/*<section className="section-marquee break-out">*/}
         {/*  <div className="marquee-container">*/}

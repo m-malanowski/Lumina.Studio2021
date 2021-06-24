@@ -89,10 +89,10 @@ const ProjectsSubsection = () => {
         <div className="subsec-header">
 
           <TriggerText threshold=".5" delay=".5">
-            <h5 className="">03.</h5>
+            <h5 className="">02.</h5>
           </TriggerText>
           <TriggerText threshold=".5" delay=".5">
-            <h2 className="subsec-title">Works</h2>
+            <h2 className="subsec-title">Prace</h2>
           </TriggerText>
         </div>
 

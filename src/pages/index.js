@@ -20,7 +20,7 @@ import Footer from "../components/Footer"
 // import SocialLinks from "../constants/socialLinks"
 // import ServicesSlider from "../components/ServicesSlider"
 // import orbitAboutPage from "../assets/icons/orbitAboutPage.png"
-// import smallStar from "../assets/icons/smallStar.svg"
+import smallStar from "../assets/icons/smallStar.svg"
 import { motion } from "framer-motion"
 import { SplitText } from "../components/SplitText"
 import TriggerText from "../components/TriggerText"
@@ -131,7 +131,7 @@ export default () => {
                   animate="visible"
                   exit="hidden"
                   variants={splitTextVariants}>
-                  meggings footruck Shoredith
+                  Kreatywna Agencja Interaktywna
                 </SplitText>
               </h2>
             </div>
@@ -145,9 +145,19 @@ export default () => {
             {/*  </TriggerText>*/}
             {/*</div>*/}
             <TriggerImg delay={1}>
-              <img className="orbit" width="900" src={orbitMain} alt="" />
+              <img
+                data-scroll
+                data-scroll-speed="-2"
+                data-scroll-position="top"
+                className="orbit" width="900" src={orbitMain} alt="" />
             </TriggerImg>
-            {/*<img className="small-star" width="50" src={smallStar} alt="" />*/}
+            <TriggerImg delay={1}>
+              <img
+                data-scroll
+                data-scroll-speed="2"
+                data-scroll-position="top"className="small-star" width="50" src={smallStar} alt="" />
+            </TriggerImg>
+
           </div>
           <div className="scroll-down">
             {/*<img width="100" src={arrowDown} alt="" />*/}
@@ -166,25 +176,29 @@ export default () => {
           <div className="main-about-container">
             <div className="subsec-header">
               <TriggerText threshold=".5" delay=".5">
-                <h5 className="">02.</h5>
+                <h5 className="">01.</h5>
               </TriggerText>
               <TriggerText threshold=".5" delay=".5">
-                <h2 className="subsec-title">About</h2>
+                <h2 className="subsec-title">O nas</h2>
               </TriggerText>
             </div>
             <div className="subsec-body">
               <div className="ss-body-first">
                 <TriggerImg>
-                  <img className="orbit" width="800" src={orbitAbout} alt="" />
+                  <img
+                    data-scroll
+                    data-scroll-speed="-1"
+                    data-scroll-position="top"
+                    className="orbit" width="800" src={orbitAbout} alt="" />
                 </TriggerImg>
               </div>
               <div className="ss-body-second">
                 {/*<p ref={ref} id="headline" className={cn({ "is-reveal": reveal }, "to-trigger")}>Distillery type write brunch wayfarers letter press hammock meggings  bulb forage. Man on the polaroid thunder cats hashtae subway tile. </p>*/}
-                <TriggerText threshold=".5" delay=".5">
+                <TriggerText threshold=".2" delay=".5">
                   <p>
                     {/*<TriggerSplit>*/}
-                    Cool Distillery type write brunch wayfa rers letter press hammock meggings <em> polaroid bulb </em>
-                    for age. Man on the polaroid thunder cats hashtae subway tile.
+                      Jako zespół specjalistów w swojej branży wiemy, że spójny wizerunek i obecność w sieci to  obowiązkaowy
+                    element w dzisiejszym świecie  dla skutecznego rozwoju <em>każdej firmy.</em>
                     {/*</TriggerSplit>*/}
                   </p>
                 </TriggerText>
@@ -198,8 +212,8 @@ export default () => {
                 {/*  full purpose of the Flirty Flowers blog is to encourage and inspire. We*/}
                 {/*  value art, we value insight, and we value opinion.*/}
                 {/*</p>*/}
-                <TriggerText threshold=".5" delay=".5">
-                  <span className="subsec-span">Who we are</span>
+                <TriggerText threshold=".2" delay=".65">
+                  <span className="subsec-span">Kim jesteśmy</span>
                 </TriggerText>
               </div>
             </div>
@@ -214,8 +228,11 @@ export default () => {
                   <h3>Branding</h3>
                 </TriggerText>
                 <TriggerText threshold=".5" delay="1.2">
-                  <p>Pok pok live-edge biodiesel gluten-free, godard knausgaard craft beer wolf succulents chia venmo
-                    edison bulb cornhole. Woke hashtag actually cloud bread listicle letterpress.</p>
+                  <p>
+                    Projektujemy logotypy, wizytówki oraz papier firmowy. Dbamy o to by wszystkie
+                    elementy identyfikacji wizualnej były spójne ze sobą jak również odzwierciedlały branżę lub
+                    sprzedawany produkt.
+                  </p>
                 </TriggerText>
               </div>
               <div className="single-service">
@@ -226,8 +243,13 @@ export default () => {
                   <h3>Web <br /> dev</h3>
                 </TriggerText>
                 <TriggerText threshold=".5" delay="1.2">
-                  <p>Pok pok live-edge biodiesel gluten-free, godard knausgaard craft beer wolf succulents chia venmo
-                    edison bulb cornhole. Woke hashtag actually cloud bread listicle letterpress.</p>
+                  <p>
+                    W naszej agencji interaktywnej świadczymy kompleksowe usługi z zakresu projektowania
+                    responsywnych stron internetowych.
+                    Realizujemy projekty dla klientów korporacyjnych oraz małych firm.
+                    Wszystkie strony www wyposażamy w dedykowany system CMS do samodzielnego zarządzania
+                    treścią.
+                  </p>
                 </TriggerText>
               </div>
               <div className="single-service">
@@ -238,8 +260,11 @@ export default () => {
                   <h3>Digital</h3>
                 </TriggerText>
                 <TriggerText threshold=".5" delay="1.2">
-                  <p>Pok pok live-edge biodiesel gluten-free, godard knausgaard craft beer wolf succulents chia venmo
-                    edison bulb cornhole. Woke hashtag actually cloud bread listicle letterpress.</p>
+                  <p>
+                    Zajmujemy się tworzeniem profesjonalnych sklepów internetowych, dopracowanych pod względem
+                    mechanizmów sprzedażowych. Tworzone przez nas sklepy internetowe oparte są wyłącznie o
+                    sprawdze, a przy tym niezawodne, rozwiązania e-commerce.
+                  </p>
                 </TriggerText>
               </div>
               <div className="single-service">
@@ -250,14 +275,21 @@ export default () => {
                   <h3>Social <br /> media</h3>
                 </TriggerText>
                 <TriggerText threshold=".5" delay="1.2">
-                  <p>Pok pok live-edge biodiesel gluten-free, godard knausgaard craft beer wolf succulents chia venmo
-                    edison bulb cornhole. Woke hashtag actually cloud bread listicle letterpress.</p>
+                  <p>
+                    Mając stronę lub sklep internetowy warto pomyśleć o skutecznej reklamie.
+                    Idealnym rozwiązaniem są kampanie Google Ads, Facebook oraz pozycjonowanie stron
+                    internetowych.
+                  </p>
                 </TriggerText>
               </div>
             </div>
 
             <TriggerImg threshold="0" delay={1}>
-              <img className="service-stickers" width="100%" src={serviceStickers} alt="" />
+              <img
+                // data-scroll
+                // data-scroll-speed="-1"
+                // data-scroll-position="bottom"
+                className="service-stickers" width="100%" src={serviceStickers} alt="" />
             </TriggerImg>
 
           </div>
@@ -274,24 +306,30 @@ export default () => {
           <div className="">
             <div className="subsec-header">
               <TriggerText threshold=".5" delay=".5">
-                <h5 className="">04.</h5>
+                <h5 className="">03.</h5>
               </TriggerText>
               <TriggerText threshold=".5" delay=".5">
-                <h2 className="subsec-title">Process</h2>
+                <h2 className="subsec-title">Proces</h2>
               </TriggerText>
             </div>
             <div className="subsec-body">
               <div className="ss-body-second">
                 <TriggerText threshold=".5" delay=".5">
-                  <p>Distillery type write brunch wayfarers letter press hammock meggings food truck hell o tomy
+                  <p>Distillery type write brunch wayfarers letter press hammock meg gings food truck hell o tom
                     edison <em>on the polaroid. </em> Man osubway tile. </p>
                 </TriggerText>
                 <TriggerText threshold=".5" delay=".5">
-                  <span className="subsec-span">How we do</span>
+                  <span className="subsec-span">Jak działamy</span>
                 </TriggerText>
 
                 <TriggerImg>
-                  <img className="orbit" width="600" src={orbitProcess} alt="" />
+                  <img
+                    data-scroll
+                    data-scroll-speed="-2"
+                    // data-scroll-position="bottom"
+                    // data-scroll-offset="bottom"
+                    // data-scroll-delay="2"
+                    className="orbit" width="600" src={orbitProcess} alt="" />
                 </TriggerImg>
 
               </div>
@@ -299,6 +337,7 @@ export default () => {
                 <div className="single-process">
                   <TriggerText threshold=".5" delay=".5">
                     <h3>Briefieng</h3>
+                    {/*<span>01</span>*/}
                   </TriggerText>
                   <TriggerText threshold=".5" delay=".5">
                     <p>Pok pok live-edge biodiesel gluten-free, dison bulb cornhole. Woke hashtag actually cloud bread
@@ -320,11 +359,13 @@ export default () => {
                 <div className="single-process">
                   <TriggerText threshold=".5" delay=".5">
                     <h3>Design</h3>
+                    {/*<span>02</span>*/}
                   </TriggerText>
                   <TriggerText threshold=".5" delay=".5">
                     <p>Pok pok live-edge biodiesel gluten-free, godard knausgaard chia venmo edison bulb cornhole. Woke
                       hashtag actually cloud bread listicle letterpress.</p>
                   </TriggerText>
+
                   <TriggerText threshold=".5" delay=".5">
                     <div className="learn-more">
                       <a href="/single-project">
@@ -340,11 +381,13 @@ export default () => {
                 <div className="single-process">
                   <TriggerText threshold=".5" delay=".5">
                     <h3>Implementation</h3>
+                    {/*<span>03</span>*/}
                   </TriggerText>
-                  <TriggerText threshold=".5" delay=".5">
+                  <TriggerText threshold=".5" del ay=".5">
                     <p>Pok pok live-edge biodiesel gluten-free, godard knausgaard craft beer wolf succulents chia venmo
                       edison bulb cornhole. Woke hashtag actually cloud bread listicle letterpress.</p>
                   </TriggerText>
+
                   <TriggerText threshold=".5" delay=".5">
                     <div className="learn-more">
                       <a href="/single-project">
@@ -354,6 +397,7 @@ export default () => {
                       </a>
                     </div>
                   </TriggerText>
+
                 </div>
               </div>
             </div>
