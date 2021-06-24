@@ -122,18 +122,38 @@ export default () => {
 
               {/*<AnimatedLetters title="meggings footruck Shoredith" />*/}
 
-              <h2 className="subsec-title">
-                {/*<span>meggings </span>*/}
-                {/*<span>foo truck</span>*/}
-                {/*<span>Shoredith</span>*/}
-                <SplitText
-                  initial={{ y: "100%" }}
-                  animate="visible"
-                  exit="hidden"
-                  variants={splitTextVariants}>
-                  Kreatywna Agencja Interaktywna
-                </SplitText>
-              </h2>
+
+              <TriggerText threshold=".5" delay=".5">
+                <h2 className="subsec-title">
+                  <span
+                    data-scroll
+                    data-scroll-speed="-3"
+                    data-scroll-direction="horizontal"
+                  >Kreatywna</span>
+                  <span
+                    data-scroll
+                    data-scroll-speed="-1"
+                    data-scroll-direction="horizontal">Agencja</span>
+                  <span
+                    data-scroll
+                    data-scroll-speed="5"
+                    data-scroll-direction="horizontal">Interaktywna</span>
+                </h2>
+              </TriggerText>
+
+              {/*<h2 className="subsec-title">*/}
+              {/*  /!*<span>meggings </span>*!/*/}
+              {/*  /!*<span>foo truck</span>*!/*/}
+              {/*  /!*<span>Shoredith</span>*!/*/}
+              {/*  <SplitText*/}
+              {/*    initial={{ y: "100%" }}*/}
+              {/*    animate="visible"*/}
+              {/*    exit="hidden"*/}
+              {/*    variants={splitTextVariants}>*/}
+              {/*    Kreatywna Agencja Interaktywna*/}
+              {/*  </SplitText>*/}
+              {/*</h2>*/}
+
             </div>
             {/*<p className="mt-5">Adaptogen cardigan pop-up mumblecore, wolf scenester jianbing small  typewriter edison bulb pug etsy. Crucifix salvia stumptown fingerstache migas, snackwave mustache authentic ramps everyday carry forage skateboard taiyaki  <em>pop-up tumblr</em>.</p>*/}
 

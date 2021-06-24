@@ -1411,7 +1411,8 @@ SECTIONS ________________________ SECTIONS
     .tag-container {
       span {
         display: inline-block;
-        line-height: 0;
+        line-height: 1;
+        //line-height: 0;
       }
 
       span:nth-of-type(2) {
