@@ -151,7 +151,7 @@ export default () => {
                 data-scroll-position="top"
                 className="orbit" width="900" src={orbitMain} alt="" />
             </TriggerImg>
-            <TriggerImg delay={1}>
+            <TriggerImg delay={1.5}>
               <img
                 data-scroll
                 data-scroll-speed="2"

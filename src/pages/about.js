@@ -23,6 +23,7 @@ import { motion } from "framer-motion"
 import SEO from "../components/SEO"
 import TriggerText from "../components/TriggerText"
 import TriggerImg from "../components/TriggerImg"
+import orbitMain from "../assets/icons/orbitMainView.png"
 
 // ...GatsbyImageSharpFluid
 const About = () => {
@@ -57,7 +58,11 @@ const About = () => {
           <div className="main-container">
             <div className="tag-container">
               <TriggerText threshold="0" delay=".5">
-                <h5 className="">01.</h5>
+                <h5
+                  data-scroll
+                  data-scroll-speed="-2"
+                  data-scroll-position="top"
+                  className="">01.</h5>
               </TriggerText>
               <h2 className="subsec-title">
                 <SplitText
@@ -69,16 +74,23 @@ const About = () => {
                 </SplitText>
               </h2>
             </div>
-            <img
-              data-scroll
-              data-scroll-speed="-2"
-              data-scroll-position="top"
-              className="orbit" width="900" src={orbitAboutPage} alt="" />
-            <img
-              data-scroll
-              data-scroll-speed="-3"
-              data-scroll-position="top"
-              className="small-star" width="50" src={smallStar} alt="" />
+            <TriggerImg delay={1}>
+              <img
+                data-scroll
+                data-scroll-speed="-2"
+                data-scroll-position="top"
+                className="orbit" width="900" src={orbitAboutPage} alt="" />
+            </TriggerImg>
+            <TriggerImg delay={1.5}>
+              <img
+                data-scroll
+                data-scroll-speed="-3"
+                data-scroll-position="top"
+                className="small-star"
+                width="50"
+                src={smallStar} alt="" />
+            </TriggerImg>
+
           </div>
         </section>
 
