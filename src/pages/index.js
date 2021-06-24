@@ -21,6 +21,8 @@ import Footer from "../components/Footer"
 // import ServicesSlider from "../components/ServicesSlider"
 // import orbitAboutPage from "../assets/icons/orbitAboutPage.png"
 import smallStar from "../assets/icons/smallStar.svg"
+import smallLuminaStar from "../assets/icons/smallLuminaStar.svg"
+
 import { motion } from "framer-motion"
 import { SplitText } from "../components/SplitText"
 import TriggerText from "../components/TriggerText"
@@ -181,11 +183,9 @@ export default () => {
           </div>
           <div className="scroll-down">
             {/*<img width="100" src={arrowDown} alt="" />*/}
-            {/*<img width="100" src={arrowDown} alt="" />*/}
-            {/*<img width="70" src={arrowDown} alt="" />*/}
-            <TriggerImg delay={1.2}>
-              <img width="125" src={handDown} alt="" />
-            </TriggerImg>
+            {/*<TriggerImg delay={1.2}>*/}
+            {/*  <img width="100" src={handDown} alt="" />*/}
+            {/*</TriggerImg>*/}
           </div>
         </section>
 
@@ -201,6 +201,12 @@ export default () => {
               <TriggerText threshold=".5" delay=".5">
                 <h2 className="subsec-title">O nas</h2>
               </TriggerText>
+
+                <img
+                  data-scroll
+                  data-scroll-speed="1"
+                  className="small-star" width="35" src={smallLuminaStar} alt="" />
+
             </div>
             <div className="subsec-body">
               <div className="ss-body-first">

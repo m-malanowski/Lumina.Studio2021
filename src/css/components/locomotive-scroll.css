@@ -27,11 +27,15 @@ html.has-scroll-dragging {
     width: 11px;
     height: 100vh;
     transform-origin: center right;
-    transition: transform 0.3s, opacity 0.3s;
+    transition: transform 0.2s, opacity 0.2s;
     opacity: 0;
+    transform: scaleX(.45);
+    mix-blend-mode: difference;
 }
 .c-scrollbar:hover {
-    transform: scaleX(1.45);
+    transform: scaleX(1.2);
+    cursor: url("../../assets/icons/pointerMIckey.png"), pointer;
+
 }
 .c-scrollbar:hover,
 .has-scroll-scrolling .c-scrollbar,
@@ -48,10 +52,19 @@ html.has-scroll-dragging {
     width: 10px;
     border-radius: 10px;
     margin: 2px;
-    cursor: -webkit-grab;
-    cursor: grab;
+    cursor: url("../../assets/icons/pointerMIckey.png"), pointer;
+
+    /*cursor: -webkit-grab;*/
+    /*cursor: grab;*/
 }
 .has-scroll-dragging .c-scrollbar_thumb {
-    cursor: -webkit-grabbing;
-    cursor: grabbing;
+    /*cursor: -webkit-grabbing;*/
+    /*cursor: grabbing;*/
+
+    cursor: url("../../assets/icons/pointerMIckey.png"), pointer;
+
+}
+::-webkit-scrollbar {
+    cursor: url("../../assets/icons/pointerMIckey.png"), pointer;
+
 }

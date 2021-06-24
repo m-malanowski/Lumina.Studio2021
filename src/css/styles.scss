@@ -107,6 +107,7 @@ body {
   background-color: var(--clr-black);
   //overflow: hidden;
   overflow-x: hidden;
+  cursor: url("../assets/icons/pointer.png") 11 11, auto;
 
   //background-color: rgba(0, 0, 0, .98);
   //background-image: url("../assets/mesh-gradient(1).png");
@@ -150,8 +151,10 @@ a {
   color: inherit;
   outline: 0;
   font-family: var(--ff-secondary);
+  &:hover{
+    cursor: url("../assets/icons/pointerMIckey.png"), pointer;
+  }
 }
-
 
 h1,
 h2,
@@ -236,7 +239,7 @@ em {
 }
 
 .orbit {
-  filter: blur(2px);
+  //filter: blur(1px);
 }
 .small-star{
   filter: blur(2px);
@@ -434,6 +437,12 @@ nav {
   }
 }
 .btn-wrapper{
+  button{
+    &.outline {
+      font-size: 14px !important;
+      text-transform: uppercase;
+    }
+  }
   button:hover {
     color: var(--clr-black);
     background: var(--clr-secondary);
@@ -460,7 +469,8 @@ nav {
 .navbar-logo {
   color: var(--clr-white);
   text-transform: uppercase;
-  font-size: calc(25px + (30 - 25) * ((100vw - 320px) / (1900 - 320)));
+  //font-size: calc(25px + (30 - 25) * ((100vw - 320px) / (1900 - 320)));
+  font-size: 25px;
 }
 
 .nav-center {
@@ -491,6 +501,9 @@ nav {
   z-index: 1001;
   @include for-desktop-up {
     //display: none;
+  }
+  &:hover{
+    cursor: url("../assets/icons/pointerMIckey.png"), pointer;
   }
 }
 
@@ -629,12 +642,21 @@ Pages
 .subsec-header {
   display: flex;
   justify-content: space-between;
+  position: relative;
 
   h5 {
     font-family: var(--ff-primary);
     font-style: italic;
     font-size: calc(25px + (55 - 25) * ((100vw - 320px) / (1900 - 320)));
   }
+
+  .small-star {
+    position: absolute;
+    top: -50%;
+    right: -5%;
+  }
+
+
 }
 
 //#headline{
@@ -1713,14 +1735,14 @@ SECTIONS ________________________ SECTIONS
   .scroll-down {
     position: absolute;
     bottom: 0;
-    right: 0;
+    left: 25%;
     //img {
     //  padding-right: 1rem;
     //}
-    img {
-      -webkit-transform: scaleX(-1);
-      transform: scaleX(-1);
-    }
+    //img {
+    //  -webkit-transform: scaleX(-1);
+    //  transform: scaleX(-1);
+    //}
   }
 }
 
@@ -1739,7 +1761,6 @@ SECTIONS ________________________ SECTIONS
 
 .section-main-about {
   margin-top: 15rem;
-
   .subsec-body {
     margin-left: 5rem;
   }
@@ -1749,6 +1770,7 @@ SECTIONS ________________________ SECTIONS
     top: -40%;
     right: -30%;
   }
+
 }
 
 .main-about-services {
@@ -2007,7 +2029,7 @@ SECTIONS ________________________ SECTIONS
     }
 
     .thumb-up {
-
+      stroke-width: 1px !important;
     }
 
     .globe {
@@ -2450,7 +2472,9 @@ Outline  Button
 .button {
   cursor: pointer;
   outline: none;
-
+  &:hover{
+    cursor: url("../assets/icons/pointerMIckey.png"), pointer;
+  }
   &.outline {
     position: relative;
     z-index: 3;
@@ -2523,10 +2547,11 @@ Nav  Icon
 */
 
 .nav-icon {
+
   z-index: 10000 !important;
   //margin: 1em;
   margin-left: 1em;
-  width: 40px;
+  width: 45px;
 
   &:after,
   &:before,
@@ -2535,8 +2560,8 @@ Nav  Icon
     border-radius: 3px;
     content: "";
     display: block;
-    height: 2px;
-    margin: 10px 0;
+    height: 1px;
+    margin: 11px 0;
     transition: all 0.2s ease-in-out;
     mix-blend-mode: difference;
   }
