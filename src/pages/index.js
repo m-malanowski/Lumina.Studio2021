@@ -212,7 +212,7 @@ export default () => {
                 {/*  full purpose of the Flirty Flowers blog is to encourage and inspire. We*/}
                 {/*  value art, we value insight, and we value opinion.*/}
                 {/*</p>*/}
-                <TriggerText threshold=".2" delay=".65">
+                <TriggerText threshold=".2" delay=".35">
                   <span className="subsec-span">Kim jesteśmy</span>
                 </TriggerText>
               </div>

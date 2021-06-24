@@ -1051,7 +1051,7 @@ Contact Page
 ===============
 */
 .contact-page {
-  padding-top: 15rem;
+  padding-top: 10rem;
 }
 
 .section-contact-container {
@@ -1250,6 +1250,9 @@ Sidebar
 Footer
 ===============
 */
+fotoer.contact-page{
+  height: 100vh;
+}
 footer {
   padding: 2.5rem 0 2.5rem 0;
 
@@ -1268,7 +1271,7 @@ footer {
   position: relative;
   display: flex;
   justify-content: space-between;
-  padding-bottom: 10rem;
+  padding-bottom: 5rem;
   .footer-top-right {
     h5 {
       font-family: var(--ff-primary);

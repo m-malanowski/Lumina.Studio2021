@@ -7,7 +7,7 @@ import TriggerImg from "../components/TriggerImg"
 const Footer = () => {
   return (
     <>
-      <footer className="container-fluid contact-page">
+      <footer className="container-fluid contact-page ">
         <div className="footer-top">
           <div>
             {/*<h5><em>Nawiąż</em> kontakt</h5>*/}

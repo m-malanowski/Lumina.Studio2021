@@ -22,6 +22,7 @@ import SectionMarquee from "../components/SectionMarquee"
 import { motion } from "framer-motion"
 import SEO from "../components/SEO"
 import TriggerText from "../components/TriggerText"
+import TriggerImg from "../components/TriggerImg"
 
 // ...GatsbyImageSharpFluid
 const About = () => {
@@ -55,7 +56,9 @@ const About = () => {
         <section className="section-about-container">
           <div className="main-container">
             <div className="tag-container">
-              <h5 className="">01.</h5>
+              <TriggerText threshold="0" delay=".5">
+                <h5 className="">01.</h5>
+              </TriggerText>
               <h2 className="subsec-title">
                 <SplitText
                   initial={{ y: "100%" }}
@@ -90,7 +93,7 @@ const About = () => {
                     on the polaroid thundercats hashtae subway tile. </p>
                 </TriggerText>
 
-                <TriggerText threshold="0" delay=".65">
+                <TriggerText threshold="0" delay=".35">
                   <span className="subsec-span">Kim jesteśmy</span>
                 </TriggerText>
               </div>
@@ -329,10 +332,13 @@ const About = () => {
 
         </section>
 
-        <div>
-          <img className="service-stickers" width="100%" src={serviceStickers} alt="" />
-          {/*<img className="service-stickers" width="100%" src={memoji} alt="" />*/}
-        </div>
+        <TriggerImg threshold="0" delay={1}>
+          <img
+            // data-scroll
+            // data-scroll-speed="-1"
+            // data-scroll-position="bottom"
+            className="service-stickers" width="100%" src={serviceStickers} alt="" />
+        </TriggerImg>
 
         <section className="about-page-process">
           <div className="subsec-header">

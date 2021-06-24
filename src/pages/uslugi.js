@@ -12,6 +12,7 @@ import Worldwide from "../components/Worldwide"
 import arrow from "../assets/icons/right-arrow.svg"
 import thumbUp from "../assets/icons/thumbUp.svg"
 import SectionMarquee from "../components/SectionMarquee"
+import TriggerText from "../components/TriggerText"
 // ...GatsbyImageSharpFluid
 const Services = () => {
   return (
@@ -33,14 +34,23 @@ const Services = () => {
           <section className="section-main-works">
             <div>
               <div className="subsec-header">
-                <h5 className="">01.</h5>
-                <h2 className="subsec-title">Works</h2>
+                <TriggerText threshold=".5" delay=".1">
+                  <h5 className="">01.</h5>
+                </TriggerText>
+                <TriggerText threshold=".5" delay=".1">
+                  <h2 className="subsec-title">Usługi</h2>
+                </TriggerText>
               </div>
               <div className="subsec-body">
                 {/*<div className="ss-body-first"/>*/}
                 <div className="ss-body-second">
-                  <p>Iceland hell of XOXO post-ironic, next level skateboard scenester cornhole tacos distillery. <em>Slow-carb tofu wolf, ennui gastropub four</em> dollar toast direct trade narwhal post-ironic blog tilde fanny pack disrupt. Fingerstache you probably haven't heard of them synth 90's.</p>
-                  <span>Things we made</span>
+                  <TriggerText threshold="0" delay=".6">
+                    <p>Iceland hell of XOXO post-ironic, next level skateboard scenester cornhole tacos distillery. <em>Slow-carb tofu wolf, ennui gastropub four</em> dollar toast direct trade narwhal post-ironic blog tilde fanny pack disrupt. Fingerstache you probably haven't heard of them synth 90's.</p>
+                  </TriggerText>
+                  <TriggerText threshold="0" delay=".35">
+                    <span className="subsec-span">Nasze usługi</span>
+                  </TriggerText>
+
                 </div>
               </div>
               <div className="main-works-container">
