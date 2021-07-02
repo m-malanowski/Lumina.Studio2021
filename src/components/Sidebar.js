@@ -51,6 +51,10 @@ const Sidebar = ({toggleSideBar, isOpen}) => {
 
   return (
     <div ref={el => (menuLayer = el)} className='hamburger-menu'>
+
+
+
+
       <div
         ref={el => (reveal1 = el)}
         className='menu-secondary-background-color'></div>
@@ -61,17 +65,10 @@ const Sidebar = ({toggleSideBar, isOpen}) => {
         <div className='container'>
           <div className='wrapper'>
             <div className='menu-links'>
+
               {/*<Links styleClass="sidebar-links"/>*/}
               <nav>
                 <ul>
-                  {/*<li>*/}
-                  {/*  <Link*/}
-                  {/*    to='/about'*/}
-                  {/*    className={"social-link link link--kale link--kale-big"}*/}
-                  {/*  >*/}
-                  {/*    Nasze studio*/}
-                  {/*  </Link>*/}
-                  {/*</li>*/}
                   <li>
                     <Link
                       onMouseEnter={e => handleHover(e)}
@@ -81,9 +78,10 @@ const Sidebar = ({toggleSideBar, isOpen}) => {
                       to='/about'
                       className={"social-link link link--kale"}
                     >
-                      Nasze studio
+                       Studio
                     </Link>
                   </li>
+
                   <li>
                     <Link
                       onMouseEnter={e => handleHover(e)}
@@ -92,6 +90,17 @@ const Sidebar = ({toggleSideBar, isOpen}) => {
                       ref={el => (line2.current = el)}
                       to='/uslugi'>
                       Usługi
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      onMouseEnter={e => handleHover(e)}
+                      onMouseOut={e => handleHoverExit(e)}
+                      onClick={toggleSideBar}
+                      to='/portfolio'
+                      className={"social-link link link--kale"}
+                    >
+                      Prace
                     </Link>
                   </li>
                   <li>
@@ -117,12 +126,11 @@ const Sidebar = ({toggleSideBar, isOpen}) => {
                 </ul>
               </nav>
               <div ref={el => (info = el)} className='info'>
-                <h3>Our Promise</h3>
+                <h3>Nasza misja</h3>
                 <p>
-                  The passage experienced a surge in popularity during the 1960s
-                  when Letraset used it on their dry-transfer sheets, and again
-                  during the 90s as desktop publishers bundled the text with
-                  their software.
+                  Na czas naszej współpracy jesteśmy Twoim zewnętrznym działem marketingu. Proponujemy
+                  współpracę w oparciu o zaufanie. Stawiamy na wzajemne zaufanie i wsparcie zarówno podczas
+                  jednorazowych zleceń, jak i długofalowej współpracy.
                 </p>
               </div>
 

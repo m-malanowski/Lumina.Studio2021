@@ -9,16 +9,18 @@ import {motion, useTransform, useViewportScroll} from "framer-motion"
 import orbitMain from "../assets/icons/orbitMainView.png"
 const Worldwide = () => {
 
-  const { scrollYProgress } = useViewportScroll()
-  const scaleAnim = useTransform(scrollYProgress, [0, 0.5, 1], [ .1, .2, 120])
-
-  const text0 = () => {
-    console.log('elo')
-  }
+  // const { scrollYProgress } = useViewportScroll()
+  // const scaleAnim = useTransform(scrollYProgress, [0, 0.5, 1], [ .1, .2, 120])
+  //
+  //
+  // const text0 = () => {
+  //   console.log(scrollYProgress)
+  // }
+  //
+  // text0()
 
   return (
     <section
-      data-scroll data-scroll-call="text0"
       className="section-worldwide"
     >
       {/*<div className="bg-circles-section">*/}

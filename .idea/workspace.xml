@@ -2,12 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ee694d7a-2567-4d80-bb6d-10629fa07e8c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assets/icons/smallLuminaStar.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ProjectsSubsectionOld.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/useMousePosition.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/fonts/New-York Italic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/icons/orbitAboutPage.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/icons/orbitAboutPage.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ArticlesSlider.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ArticlesSlider.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ProjectsSubsection.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ProjectsSubsection.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Sidebar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/TriggerText.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TriggerText.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Worldwide.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Worldwide.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/components/hamburger.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/components/hamburger.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/css/components/locomotive-scroll.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/components/locomotive-scroll.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/css/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/styles.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/about.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/about.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/blog.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/blog.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/contact.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/contact.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/portfolio.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/portfolio.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/single-project.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/single-project.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/uslugi.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/uslugi.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/theme.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/theme.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +111,20 @@
       <workItem from="1624396440318" duration="8339000" />
       <workItem from="1624435924972" duration="4510000" />
       <workItem from="1624543022833" duration="14949000" />
-      <workItem from="1624563067946" duration="6463000" />
+      <workItem from="1624563067946" duration="6605000" />
+      <workItem from="1624608622311" duration="5102000" />
+      <workItem from="1624631445616" duration="1989000" />
+      <workItem from="1624700514052" duration="439000" />
+      <workItem from="1624702893235" duration="6634000" />
+      <workItem from="1624713430246" duration="19995000" />
+      <workItem from="1624788051717" duration="1744000" />
+      <workItem from="1624803926430" duration="15299000" />
+      <workItem from="1624862239349" duration="5242000" />
+      <workItem from="1624870668890" duration="2611000" />
+      <workItem from="1625082180080" duration="637000" />
+      <workItem from="1625160027388" duration="24917000" />
+      <workItem from="1625209535275" duration="8000" />
+      <workItem from="1625217863279" duration="457000" />
     </task>
     <servers />
   </component>
@@ -110,5 +142,16 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/components/Variants.js</url>
+          <line>30</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

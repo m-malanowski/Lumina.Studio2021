@@ -9,6 +9,7 @@ import carra from "../assets/imgs/carra.jpg"
 import drewstal from "../assets/imgs/drewstal.jpg"
 import adwokat from "../assets/imgs/adwokat.jpg"
 import Worldwide from "../components/Worldwide"
+import SectionMarquee from "../components/SectionMarquee"
 
 // ...GatsbyImageSharpFluid
 const Portfolio = () => {
@@ -67,13 +68,10 @@ const Portfolio = () => {
             </div>
         </section>
 
-        <section className="section-marquee break-out">
-          <div className="marquee-container">
-            <div className="first-tape"><span> <span>Together</span> <span>Together</span> <span>Together</span> <span>Together</span> <span>Together</span> </span></div>
-            <div className="second-tape"><span> <span>Work</span> <span>Work</span> <span>Work</span> <span>Work</span> <span>Work</span><span>Work</span><span>Work</span> </span></div>
-            <div className="third-tape"><span> <span>Lumina</span>    <span>Lumina</span> <span>Lumina</span> <span>Lumina</span>  <span>Lumina</span>   </span></div>
-          </div>
-        </section>
+
+        <SectionMarquee firstTape={false} secondTape={false} thirdTape={false} firstTapeScroll={true} secondTapeScroll={true}
+                        thirdTapeScroll={true} dataScrollPosition="bottom" dataScrollSpeed="2"/>
+
         <Worldwide/>
       </main>
       <LowerFooter/>

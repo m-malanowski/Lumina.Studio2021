@@ -14,6 +14,7 @@ import ServicesSlider from "../components/ServicesSlider"
 import arrow from "../assets/icons/right-arrow.svg"
 import orbitMain from "../assets/icons/orbitMainView.png"
 import Worldwide from "../components/Worldwide"
+import SectionMarquee from "../components/SectionMarquee"
 // ...GatsbyImageSharpFluid
 
 const Blog = () => {
@@ -103,13 +104,9 @@ const Blog = () => {
           </section>
         </div>
 
-        <section className="section-marquee break-out">
-          <div className="marquee-container">
-            <div className="first-tape"><span> <span>Together</span> <span>Together</span> <span>Together</span> <span>Together</span> <span>Together</span> </span></div>
-            <div className="second-tape"><span> <span>Work</span> <span>Work</span> <span>Work</span> <span>Work</span> <span>Work</span><span>Work</span><span>Work</span> </span></div>
-            <div className="third-tape"><span> <span>Lumina</span>  <span>Lumina</span>   <span>Lumina</span> <span>Lumina</span> <span>Lumina</span>  <span>Lumina</span>   </span></div>
-          </div>
-        </section>
+
+        <SectionMarquee firstTape={false} secondTape={false} thirdTape={false} firstTapeScroll={true} secondTapeScroll={true}
+                        thirdTapeScroll={true} dataScrollPosition="bottom" dataScrollSpeed="2"/>
 
 
       </main>

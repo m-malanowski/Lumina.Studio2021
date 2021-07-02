@@ -24,6 +24,9 @@ import SEO from "../components/SEO"
 import TriggerText from "../components/TriggerText"
 import TriggerImg from "../components/TriggerImg"
 import orbitMain from "../assets/icons/orbitMainView.png"
+import ArticlesSlider from "../components/ArticlesSlider"
+import orbitService from "../assets/icons/orbitServicesPage.svg"
+import TriggerLine from "../components/TriggerLine"
 
 // ...GatsbyImageSharpFluid
 const About = () => {
@@ -56,40 +59,58 @@ const About = () => {
 
         <section className="section-about-container">
           <div className="main-container">
-            <div className="tag-container">
-              <TriggerText threshold="0" delay=".5">
-                <h5
-                  data-scroll
-                  data-scroll-speed="-2"
-                  data-scroll-position="top"
-                  className="">01.</h5>
+
+              <TriggerText threshold=".5" delay=".2">
+                <h2>Step</h2>
               </TriggerText>
-              <h2 className="subsec-title">
-                <SplitText
-                  initial={{ y: "100%" }}
-                  animate="visible"
-                  exit="hidden"
-                  variants={splitTextVariants}>
-                  meggings footruck Shoredith
-                </SplitText>
-              </h2>
-            </div>
+
+              <TriggerText threshold=".5" delay=".25">
+                <span>into</span>
+                <h2>Van</h2>
+              </TriggerText>
+
+              <TriggerText threshold=".5" delay=".3">
+                <h2>Gogh's</h2>
+              </TriggerText>
+
+            <TriggerText threshold=".5" delay=".35">
+              <h2>World</h2>
+            </TriggerText>
+
+
+            {/*  <TriggerText threshold="0" delay=".5">*/}
+            {/*    <h5*/}
+            {/*      data-scroll*/}
+            {/*      data-scroll-speed="-2"*/}
+            {/*      data-scroll-position="top"*/}
+            {/*      className="">01.</h5>*/}
+            {/*  </TriggerText>*/}
+            {/*  <h2 className="subsec-title">*/}
+            {/*    <SplitText*/}
+            {/*      initial={{ y: "100%" }}*/}
+            {/*      animate="visible"*/}
+            {/*      exit="hidden"*/}
+            {/*      variants={splitTextVariants}>*/}
+            {/*      meggings footruck Shoredith*/}
+            {/*    </SplitText>*/}
+            {/*  </h2>*/}
+
             <TriggerImg delay={1}>
               <img
                 data-scroll
                 data-scroll-speed="-2"
                 data-scroll-position="top"
-                className="orbit" width="900" src={orbitAboutPage} alt="" />
+                className="orbit-about" width="60%" src={orbitAboutPage} alt="" />
             </TriggerImg>
-            <TriggerImg delay={1.5}>
-              <img
-                data-scroll
-                data-scroll-speed="-3"
-                data-scroll-position="top"
-                className="small-star"
-                width="50"
-                src={smallStar} alt="" />
-            </TriggerImg>
+            {/*<TriggerImg delay={1.5}>*/}
+            {/*  <img*/}
+            {/*    data-scroll*/}
+            {/*    data-scroll-speed="-3"*/}
+            {/*    data-scroll-position="top"*/}
+            {/*    className="small-star"*/}
+            {/*    width="50"*/}
+            {/*    src={smallStar} alt="" />*/}
+            {/*</TriggerImg>*/}
 
           </div>
         </section>
@@ -115,8 +136,13 @@ const About = () => {
 
         <section className="about-page-process">
           <div className="subsec-header">
-            <h5 className="">02.</h5>
-            <h2 className="subsec-title">Our <br /> Vision</h2>
+
+            <TriggerText threshold=".5" delay=".35">
+              <h5 className="">01.</h5>
+            </TriggerText>
+            <TriggerText threshold=".5" delay=".45">
+              <h2 className="subsec-title">Our <br /> Vision</h2>
+            </TriggerText>
           </div>
 
           <div className="about-process-single mt-5">
@@ -155,7 +181,6 @@ const About = () => {
               </div>
             </motion.div>
           </div>
-
 
           <div className="about-process-single">
             <div className="about-process-single-top">
@@ -344,6 +369,280 @@ const About = () => {
 
         </section>
 
+
+        {/*<section className="section-main-about">*/}
+        {/*  <div className="main-about-container">*/}
+        {/*    <div className="subsec-header">*/}
+        {/*      <TriggerText threshold=".5" delay=".5">*/}
+        {/*        <h5 className="">01.</h5>*/}
+        {/*      </TriggerText>*/}
+        {/*      <TriggerText threshold=".5" delay=".5">*/}
+        {/*        <h2 className="subsec-title">Proces</h2>*/}
+        {/*      </TriggerText>*/}
+        {/*      <img*/}
+        {/*        data-scroll*/}
+        {/*        data-scroll-speed="1"*/}
+        {/*        className="small-star" width="35" src={smallLuminaStar} alt="" />*/}
+        {/*    </div>*/}
+        {/*    <div className="subsec-body">*/}
+        {/*      <div className="ss-body-first">*/}
+        {/*        <TriggerImg>*/}
+        {/*          <img*/}
+        {/*            data-scroll*/}
+        {/*            data-scroll-speed="-1"*/}
+        {/*            data-scroll-position="top"*/}
+        {/*            className="orbit" width="800" src={orbitAbout} alt="" />*/}
+        {/*        </TriggerImg>*/}
+        {/*      </div>*/}
+        {/*      <div className="ss-body-second">*/}
+        {/*        <TriggerText threshold=".2" delay=".5">*/}
+        {/*          <p>*/}
+        {/*            Jako zespół specjalistów w swojej branży wiemy, że spójny wizerunek i obecność w sieci to  obowiązkaowy*/}
+        {/*            element w dzisiejszym świecie  dla skutecznego rozwoju każdej firmy.*/}
+        {/*          </p>*/}
+        {/*        </TriggerText>*/}
+
+        {/*        <TriggerText threshold=".2" delay=".35">*/}
+        {/*          <span className="subsec-span">Jak działamy</span>*/}
+        {/*        </TriggerText>*/}
+        {/*      </div>*/}
+        {/*    </div>*/}
+
+        {/*    <div className="main-about-services">*/}
+        {/*      <div className="single-service">*/}
+        {/*        <TriggerLine threshold=".5" delay=".5">*/}
+        {/*          <hr className="animated" />*/}
+        {/*        </TriggerLine>*/}
+
+        {/*        <TriggerText threshold=".5" delay="1.0">*/}
+        {/*          <h3>Branding</h3>*/}
+        {/*        </TriggerText>*/}
+        {/*        <TriggerText threshold=".5" delay="1.2">*/}
+        {/*          <p>*/}
+        {/*            Projektujemy logotypy, wizytówki oraz papier firmowy. Dbamy o to by wszystkie*/}
+        {/*            elementy identyfikacji wizualnej były spójne ze sobą jak również odzwierciedlały branżę lub*/}
+        {/*            sprzedawany produkt.*/}
+        {/*          </p>*/}
+        {/*        </TriggerText>*/}
+        {/*      </div>*/}
+        {/*      <div className="single-service">*/}
+        {/*        <TriggerLine threshold=".5" delay=".5">*/}
+        {/*          <hr className="animated" />*/}
+        {/*        </TriggerLine>*/}
+        {/*        <TriggerText threshold=".5" delay="1.0">*/}
+        {/*          <h3>Web <br /> dev</h3>*/}
+        {/*        </TriggerText>*/}
+        {/*        <TriggerText threshold=".5" delay="1.2">*/}
+        {/*          <p>*/}
+        {/*            W naszej agencji interaktywnej świadczymy kompleksowe usługi z zakresu projektowania*/}
+        {/*            responsywnych stron internetowych.*/}
+        {/*            Realizujemy projekty dla klientów korporacyjnych oraz małych firm.*/}
+        {/*            Wszystkie strony www wyposażamy w dedykowany system CMS do samodzielnego zarządzania*/}
+        {/*            treścią.*/}
+        {/*          </p>*/}
+        {/*        </TriggerText>*/}
+        {/*      </div>*/}
+        {/*      <div className="single-service">*/}
+        {/*        <TriggerLine threshold=".5" delay=".5">*/}
+        {/*          <hr className="animated" />*/}
+        {/*        </TriggerLine>*/}
+        {/*        <TriggerText threshold=".5" delay="1.0">*/}
+        {/*          <h3>Digital</h3>*/}
+        {/*        </TriggerText>*/}
+        {/*        <TriggerText threshold=".5" delay="1.2">*/}
+        {/*          <p>*/}
+        {/*            Zajmujemy się tworzeniem profesjonalnych sklepów internetowych, dopracowanych pod względem*/}
+        {/*            mechanizmów sprzedażowych. Tworzone przez nas sklepy internetowe oparte są wyłącznie o*/}
+        {/*            sprawdze, a przy tym niezawodne, rozwiązania e-commerce.*/}
+        {/*          </p>*/}
+        {/*        </TriggerText>*/}
+        {/*      </div>*/}
+        {/*      <div className="single-service">*/}
+        {/*        <TriggerLine threshold=".5" delay=".5">*/}
+        {/*          <hr className="animated" />*/}
+        {/*        </TriggerLine>*/}
+        {/*        <TriggerText threshold=".5" delay="1.0">*/}
+        {/*          <h3>Social <br /> media</h3>*/}
+        {/*        </TriggerText>*/}
+        {/*        <TriggerText threshold=".5" delay="1.2">*/}
+        {/*          <p>*/}
+        {/*            Mając stronę lub sklep internetowy warto pomyśleć o skutecznej reklamie.*/}
+        {/*            Idealnym rozwiązaniem są kampanie Google Ads, Facebook oraz pozycjonowanie stron*/}
+        {/*            internetowych.*/}
+        {/*          </p>*/}
+        {/*        </TriggerText>*/}
+        {/*      </div>*/}
+        {/*    </div>*/}
+        {/*  </div>*/}
+        {/*</section>*/}
+
+
+
+
+        {/*<TriggerImg threshold="0" delay={1}>*/}
+        {/*  <img*/}
+        {/*    // data-scroll*/}
+        {/*    // data-scroll-speed="-1"*/}
+        {/*    // data-scroll-position="bottom"*/}
+        {/*    className="service-stickers" width="100%" src={serviceStickers} alt="" />*/}
+        {/*</TriggerImg>*/}
+
+
+
+            {/*<TriggerImg threshold="0" delay={1}>*/}
+            {/*  <img*/}
+            {/*    data-scroll*/}
+            {/*    data-scroll-speed="-1"*/}
+            {/*    // data-scroll-position="bottom"*/}
+            {/*    className="service-stickers" width="100%" src={serviceStickers} alt="" />*/}
+            {/*</TriggerImg>*/}
+
+
+
+
+        {/*<section className="section-about-container">*/}
+        {/*  <div className="main-container">*/}
+
+        {/*    <TriggerText threshold=".5" delay=".2">*/}
+        {/*      <h2>Step</h2>*/}
+        {/*    </TriggerText>*/}
+
+        {/*    <TriggerText threshold=".5" delay=".25">*/}
+        {/*      <span>into</span>*/}
+        {/*      <h2>Van</h2>*/}
+        {/*    </TriggerText>*/}
+
+        {/*    <TriggerText threshold=".5" delay=".3">*/}
+        {/*      <h2>Gogh's</h2>*/}
+        {/*    </TriggerText>*/}
+
+        {/*    <TriggerText threshold=".5" delay=".35">*/}
+        {/*      <h2>World</h2>*/}
+        {/*    </TriggerText>*/}
+
+        {/*  </div>*/}
+        {/*</section>*/}
+
+        {/*<TriggerImg threshold="0" delay={1}>*/}
+        {/*  <img*/}
+        {/*    // data-scroll*/}
+        {/*    // data-scroll-speed="-1"*/}
+        {/*    // data-scroll-position="bottom"*/}
+        {/*    className="service-stickers" width="100%" src={serviceStickers} alt="" />*/}
+        {/*</TriggerImg>*/}
+
+        {/*<section className="about-page-process">*/}
+        {/*  <div className="subsec-header">*/}
+
+        {/*    <TriggerText threshold=".5" delay=".35">*/}
+        {/*      <h5 className="">02.</h5>*/}
+        {/*    </TriggerText>*/}
+        {/*    <TriggerText threshold=".5" delay=".45">*/}
+        {/*      <h2 className="subsec-title">Nasze <br /> Usługi</h2>*/}
+        {/*    </TriggerText>*/}
+        {/*  </div>*/}
+
+        {/*  <div className="about-page-services">*/}
+        {/*    <div className="about-single">*/}
+        {/*      <div className="about-single-left">*/}
+        {/*        <img className="small-star" width="150" src={aboutServiceStar1} alt="" />*/}
+        {/*      </div>*/}
+        {/*      <div className="about-single-right">*/}
+        {/*        <div>*/}
+        {/*          <span>01.</span>*/}
+        {/*          <h3>Web dev</h3>*/}
+        {/*        </div>*/}
+        {/*        <p>Pok pok live-edge biodiesel gluten-free, godard knausgaard craft beer wolf succulents chia venmo*/}
+        {/*          edison bulb cornhole. Woke hashtag actually cloud bread listicle letterpress. Dreamcatcher celiac*/}
+        {/*          stumptown narwhal tilde. Flannel four dollar toast bitters intelligentsia pop-up copper mug venmo*/}
+        {/*          kickstarter XOXO. Skateboard kombucha waistcoat. </p>*/}
+        {/*      </div>*/}
+        {/*    </div>*/}
+
+        {/*    <div className="about-single">*/}
+        {/*      <div className="about-single-left">*/}
+        {/*        <img className="small-star" width="150" src={aboutServiceStar2} alt="" />*/}
+        {/*      </div>*/}
+        {/*      <div className="about-single-right">*/}
+        {/*        <div>*/}
+        {/*          <span>02.</span>*/}
+        {/*          <h3>Web dev</h3>*/}
+        {/*        </div>*/}
+        {/*        <p>Pok pok live-edge biodiesel gluten-free, godard knausgaard craft beer wolf succulents chia venmo*/}
+        {/*          edison bulb cornhole. Woke hashtag actually cloud bread listicle letterpress. Dreamcatcher celiac*/}
+        {/*          stumptown narwhal tilde. Flannel four dollar toast bitters intelligentsia pop-up copper mug venmo*/}
+        {/*          kickstarter XOXO. Skateboard kombucha waistcoat. </p>*/}
+        {/*      </div>*/}
+        {/*    </div>*/}
+
+        {/*    <div className="about-single">*/}
+        {/*      <div className="about-single-left">*/}
+        {/*        <img className="small-star" width="150" src={aboutServiceStar1} alt="" />*/}
+        {/*      </div>*/}
+        {/*      <div className="about-single-right">*/}
+        {/*        <div>*/}
+        {/*          <span>03.</span>*/}
+        {/*          <h3>Web dev</h3>*/}
+        {/*        </div>*/}
+        {/*        <p>Pok pok live-edge biodiesel gluten-free, godard knausgaard craft beer wolf succulents chia venmo*/}
+        {/*          edison bulb cornhole. Woke hashtag actually cloud bread listicle letterpress. Dreamcatcher celiac*/}
+        {/*          stumptown narwhal tilde. Flannel four dollar toast bitters intelligentsia pop-up copper mug venmo*/}
+        {/*          kickstarter XOXO. Skateboard kombucha waistcoat. </p>*/}
+        {/*      </div>*/}
+        {/*    </div>*/}
+
+        {/*    <div className="about-single">*/}
+        {/*      <div className="about-single-left">*/}
+        {/*        <img className="small-star" width="150" src={aboutServiceStar2} alt="" />*/}
+        {/*      </div>*/}
+        {/*      <div className="about-single-right">*/}
+        {/*        <div>*/}
+        {/*          <span>04.</span>*/}
+        {/*          <h3>Web dev</h3>*/}
+        {/*        </div>*/}
+        {/*        <p>Pok pok live-edge biodiesel gluten-free, godard knausgaard craft beer wolf succulents chia venmo*/}
+        {/*          edison bulb cornhole. Woke hashtag actually cloud bread listicle letterpress. Dreamcatcher celiac*/}
+        {/*          stumptown narwhal tilde. Flannel four dollar toast bitters intelligentsia pop-up copper mug venmo*/}
+        {/*          kickstarter XOXO. Skateboard kombucha waistcoat. </p>*/}
+        {/*      </div>*/}
+        {/*    </div>*/}
+
+        {/*    <div className="about-single">*/}
+        {/*      <div className="about-single-left">*/}
+        {/*        <img className="small-star" width="150" src={aboutServiceStar1} alt="" />*/}
+        {/*      </div>*/}
+        {/*      <div className="about-single-right">*/}
+        {/*        <div>*/}
+        {/*          <span>01.</span>*/}
+        {/*          <h3>Web dev</h3>*/}
+        {/*        </div>*/}
+        {/*        <p>Pok pok live-edge biodiesel gluten-free, godard knausgaard craft beer wolf succulents chia venmo*/}
+        {/*          edison bulb cornhole. Woke hashtag actually cloud bread listicle letterpress. Dreamcatcher celiac*/}
+        {/*          stumptown narwhal tilde. Flannel four dollar toast bitters intelligentsia pop-up copper mug venmo*/}
+        {/*          kickstarter XOXO. Skateboard kombucha waistcoat. </p>*/}
+        {/*      </div>*/}
+        {/*    </div>*/}
+
+        {/*    <div className="about-single">*/}
+        {/*      <div className="about-single-left">*/}
+        {/*        <img className="small-star" width="150" src={aboutServiceStar1} alt="" />*/}
+        {/*      </div>*/}
+        {/*      <div className="about-single-right">*/}
+        {/*        <div>*/}
+        {/*          <span>01.</span>*/}
+        {/*          <h3>Web dev</h3>*/}
+        {/*        </div>*/}
+        {/*        <p>Pok pok live-edge biodiesel gluten-free, godard knausgaard craft beer wolf succulents chia venmo*/}
+        {/*          edison bulb cornhole. Woke hashtag actually cloud bread listicle letterpress. Dreamcatcher celiac*/}
+        {/*          stumptown narwhal tilde. Flannel four dollar toast bitters intelligentsia pop-up copper mug venmo*/}
+        {/*          kickstarter XOXO. Skateboard kombucha waistcoat. </p>*/}
+        {/*      </div>*/}
+        {/*    </div>*/}
+        {/*  </div>*/}
+        {/*</section>*/}
+
+
+
         <TriggerImg threshold="0" delay={1}>
           <img
             // data-scroll
@@ -352,123 +651,161 @@ const About = () => {
             className="service-stickers" width="100%" src={serviceStickers} alt="" />
         </TriggerImg>
 
-        <section className="about-page-process">
-          <div className="subsec-header">
-            <h5 className="">03.</h5>
-            <h2 className="subsec-title">Our <br /> services</h2>
-          </div>
 
-          <div className="about-page-services">
-            <div className="about-single">
-              <div className="about-single-left">
-                <img className="small-star" width="150" src={aboutServiceStar1} alt="" />
-              </div>
-              <div className="about-single-right">
-                <div>
-                  <span>01.</span>
-                  <h3>Web dev</h3>
-                </div>
-                <p>Pok pok live-edge biodiesel gluten-free, godard knausgaard craft beer wolf succulents chia venmo
-                  edison bulb cornhole. Woke hashtag actually cloud bread listicle letterpress. Dreamcatcher celiac
-                  stumptown narwhal tilde. Flannel four dollar toast bitters intelligentsia pop-up copper mug venmo
-                  kickstarter XOXO. Skateboard kombucha waistcoat. </p>
+        <section className="section-main-works mt-5">
+          <div>
+            <div className="subsec-header">
+              <TriggerText threshold=".5" delay=".1">
+                <h5 className="">02.</h5>
+              </TriggerText>
+              <TriggerText threshold=".5" delay=".1">
+                <h2 className="subsec-title">Usługi</h2>
+              </TriggerText>
+            </div>
+
+            <div className="subsec-body">
+              {/*<div className="ss-body-first"/>*/}
+              <div className="ss-body-second">
+                <TriggerText threshold="0" delay=".6">
+                  <p>Iceland hell of XOXO post-ironic, next level skateboard scenester cornhole tacos distillery. <em>Slow-carb tofu wolf, ennui gastropub four</em> dollar toast direct trade narwhal post-ironic blog tilde fanny pack disrupt. Fingerstache you probably haven't heard of them synth 90's.</p>
+                </TriggerText>
+                <TriggerText threshold="0" delay=".35">
+                  <span className="subsec-span">Nasze usługi</span>
+                </TriggerText>
               </div>
             </div>
 
-            <div className="about-single">
-              <div className="about-single-left">
-                <img className="small-star" width="150" src={aboutServiceStar2} alt="" />
+            <div className="main-about-services">
+              <div className="single-service">
+                <TriggerLine threshold=".5" delay=".5">
+                  <hr className="animated" />
+                </TriggerLine>
+
+                <TriggerText threshold=".5" delay="1.0">
+                  <h3>Branding</h3>
+                </TriggerText>
+                <TriggerText threshold=".5" delay="1.2">
+                  <p>
+                    Projektujemy logotypy, wizytówki oraz papier firmowy. Dbamy o to by wszystkie
+                    elementy identyfikacji wizualnej były spójne ze sobą jak również odzwierciedlały branżę lub
+                    sprzedawany produkt.
+                  </p>
+                </TriggerText>
               </div>
-              <div className="about-single-right">
-                <div>
-                  <span>02.</span>
-                  <h3>Web dev</h3>
-                </div>
-                <p>Pok pok live-edge biodiesel gluten-free, godard knausgaard craft beer wolf succulents chia venmo
-                  edison bulb cornhole. Woke hashtag actually cloud bread listicle letterpress. Dreamcatcher celiac
-                  stumptown narwhal tilde. Flannel four dollar toast bitters intelligentsia pop-up copper mug venmo
-                  kickstarter XOXO. Skateboard kombucha waistcoat. </p>
+              <div className="single-service">
+                <TriggerLine threshold=".5" delay=".5">
+                  <hr className="animated" />
+                </TriggerLine>
+                <TriggerText threshold=".5" delay="1.0">
+                  <h3>Web <br /> dev</h3>
+                </TriggerText>
+                <TriggerText threshold=".5" delay="1.2">
+                  <p>
+                    W naszej agencji interaktywnej świadczymy kompleksowe usługi z zakresu projektowania
+                    responsywnych stron internetowych.
+                    Realizujemy projekty dla klientów korporacyjnych oraz małych firm.
+                    Wszystkie strony www wyposażamy w dedykowany system CMS do samodzielnego zarządzania
+                    treścią.
+                  </p>
+                </TriggerText>
+              </div>
+              <div className="single-service">
+                <TriggerLine threshold=".5" delay=".5">
+                  <hr className="animated" />
+                </TriggerLine>
+                <TriggerText threshold=".5" delay="1.0">
+                  <h3>Digital</h3>
+                </TriggerText>
+                <TriggerText threshold=".5" delay="1.2">
+                  <p>
+                    Zajmujemy się tworzeniem profesjonalnych sklepów internetowych, dopracowanych pod względem
+                    mechanizmów sprzedażowych. Tworzone przez nas sklepy internetowe oparte są wyłącznie o
+                    sprawdze, a przy tym niezawodne, rozwiązania e-commerce.
+                  </p>
+                </TriggerText>
+              </div>
+              <div className="single-service">
+                <TriggerLine threshold=".5" delay=".5">
+                  <hr className="animated" />
+                </TriggerLine>
+                <TriggerText threshold=".5" delay="1.0">
+                  <h3>Social <br /> media</h3>
+                </TriggerText>
+                <TriggerText threshold=".5" delay="1.2">
+                  <p>
+                    Mając stronę lub sklep internetowy warto pomyśleć o skutecznej reklamie.
+                    Idealnym rozwiązaniem są kampanie Google Ads, Facebook oraz pozycjonowanie stron
+                    internetowych.
+                  </p>
+                </TriggerText>
               </div>
             </div>
 
-            <div className="about-single">
-              <div className="about-single-left">
-                <img className="small-star" width="150" src={aboutServiceStar1} alt="" />
-              </div>
-              <div className="about-single-right">
-                <div>
-                  <span>03.</span>
-                  <h3>Web dev</h3>
-                </div>
-                <p>Pok pok live-edge biodiesel gluten-free, godard knausgaard craft beer wolf succulents chia venmo
-                  edison bulb cornhole. Woke hashtag actually cloud bread listicle letterpress. Dreamcatcher celiac
-                  stumptown narwhal tilde. Flannel four dollar toast bitters intelligentsia pop-up copper mug venmo
-                  kickstarter XOXO. Skateboard kombucha waistcoat. </p>
-              </div>
-            </div>
 
-            <div className="about-single">
-              <div className="about-single-left">
-                <img className="small-star" width="150" src={aboutServiceStar2} alt="" />
-              </div>
-              <div className="about-single-right">
-                <div>
-                  <span>04.</span>
-                  <h3>Web dev</h3>
-                </div>
-                <p>Pok pok live-edge biodiesel gluten-free, godard knausgaard craft beer wolf succulents chia venmo
-                  edison bulb cornhole. Woke hashtag actually cloud bread listicle letterpress. Dreamcatcher celiac
-                  stumptown narwhal tilde. Flannel four dollar toast bitters intelligentsia pop-up copper mug venmo
-                  kickstarter XOXO. Skateboard kombucha waistcoat. </p>
-              </div>
-            </div>
+            {/*<div className="main-works-container">*/}
+            {/*  <div className="single-work">*/}
+            {/*    <div>*/}
+            {/*      <h5>01.</h5>*/}
+            {/*      <h3>Web development</h3>*/}
+            {/*    </div>*/}
+            {/*    <div>*/}
+            {/*      <p>Gluten-free skateboard YOLO, fam semiotics deep v selfies farm-to-table asymmetrical vice fashion axe tacos pug helvetica. Tote bag before they sold out bespoke, health goth food truck chillwave copper mug quinoa poke bitters. Brooklyn la croix microdosing.</p>*/}
+            {/*      <div className="learn-more sw-right">*/}
+            {/*        <a href="#">Sprawdź więcej</a>*/}
+            {/*        <img width="30" src={arrow} alt="" />*/}
+            {/*      </div>*/}
+            {/*    </div>*/}
+            {/*  </div>*/}
 
-            <div className="about-single">
-              <div className="about-single-left">
-                <img className="small-star" width="150" src={aboutServiceStar1} alt="" />
-              </div>
-              <div className="about-single-right">
-                <div>
-                  <span>01.</span>
-                  <h3>Web dev</h3>
-                </div>
-                <p>Pok pok live-edge biodiesel gluten-free, godard knausgaard craft beer wolf succulents chia venmo
-                  edison bulb cornhole. Woke hashtag actually cloud bread listicle letterpress. Dreamcatcher celiac
-                  stumptown narwhal tilde. Flannel four dollar toast bitters intelligentsia pop-up copper mug venmo
-                  kickstarter XOXO. Skateboard kombucha waistcoat. </p>
-              </div>
-            </div>
+            {/*  <div className="single-work">*/}
+            {/*    <div>*/}
+            {/*      <h5>02.</h5>*/}
+            {/*      <h3>Branding</h3>*/}
+            {/*    </div>*/}
+            {/*    <div>*/}
+            {/*      <p>Gluten-free skateboard YOLO, fam semiotics deep v selfies farm-to-table asymmetrical vice fashion axe tacos pug helvetica. Tote bag before they sold out bespoke, health goth food truck chillwave copper mug quinoa poke bitters. Brooklyn la croix microdosing.</p>*/}
+            {/*      <div className="learn-more sw-right">*/}
+            {/*        <a href="#">Sprawdź więcej</a>*/}
+            {/*        <img width="30" src={arrow} alt="" />*/}
+            {/*      </div>*/}
+            {/*    </div>*/}
+            {/*  </div>*/}
 
-            <div className="about-single">
-              <div className="about-single-left">
-                <img className="small-star" width="150" src={aboutServiceStar1} alt="" />
-              </div>
-              <div className="about-single-right">
-                <div>
-                  <span>01.</span>
-                  <h3>Web dev</h3>
-                </div>
-                <p>Pok pok live-edge biodiesel gluten-free, godard knausgaard craft beer wolf succulents chia venmo
-                  edison bulb cornhole. Woke hashtag actually cloud bread listicle letterpress. Dreamcatcher celiac
-                  stumptown narwhal tilde. Flannel four dollar toast bitters intelligentsia pop-up copper mug venmo
-                  kickstarter XOXO. Skateboard kombucha waistcoat. </p>
-              </div>
-            </div>
+            {/*  <div className="single-work">*/}
+            {/*    <div>*/}
+            {/*      <h5>03.</h5>*/}
+            {/*      <h3>Design</h3>*/}
+            {/*    </div>*/}
+            {/*    <div>*/}
+            {/*      <p>Gluten-free skateboard YOLO, fam semiotics deep v selfies farm-to-table asymmetrical vice fashion axe tacos pug helvetica. Tote bag before they sold out bespoke, health goth food truck chillwave copper mug quinoa poke bitters. Brooklyn la croix microdosing.</p>*/}
+            {/*      <div className="learn-more sw-right">*/}
+            {/*        <a href="#">Sprawdź więcej</a>*/}
+            {/*        <img width="30" src={arrow} alt="" />*/}
+            {/*      </div>*/}
+            {/*    </div>*/}
+            {/*  </div>*/}
+
+            {/*  <div className="single-work">*/}
+            {/*    <div>*/}
+            {/*      <h5>04.</h5>*/}
+            {/*      <h3>Strategy</h3>*/}
+            {/*    </div>*/}
+            {/*    <div>*/}
+            {/*      <p>Gluten-free skateboard YOLO, fam semiotics deep v selfies farm-to-table asymmetrical vice fashion axe tacos pug helvetica. Tote bag before they sold out bespoke, health goth food truck chillwave copper mug quinoa poke bitters. Brooklyn la croix microdosing.</p>*/}
+            {/*      <div className="learn-more sw-right">*/}
+            {/*        <a href="#">Sprawdź więcej</a>*/}
+            {/*        <img width="30" src={arrow} alt="" />*/}
+            {/*      </div>*/}
+            {/*    </div>*/}
+            {/*  </div>*/}
+            {/*</div>*/}
+
           </div>
         </section>
-
-        {/*<SectionMarquee firstTape={true} secondTape={true} thirdTape={true} />*/}
 
         <SectionMarquee firstTape={false} secondTape={false} thirdTape={false} firstTapeScroll={true} secondTapeScroll={true}
                         thirdTapeScroll={true} dataScrollPosition="bottom" dataScrollSpeed="2"/>
 
-        {/*<section className="section-marquee break-out">*/}
-        {/*  <div className="marquee-container">*/}
-        {/*    <div className="first-tape"><span> <span>Together</span> <span>Together</span> <span>Together</span> <span>Together</span> <span>Together</span> </span></div>*/}
-        {/*    <div className="second-tape"><span> <span>Work</span> <span>Work</span> <span>Work</span> <span>Work</span> <span>Work</span><span>Work</span><span>Work</span> </span></div>*/}
-        {/*    <div className="third-tape"><span> <span>Lumina</span>  <span>Lumina</span>  <span>Lumina</span> <span>Lumina</span> <span>Lumina</span>  <span>Lumina</span>   </span></div>*/}
-        {/*  </div>*/}
-        {/*</section>*/}
 
         <Worldwide />
 

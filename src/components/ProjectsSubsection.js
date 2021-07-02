@@ -3,6 +3,7 @@ import { useEffect, useState, useRef } from "react"
 import TriggerText from "../components/TriggerText"
 import TriggerLine from "./TriggerLine"
 import { motion, useAnimation, useMotionValue, AnimatePresence } from "framer-motion"
+import CurtainSlider from "./curtain-slider/CurtainSlider"
 
 
 const images = [
@@ -26,187 +27,30 @@ const images = [
 
 
 const ProjectsSubsection = () => {
-  const [mouse, setMouse] = useState([0, 0, false])
-  const [mx, my, isActive] = mouse
   return (
     <>
-      <section className="section-more-projects"
-        // onMouseMove={e => (mouseInfo.now = { x: e.pageX, y: e.pageY })}
-        // onMouseMove={e => console.log(mouseInfo.now =  { x: e.pageX, y: e.pageY })}
-        // onMouseMove={handleMouse}
-      >
-
-        {/*<ImagePlaceholder*/}
-        {/*  // position={imagePositions}*/}
-        {/*/>*/}
-        <AnimatePresence>
-        {images.map((item, id) => (
-          isActive && (
-            <motion.img
-              key={id}
-              className="main-img"
-              initial={{
-                opacity: 0
-              }}
-              animate={{
-                x: mx,
-                y: my,
-                opacity: 1
-              }}
-              exit={{
-                opacity: 0
-              }}
-              src={item.src}
-              alt="activewear" data-image="activewear"
-            />
-          )
-        ))}
-        </AnimatePresence>
-
-
-        {/*<AnimatePresence>*/}
-        {/*  {isActive && (*/}
-        {/*    <motion.img*/}
-        {/*      className="main-img"*/}
-        {/*      initial={{*/}
-        {/*        opacity: 0,*/}
-        {/*      }}*/}
-        {/*      animate={{*/}
-        {/*        x: mx,*/}
-        {/*        y: my,*/}
-        {/*        opacity: 1,*/}
-        {/*      }}*/}
-        {/*      exit={{*/}
-        {/*        opacity: 0,*/}
-        {/*      }}*/}
-        {/*      src="https://firebasestorage.googleapis.com/v0/b/hashnode-tutorials.appspot.com/o/image-hover-tutorial%2Factivewear-3.jpg?alt=media&token=45174749-6fc9-4a23-b671-4fba4ca2d0f6"*/}
-        {/*      alt="activewear" data-image="activewear"*/}
-        {/*    />*/}
-        {/*  )}*/}
-        {/*</AnimatePresence>*/}
-
+      <section className="projects-subsection">
 
         <div className="subsec-header">
-
           <TriggerText threshold=".5" delay=".5">
             <h5 className="">02.</h5>
           </TriggerText>
           <TriggerText threshold=".5" delay=".5">
-            <h2 className="subsec-title">Prace</h2>
+            <h2 className="subsec-title">Projekty</h2>
           </TriggerText>
         </div>
 
-        <motion.div className="more-projects-single mt-5" data-label="dresses"
-                    onMouseMove={e => {
-                      const { offsetTop, offsetLeft } = e.currentTarget
-                      setMouse([e.pageX - offsetLeft, e.pageY - offsetTop, true])
-                    }}
-                    onMouseEnter={() => setMouse([mx, my, true])}
-                    onMouseLeave={() => setMouse([mx, my, false])}
-        >
-          <TriggerLine threshold=".5" delay=".5">
-            <hr className="animated" />
-          </TriggerLine>
-          <div className="more-left">
-            <TriggerText threshold=".5" delay=".5">
-              <span>2019</span>
-            </TriggerText>
-            <TriggerText threshold=".5" delay=".5">
-              <h5><a href="@">Antyegzekucja</a></h5>
-            </TriggerText>
-          </div>
-          <TriggerText threshold=".5" delay=".5">
-            <p className="more-right"> Webdesign, Banding </p>
-          </TriggerText>
-        </motion.div>
 
-        <div className="more-projects-single"
-             data-label="heels"
-             onMouseMove={e => {
-               const { offsetTop, offsetLeft } = e.currentTarget
-               setMouse([e.pageX - offsetLeft, e.pageY - offsetTop, true])
-             }}
-             onMouseEnter={() => setMouse([mx, my, true])}
-             onMouseLeave={() => setMouse([mx, my, false])}
-        >
-          <TriggerLine threshold=".5" delay=".5">
-            <hr className="animated" />
-          </TriggerLine>
-          <div className="more-left">
-            <TriggerText threshold=".5" delay=".5">
-              <span>2020</span>
-            </TriggerText>
-            <TriggerText threshold=".5" delay=".5">
-              <h5>Carra</h5>
-            </TriggerText>
-          </div>
-          <TriggerText threshold=".5" delay=".5">
-            <p className="more-right"> Webdesign, Strategy </p>
-          </TriggerText>
-        </div>
+        <CurtainSlider/>
 
-        <div className="more-projects-single">
-          <TriggerLine threshold=".5" delay=".5">
-            <hr className="animated" />
-          </TriggerLine>
-          <div className="more-left">
-            <TriggerText threshold=".5" delay=".5">
-              <span>2020</span>
-            </TriggerText>
-            <TriggerText threshold=".5" delay=".5">
-              <h5>Radca prawny tomczak</h5>
-            </TriggerText>
-          </div>
-          <TriggerText threshold=".5" delay=".5">
-            <p className="more-right"> Webdesign, Branding </p>
-          </TriggerText>
-        </div>
+        {/*<motion.div className="imgs-wrapper">*/}
+        {/*  <img src={images[1].src} alt="" />*/}
+        {/*  <img src={images[2].src} alt="" />*/}
+        {/*  <img src={images[3].src} alt="" />*/}
+        {/*  <img src={images[0].src} alt="" />*/}
+        {/*</motion.div>*/}
 
-        <div className="more-projects-single" data-label="joggers">
-          <TriggerLine threshold=".5" delay=".5">
-            <hr className="animated" />
-          </TriggerLine>
-          <div className="more-left">
-            <TriggerText threshold=".5" delay=".5">
-              <span>2021</span>
-            </TriggerText>
-            <TriggerText threshold=".5" delay=".5">
-              <h5>Antyegzekucja</h5>
-            </TriggerText>
-          </div>
-          <TriggerText threshold=".5" delay=".5">
-            <p className="more-right"> Webdesign </p>
-          </TriggerText>
-        </div>
 
-        <div className="more-projects-single" data-label="kimonos">
-          <TriggerLine threshold=".5" delay=".5">
-            <hr className="animated" />
-          </TriggerLine>
-          <div className="more-left">
-            <TriggerText threshold=".5" delay=".5">
-              <span>2021</span>
-            </TriggerText>
-            <TriggerText threshold=".5" delay=".5">
-              <h5>Odszkodowania</h5>
-            </TriggerText>
-          </div>
-          <TriggerText threshold=".5" delay=".5">
-            <p className="more-right"> Webdesign </p>
-          </TriggerText>
-        </div>
-
-        <TriggerLine threshold=".5" delay=".5">
-          <hr className="animated" />
-        </TriggerLine>
-
-        <div className="learn-more">
-          <a href="/portfolio">
-            <span>Zobacz</span>
-            <span />
-            <span>Wszystkie</span>
-          </a>
-        </div>
       </section>
     </>
   )

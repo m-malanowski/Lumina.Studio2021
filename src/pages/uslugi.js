@@ -5,6 +5,7 @@ import Layout from "../components/Layout"
 import { graphql } from "gatsby"
 import Title from "../components/Title"
 import Image from "gatsby-image"
+import orbitService from "../assets/icons/orbitServicesPage.svg"
 import LowerFooter from "../components/LowerFooter"
 import orbitAbout from "../assets/icons/orbitAbout.png"
 import handDown from "../assets/icons/handDown.svg"
@@ -13,108 +14,239 @@ import arrow from "../assets/icons/right-arrow.svg"
 import thumbUp from "../assets/icons/thumbUp.svg"
 import SectionMarquee from "../components/SectionMarquee"
 import TriggerText from "../components/TriggerText"
+import TriggerImg from "../components/TriggerImg"
+import TriggerLine from "../components/TriggerLine"
+
+import orbitMain from "../assets/icons/orbitMainViewNew.svg"
+import serviceStickers from "../assets/icons/serviceStickers.svg"
+import aboutServiceStar1 from "../assets/icons/aboutServiceStar1.svg"
+import aboutServiceStar2 from "../assets/icons/aboutServiceStar2.svg"
 // ...GatsbyImageSharpFluid
 const Services = () => {
   return (
     <>
       <main className="services-page container-fluid">
-        <div className="page-content">
-          {/*<div className="subsec-header">*/}
-          {/*  <h5 className="">01.</h5>*/}
-          {/*  <h2 className="subsec-title">Services</h2>*/}
-          {/*</div>*/}
+        <section className="section-about-container">
+          <div className="main-container">
 
-          {/*<div className="subsec-body">*/}
-          {/*  /!*<div className="ss-body-first"/>*!/*/}
-          {/*  <div className="ss-body-second">*/}
-          {/*    <p>Iceland hell of XOXO post-ironic, next level skateboard scenester cornhole tacos distillery. Slow-carb tofu wolf, <em> ennui gastropub four</em> dollar toast direct trade narwhal post-ironic blog tilde fanny pack disrupt. Fingerstache you probably haven't heard of them synth 90's.</p>*/}
-          {/*    <span>Things we made</span>*/}
-          {/*  </div>*/}
-          {/*</div>*/}
-          <section className="section-main-works">
-            <div>
-              <div className="subsec-header">
-                <TriggerText threshold=".5" delay=".1">
-                  <h5 className="">01.</h5>
-                </TriggerText>
-                <TriggerText threshold=".5" delay=".1">
-                  <h2 className="subsec-title">Usługi</h2>
-                </TriggerText>
+            <TriggerText threshold=".5" delay=".2">
+              <h2>Step</h2>
+            </TriggerText>
+
+            <TriggerText threshold=".5" delay=".25">
+              <span>into</span>
+              <h2>Van</h2>
+            </TriggerText>
+
+            <TriggerText threshold=".5" delay=".3">
+              <h2>Gogh's</h2>
+            </TriggerText>
+
+            <TriggerText threshold=".5" delay=".35">
+              <h2>World</h2>
+            </TriggerText>
+
+          </div>
+        </section>
+
+        <TriggerImg threshold="0" delay={1}>
+          <img
+            // data-scroll
+            // data-scroll-speed="-1"
+            // data-scroll-position="bottom"
+            className="service-stickers" width="100%" src={serviceStickers} alt="" />
+        </TriggerImg>
+
+        <section className="about-page-process">
+          <div className="subsec-header">
+
+            <TriggerText threshold=".5" delay=".35">
+              <h5 className="">01.</h5>
+            </TriggerText>
+            <TriggerText threshold=".5" delay=".45">
+              <h2 className="subsec-title">Nasze <br /> Usługi</h2>
+            </TriggerText>
+          </div>
+
+          <div className="about-page-services">
+            <div className="about-single">
+
+              <TriggerLine threshold=".5" delay=".35">
+                <hr className="animated" />
+              </TriggerLine>
+
+              <div className="about-single-left">
+                <TriggerImg threshold="0" delay={.2}>
+                  <img className="small-star" width="150" src={aboutServiceStar1} alt="" />
+                </TriggerImg>
               </div>
-              <div className="subsec-body">
-                {/*<div className="ss-body-first"/>*/}
-                <div className="ss-body-second">
-                  <TriggerText threshold="0" delay=".6">
-                    <p>Iceland hell of XOXO post-ironic, next level skateboard scenester cornhole tacos distillery. <em>Slow-carb tofu wolf, ennui gastropub four</em> dollar toast direct trade narwhal post-ironic blog tilde fanny pack disrupt. Fingerstache you probably haven't heard of them synth 90's.</p>
+              <div className="about-single-right">
+                <div>
+                  <TriggerText threshold=".5" delay=".35">
+                    <span>01.</span>
                   </TriggerText>
-                  <TriggerText threshold="0" delay=".35">
-                    <span className="subsec-span">Nasze usługi</span>
+                  <TriggerText threshold=".5" delay=".45">
+                    <h3>Web dev</h3>
                   </TriggerText>
-
                 </div>
-              </div>
-              <div className="main-works-container">
-                <div className="single-work">
-                  <div>
-                    <h5>01.</h5>
-                    <h3>Web development</h3>
-                  </div>
-                  <div>
-                    <p>Gluten-free skateboard YOLO, fam semiotics deep v selfies farm-to-table asymmetrical vice fashion axe tacos pug helvetica. Tote bag before they sold out bespoke, health goth food truck chillwave copper mug quinoa poke bitters. Brooklyn la croix microdosing.</p>
-                    <div className="learn-more sw-right">
-                      <a href="#">Sprawdź więcej</a>
-                      <img width="30" src={arrow} alt="" />
-                    </div>
-                  </div>
-                </div>
-
-                <div className="single-work">
-                  <div>
-                    <h5>02.</h5>
-                    <h3>Branding</h3>
-                  </div>
-                  <div>
-                    <p>Gluten-free skateboard YOLO, fam semiotics deep v selfies farm-to-table asymmetrical vice fashion axe tacos pug helvetica. Tote bag before they sold out bespoke, health goth food truck chillwave copper mug quinoa poke bitters. Brooklyn la croix microdosing.</p>
-                    <div className="learn-more sw-right">
-                      <a href="#">Sprawdź więcej</a>
-                      <img width="30" src={arrow} alt="" />
-                    </div>
-                  </div>
-                </div>
-
-                <div className="single-work">
-                  <div>
-                    <h5>03.</h5>
-                    <h3>Design</h3>
-                  </div>
-                  <div>
-                    <p>Gluten-free skateboard YOLO, fam semiotics deep v selfies farm-to-table asymmetrical vice fashion axe tacos pug helvetica. Tote bag before they sold out bespoke, health goth food truck chillwave copper mug quinoa poke bitters. Brooklyn la croix microdosing.</p>
-                    <div className="learn-more sw-right">
-                      <a href="#">Sprawdź więcej</a>
-                      <img width="30" src={arrow} alt="" />
-                    </div>
-                  </div>
-                </div>
-
-                <div className="single-work">
-                  <div>
-                    <h5>04.</h5>
-                    <h3>Strategy</h3>
-                  </div>
-                  <div>
-                    <p>Gluten-free skateboard YOLO, fam semiotics deep v selfies farm-to-table asymmetrical vice fashion axe tacos pug helvetica. Tote bag before they sold out bespoke, health goth food truck chillwave copper mug quinoa poke bitters. Brooklyn la croix microdosing.</p>
-                    <div className="learn-more sw-right">
-                      <a href="#">Sprawdź więcej</a>
-                      <img width="30" src={arrow} alt="" />
-                    </div>
-                  </div>
-                </div>
+                <TriggerText threshold=".5" delay=".55">
+                  <p>Pok pok live-edge biodiesel gluten-free, godard knausgaard craft beer wolf succulents chia venmo
+                    edison bulb cornhole. Woke hashtag actually cloud bread listicle letterpress. Dreamcatcher celiac
+                    stumptown narwhal tilde. Flannel four dollar toast bitters intelligentsia pop-up copper mug venmo
+                    kickstarter XOXO. Skateboard kombucha waistcoat. </p>
+                </TriggerText>
               </div>
             </div>
-          </section>
-        </div>
 
-        <SectionMarquee firstTape={true} secondTape={true} thirdTape={true}/>
+            <div className="about-single">
+
+              <TriggerLine threshold=".5" delay=".2">
+                <hr className="animated" />
+              </TriggerLine>
+
+              <div className="about-single-left">
+                <TriggerImg threshold="0" delay={.2}>
+                  <img className="small-star" width="150" src={aboutServiceStar2} alt="" />
+                </TriggerImg>
+              </div>
+              <div className="about-single-right">
+                <div>
+                  <TriggerText threshold=".5" delay=".35">
+                    <span>02.</span>
+                  </TriggerText>
+                  <TriggerText threshold=".5" delay=".45">
+                    <h3>Branding</h3>
+                  </TriggerText>
+                </div>
+                <TriggerText threshold=".5" delay=".55">
+                  <p>Pok pok live-edge biodiesel gluten-free, godard knausgaard craft beer wolf succulents chia venmo
+                    edison bulb cornhole. Woke hashtag actually cloud bread listicle letterpress. Dreamcatcher celiac
+                    stumptown narwhal tilde. Flannel four dollar toast bitters intelligentsia pop-up copper mug venmo
+                    kickstarter XOXO. Skateboard kombucha waistcoat. </p>
+                </TriggerText>
+              </div>
+            </div>
+
+            <div className="about-single">
+
+              <TriggerLine threshold=".5" delay=".2">
+                <hr className="animated" />
+              </TriggerLine>
+
+              <div className="about-single-left">
+                <TriggerImg threshold="0" delay={.2}>
+                  <img className="small-star" width="150" src={aboutServiceStar2} alt="" />
+                </TriggerImg>
+              </div>
+              <div className="about-single-right">
+                <div>
+                  <TriggerText threshold=".5" delay=".35">
+                    <span>03.</span>
+                  </TriggerText>
+                  <TriggerText threshold=".5" delay=".45">
+                    <h3>Social media</h3>
+                  </TriggerText>
+                </div>
+                <TriggerText threshold=".5" delay=".55">
+                  <p>Pok pok live-edge biodiesel gluten-free, godard knausgaard craft beer wolf succulents chia venmo
+                    edison bulb cornhole. Woke hashtag actually cloud bread listicle letterpress. Dreamcatcher celiac
+                    stumptown narwhal tilde. Flannel four dollar toast bitters intelligentsia pop-up copper mug venmo
+                    kickstarter XOXO. Skateboard kombucha waistcoat. </p>
+                </TriggerText>
+              </div>
+            </div>
+
+            <div className="about-single">
+
+              <TriggerLine threshold=".5" delay=".2">
+                <hr className="animated" />
+              </TriggerLine>
+
+              <div className="about-single-left">
+                <TriggerImg threshold="0" delay={.2}>
+                  <img className="small-star" width="150" src={aboutServiceStar2} alt="" />
+                </TriggerImg>
+              </div>
+              <div className="about-single-right">
+                <div>
+                  <TriggerText threshold=".5" delay=".35">
+                    <span>04.</span>
+                  </TriggerText>
+                  <TriggerText threshold=".5" delay=".45">
+                    <h3>SEO</h3>
+                  </TriggerText>
+                </div>
+                <TriggerText threshold=".5" delay=".55">
+                  <p>Pok pok live-edge biodiesel gluten-free, godard knausgaard craft beer wolf succulents chia venmo
+                    edison bulb cornhole. Woke hashtag actually cloud bread listicle letterpress. Dreamcatcher celiac
+                    stumptown narwhal tilde. Flannel four dollar toast bitters intelligentsia pop-up copper mug venmo
+                    kickstarter XOXO. Skateboard kombucha waistcoat. </p>
+                </TriggerText>
+              </div>
+            </div>
+
+            <div className="about-single">
+
+              <TriggerLine threshold=".5" delay=".2">
+                <hr className="animated" />
+              </TriggerLine>
+
+              <div className="about-single-left">
+                <TriggerImg threshold="0" delay={.2}>
+                  <img className="small-star" width="150" src={aboutServiceStar2} alt="" />
+                </TriggerImg>
+              </div>
+              <div className="about-single-right">
+                <div>
+                  <TriggerText threshold=".5" delay=".35">
+                    <span>05.</span>
+                  </TriggerText>
+                  <TriggerText threshold=".5" delay=".45">
+                    <h3>Digital</h3>
+                  </TriggerText>
+                </div>
+                <TriggerText threshold=".5" delay=".55">
+                  <p>Pok pok live-edge biodiesel gluten-free, godard knausgaard craft beer wolf succulents chia venmo
+                    edison bulb cornhole. Woke hashtag actually cloud bread listicle letterpress. Dreamcatcher celiac
+                    stumptown narwhal tilde. Flannel four dollar toast bitters intelligentsia pop-up copper mug venmo
+                    kickstarter XOXO. Skateboard kombucha waistcoat. </p>
+                </TriggerText>
+              </div>
+            </div>
+
+            <div className="about-single">
+
+              <TriggerLine threshold=".5" delay=".2">
+                <hr className="animated" />
+              </TriggerLine>
+
+              <div className="about-single-left">
+                <TriggerImg threshold="0" delay={.2}>
+                  <img className="small-star" width="150" src={aboutServiceStar2} alt="" />
+                </TriggerImg>
+              </div>
+              <div className="about-single-right">
+                <div>
+                  <TriggerText threshold=".5" delay=".35">
+                    <span>06.</span>
+                  </TriggerText>
+                  <TriggerText threshold=".5" delay=".45">
+                    <h3>Design</h3>
+                  </TriggerText>
+                </div>
+                <TriggerText threshold=".5" delay=".55">
+                  <p>Pok pok live-edge biodiesel gluten-free, godard knausgaard craft beer wolf succulents chia venmo
+                    edison bulb cornhole. Woke hashtag actually cloud bread listicle letterpress. Dreamcatcher celiac
+                    stumptown narwhal tilde. Flannel four dollar toast bitters intelligentsia pop-up copper mug venmo
+                    kickstarter XOXO. Skateboard kombucha waistcoat. </p>
+                </TriggerText>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <SectionMarquee firstTape={false} secondTape={false} thirdTape={false} firstTapeScroll={true} secondTapeScroll={true}
+                        thirdTapeScroll={true} dataScrollPosition="bottom" dataScrollSpeed="2"/>
 
         <Worldwide/>
       </main>

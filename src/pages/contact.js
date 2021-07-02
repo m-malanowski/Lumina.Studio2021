@@ -1,5 +1,6 @@
 import React from "react"
 import Footer from "../components/Footer"
+import { Helmet } from "react-helmet"
 import SocialLinks from "../constants/socialLinks"
 import ArticlesSlider from "../components/ArticlesSlider"
 import LowerFooter from "../components/LowerFooter"
@@ -11,6 +12,10 @@ import Worldwide from "../components/Worldwide"
 const contact = () => {
   return (
     <>
+      <Helmet bodyAttributes={{
+        id: 'contact-page'
+      }}   />
+
       <Footer />
 
       {/*<main className="contact-page container-fluid">*/}

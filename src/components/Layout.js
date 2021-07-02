@@ -6,6 +6,9 @@ import Sidebar from "./Sidebar"
 // import Footer from "./Footer"
 import { layoutVariants, transition } from '../components/Variants'
 import Scroll from "./LocomotiveScroll"
+import starTransition from "../assets/icons/clover.svg"
+import ProjectsSubsection from "./ProjectsSubsection"
+
 
 const Layout = ({ children, location }) => {
   const [isOpen, setIsOpen] = React.useState(false)
@@ -16,7 +19,30 @@ const Layout = ({ children, location }) => {
     <>
       <Navbar isOpen={isOpen} toggleSideBar={toggleSideBar} />
       <Sidebar isOpen={isOpen} toggleSideBar={toggleSideBar} />
+
       <Scroll callbacks={location}  />
+
+      {/*<AnimatePresence  >*/}
+      {/*  <motion.img*/}
+      {/*    location={location}*/}
+      {/*    key={location.key}*/}
+      {/*    initial="enter"*/}
+      {/*    animate="enter"*/}
+      {/*    exit="hidden"*/}
+      {/*    variants={{*/}
+      {/*      enter: {  scale: .001, display: 'none',*/}
+      {/*        transition: {  duration: 1.0, ease: [.17,.67,.83,.67]}*/}
+      {/*      },*/}
+      {/*      hidden: {  display: "block" ,  scale: 20,  transformOrigin: "center",*/}
+      {/*        transition: { delay:  .4 , duration: .9, ease: [.17,.67,.83,.67]}*/}
+      {/*      }*/}
+      {/*    }}*/}
+      {/*    data-scroll data-scroll-sticky*/}
+      {/*    className="star-transition" src={starTransition} width="1220" alt=""/>*/}
+      {/*</AnimatePresence>*/}
+
+
+
       <AnimatePresence initial={true} exitBeforeEnter>
         <motion.div
           location={location}
@@ -26,6 +52,7 @@ const Layout = ({ children, location }) => {
           animate="enter"
           exit="exit"
           transition={transition}
+          className="dupa"
         >
           {/*{console.log(location)}*/}
           {children}

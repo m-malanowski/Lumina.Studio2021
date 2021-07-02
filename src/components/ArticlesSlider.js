@@ -8,7 +8,7 @@ const ServicesSlider = (props) => {
   return (
     <>
       <div className="ss-drag">
-        DRAG
+        <span className="subsec-span">DRAG</span>
       </div>
 
       <div ref={sliderRef} className="keen-slider">
@@ -33,8 +33,20 @@ const ServicesSlider = (props) => {
             <p>Elo Elo trzy dwa zero</p>
           </div>
         </div>
-        <div className="keen-slider__slide number-slide4 service-slide">4</div>
-        <div className="keen-slider__slide number-slide5 service-slide">5</div>
+        <div className="keen-slider__slide number-slide1 service-slide">
+          <h5>11-04-2021</h5>
+          <div className="ss-bottom">
+            <h2>Post numerI</h2>
+            <p>lorem ipsum coś tam, coś tam</p>
+          </div>
+        </div>
+        <div className="keen-slider__slide number-slide1 service-slide">
+          <h5>11-04-2021</h5>
+          <div className="ss-bottom">
+            <h2>Post numerI</h2>
+            <p>lorem ipsum coś tam, coś tam</p>
+          </div>
+        </div>
       </div>
     </>
   )
