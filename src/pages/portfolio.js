@@ -72,7 +72,6 @@ const Portfolio = ({ data }) => {
               </div>
             </section>
 
-
             <div className="main-works-container mt-5">
 
               {data.allStrapiProjects.nodes.map(node => (
@@ -165,7 +164,7 @@ const Portfolio = ({ data }) => {
               <TriggerText threshold=".5" delay=".35">
                 {/*<h2 className="pseudo-line">Ciekawego</h2>*/}
                 <h2>Fajnego</h2>
-                <Link to="/portfolio">
+                <Link to="/kontakt">
                   <img src={arrow} alt="" width="120px" className="ml-5" />
                 </Link>
               </TriggerText>

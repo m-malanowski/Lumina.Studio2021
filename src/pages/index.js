@@ -13,6 +13,7 @@ import SectionMarquee from "../components/SectionMarquee"
 import LowerFooter from "../components/LowerFooter"
 import arrow from "../assets/icons/right-arrow.svg"
 import { LocomotiveScrollProvider } from 'react-locomotive-scroll'
+import orbitMoreSection from "../assets/icons/orbitMoreSection.svg"
 
 const HomePage = ()  => {
 
@@ -241,22 +242,22 @@ const HomePage = ()  => {
         <ProjectsSubsectionNew/>
 
         <section className="section-show-more">
-          <div className="constellation">
-            <div className="stars-wrapper">
-              <img src={smallStar} width={50} alt=""
-                   data-scroll
-                   data-scroll-speed="-2"
-              />
-              <img src={smallStar} width={40} alt=""
-                   data-scroll
-                   data-scroll-speed="-1"
-              />
-              <img src={smallStar} width={30} alt=""
-                   data-scroll
-                   data-scroll-speed="-2"
-              />
-            </div>
-          </div>
+          {/*<div className="constellation">*/}
+          {/*  <div className="stars-wrapper">*/}
+          {/*    <img src={smallStar} width={50} alt=""*/}
+          {/*         data-scroll*/}
+          {/*         data-scroll-speed="-2"*/}
+          {/*    />*/}
+          {/*    <img src={smallStar} width={40} alt=""*/}
+          {/*         data-scroll*/}
+          {/*         data-scroll-speed="-1"*/}
+          {/*    />*/}
+          {/*    <img src={smallStar} width={30} alt=""*/}
+          {/*         data-scroll*/}
+          {/*         data-scroll-speed="-2"*/}
+          {/*    />*/}
+          {/*  </div>*/}
+          {/*</div>*/}
 
           <div className="main-container">
 
@@ -282,10 +283,11 @@ const HomePage = ()  => {
             <TriggerText threshold=".5" delay=".35">
               {/*<h2 className="pseudo-line">Ciekawego</h2>*/}
               <h2>Fajnego</h2>
-              <Link to="/portfolio">
+              <Link to="/kontakt">
                 <img src={arrow} alt="" width="120px" className="ml-5"/>
               </Link>
             </TriggerText>
+
 
 
             {/*<TriggerText threshold=".5" delay=".3">*/}
@@ -296,8 +298,16 @@ const HomePage = ()  => {
             {/*  </Link>*/}
             {/*</TriggerText>*/}
 
-
           </div>
+
+          <TriggerImg delay={.8}>
+            <img
+              data-scroll
+              data-scroll-speed="1"
+              data-scroll-position="top"
+              className="orbit" width="100%" src={orbitMoreSection} alt="" />
+           </TriggerImg>
+
         </section>
 
         {/*<section className="experimento ">*/}

@@ -1,6 +1,6 @@
 import React, { useRef, useState, useEffect } from "react"
 import LowerFooter from "../components/LowerFooter"
-import orbitAboutPage from "../assets/icons/orbitAboutPage.png"
+import orbitAboutPage from "../assets/icons/orbitAboutPage.svg"
 import arrow from "../assets/icons/right-arrow.svg"
 import serviceStickers from "../assets/icons/serviceStickers.svg"
 import Worldwide from "../components/Worldwide"
@@ -27,7 +27,7 @@ const ONas = () => {
   const variantsPlus = {
     open: { rotate: 90, opacity: 1 },
     closed: { opacity: 1 },
-    hover: { opacity: .4 }
+    hover: { opacity: .95 }
   }
   const variantsDesc1 = {
     open: { opacity: 1, height: "auto", visibility: "visible" },
@@ -115,7 +115,7 @@ const ONas = () => {
                 data-scroll
                 data-scroll-speed="-2"
                 data-scroll-position="top"
-                className="orbit-about" width="60%" src={orbitAboutPage} alt="" />
+                className="orbit-about" width="75%" src={orbitAboutPage} alt="" />
             </TriggerImg>
             {/*<TriggerImg delay={1.5}>*/}
             {/*  <img*/}
