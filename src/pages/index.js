@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react"
-import cn from "classnames"
+// import cn from "classnames"
 // import globe from "../assets/icons/globe.svg"
 // import star from "../assets/icons/star.svg"
 // import starSm from "../assets/icons/starSmall.svg"
@@ -13,33 +13,31 @@ import orbitMain from "../assets/icons/orbitMainViewNew.svg"
 import handDown from "../assets/icons/handDown.svg"
 // import thumbUp from "../assets/icons/thumbUp.svg"
 // import arrowDown from "../assets/icons/arrowDown.svg"
-import serviceStickers from "../assets/icons/serviceStickers.svg"
+// import serviceStickers from "../assets/icons/serviceStickers.svg"
 import SEO from "../components/SEO"
 import { graphql } from "gatsby"
-import ProjectsSubsection from "../components/ProjectsSubsection"
+// import ProjectsSubsection from "../components/ProjectsSubsection"
 import ProjectsSubsectionNew from "../components/ProjectsSubsectionNew"
 
 import Worldwide from "../components/Worldwide"
-import Footer from "../components/Footer"
 // import MainScene3 from "../components/MainScene3"
 // import SocialLinks from "../constants/socialLinks"
 // import ServicesSlider from "../components/ServicesSlider"
 // import orbitAboutPage from "../assets/icons/orbitAboutPage.png"
 import smallStar from "../assets/icons/smallStar.svg"
-import smallLuminaStar from "../assets/icons/smallLuminaStar.svg"
-
-import { motion } from "framer-motion"
-import { SplitText } from "../components/SplitText"
+// import smallLuminaStar from "../assets/icons/smallLuminaStar.svg"
+// import { motion } from "framer-motion"
+// import { SplitText } from "../components/SplitText"
 import TriggerText from "../components/TriggerText"
-import TriggerLine from "../components/TriggerLine"
+// import TriggerLine from "../components/TriggerLine"
 import TriggerImg from "../components/TriggerImg"
-import { TriggerSplit } from "../components/TriggerSplit"
-import { splitTextVariants, transition } from "../components/Variants"
+// import { TriggerSplit } from "../components/TriggerSplit"
+// import { splitTextVariants, transition } from "../components/Variants"
 import SectionMarquee from "../components/SectionMarquee"
 import LowerFooter from "../components/LowerFooter"
 import arrow from "../assets/icons/right-arrow.svg"
-import orbitAboutPage from "../assets/icons/orbitAboutPage.png"
-import ArticlesSlider from "../components/ArticlesSlider"
+// import orbitAboutPage from "../assets/icons/orbitAboutPage.png"
+// import ArticlesSlider from "../components/ArticlesSlider"
 // import Marquee from "react-fast-marquee";
 // import gsap from "gsap";
 // import SplitText from "../utils/Split";
@@ -169,7 +167,7 @@ export default () => {
         containerRef={containerRef}
       >
 
-      <main className="index-page container-fluid"  data-scroll-container ref={containerRef} >
+      <main className="index-page container-fluid"  data-scroll-container ref={containerRef}>
         <section className="section-main-container">
           <div className="main-container">
 
