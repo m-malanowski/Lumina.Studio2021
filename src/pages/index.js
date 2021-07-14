@@ -4,9 +4,6 @@ import React, { useEffect, useRef, useState } from "react"
 // import star from "../assets/icons/star.svg"
 // import starSm from "../assets/icons/starSmall.svg"
 import orbitProcess from "../assets/icons/orbitProcess.png"
-import orbitAbout from "../assets/icons/orbitAbout.png"
-import orbitTwo from "../assets/icons/orbitTwo.png"
-import { useLocomotiveScroll } from 'react-locomotive-scroll'
 // import arrow from "../assets/icons/right-arrow.svg"
 import { Link } from "gatsby"
 import orbitMain from "../assets/icons/orbitMainViewNew.svg"
@@ -15,10 +12,8 @@ import handDown from "../assets/icons/handDown.svg"
 // import arrowDown from "../assets/icons/arrowDown.svg"
 // import serviceStickers from "../assets/icons/serviceStickers.svg"
 import SEO from "../components/SEO"
-import { graphql } from "gatsby"
 // import ProjectsSubsection from "../components/ProjectsSubsection"
 import ProjectsSubsectionNew from "../components/ProjectsSubsectionNew"
-
 import Worldwide from "../components/Worldwide"
 // import MainScene3 from "../components/MainScene3"
 // import SocialLinks from "../constants/socialLinks"
@@ -52,8 +47,7 @@ import { LocomotiveScrollProvider } from 'react-locomotive-scroll'
 //   })
 // }
 
-
-export default () => {
+const HomePage = ()  => {
   // const banner = {
   //   animate: {
   //     transition: {
@@ -799,3 +793,5 @@ export default () => {
   )
 }
 // ...GatsbyImageSharpFluid
+
+export default HomePage;

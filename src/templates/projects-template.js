@@ -1,20 +1,19 @@
 import React, { useRef } from "react"
-import Footer from "../components/Footer"
-import orbitSingleProject from "../assets/icons/orbitContact.svg"
-
-import Layout from "../components/Layout"
+// import Footer from "../components/Footer"
+// import orbitSingleProject from "../assets/icons/orbitContact.svg"
+// import Layout from "../components/Layout"
 import { graphql } from "gatsby"
-import Blogs from "../components/Blogs"
-import LowerFooter from "../components/LowerFooter"
-import malva from "../assets/imgs/malva2.png"
-import malva2 from "../assets/imgs/malva2.png"
+// import Blogs from "../components/Blogs"
+// import LowerFooter from "../components/LowerFooter"
+// import malva from "../assets/imgs/malva2.png"
+// import malva2 from "../assets/imgs/malva2.png"
 import { LocomotiveScrollProvider } from "react-locomotive-scroll"
-import { GatsbyImage, getImage } from "gatsby-plugin-image"
-import arrowDown from "../assets/icons/arrowDown.svg"
-import ServicesSlider from "../components/ServicesSlider"
-import arrow from "../assets/icons/right-arrow.svg"
-import orbitMain from "../assets/icons/orbitMainView.png"
-import Worldwide from "../components/Worldwide"
+// import { GatsbyImage, getImage } from "gatsby-plugin-image"
+// import arrowDown from "../assets/icons/arrowDown.svg"
+// import ServicesSlider from "../components/ServicesSlider"
+// import arrow from "../assets/icons/right-arrow.svg"
+// import orbitMain from "../assets/icons/orbitMainView.png"
+// import Worldwide from "../components/Worldwide"
 import SectionMarquee from "../components/SectionMarquee"
 import { Helmet } from "react-helmet"
 import TriggerImg from "../components/TriggerImg"
@@ -24,7 +23,6 @@ import TriggerText from "../components/TriggerText"
 
 
 const ProjectTemplate = ({ data }) => {
-
   const containerRef = useRef(null)
   // const image = getImage(data.project.media)
 
@@ -51,7 +49,6 @@ const ProjectTemplate = ({ data }) => {
 
 
         <main className="single-project-page container-fluid" data-scroll-container ref={containerRef}>
-
           {/*<TriggerImg delay={1}>*/}
           {/*  <img*/}
           {/*    data-scroll*/}
@@ -111,15 +108,12 @@ const ProjectTemplate = ({ data }) => {
                           secondTapeScroll={true}
                           thirdTapeScroll={true} dataScrollPosition="bottom" dataScrollSpeed="2" />
 
-
         </main>
       </LocomotiveScrollProvider>
 
     </>
   )
 }
-
-export default ProjectTemplate
 
 export const query = graphql`
   query GetSingleProject($slug: String) {
@@ -134,3 +128,4 @@ export const query = graphql`
     }
   }
 `
+export default ProjectTemplate

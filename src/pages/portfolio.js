@@ -197,8 +197,6 @@ const Portfolio = ({ data }) => {
   )
 }
 
-export default Portfolio
-
 export const query = graphql`
 {
   allStrapiProjects {
@@ -221,3 +219,5 @@ export const query = graphql`
   }
 }
 `
+
+export default Portfolio
