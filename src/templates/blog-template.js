@@ -1,9 +1,6 @@
 import React from "react"
-import { graphql, Link } from "gatsby"
-import Layout from "../components/Layout"
-import ReactMarkdown from "react-markdown"
 
-const ComponentName = () => {
+const ArticlesTemplate = () => {
   return <h2>blog post template</h2>
 }
 
@@ -16,4 +13,4 @@ const ComponentName = () => {
 //   }
 // `
 
-export default ComponentName
+export default ArticlesTemplate

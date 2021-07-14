@@ -1,32 +1,19 @@
 import React, { useRef } from "react"
-// import ServicesSlider from "../components/ServicesSlider"
-// import arrowDown from "../assets/icons/arrowDown.svg"
-// import Layout from "../components/Layout"
-// import { graphql } from "gatsby"
-// import Title from "../components/Title"
-// import Image from "gatsby-image"
-// import orbitService from "../assets/icons/orbitServicesPage.svg"
 import LowerFooter from "../components/LowerFooter"
-// import orbitAbout from "../assets/icons/orbitAbout.png"
-// import handDown from "../assets/icons/handDown.svg"
 import Worldwide from "../components/Worldwide"
-// import arrow from "../assets/icons/right-arrow.svg"
-// import thumbUp from "../assets/icons/thumbUp.svg"
 import SectionMarquee from "../components/SectionMarquee"
 import TriggerText from "../components/TriggerText"
 import TriggerImg from "../components/TriggerImg"
 import TriggerLine from "../components/TriggerLine"
 import { LocomotiveScrollProvider } from 'react-locomotive-scroll'
-
 import orbitMain from "../assets/icons/orbitServicesViewNew.svg"
 import serviceStickers from "../assets/icons/serviceStickers.svg"
 import aboutServiceStar1 from "../assets/icons/aboutServiceStar1.svg"
 import aboutServiceStar2 from "../assets/icons/aboutServiceStar2.svg"
 // ...GatsbyImageSharpFluid
-const Services = () => {
+const Uslugi = () => {
 
   const containerRef = useRef(null)
-
 
   return (
     <>
@@ -314,4 +301,4 @@ const Services = () => {
     </>
 )}
 
-export default Services
+export default Uslugi

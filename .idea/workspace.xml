@@ -3,10 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="5d55e401-15fe-43b2-810d-1da9c4f903b3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gatsby-node.js" beforeDir="false" afterPath="$PROJECT_DIR$/gatsby-node.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/404.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/404.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/blog.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/blog.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/kontakt.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/kontakt.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/o-nas.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/o-nas.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/portfolio.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/portfolio.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/single-project.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/single-project.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/uslugi.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/uslugi.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/project-template.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/blog-template.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/blog-template.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/projects-template.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/projects-template.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +53,8 @@
       <recent name="$PROJECT_DIR$/src/templates" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/pages" />
+      <recent name="$PROJECT_DIR$/src/css" />
       <recent name="$PROJECT_DIR$/src/components" />
     </key>
   </component>
@@ -72,7 +80,7 @@
       <workItem from="1626160021001" duration="3224000" />
       <workItem from="1626165778785" duration="836000" />
       <workItem from="1626210637699" duration="637000" />
-      <workItem from="1626266092496" duration="8769000" />
+      <workItem from="1626266092496" duration="11795000" />
     </task>
     <servers />
   </component>

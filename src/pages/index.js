@@ -1,110 +1,20 @@
 import React, { useEffect, useRef, useState } from "react"
-// import cn from "classnames"
-// import globe from "../assets/icons/globe.svg"
-// import star from "../assets/icons/star.svg"
-// import starSm from "../assets/icons/starSmall.svg"
 import orbitProcess from "../assets/icons/orbitProcess.png"
-// import arrow from "../assets/icons/right-arrow.svg"
 import { Link } from "gatsby"
 import orbitMain from "../assets/icons/orbitMainViewNew.svg"
 import handDown from "../assets/icons/handDown.svg"
-// import thumbUp from "../assets/icons/thumbUp.svg"
-// import arrowDown from "../assets/icons/arrowDown.svg"
-// import serviceStickers from "../assets/icons/serviceStickers.svg"
 import SEO from "../components/SEO"
-// import ProjectsSubsection from "../components/ProjectsSubsection"
 import ProjectsSubsectionNew from "../components/ProjectsSubsectionNew"
 import Worldwide from "../components/Worldwide"
-// import MainScene3 from "../components/MainScene3"
-// import SocialLinks from "../constants/socialLinks"
-// import ServicesSlider from "../components/ServicesSlider"
-// import orbitAboutPage from "../assets/icons/orbitAboutPage.png"
 import smallStar from "../assets/icons/smallStar.svg"
-// import smallLuminaStar from "../assets/icons/smallLuminaStar.svg"
-// import { motion } from "framer-motion"
-// import { SplitText } from "../components/SplitText"
 import TriggerText from "../components/TriggerText"
-// import TriggerLine from "../components/TriggerLine"
 import TriggerImg from "../components/TriggerImg"
-// import { TriggerSplit } from "../components/TriggerSplit"
-// import { splitTextVariants, transition } from "../components/Variants"
 import SectionMarquee from "../components/SectionMarquee"
 import LowerFooter from "../components/LowerFooter"
 import arrow from "../assets/icons/right-arrow.svg"
-// import orbitAboutPage from "../assets/icons/orbitAboutPage.png"
-// import ArticlesSlider from "../components/ArticlesSlider"
-// import Marquee from "react-fast-marquee";
-// import gsap from "gsap";
-// import SplitText from "../utils/Split";
-// import useOnScreen from "../hooks/useOnScreen";
-// import CurtainSlider from "../components/curtain-slider/CurtainSlider";
 import { LocomotiveScrollProvider } from 'react-locomotive-scroll'
-// const useSize = () => {
-//   const { scroll } = useLocomotiveScroll()
-//
-//   useEffect(() => {
-//     console.log(scroll)
-//   })
-// }
 
 const HomePage = ()  => {
-  // const banner = {
-  //   animate: {
-  //     transition: {
-  //       delayChildren: 0.4,
-  //       staggerChildren: 0.1,
-  //     },
-  //   },
-  // };
-  // const letterAni = {
-  //   initial: { y: 400 },
-  //   animate: {
-  //     y: 0,
-  //     transition: {
-  //       ease: [0.6, 0.01, -0.05, 0.95],
-  //       duration: 1,
-  //     },
-  //   },
-  // };
-  // const AnimatedLetters = ({ title, disabled }) => (
-  //   <motion.span
-  //     className='row-title'
-  //     variants={disabled ? null : banner}
-  //     initial='initial'
-  //     animate='animate'>
-  //     {[...title].map((letter) => (
-  //       <motion.span
-  //         className='row-letter'
-  //         variants={disabled ? null : letterAni}>
-  //         {letter}
-  //       </motion.span>
-  //     ))}
-  //   </motion.span>
-  // );
-  // const ref = useRef(null);
-  //
-  // const [reveal, setReveal] = useState(false);
-  // const onScreen = useOnScreen(ref);
-  //
-  // useEffect(() => {
-  //   if (onScreen) setReveal(onScreen);
-  // }, [onScreen]);
-  //
-  // useEffect(() => {
-  //   if (reveal) {
-  //     const split = new SplitText("#headline", { type: "lines" });
-  //
-  //     gsap.to(split.lines, {
-  //       duration: 3,
-  //       y: -20,
-  //       opacity: 1,
-  //       stagger: 0.2,
-  //       ease: "power4.out",
-  //       // onComplete: () => split.revert(),
-  //     });
-  //   }
-  // }, [reveal]);
-
 
   const containerRef = useRef(null)
 
@@ -197,44 +107,6 @@ const HomePage = ()  => {
             </TriggerText>
 
 
-            {/*<TriggerText threshold=".5" delay=".2">*/}
-            {/*  <h2*/}
-            {/*    data-scroll*/}
-            {/*    data-scroll-speed="-2"*/}
-            {/*    data-scroll-direction="horizontal"*/}
-            {/*  >Rozwi</h2>*/}
-            {/*</TriggerText>*/}
-
-            {/*<TriggerText threshold=".5" delay=".2">*/}
-            {/*  <h2*/}
-            {/*    // data-scroll*/}
-            {/*    // data-scroll-speed="-2"*/}
-            {/*    // data-scroll-direction="horizontal"*/}
-            {/*    className="pseudo-line"*/}
-            {/*  >Jamy</h2>*/}
-            {/*</TriggerText>*/}
-
-            {/*<TriggerText threshold=".5" delay=".25">*/}
-            {/*  <h2*/}
-            {/*    data-scroll*/}
-            {/*    data-scroll-speed="1"*/}
-            {/*    data-scroll-direction="horizontal"*/}
-            {/*  >Marki</h2>*/}
-            {/*  <span*/}
-            {/*    data-scroll*/}
-            {/*    data-scroll-speed="-3"*/}
-            {/*    data-scroll-direction="horizontal"*/}
-            {/*  >naszych</span>*/}
-            {/*</TriggerText>*/}
-
-            {/*<TriggerText threshold=".5" delay=".3">*/}
-            {/*  <h2*/}
-            {/*    data-scroll*/}
-            {/*    data-scroll-speed="4"*/}
-            {/*    data-scroll-direction="horizontal"*/}
-            {/*  > Klientów </h2>*/}
-            {/*</TriggerText>*/}
-
             <TriggerImg delay={1}>
               <img
                 data-scroll
@@ -257,12 +129,8 @@ const HomePage = ()  => {
 
         </section>
 
-        {/*<SectionMarquee firstTape={false} secondTape={false} thirdTape={false} firstTapeScroll={true}*/}
-        {/*                secondTapeScroll={true} />*/}
-
         <SectionMarquee firstTape={false} secondTape={true} thirdTape={true} secondTapeScroll={true}
                         thirdTapeScroll={true} dataScrollSpeed="2"/>
-
 
         <section className="section-main-process">
           <div className="">
@@ -367,12 +235,8 @@ const HomePage = ()  => {
           </div>
         </section>
 
-        {/*<SectionMarquee firstTape={false} secondTape={false} thirdTape={false} firstTapeScroll={true} />*/}
-
         <SectionMarquee firstTape={false} secondTape={false} thirdTape={false} firstTapeScroll={true}
                         secondTapeScroll={true} />
-
-        {/*<ProjectsSubsection/>*/}
 
         <ProjectsSubsectionNew/>
 

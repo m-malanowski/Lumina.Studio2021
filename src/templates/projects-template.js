@@ -17,7 +17,7 @@ import { LocomotiveScrollProvider } from "react-locomotive-scroll"
 import SectionMarquee from "../components/SectionMarquee"
 import { Helmet } from "react-helmet"
 import TriggerImg from "../components/TriggerImg"
-import ProjectsSubsectionNew from "../components/ProjectsSubsectionNew"
+// import ProjectsSubsectionNew from "../components/ProjectsSubsectionNew"
 // ...GatsbyImageSharpFluid
 import TriggerText from "../components/TriggerText"
 
@@ -40,9 +40,7 @@ const ProjectTemplate = ({ data }) => {
           }
         }
         watch={
-          [
-            // <ProjectsSubsectionNew />
-          ]
+          []
         }
         containerRef={containerRef}
       >
@@ -101,7 +99,7 @@ const ProjectTemplate = ({ data }) => {
 
           </div>
 
-          <ProjectsSubsectionNew />
+          {/*<ProjectsSubsectionNew />*/}
 
 
           <SectionMarquee firstTape={false} secondTape={false} thirdTape={false} firstTapeScroll={true}

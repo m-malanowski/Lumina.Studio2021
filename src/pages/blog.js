@@ -1,20 +1,13 @@
 import React, { useRef } from "react"
-import Footer from "../components/Footer"
 import ArticlesSlider from "../components/ArticlesSlider"
-import Layout from "../components/Layout"
 import { graphql } from "gatsby"
-import Blogs from "../components/Blogs"
 import LowerFooter from "../components/LowerFooter"
-import arrowDown from "../assets/icons/arrowDown.svg"
-import ServicesSlider from "../components/ServicesSlider"
 import Worldwide from "../components/Worldwide"
 import SectionMarquee from "../components/SectionMarquee"
 import TriggerText from "../components/TriggerText"
 import { LocomotiveScrollProvider } from 'react-locomotive-scroll'
 import TriggerImg from "../components/TriggerImg"
-// import orbitAboutPage from "../assets/icons/orbitContact.svg"
 import orbitAboutPage from "../assets/icons/orbitBlogPage.svg"
-
 
 // ...GatsbyImageSharpFluid
 
@@ -105,8 +98,6 @@ const Blog = () => {
             </div>
           </div>
         </section>
-
-
 
         <section className="services-page-slider break-out">
           <ArticlesSlider/>

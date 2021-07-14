@@ -1,15 +1,7 @@
 import React from "react"
 import Footer from "../components/Footer"
 import { Helmet } from "react-helmet"
-import SocialLinks from "../constants/socialLinks"
-import ArticlesSlider from "../components/ArticlesSlider"
-import LowerFooter from "../components/LowerFooter"
-import orbitAboutPage from "../assets/icons/orbitAboutPage.png"
-import smallStar from "../assets/icons/smallStar.svg"
-import arrow from "../assets/icons/right-arrow.svg"
-import Worldwide from "../components/Worldwide"
-
-const kontakt = () => {
+const Kontakt = () => {
   return (
     <>
       <Helmet bodyAttributes={{
@@ -69,4 +61,4 @@ const kontakt = () => {
   )
 }
 
-export default kontakt
+export default Kontakt
