@@ -2550,14 +2550,29 @@ SECTIONS ________________________ SECTIONS
     }
   }
 
-  .tapes-container .second-tape-wrapper > .second-tape, .tapes-container .first-tape-wrapper > .first-tape {
+  .tapes-container .second-tape-wrapper > .second-tape{
+    span {
+      span:after {
+        content: ' ';
+        display: inline-block;
+        text-align: right;
+        background-image: url('../assets/imgs/redHotCross.svg');
+        background-size: 60px 60px;
+        height: 60px;
+        width: 60px;
+        margin-left: 1.0rem;
+      }
+    }
+  }
+
+  .tapes-container .first-tape-wrapper > .first-tape {
 
     span {
       span:after {
         content: ' ';
         display: inline-block;
         text-align: right;
-        background-image: url('../assets/icons/starSmallBlack.svg');
+        background-image: url('../assets/imgs/cloverSmallBlack.svg');
         background-size: 60px 60px;
         height: 60px;
         width: 60px;

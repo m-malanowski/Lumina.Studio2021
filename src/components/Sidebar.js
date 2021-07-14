@@ -4,8 +4,9 @@ import Socials from "../constants/socialLinks"
 import orbitMain from "../assets/icons/orbitMain.png";
 import mickyHand1 from "../assets/imgs/starSmallBlack.svg"
 import mickyHand2 from "../assets/imgs/cloverSmallBlack.svg"
-import mickyHand3 from "../assets/imgs/starSmallBlack.svg"
-import mickyHand4 from "../assets/imgs/cloverSmallBlack.svg"
+import mickyHand3 from "../assets/imgs/smallStarBlack.svg"
+import mickyHand4 from "../assets/imgs/redHotCross.svg"
+
 
 import { Link } from "gatsby"
 import { gsap } from "gsap";
@@ -180,9 +181,8 @@ const Sidebar = ({toggleSideBar, isOpen}) => {
               <Link to="/uslugi" className="menu__item-link"
                     onClick={toggleSideBar}
                     ref={el => (line3.current = el)}
-
               >Usługi</Link>
-              <img className="menu__item-img" src={mickyHand3} />
+              <img className="menu__item-img" src={mickyHand3}  />
               <div className="marquee">
                 <div className="marquee__inner">
                   <span>Usługi - Usługi - Usługi - Usługi - Usługi - Usługi - Usługi</span>
