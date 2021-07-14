@@ -1,7 +1,6 @@
 import React, { useRef } from "react"
 import Footer from "../components/Footer"
 import ArticlesSlider from "../components/ArticlesSlider"
-
 import Layout from "../components/Layout"
 import { graphql } from "gatsby"
 import Blogs from "../components/Blogs"

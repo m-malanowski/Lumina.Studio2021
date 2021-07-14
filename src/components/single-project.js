@@ -1,11 +1,11 @@
 import React, { useRef } from "react"
-import Footer from "../components/Footer"
+import Footer from "./Footer"
 import orbitSingleProject from "../assets/icons/orbitContact.svg"
 
-import Layout from "../components/Layout"
+import Layout from "./Layout"
 import { graphql } from "gatsby"
-import Blogs from "../components/Blogs"
-import LowerFooter from "../components/LowerFooter"
+import Blogs from "./Blogs"
+import LowerFooter from "./LowerFooter"
 import malva from "../assets/imgs/Kopelat/1.png"
 import malva2 from "../assets/imgs/Kopelat/2.png"
 import malva3 from "../assets/imgs/Kopelat/3.png"
@@ -15,13 +15,13 @@ import malva5 from "../assets/imgs/Kopelat/5.png"
 import { LocomotiveScrollProvider } from 'react-locomotive-scroll'
 
 import arrowDown from "../assets/icons/arrowDown.svg"
-import ServicesSlider from "../components/ServicesSlider"
+import ServicesSlider from "./ServicesSlider"
 import arrow from "../assets/icons/right-arrow.svg"
 import orbitMain from "../assets/icons/orbitMainView.png"
-import Worldwide from "../components/Worldwide"
-import SectionMarquee from "../components/SectionMarquee"
+import Worldwide from "./Worldwide"
+import SectionMarquee from "./SectionMarquee"
 import { Helmet } from "react-helmet"
-import TriggerImg from "../components/TriggerImg"
+import TriggerImg from "./TriggerImg"
 // ...GatsbyImageSharpFluid
 
 
