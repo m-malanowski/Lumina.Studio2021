@@ -2,41 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5d55e401-15fe-43b2-810d-1da9c4f903b3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/ProjectsSubsectionNew.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/SampleData.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/plane/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/plane/plane.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/templates/projects-template.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gatsby-config.js" beforeDir="false" afterPath="$PROJECT_DIR$/gatsby-config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gatsby-node.js" beforeDir="false" afterPath="$PROJECT_DIR$/gatsby-node.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/imgs/malva.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Animations.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Animations.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/LocomotiveScroll.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LocomotiveScroll.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/LowerFooter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LowerFooter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Sidebar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/TriggerText.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TriggerText.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Worldwide.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Worldwide.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/elo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/elo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/constants/links.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/links.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/constants/socialLinks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/socialLinks.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/components/hamburger.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/components/hamburger.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/styles.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/about.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/o-nas.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/blog.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/blog.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/contact.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/kontakt.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/portfolio.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/portfolio.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/projects.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/single-project.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/single-project.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/uslugi.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/uslugi.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/theme.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/o-nas.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/o-nas.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +68,7 @@
       <workItem from="1626160021001" duration="3224000" />
       <workItem from="1626165778785" duration="836000" />
       <workItem from="1626210637699" duration="637000" />
-      <workItem from="1626266092496" duration="4851000" />
+      <workItem from="1626266092496" duration="5947000" />
     </task>
     <servers />
   </component>

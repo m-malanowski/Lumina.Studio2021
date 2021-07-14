@@ -63,11 +63,6 @@ const ONas = () => {
 
   const containerRef = useRef(null)
 
-  useEffect(() => {
-
-
-  },[])
-
   return (
     <>
       {/*<SEO title="LUMINA STUDIO | Agencja Interaktywna"*/}
