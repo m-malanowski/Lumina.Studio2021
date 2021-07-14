@@ -3,9 +3,17 @@
   <component name="ChangeListManager">
     <list default="true" id="5d55e401-15fe-43b2-810d-1da9c4f903b3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/o-nas.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/o-nas.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/curtain-slider/Canvas/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/curtain-slider/Canvas/style.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/curtain-slider/CurtainSlider.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/curtain-slider/Plane/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/curtain-slider/Plane/shaders.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/curtain-slider/Plane/style.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/curtain-slider/dumbData.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/curtain-slider/store/reduxStore.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/curtain-slider/style.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/plane/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/plane/plane.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +76,7 @@
       <workItem from="1626160021001" duration="3224000" />
       <workItem from="1626165778785" duration="836000" />
       <workItem from="1626210637699" duration="637000" />
-      <workItem from="1626266092496" duration="5947000" />
+      <workItem from="1626266092496" duration="6434000" />
     </task>
     <servers />
   </component>
