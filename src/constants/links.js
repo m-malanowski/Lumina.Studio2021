@@ -33,10 +33,27 @@ const data = [
   },
 ]
 
+const NavLink = props => (
+  <Link
+    {...props}
+    getProps={({ isCurrent }) => {
+      return {
+        style: {
+          color: isCurrent ? "#0c0c0c" : "red !important",
+
+          // color: (condition) ? (true block) : ((condition2) ? (true block2) : (else block2)),
+          // borderBottom: isCurrent ? "1px solid white" : "none"
+        }
+      };
+    }}
+  />
+);
+
+
 const tempLinks = data.map(link => {
   return (
     <li key={link.id}>
-      <Link className="link link--kale" to={link.url}>{link.text}</Link>
+      <NavLink aria-current="location" className="link link--kale" to={link.url}>{link.text}</NavLink>
     </li>
   )
 })

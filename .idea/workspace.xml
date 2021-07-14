@@ -1,19 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ee694d7a-2567-4d80-bb6d-10629fa07e8c" name="Default Changelist" comment="" />
+    <list default="true" id="5d55e401-15fe-43b2-810d-1da9c4f903b3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/ProjectsSubsectionNew.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/SampleData.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/plane/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/plane/plane.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/projects-template.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gatsby-config.js" beforeDir="false" afterPath="$PROJECT_DIR$/gatsby-config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gatsby-node.js" beforeDir="false" afterPath="$PROJECT_DIR$/gatsby-node.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/imgs/malva.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Animations.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Animations.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/LocomotiveScroll.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LocomotiveScroll.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/LowerFooter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LowerFooter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Sidebar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/TriggerText.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TriggerText.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Worldwide.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Worldwide.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/elo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/elo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants/links.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/links.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants/socialLinks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/socialLinks.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/components/hamburger.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/components/hamburger.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/styles.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/about.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/o-nas.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/blog.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/blog.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/contact.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/kontakt.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/portfolio.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/portfolio.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/projects.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/single-project.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/single-project.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/uslugi.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/uslugi.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/theme.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/theme.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="SCSS File" />
-        <option value="JavaScript File" />
-      </list>
-    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -26,7 +54,7 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
-  <component name="ProjectId" id="1teu70ppFoo6gTQWw6xQG3Crvh1" />
+  <component name="ProjectId" id="1v1wnZctoBLW0MpWChyntsh1aUz" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -36,69 +64,42 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components" />
-    <property name="list.type.of.created.stylesheet" value="SCSS" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/templates" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
-    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="watcher.settings" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/components" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/css/components" />
+      <recent name="$PROJECT_DIR$/src/templates" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="ee694d7a-2567-4d80-bb6d-10629fa07e8c" name="Default Changelist" comment="" />
-      <created>1623141709790</created>
+      <changelist id="5d55e401-15fe-43b2-810d-1da9c4f903b3" name="Default Changelist" comment="" />
+      <created>1625743075989</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1623141709790</updated>
-      <workItem from="1623141723334" duration="713000" />
-      <workItem from="1623173989134" duration="5253000" />
-      <workItem from="1623182423039" duration="6790000" />
-      <workItem from="1623225005537" duration="967000" />
-      <workItem from="1623327925543" duration="5787000" />
-      <workItem from="1623523478608" duration="1804000" />
-      <workItem from="1623596639820" duration="12944000" />
-      <workItem from="1623613208423" duration="2712000" />
-      <workItem from="1623659896398" duration="3900000" />
-      <workItem from="1623780501620" duration="4047000" />
-      <workItem from="1623785312803" duration="7258000" />
-      <workItem from="1623831849808" duration="8196000" />
-      <workItem from="1623851188247" duration="1140000" />
-      <workItem from="1623858416669" duration="2531000" />
-      <workItem from="1623918103106" duration="3738000" />
-      <workItem from="1624187472888" duration="14195000" />
-      <workItem from="1624218862224" duration="10493000" />
-      <workItem from="1624266860271" duration="5582000" />
-      <workItem from="1624279925855" duration="1701000" />
-      <workItem from="1624297322450" duration="599000" />
-      <workItem from="1624360018769" duration="4581000" />
-      <workItem from="1624396440318" duration="8339000" />
-      <workItem from="1624435924972" duration="4510000" />
-      <workItem from="1624543022833" duration="14949000" />
-      <workItem from="1624563067946" duration="6605000" />
-      <workItem from="1624608622311" duration="5102000" />
-      <workItem from="1624631445616" duration="1989000" />
-      <workItem from="1624700514052" duration="439000" />
-      <workItem from="1624702893235" duration="6634000" />
-      <workItem from="1624713430246" duration="19995000" />
-      <workItem from="1624788051717" duration="1744000" />
-      <workItem from="1624803926430" duration="15299000" />
-      <workItem from="1624862239349" duration="5242000" />
-      <workItem from="1624870668890" duration="2611000" />
-      <workItem from="1625082180080" duration="637000" />
-      <workItem from="1625160027388" duration="24917000" />
-      <workItem from="1625209535275" duration="8000" />
-      <workItem from="1625217863279" duration="745000" />
+      <updated>1625743075989</updated>
+      <workItem from="1625743092635" duration="5287000" />
+      <workItem from="1625764599117" duration="12691000" />
+      <workItem from="1625819147961" duration="247000" />
+      <workItem from="1625824662696" duration="8269000" />
+      <workItem from="1625833757313" duration="9045000" />
+      <workItem from="1625852901833" duration="1598000" />
+      <workItem from="1625867134630" duration="2010000" />
+      <workItem from="1625909542508" duration="2651000" />
+      <workItem from="1625936363956" duration="4231000" />
+      <workItem from="1626005915354" duration="5718000" />
+      <workItem from="1626094971606" duration="11389000" />
+      <workItem from="1626160021001" duration="3224000" />
+      <workItem from="1626165778785" duration="836000" />
+      <workItem from="1626210637699" duration="637000" />
+      <workItem from="1626266092496" duration="4851000" />
     </task>
     <servers />
   </component>
@@ -116,16 +117,5 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/components/Variants.js</url>
-          <line>30</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

@@ -3,12 +3,12 @@ import cn from "classnames"
 // import globe from "../assets/icons/globe.svg"
 // import star from "../assets/icons/star.svg"
 // import starSm from "../assets/icons/starSmall.svg"
-// import arrow from "../assets/icons/right-arrow.svg"
 import orbitProcess from "../assets/icons/orbitProcess.png"
 import orbitAbout from "../assets/icons/orbitAbout.png"
 import orbitTwo from "../assets/icons/orbitTwo.png"
 import { useLocomotiveScroll } from 'react-locomotive-scroll'
-
+// import arrow from "../assets/icons/right-arrow.svg"
+import { Link } from "gatsby"
 import orbitMain from "../assets/icons/orbitMainViewNew.svg"
 import handDown from "../assets/icons/handDown.svg"
 // import thumbUp from "../assets/icons/thumbUp.svg"
@@ -17,7 +17,7 @@ import serviceStickers from "../assets/icons/serviceStickers.svg"
 import SEO from "../components/SEO"
 import { graphql } from "gatsby"
 import ProjectsSubsection from "../components/ProjectsSubsection"
-import ProjectsSubsectionOld from "../components/ProjectsSubsectionOld"
+import ProjectsSubsectionNew from "../components/ProjectsSubsectionNew"
 
 import Worldwide from "../components/Worldwide"
 import Footer from "../components/Footer"
@@ -45,7 +45,14 @@ import ArticlesSlider from "../components/ArticlesSlider"
 // import SplitText from "../utils/Split";
 // import useOnScreen from "../hooks/useOnScreen";
 // import CurtainSlider from "../components/curtain-slider/CurtainSlider";
-
+import { LocomotiveScrollProvider } from 'react-locomotive-scroll'
+// const useSize = () => {
+//   const { scroll } = useLocomotiveScroll()
+//
+//   useEffect(() => {
+//     console.log(scroll)
+//   })
+// }
 
 
 export default () => {
@@ -107,6 +114,8 @@ export default () => {
   // }, [reveal]);
 
 
+  const containerRef = useRef(null)
+
   const schema = {
     "@context": "https://schema.org",
     "@type": "Organization",
@@ -137,54 +146,102 @@ export default () => {
   //   // });
   //
   // }, []);
-
-
-
-
   return (
-
-
 
     <>
       <SEO title="LUMINA STUDIO | Agencja Interaktywna"
            description="LUMINA STUDIO | Agencja Interaktywna"
            schemaMarkup={schema}
       />
-      <main className="index-page container-fluid">
+
+      <LocomotiveScrollProvider
+        options={
+          {
+            smooth: true,
+            getDirection: true,
+          }
+        }
+        watch={
+          [
+
+          ]
+        }
+        containerRef={containerRef}
+      >
+
+      <main className="index-page container-fluid"  data-scroll-container ref={containerRef} >
         <section className="section-main-container">
           <div className="main-container">
 
-              <TriggerText threshold=".5" delay=".2">
-                <span>the</span>
-                <h2>Supreme</h2>
-              </TriggerText>
 
-              <TriggerText threshold=".5" delay=".25">
-                <h2>Discipline</h2>
-                <span>of</span>
-              </TriggerText>
+            <TriggerText threshold=".5" delay=".2">
+              <h2
+                data-scroll
+                data-scroll-speed="-1"
+                data-scroll-direction="horizontal"
+              >Idziemy</h2>
+            </TriggerText>
 
-              <TriggerText threshold=".5" delay=".3">
-                <h2>Mountaineerin</h2>
-              </TriggerText>
-
-              {/*<h2 className="subsec-title">*/}
-              {/*  /!*<span>meggings </span>*!/*/}
-              {/*  /!*<span>foo truck</span>*!/*/}
-              {/*  /!*<span>Shoredith</span>*!/*/}
-              {/*  <SplitText*/}
-              {/*    initial={{ y: "100%" }}*/}
-              {/*    animate="visible"*/}
-              {/*    exit="hidden"*/}
-              {/*    variants={splitTextVariants}>*/}
-              {/*    Kreatywna Agencja Interaktywna*/}
-              {/*  </SplitText>*/}
-              {/*</h2>*/}
+            <TriggerText threshold=".5" delay=".2">
+              <span
+                data-scroll
+                data-scroll-speed="2"
+                data-scroll-direction="horizontal"
+              >z</span>
+              <h2
+                data-scroll
+                data-scroll-speed="-3"
+                data-scroll-direction="horizontal"
+              >Duchem</h2>
+            </TriggerText>
 
 
-            {/*<div className="bg-circles-section">*/}
-            {/*  <div className="blurry-circle bc-1"/>*/}
-            {/*</div>*/}
+            <TriggerText threshold=".5" delay=".2">
+              <h2
+                data-scroll
+                data-scroll-speed="1"
+                data-scroll-direction="horizontal"
+              >Czasu</h2>
+            </TriggerText>
+
+
+            {/*<TriggerText threshold=".5" delay=".2">*/}
+            {/*  <h2*/}
+            {/*    data-scroll*/}
+            {/*    data-scroll-speed="-2"*/}
+            {/*    data-scroll-direction="horizontal"*/}
+            {/*  >Rozwi</h2>*/}
+            {/*</TriggerText>*/}
+
+            {/*<TriggerText threshold=".5" delay=".2">*/}
+            {/*  <h2*/}
+            {/*    // data-scroll*/}
+            {/*    // data-scroll-speed="-2"*/}
+            {/*    // data-scroll-direction="horizontal"*/}
+            {/*    className="pseudo-line"*/}
+            {/*  >Jamy</h2>*/}
+            {/*</TriggerText>*/}
+
+            {/*<TriggerText threshold=".5" delay=".25">*/}
+            {/*  <h2*/}
+            {/*    data-scroll*/}
+            {/*    data-scroll-speed="1"*/}
+            {/*    data-scroll-direction="horizontal"*/}
+            {/*  >Marki</h2>*/}
+            {/*  <span*/}
+            {/*    data-scroll*/}
+            {/*    data-scroll-speed="-3"*/}
+            {/*    data-scroll-direction="horizontal"*/}
+            {/*  >naszych</span>*/}
+            {/*</TriggerText>*/}
+
+            {/*<TriggerText threshold=".5" delay=".3">*/}
+            {/*  <h2*/}
+            {/*    data-scroll*/}
+            {/*    data-scroll-speed="4"*/}
+            {/*    data-scroll-direction="horizontal"*/}
+            {/*  > Klientów </h2>*/}
+            {/*</TriggerText>*/}
 
             <TriggerImg delay={1}>
               <img
@@ -201,15 +258,19 @@ export default () => {
             </TriggerImg>
             <div className="scroll-down">
               <TriggerImg delay={1.2}>
-                <img width="125" src={handDown} alt="" />
+                <img width="85" src={handDown} alt="" />
               </TriggerImg>
             </div>
           </div>
 
         </section>
 
-        <SectionMarquee firstTape={false} secondTape={false} thirdTape={false} firstTapeScroll={true}
-                        secondTapeScroll={true} />
+        {/*<SectionMarquee firstTape={false} secondTape={false} thirdTape={false} firstTapeScroll={true}*/}
+        {/*                secondTapeScroll={true} />*/}
+
+        <SectionMarquee firstTape={false} secondTape={true} thirdTape={true} secondTapeScroll={true}
+                        thirdTapeScroll={true} dataScrollSpeed="2"/>
+
 
         <section className="section-main-process">
           <div className="">
@@ -224,8 +285,9 @@ export default () => {
             <div className="subsec-body">
               <div className="ss-body-second">
                 <TriggerText threshold=".5" delay=".5">
-                  <p>Distillery type write brunch wayfarers letter press hammock meg gings food truck hell o tom
-                    edison <em>on the polaroid. </em> Man osubway tile. </p>
+                  <p>
+                    Jeżeli tak jak my uważasz, że większość stron internetowych dostępnych w internecie jest nudna i bez polotu, to <em>dobrze trafiłeś.</em>
+                    </p>
                 </TriggerText>
                 <TriggerText threshold=".5" delay=".5">
                   <span className="subsec-span">Kim jesteśmy</span>
@@ -249,17 +311,17 @@ export default () => {
                     {/*<span>01</span>*/}
                   </TriggerText>
                   <TriggerText threshold=".5" delay=".5">
-                    <p>Pok pok live-edge biodiesel gluten-free, dison bulb cornhole. Woke hashtag actually cloud bread
-                      listicle letterpress.</p>
+                    <p>Projektujemy logotypy, wizytówki oraz papier firmowy. Dbamy o to by wszystkie elementy identyfikacji wizualnej były spójne ze sobą jak
+                      również odzwierciedlały branżę lub sprzedawany produkt.</p>
                   </TriggerText>
 
                   <TriggerText threshold=".5" delay=".5">
                     <div className="learn-more">
-                      <a href="/single-project">
+                      <Link to="/uslugi">
                         <span>Sprawdź</span>
                         <span />
                         <span>Więcej</span>
-                      </a>
+                      </Link>
                     </div>
                   </TriggerText>
 
@@ -271,17 +333,17 @@ export default () => {
                     {/*<span>02</span>*/}
                   </TriggerText>
                   <TriggerText threshold=".5" delay=".5">
-                    <p>Pok pok live-edge biodiesel gluten-free, godard knausgaard chia venmo edison bulb cornhole. Woke
-                      hashtag actually cloud bread listicle letterpress.</p>
+                    <p>W naszej agencji interaktywnej świadczymy kompleksowe usługi z zakresu projektowania responsywnych stron internetowych.
+                      Wszystkie strony www wyposażamy w dedykowany system CMS do samodzielnego zarządzania treścią.</p>
                   </TriggerText>
 
                   <TriggerText threshold=".5" delay=".5">
                     <div className="learn-more">
-                      <a href="/single-project">
+                      <Link to="/uslugi">
                         <span>Sprawdź</span>
                         <span />
                         <span>Więcej</span>
-                      </a>
+                      </Link>
                     </div>
                   </TriggerText>
 
@@ -289,21 +351,21 @@ export default () => {
 
                 <div className="single-process">
                   <TriggerText threshold=".5" delay=".5">
-                    <h3>Design</h3>
+                    <h3>Social media</h3>
                     {/*<span>03</span>*/}
                   </TriggerText>
                   <TriggerText threshold=".5" delay=".5">
-                    <p>Pok pok live-edge biodiesel gluten-free, godard knausgaard craft beer wolf succulents chia venmo
-                      edison bulb cornhole. Woke hashtag actually cloud bread listicle letterpress.</p>
+                    <p>Mając stronę lub sklep internetowy warto pomyśleć o skutecznej reklamie. Idealnym rozwiązaniem są kampanie Google Ads,
+                      Facebook oraz pozycjonowanie stron internetowych.</p>
                   </TriggerText>
 
                   <TriggerText threshold=".5" delay=".5">
                     <div className="learn-more">
-                      <a href="/single-project">
+                      <Link to="/uslugi">
                         <span>Sprawdź</span>
                         <span />
                         <span>Więcej</span>
-                      </a>
+                      </Link>
                     </div>
                   </TriggerText>
 
@@ -313,11 +375,101 @@ export default () => {
           </div>
         </section>
 
-        <SectionMarquee firstTape={false} secondTape={false} thirdTape={false} firstTapeScroll={true} />
+        {/*<SectionMarquee firstTape={false} secondTape={false} thirdTape={false} firstTapeScroll={true} />*/}
 
-        <ProjectsSubsection/>
+        <SectionMarquee firstTape={false} secondTape={false} thirdTape={false} firstTapeScroll={true}
+                        secondTapeScroll={true} />
+
+        {/*<ProjectsSubsection/>*/}
+
+        <ProjectsSubsectionNew/>
+
+        <section className="section-show-more">
+          <div className="constellation">
+            <div className="stars-wrapper">
+              <img src={smallStar} width={50} alt=""
+                   data-scroll
+                   data-scroll-speed="-2"
+              />
+              <img src={smallStar} width={40} alt=""
+                   data-scroll
+                   data-scroll-speed="-1"
+              />
+              <img src={smallStar} width={30} alt=""
+                   data-scroll
+                   data-scroll-speed="-2"
+              />
+            </div>
+          </div>
+
+          <div className="main-container">
+
+            <TriggerText threshold=".5" delay=".2">
+              <h2>Stwó</h2>
+            </TriggerText>
+            <TriggerText threshold=".5" delay=".25">
+              <h2 className="pseudo-line">rzmy</h2>
+            </TriggerText>
+
+            {/*<TriggerText threshold=".5" delay=".25">*/}
+            {/*  /!*<span>the</span>*!/*/}
+            {/*  <h2>Razem</h2>*/}
+            {/*</TriggerText>*/}
 
 
+            <TriggerText threshold=".5" delay=".3">
+              <h2>Razem</h2>
+              <span className="ml-5">Coś</span>
+            </TriggerText>
+
+
+            <TriggerText threshold=".5" delay=".35">
+              {/*<h2 className="pseudo-line">Ciekawego</h2>*/}
+              <h2>Fajnego</h2>
+              <Link to="/portfolio">
+                <img src={arrow} alt="" width="120px" className="ml-5"/>
+              </Link>
+            </TriggerText>
+
+
+            {/*<TriggerText threshold=".5" delay=".3">*/}
+            {/*  /!*<h2 className="pseudo-line">Ciekawego</h2>*!/*/}
+            {/*  <h2 className="pseudo-line">Wego</h2>*/}
+            {/*  <Link to="/portfolio">*/}
+            {/*    <img src={arrow} alt="" width="100px" />*/}
+            {/*  </Link>*/}
+            {/*</TriggerText>*/}
+
+
+          </div>
+        </section>
+
+        {/*<section className="experimento ">*/}
+        {/*  <div className="single">*/}
+        {/*    <h6> News December 2nd, 2020</h6>*/}
+        {/*    <h5>What governs your deon, Co-Founder and Creative</h5>*/}
+        {/*    <p>s  creativity and innovation. Incorporating the process of play into their work ensures that they enjoy what they make and that their clients do too.</p>*/}
+        {/*    <img src="" alt="" />*/}
+        {/*  </div>*/}
+        
+        {/*  <div className="single">*/}
+        {/*    <h6> News December 2nd, 2020</h6>*/}
+        {/*    <h5>What governs your desigKenjiro Kirton, Co-Founder and Creative</h5>*/}
+        {/*    <p>Kivity and innovation. Incorporating the process of play into their work ensures that they enjoy what they make and that their clients do too.</p>*/}
+        {/*    <img src="" alt="" />*/}
+        {/*  </div>*/}
+        
+        {/*  <div className="single">*/}
+        {/*    <h6> News December 2nd, 2020</h6>*/}
+        {/*    <h5> DesignThinkers 2020, Kenjiro Kirton, Co-Founder and Creative</h5>*/}
+        {/*    <p>Ken talk ofe process of play into their work ensures that they enjoy what they make and that their clients do too.</p>*/}
+        {/*    <img src="" alt="" />*/}
+        {/*  </div>*/}
+        {/*</section>*/}
+
+        {/*<section className="services-page-slider break-out">*/}
+        {/*  <ArticlesSlider/>*/}
+        {/*</section>*/}
         {/*<SectionMarquee firstTape={false} secondTape={true} thirdTape={true} secondTapeScroll={true}*/}
         {/*                thirdTapeScroll={true} dataScrollSpeed="2"/>*/}
 
@@ -640,9 +792,11 @@ export default () => {
 
         <Worldwide />
 
-      </main>
+        <LowerFooter />
 
-      <LowerFooter />
+      </main>
+      </LocomotiveScrollProvider>
+
     </>
   )
 }

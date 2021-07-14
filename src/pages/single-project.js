@@ -1,13 +1,18 @@
-import React from "react"
+import React, { useRef } from "react"
 import Footer from "../components/Footer"
-import orbitSingleProject from "../assets/icons/orbitSingleProject.png"
+import orbitSingleProject from "../assets/icons/orbitContact.svg"
 
 import Layout from "../components/Layout"
 import { graphql } from "gatsby"
 import Blogs from "../components/Blogs"
 import LowerFooter from "../components/LowerFooter"
-import malva from "../assets/imgs/malva.png"
-import malva2 from "../assets/imgs/malva2.png"
+import malva from "../assets/imgs/Kopelat/1.png"
+import malva2 from "../assets/imgs/Kopelat/2.png"
+import malva3 from "../assets/imgs/Kopelat/3.png"
+import malva4 from "../assets/imgs/Kopelat/4.png"
+import malva5 from "../assets/imgs/Kopelat/5.png"
+
+import { LocomotiveScrollProvider } from 'react-locomotive-scroll'
 
 import arrowDown from "../assets/icons/arrowDown.svg"
 import ServicesSlider from "../components/ServicesSlider"
@@ -15,18 +20,50 @@ import arrow from "../assets/icons/right-arrow.svg"
 import orbitMain from "../assets/icons/orbitMainView.png"
 import Worldwide from "../components/Worldwide"
 import SectionMarquee from "../components/SectionMarquee"
+import { Helmet } from "react-helmet"
+import TriggerImg from "../components/TriggerImg"
 // ...GatsbyImageSharpFluid
 
+
 const Blog = () => {
+
+  const containerRef = useRef(null)
+
   return (
     <>
-      <main className="single-project-page container-fluid">
-        <div className="page-content">
-          <img className="orbit" width="700" src={orbitSingleProject} alt="" />
+      <Helmet bodyAttributes={{
+        id: 'single-project-page'
+      }}   />
+
+      <LocomotiveScrollProvider
+        options={
+          {
+            smooth: true,
+            getDirection: true,
+          }
+        }
+        watch={
+          [
+
+          ]
+        }
+        containerRef={containerRef}
+      >
+
+
+      <main className="single-project-page container-fluid"  data-scroll-container ref={containerRef}>
+
+        <TriggerImg delay={1}>
+          <img
+            data-scroll
+            data-scroll-speed="1"
+            data-scroll-position="top"
+            className="orbit" width="1000" src={orbitSingleProject} alt="" />
+        </TriggerImg>
 
           <div className="subsec-header">
             {/*<h5 className="">01.</h5>*/}
-            <h2 className="subsec-title">Radca Tomczak</h2>
+            <h2 className="subsec-title">Carra</h2>
           </div>
 
           <div className="subsec-body">
@@ -41,19 +78,63 @@ const Blog = () => {
             </div>
           </div>
 
-          <div className="single-project-body">
-            <div className="subsec-header">
-              <h5 className="">01.</h5>
-              <h2 className="subsec-title">Główny widok</h2>
-            </div>
-            <img className="" width="900" src={malva} alt="" />
+          {/*<div className="single-project-body">*/}
+          {/*  <div className="subsec-header">*/}
+          {/*    <h5 className="">01.</h5>*/}
+          {/*    <h2 className="subsec-title">Główny widok</h2>*/}
+          {/*  </div>*/}
+          {/*  <img className="" width="900" src={malva} alt="" />*/}
 
-            <div className="subsec-header">
-              <h5 className="">02.</h5>
-              <h2 className="subsec-title">About</h2>
+          {/*  <div className="subsec-header">*/}
+          {/*    <h5 className="">02.</h5>*/}
+          {/*    <h2 className="subsec-title">ONas</h2>*/}
+          {/*  </div>*/}
+          {/*  <img className="" width="900" src={malva2} alt="" />*/}
+          {/*</div>*/}
+
+          <div className="single-project-body">
+            <div className="imgs-wrapper">
+
+              <img className="" width="900" src={malva3} alt=""
+                   data-scroll
+                   data-scroll-speed="-2"
+                   // data-scroll-direction="horizontal"
+              />
+              <img className="" width="900" src={malva2} alt=""
+                   data-scroll
+                   data-scroll-speed="-2"
+                   // data-scroll-direction="horizontal"
+              />
+              <img className="" width="900" src={malva4} alt=""
+                   data-scroll
+                   data-scroll-speed="-2"
+                   // data-scroll-direction="horizontal"
+              />
+
+              <img className="" width="900" src={malva5} alt=""
+                   data-scroll
+                   data-scroll-speed="-1"
+                // data-scroll-direction="horizontal"
+              />
+              <img className="" width="900" src={malva} alt=""
+                   data-scroll
+                   data-scroll-speed="-2"
+                // data-scroll-direction="horizontal"
+              />
+              <img className="" width="900" src={malva3} alt=""
+                   data-scroll
+                   data-scroll-speed="-2"
+                // data-scroll-direction="horizontal"
+              />
+              <img className="" width="900" src={malva2} alt=""
+                   data-scroll
+                   data-scroll-speed="-2"
+                // data-scroll-direction="horizontal"
+              />
             </div>
-            <img className="" width="900" src={malva2} alt="" />
+
           </div>
+
 
           <section className="section-more-projects">
             <div className="subsec-header">
@@ -102,7 +183,6 @@ const Blog = () => {
             {/*</div>*/}
 
           </section>
-        </div>
 
 
         <SectionMarquee firstTape={false} secondTape={false} thirdTape={false} firstTapeScroll={true} secondTapeScroll={true}
@@ -110,6 +190,8 @@ const Blog = () => {
 
 
       </main>
+      </LocomotiveScrollProvider>
+
     </>
   )
 }

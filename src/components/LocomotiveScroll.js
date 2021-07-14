@@ -23,6 +23,7 @@ const Scroll = callbacks => {
       document.documentElement.setAttribute("data-direction", func.direction)
     })
 
+    console.log(callbacks)
 
     return () => {
       if (locomotiveScroll) locomotiveScroll.destroy()

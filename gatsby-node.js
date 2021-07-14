@@ -1,28 +1,29 @@
-// const path = require("path")
+const path = require("path")
 
-// // create pages dynamically
-// exports.createPages = async ({ graphql, actions }) => {
-//   const { createPage } = actions
-//   const result = await graphql(`
-//     {
-//       blogs: allStrapiBlogs {
-//         nodes {
-//           slug
-//         }
-//       }
-//     }
-//   `)
+// create pages dynamically
+exports.createPages = async ({ graphql, actions }) => {
+  const { createPage } = actions
+  const result = await graphql(`
+    {
+      projects: allStrapiProjects {
+        nodes {
+          slug
+        }
+      }
+    }
+  `)
 
-//   result.data.blogs.nodes.forEach(blog => {
-//     createPage({
-//       path: `/blogs/${blog.slug}`,
-//       component: path.resolve(`src/templates/blog-template.js`),
-//       context: {
-//         slug: blog.slug,
-//       },
-//     })
-//   })
-// }
+  result.data.projects.nodes.forEach(project => {
+    createPage({
+      path: `/portfolio/${project.slug}`,
+      component: path.resolve(`src/templates/projects-template.js`),
+      context: {
+        slug: project.slug,
+      },
+    })
+  })
+}
+
 exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
   if (stage === "build-html" || stage === "develop-html") {
     actions.setWebpackConfig({
@@ -37,3 +38,30 @@ exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
     })
   }
 }
+
+//
+// // Creating node for array media query
+// const { createRemoteFileNode } = require(`gatsby-source-filesystem`);
+//
+// exports.onCreateNode = async ({ node, actions, store, cache }) => {
+//   const { createNode, createNodeField } = actions;
+//
+//   if (node.internal.type !== null && node.internal.type === "strapiProjects") {
+//     for (const category of node.category) {
+//       for (const image of category.images) {
+//         console.log(image);
+//         const fileNode = await createRemoteFileNode({
+//           url: "http://localhost:1337" + image.url,
+//           store,
+//           cache,
+//           createNode,
+//           createNodeId: (id) => image.id.toString(),
+//         });
+//
+//         if (fileNode) {
+//           image.localFile___NODE = fileNode.id;
+//         }
+//       }
+//     }
+//   }
+// };

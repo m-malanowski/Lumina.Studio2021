@@ -1,35 +1,34 @@
 import React from "react"
 import SocialLinks from "../constants/socialLinks"
 import arrow from "../assets/icons/right-arrow.svg"
-import orbitFooter from "../assets/icons/orbitFooter.png"
+import orbitFooter from "../assets/icons/orbitContact.svg"
 import TriggerText from "../components/TriggerText"
 import TriggerImg from "../components/TriggerImg"
 const Footer = () => {
   return (
     <>
       <footer className="container-fluid contact-page">
-
-        <TriggerText threshold="0" delay=".8" cName="circle-wrapper">
-          <div className="circle">
-            <p>Brief</p>
-          </div>
-        </TriggerText>
+        {/*<TriggerText threshold="0" delay=".8" cName="circle-wrapper">*/}
+        {/*  <div className="circle">*/}
+        {/*    <p>Brief</p>*/}
+        {/*  </div>*/}
+        {/*</TriggerText>*/}
 
         <div className="footer-top">
           <div>
             {/*<h5><em>Nawiąż</em> kontakt</h5>*/}
             <TriggerText threshold=".5" delay=".5">
-              <span className="subsec-title">Zadzwoń <br/>   +(48) 123 456 789  </span>
-            </TriggerText>
-            <TriggerText threshold=".5" delay=".6">
-              <h5 className="mt-3"><a href="mailto:hello@lumina.studio">hello@lumina.studio</a></h5>
+              <span className="subsec-title">Zadzwoń <br/> +(48) 506 870 672 </span>
             </TriggerText>
             <TriggerText threshold=".5" delay=".7">
-              <button type="button" className="mt-5 button outline footer-button">Wyślij wiadomość</button>
+              <h5 className="mt-3"><a href="mailto:hello@lumina.studio">hello@lumina.studio</a></h5>
+            </TriggerText>
+            <TriggerText threshold=".5" delay=".8">
+              <a href="mailto:hello@lumina.studio"><button type="button" className="mt-5 button outline footer-button">Wyślij wiadomość</button></a>
             </TriggerText>
 
-            <TriggerImg>
-              <img className="orbit" width="400" src={orbitFooter} alt="" />
+            <TriggerImg delay={1}>
+              <img className="orbit" width="1200" src={orbitFooter} alt="" />
             </TriggerImg>
           </div>
           {/*<div className="footer-top-right">*/}

@@ -6,7 +6,7 @@ export const staggerReveal = (node1, node2) => {
     duration: 0.8,
     height: 0,
     transformOrigin: "right top",
-    skewY: 2,
+    skewY: 4,
     ease: "power3.inOut",
     stagger: {
       amount: 0.1
@@ -29,9 +29,10 @@ export const staggerRevealClose = (node1, node2) => {
 // STAGGER THE LINKS TO APPEAR
 export const staggerText = (node1, node2, node3, node4) => {
   gsap.from([node1, node2, node3, node4], {
-    duration: 0.8,
+    duration: 1.2,
+    opacity: 0,
     y: 100,
-    delay: 0.1,
+    delay: 0.4,
     ease: "power3.inOut",
     stagger: {
       amount: 0.3
@@ -44,59 +45,75 @@ export const fadeInUp = node => {
   gsap.from(node, {
     y: 60,
     duration: 1,
-    delay: 0.2,
+    delay: 1,
     opacity: 0,
     ease: "power3.inOut"
   });
 };
 
-// Hover on the link
-export const handleHover = e => {
-  gsap.to(e.target, {
-    duration: 0.3,
-    y: 3,
-    skewX: 4,
-    ease: "power1.inOut"
-  });
-};
 
-// Hover off the link
-export const handleHoverExit = e => {
-  gsap.to(e.target, {
-    duration: 0.3,
-    y: -3,
-    skewX: 0,
-    ease: "power1.inOut"
-  });
-};
-
-// adds city image once you hover on
-export const handleCity = (city, target) => {
-  gsap.to(target, {
-    duration: 0,
-    background: `url(${city}) center center`
-  });
-  gsap.to(target, {
-    duration: 0.4,
-    opacity: 1,
-    ease: "power3.inOut"
-  });
-  gsap.from(target, {
-    duration: 0.4,
-    skewY: 2,
-    transformOrigin: "right top"
-  });
-};
-
-// Removes the city image once you hover off
-export const handleCityReturn = target => {
-  gsap.to(target, {
-    duration: 0,
-    skewY: 0
-  });
-  gsap.to(target, {
-    duration: 0.4,
+export const staggerTextClose = (node1, node2, node3, node4) => {
+  gsap.to([node1, node2, node3, node4], {
+    duration: 1.2,
     opacity: 0,
-    skewY: 0
+    y: 100,
+    delay: 0.5,
+    ease: "power3.inOut",
+    stagger: {
+      amount: 0.3
+    }
   });
 };
+
+
+
+// // Hover on the link
+// export const handleHover = e => {
+//   gsap.to(e.target, {
+//     duration: 0.3,
+//     y: 3,
+//     skewX: 4,
+//     ease: "power1.inOut"
+//   });
+// };
+//
+// // Hover off the link
+// export const handleHoverExit = e => {
+//   gsap.to(e.target, {
+//     duration: 0.3,
+//     y: -3,
+//     skewX: 0,
+//     ease: "power1.inOut"
+//   });
+// };
+//
+// // adds city image once you hover on
+// export const handleCity = (city, target) => {
+//   gsap.to(target, {
+//     duration: 0,
+//     background: `url(${city}) center center`
+//   });
+//   gsap.to(target, {
+//     duration: 0.4,
+//     opacity: 1,
+//     ease: "power3.inOut"
+//   });
+//   gsap.from(target, {
+//     duration: 0.4,
+//     skewY: 2,
+//     transformOrigin: "right top"
+//   });
+// };
+//
+// // Removes the city image once you hover off
+// export const handleCityReturn = target => {
+//   gsap.to(target, {
+//     duration: 0,
+//     skewY: 0
+//   });
+//   gsap.to(target, {
+//     duration: 0.4,
+//     opacity: 0,
+//     skewY: 0
+//   });
+// };

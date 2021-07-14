@@ -26,7 +26,7 @@ const Worldwide = () => {
       {/*<div className="bg-circles-section">*/}
       {/*  <div className="blurry-circle bc-4"/>*/}
       {/*</div>*/}
-      <img width="125" className="thumb-up" src={thumbUp} alt="" />
+      <img width="85" className="thumb-up" src={thumbUp} alt="" />
       <div className="worldwide-container">
         <TriggerImg delay={.1}>
           <img

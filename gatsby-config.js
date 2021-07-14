@@ -6,17 +6,18 @@
 
 module.exports = {
   siteMetadata: {
-    title: "WebDev Portfolio",
-    description: "This is WebDev Portfolio Site",
+    title: "Lumina Studio - Website",
+    description: "Lumina Studio - Website",
     author: "@webdev",
-    twitterUsername: "@john_smilga",
+    twitterUsername: "@luminastudio2021",
     image: "/twitter-img.png",
-    siteUrl: "https://testing-strapi-gatsby-build.netlify.app",
+    siteUrl: "https://lumina.studio",
   },
   plugins: [
     `gatsby-plugin-sass`,
-    `gatsby-transformer-sharp`,
+    `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sitemap`,
     {
@@ -37,13 +38,15 @@ module.exports = {
     {
       resolve: `gatsby-source-strapi`,
       options: {
-        apiURL: `http://localhost:1337`,
+        apiURL: `https://lumina-studio-2021-backend.herokuapp.com`,
         queryLimit: 1000, // Default to 100
-        //   contentTypes : `jobs`, `projects`, `blogs`,
+          // contentTypes : `projects`,
         //   singleType : `about`
         //  ONLY ADD TO ARRAY IF YOU HAVE DATA IN STRAPI !!!!
-        contentTypes: [],
-        singleTypes: [],
+        collectionTypes: [`projects`],
+        // contentTypes: [`projects`],
+
+        // singleTypes: [],
       },
     },
     // {

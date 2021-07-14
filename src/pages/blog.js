@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useRef } from "react"
 import Footer from "../components/Footer"
 import ArticlesSlider from "../components/ArticlesSlider"
 
@@ -11,12 +11,25 @@ import ServicesSlider from "../components/ServicesSlider"
 import Worldwide from "../components/Worldwide"
 import SectionMarquee from "../components/SectionMarquee"
 import TriggerText from "../components/TriggerText"
+import { LocomotiveScrollProvider } from 'react-locomotive-scroll'
+import TriggerImg from "../components/TriggerImg"
+// import orbitAboutPage from "../assets/icons/orbitContact.svg"
+import orbitAboutPage from "../assets/icons/orbitBlogPage.svg"
+
+
 // ...GatsbyImageSharpFluid
 
 const Blog = () => {
+  const containerRef = useRef(null)
+
   return (
     <>
-      <main className="blog-page container-fluid">
+      <LocomotiveScrollProvider
+        options={{ smooth: true, lerp: 0.05 }}
+        containerRef={containerRef}
+        watch={[]}
+      >
+      <main className="blog-page container-fluid"  data-scroll-container ref={containerRef}>
         {/*<div className="page-content">*/}
 
         {/*  <div className="subsec-header">*/}
@@ -46,29 +59,55 @@ const Blog = () => {
         {/*                thirdTapeScroll={true} dataScrollPosition="bottom" dataScrollSpeed="2"/>*/}
         {/*<Worldwide/>*/}
 
-        <section className="section-about-container">
+        <section className="section-blog-container">
           <div className="main-container">
 
             <TriggerText threshold=".5" delay=".2">
-              <h2>Step</h2>
+              <h2>blog</h2>
             </TriggerText>
 
-            <TriggerText threshold=".5" delay=".25">
-              <span>into</span>
-              <h2>Van</h2>
-            </TriggerText>
+            {/*<TriggerText threshold=".5" delay=".25">*/}
+            {/*  <span>into</span>*/}
+            {/*  <h2>Van</h2>*/}
+            {/*</TriggerText>*/}
 
-            <TriggerText threshold=".5" delay=".3">
-              <h2>Gogh's</h2>
-            </TriggerText>
+            {/*<TriggerText threshold=".5" delay=".3">*/}
+            {/*  <h2>Gogh's</h2>*/}
+            {/*</TriggerText>*/}
 
-            <TriggerText threshold=".5" delay=".35">
-              <h2>World</h2>
-            </TriggerText>
-
+            {/*<TriggerText threshold=".5" delay=".35">*/}
+            {/*  <h2>World</h2>*/}
+            {/*</TriggerText>*/}
+            <TriggerImg delay={1}>
+              <img
+                data-scroll
+                data-scroll-speed="1"
+                data-scroll-position="top"
+                className="orbit-blog" width="70%" src={orbitAboutPage} alt="" />
+            </TriggerImg>
           </div>
-
         </section>
+
+        <section>
+          <div className="">
+            <div className="subsec-body">
+              <div className="ss-body-first">
+              </div>
+              <div className="ss-body-second">
+                <TriggerText threshold="0" delay=".5">
+                  <p> Nasza agencja specjializuję się w tworzeniu aplikacji internetowych oraz <em> identyfikacji wizualnej </em> dla firm. Coś tam napisać o blogu.
+                  </p>
+                </TriggerText>
+
+                <TriggerText threshold="0" delay=".35">
+                  <span className="subsec-span">Aktualności</span>
+                </TriggerText>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
 
         <section className="services-page-slider break-out">
           <ArticlesSlider/>
@@ -78,9 +117,10 @@ const Blog = () => {
                         thirdTapeScroll={true} dataScrollPosition="bottom" dataScrollSpeed="2"/>
 
         <Worldwide />
+        <LowerFooter />
 
       </main>
-      <LowerFooter />
+      </LocomotiveScrollProvider>
     </>
   )
 }
