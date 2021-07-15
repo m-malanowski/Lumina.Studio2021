@@ -1990,12 +1990,12 @@ SECTIONS ________________________ SECTIONS
   }
 }
 .section-show-more{
-  margin: 10rem 0;
+  margin: 20rem 0;
   position: relative;
   .orbit{
     position: absolute;
     top: 25%;
-    right: 5%;
+    left: -5%;
   }
 
   .constellation{
@@ -2556,7 +2556,7 @@ SECTIONS ________________________ SECTIONS
         content: ' ';
         display: inline-block;
         text-align: right;
-        background-image: url('../assets/imgs/redHotCross.svg');
+        background-image: url('../assets/imgs/cloverSmallBlack.svg');
         background-size: 60px 60px;
         height: 60px;
         width: 60px;
@@ -2572,7 +2572,7 @@ SECTIONS ________________________ SECTIONS
         content: ' ';
         display: inline-block;
         text-align: right;
-        background-image: url('../assets/imgs/cloverSmallBlack.svg');
+        background-image: url('../assets/imgs/redHotCross.svg');
         background-size: 60px 60px;
         height: 60px;
         width: 60px;

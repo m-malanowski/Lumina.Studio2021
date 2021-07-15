@@ -26,9 +26,12 @@ const Worldwide = () => {
       {/*<div className="bg-circles-section">*/}
       {/*  <div className="blurry-circle bc-4"/>*/}
       {/*</div>*/}
-      <img width="85" className="thumb-up" src={thumbUp} alt="" />
+      <TriggerImg delay={1.2}>
+        <img width="85" className="thumb-up" src={thumbUp} alt="" />
+      </TriggerImg>
+
       <div className="worldwide-container">
-        <TriggerImg delay={.1}>
+        <TriggerImg delay={.15}>
           <img
             // data-scroll
             // data-scroll-speed="2"
