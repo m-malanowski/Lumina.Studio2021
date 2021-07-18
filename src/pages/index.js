@@ -65,6 +65,9 @@ const HomePage = ()  => {
             smartphone: {
               smooth: true
             },
+            mobile: {
+              smooth: true
+            }
           }
         }
         watch={

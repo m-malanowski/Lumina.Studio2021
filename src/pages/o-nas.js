@@ -52,9 +52,13 @@ const ONas = () => {
       {/*     // schemaMarkup={schema}*/}
       {/*/>*/}
       <LocomotiveScrollProvider
-        options={{ smooth: true,
+        options={{
+          smooth: true,
           lerp: 0.05,
           smartphone: {
+            smooth: true
+          },
+          mobile: {
             smooth: true
           }
         }}
