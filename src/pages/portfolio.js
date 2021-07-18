@@ -10,6 +10,7 @@ import TriggerLine from "../components/TriggerLine"
 import TriggerImg from "../components/TriggerImg"
 import smallStar from "../assets/icons/smallStar.svg"
 import orbitAboutPage from "../assets/icons/orbitPortfolioPage.svg"
+import orbitMoreSection from "../assets/icons/orbitMoreSection.svg"
 
 // ...GatsbyImageSharpFluid
 const Portfolio = ({ data }) => {
@@ -48,11 +49,6 @@ const Portfolio = ({ data }) => {
                     data-scroll-direction="horizontal"
                   >Nasze</h2>
                 </TriggerText>
-
-                {/*<TriggerText threshold=".5" delay=".25">*/}
-                {/*  <span>into</span>*/}
-                {/*  <h2>Van</h2>*/}
-                {/*</TriggerText>*/}
 
                 <TriggerText threshold=".5" delay=".3">
                   <h2
@@ -129,26 +125,7 @@ const Portfolio = ({ data }) => {
           </section>
 
           <section className="section-show-more">
-
-            <div className="constellation">
-              <div className="stars-wrapper">
-                <img src={smallStar} width={50} alt=""
-                     data-scroll
-                     data-scroll-speed="-2"
-                />
-                <img src={smallStar} width={40} alt=""
-                     data-scroll
-                     data-scroll-speed="-1"
-                />
-                <img src={smallStar} width={30} alt=""
-                     data-scroll
-                     data-scroll-speed="-2"
-                />
-              </div>
-            </div>
-
             <div className="main-container">
-
               <TriggerText threshold=".5" delay=".2">
                 <h2>Stwó</h2>
               </TriggerText>
@@ -162,14 +139,20 @@ const Portfolio = ({ data }) => {
               </TriggerText>
 
               <TriggerText threshold=".5" delay=".35">
-                {/*<h2 className="pseudo-line">Ciekawego</h2>*/}
                 <h2>Fajnego</h2>
                 <Link to="/kontakt">
-                  <img src={arrow} alt="" width="120px" className="ml-5" />
+                  <img src={arrow} alt="" width="120px" className="ml-5"/>
                 </Link>
               </TriggerText>
-
             </div>
+
+            <TriggerImg delay={.01} threshold={0}>
+              <img
+                data-scroll
+                data-scroll-speed="1"
+                data-scroll-position="top"
+                className="orbit" width="95%" src={orbitMoreSection} alt="" />
+            </TriggerImg>
           </section>
 
 

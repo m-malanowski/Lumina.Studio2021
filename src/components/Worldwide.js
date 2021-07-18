@@ -23,9 +23,6 @@ const Worldwide = () => {
     <section
       className="section-worldwide"
     >
-      {/*<div className="bg-circles-section">*/}
-      {/*  <div className="blurry-circle bc-4"/>*/}
-      {/*</div>*/}
       <TriggerImg delay={1.2}>
         <img width="85" className="thumb-up" src={thumbUp} alt="" />
       </TriggerImg>
@@ -33,9 +30,7 @@ const Worldwide = () => {
       <div className="worldwide-container">
         <TriggerImg delay={.15}>
           <img
-            // data-scroll
-            // data-scroll-speed="2"
-            className="star" width="500" src={star} alt="Agencja interaktywna lumina studio"
+            className="worldwide-star " width="500" src={star} alt="Agencja interaktywna lumina studio"
           />
         </TriggerImg>
 
@@ -48,11 +43,6 @@ const Worldwide = () => {
         </TriggerText>
 
         <TriggerImg delay={1} threshold={0}>
-          {/*<img*/}
-          {/*  data-scroll*/}
-          {/*  data-scroll-speed="-2"*/}
-          {/*  data-scroll-position="top"*/}
-          {/*  className="orbit" width="900" src={orbitMain} alt="" />*/}
           <img
             data-scroll
             data-scroll-speed="2"

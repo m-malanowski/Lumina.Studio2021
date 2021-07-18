@@ -27,7 +27,6 @@ const Footer = () => {
           <TriggerText threshold="0" delay=".9">
             <ul>
               <h4>Elbląg</h4>
-              {/*<li>Elbląg</li>*/}
               <li>
                 <a href="mailto:info@lumina.studio" className="social-link link link--kale">
                   info@lumina.studio
@@ -39,11 +38,9 @@ const Footer = () => {
             </ul>
           </TriggerText>
           <TriggerText threshold="0" delay="1.1">
-
-            <h4>Śledź nas</h4>
+            <h4 className="follow-us">Śledź nas</h4>
             <SocialLinks/>
           </TriggerText>
-
         </div>
       </footer>
     </>

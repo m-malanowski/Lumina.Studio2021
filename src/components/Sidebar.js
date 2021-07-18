@@ -5,11 +5,10 @@ import orbitMain from "../assets/icons/orbitMain.png";
 import mickyHand1 from "../assets/imgs/starSmallBlack.svg"
 import mickyHand2 from "../assets/imgs/cloverSmallBlack.svg"
 import mickyHand3 from "../assets/imgs/smallStarBlack.svg"
-import mickyHand4 from "../assets/imgs/redHotCross.svg"
-
-
+import mickyHand4 from "../assets/icons/asterisk.svg"
 import { Link } from "gatsby"
 import { gsap } from "gsap";
+// import elo from "../assets/imgs/stickerLogo.png"
 import {
   staggerText,
   staggerReveal,
@@ -68,84 +67,6 @@ const Sidebar = ({toggleSideBar, isOpen}) => {
       <div ref={el => (reveal2 = el)} className='menu-layer'>
 
         <div className='container-fluid break-out'>
-          {/*<div className='wrapper'>*/}
-          {/*  <div className='menu-links'>*/}
-
-          {/*    /!*<Links styleClass="sidebar-links"/>*!/*/}
-          {/*    <nav>*/}
-          {/*      <ul>*/}
-          {/*        <li>*/}
-          {/*          <Link*/}
-          {/*            onMouseEnter={e => handleHover(e)}*/}
-          {/*            onMouseOut={e => handleHoverExit(e)}*/}
-          {/*            onClick={toggleSideBar}*/}
-          {/*            ref={el => (line1.current = el)}*/}
-          {/*            to='/about'*/}
-          {/*            className={"social-link link link--kale"}*/}
-          {/*          >*/}
-          {/*             Studio*/}
-          {/*          </Link>*/}
-          {/*        </li>*/}
-
-          {/*        <li>*/}
-          {/*          <Link*/}
-          {/*            onMouseEnter={e => handleHover(e)}*/}
-          {/*            onMouseOut={e => handleHoverExit(e)}*/}
-          {/*            onClick={toggleSideBar}*/}
-          {/*            ref={el => (line2.current = el)}*/}
-          {/*            to='/uslugi'>*/}
-          {/*            Usługi*/}
-          {/*          </Link>*/}
-          {/*        </li>*/}
-          {/*        <li>*/}
-          {/*          <Link*/}
-          {/*            onMouseEnter={e => handleHover(e)}*/}
-          {/*            onMouseOut={e => handleHoverExit(e)}*/}
-          {/*            onClick={toggleSideBar}*/}
-          {/*            to='/portfolio'*/}
-          {/*            className={"social-link link link--kale"}*/}
-          {/*          >*/}
-          {/*            Prace*/}
-          {/*          </Link>*/}
-          {/*        </li>*/}
-          {/*        <li>*/}
-          {/*          <Link*/}
-          {/*            onMouseEnter={e => handleHover(e)}*/}
-          {/*            onMouseOut={e => handleHoverExit(e)}*/}
-          {/*            onClick={toggleSideBar}*/}
-          {/*            ref={el => (line3.current = el)}*/}
-          {/*            to='/blog'>*/}
-          {/*            Blog*/}
-          {/*          </Link>*/}
-          {/*        </li>*/}
-          {/*        <li>*/}
-          {/*          <Link*/}
-          {/*            onMouseEnter={e => handleHover(e)}*/}
-          {/*            onMouseOut={e => handleHoverExit(e)}*/}
-          {/*            onClick={toggleSideBar}*/}
-          {/*            ref={el => (line4.current = el)}*/}
-          {/*            to='/kontakt'>*/}
-          {/*            Kontakt*/}
-          {/*          </Link>*/}
-          {/*        </li>*/}
-          {/*      </ul>*/}
-          {/*    </nav>*/}
-          {/*    <div ref={el => (info = el)} className='info'>*/}
-          {/*      <h3>Nasza misja</h3>*/}
-          {/*      <p>*/}
-          {/*        Na czas naszej współpracy jesteśmy Twoim zewnętrznym działem marketingu. Proponujemy*/}
-          {/*        współpracę w oparciu o zaufanie. Stawiamy na wzajemne zaufanie i wsparcie zarówno podczas*/}
-          {/*        jednorazowych zleceń, jak i długofalowej współpracy.*/}
-          {/*      </p>*/}
-          {/*    </div>*/}
-
-          {/*    <div className='locations'>*/}
-          {/*      <p>Socials:</p>*/}
-          {/*      <Socials/>*/}
-          {/*    </div>*/}
-
-          {/*  </div>*/}
-          {/*</div>*/}
 
           <nav className="menu">
             <div className="menu__item">
@@ -213,6 +134,8 @@ const Sidebar = ({toggleSideBar, isOpen}) => {
                 onClick={toggleSideBar}
                 >BLOG</Link>
             </div>
+
+            {/*<img className="eloelo" src={elo} alt="" />*/}
 
           </nav>
 
