@@ -152,7 +152,7 @@ const HomePage = ()  => {
           <div className="">
             <div className="subsec-header">
               <TriggerText threshold=".5" delay=".5">
-                <h5 className="">01.</h5>
+                <span className="">01.</span>
               </TriggerText>
               <TriggerText threshold=".5" delay=".5">
                 <h2 className="subsec-title">O nas</h2>
@@ -173,9 +173,6 @@ const HomePage = ()  => {
                   <img
                     data-scroll
                     data-scroll-speed="-2"
-                    // data-scroll-position="bottom"
-                    // data-scroll-offset="bottom"
-                    // data-scroll-delay="2"
                     className="orbit" width="600" src={orbitProcess} alt="" />
                 </TriggerImg>
 

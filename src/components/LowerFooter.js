@@ -13,7 +13,7 @@ const Footer = () => {
           </TriggerText>
           <TriggerText threshold="0" delay=".7">
             <ul>
-              <h4>Wrocław</h4>
+              <li><h4>Wrocław</h4></li>
               <li>
                 <a href="mailto:hello@lumina.studio" className="social-link link link--kale">
                   hello@lumina.studio
@@ -26,7 +26,7 @@ const Footer = () => {
           </TriggerText>
           <TriggerText threshold="0" delay=".9">
             <ul>
-              <h4>Elbląg</h4>
+              <li><h4>Elbląg</h4></li>
               <li>
                 <a href="mailto:info@lumina.studio" className="social-link link link--kale">
                   info@lumina.studio

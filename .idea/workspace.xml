@@ -3,8 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="5d55e401-15fe-43b2-810d-1da9c4f903b3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/components/hamburger.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/components/hamburger.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/LowerFooter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LowerFooter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ProjectsSubsectionNew.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ProjectsSubsectionNew.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SampleData.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SampleData.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/css/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/styles.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +83,7 @@
       <workItem from="1626443556198" duration="4582000" />
       <workItem from="1626607776139" duration="16169000" />
       <workItem from="1626762021935" duration="4876000" />
-      <workItem from="1626805031539" duration="4049000" />
+      <workItem from="1626805031539" duration="5270000" />
     </task>
     <servers />
   </component>

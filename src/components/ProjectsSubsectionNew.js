@@ -88,16 +88,16 @@ const ProjectsSubsection = () => {
         <div className="projects-wrapper">
 
           {ProjectsData.map(({title, year, imgPath, services}, index) => (
-            <Desc key={index} title={title} year={year} imgPath={imgPath} services={services} setActiveIndex={setActiveIndex} index={index} />
+            <Desc key={index}  title={title} year={year} imgPath={imgPath} services={services} setActiveIndex={setActiveIndex} index={index} />
           ))}
 
           <div className="project-img">
-            {ProjectsData.map(({src}, index) => {
+            {ProjectsData.map(({src,alt}, index) => {
               const isActive = index === activeIndex;
               const xPos = isActive ? x : 0;
               const yPos = isActive ? y : 0;
 
-              return  <Image key={index} src={src} active={isActive} x={xPos} y={yPos}/>
+              return  <Image key={index} alt={alt} src={src} active={isActive} x={xPos} y={yPos}/>
             })}
           </div>
         </div>
@@ -147,7 +147,7 @@ export const Desc = ({title, year, services, imgPath, setActiveIndex, index}) =>
   )
 }
 
-export const Image = ({src, active, x, y}) => {
+export const Image = ({src, active, x, y, alt}) => {
   const [ref, {width, height}] = useSize();
   return(
     <img
@@ -155,6 +155,7 @@ export const Image = ({src, active, x, y}) => {
       className={ active ? 'is-active' : ''}
       src={src}
       ref={ref}
+      alt={alt}
       style={{
         transform: `translate(${ x - width/3 }px, ${ y - height/2 }px)`,
       }}

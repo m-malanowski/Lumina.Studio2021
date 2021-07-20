@@ -613,7 +613,7 @@ Pages
   justify-content: space-between;
   position: relative;
 
-  h5 {
+  h5, span {
     font-family: var(--ff-primary);
     font-style: italic;
     font-size: calc(25px + (55 - 25) * ((100vw - 320px) / (1900 - 320)));
@@ -1530,6 +1530,7 @@ footer {
   h4 {
     margin-bottom: 2rem;
     font-size: calc(25px + (30 - 25) * ((100vw - 320px) / (1900 - 320)));
+    color: var(--clr-white);
     }
 
   ul {
