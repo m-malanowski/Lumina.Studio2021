@@ -68,11 +68,10 @@ module.exports = {
         display: `standalone`,
         icon: `src/assets/imgs/favIcon.png`,
         icon_options: {
-          purpose: `maskable`,
+          purpose: `any maskable`,
         },
       },
     },
-
     `gatsby-plugin-offline`,
   ],
 }
