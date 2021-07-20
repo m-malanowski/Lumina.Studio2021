@@ -1,6 +1,6 @@
 import React, { useRef } from "react"
 import ArticlesSlider from "../components/ArticlesSlider"
-import { graphql } from "gatsby"
+// import { graphql } from "gatsby"
 import LowerFooter from "../components/LowerFooter"
 import Worldwide from "../components/Worldwide"
 import SectionMarquee from "../components/SectionMarquee"

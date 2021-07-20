@@ -1,26 +1,12 @@
 import React, { useRef } from "react"
-// import Footer from "../components/Footer"
-// import orbitSingleProject from "../assets/icons/orbitContact.svg"
-// import Layout from "../components/Layout"
 import { graphql } from "gatsby"
-// import Blogs from "../components/Blogs"
-// import LowerFooter from "../components/LowerFooter"
-// import malva from "../assets/imgs/malva2.png"
-// import malva2 from "../assets/imgs/malva2.png"
 import { LocomotiveScrollProvider } from "react-locomotive-scroll"
 // import { GatsbyImage, getImage } from "gatsby-plugin-image"
-// import arrowDown from "../assets/icons/arrowDown.svg"
-// import ServicesSlider from "../components/ServicesSlider"
-// import arrow from "../assets/icons/right-arrow.svg"
-// import orbitMain from "../assets/icons/orbitMainView.png"
-// import Worldwide from "../components/Worldwide"
 import SectionMarquee from "../components/SectionMarquee"
 import { Helmet } from "react-helmet"
 import TriggerImg from "../components/TriggerImg"
-// import ProjectsSubsectionNew from "../components/ProjectsSubsectionNew"
 // ...GatsbyImageSharpFluid
 import TriggerText from "../components/TriggerText"
-
 
 const ProjectTemplate = ({ data }) => {
   const containerRef = useRef(null)

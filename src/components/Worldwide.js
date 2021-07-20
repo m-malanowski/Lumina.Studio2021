@@ -1,12 +1,11 @@
 import star from "../assets/icons/star.svg"
 import globe from "../assets/icons/globe.svg"
-import mickyAnimation from "../assets/imgs/mickey-main.gif"
 import React from "react"
 import thumbUp from "../assets/icons/thumbUp.svg"
 import TriggerText from "../components/TriggerText"
 import TriggerImg from "../components/TriggerImg"
-import {motion, useTransform, useViewportScroll} from "framer-motion"
-import orbitMain from "../assets/icons/orbitMainView.png"
+// import {motion, useTransform, useViewportScroll} from "framer-motion"
+// import orbitMain from "../assets/icons/orbitMainView.png"
 const Worldwide = () => {
 
   // const { scrollYProgress } = useViewportScroll()

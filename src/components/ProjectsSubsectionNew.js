@@ -6,8 +6,8 @@ import ProjectsData from "./SampleData"
 import { Link } from "gatsby"
 
 // import ImgPlane from "./plane/plane";
-import smallStar from "../assets/icons/smallStar.svg"
-import TriggerImg from "./TriggerImg"
+// import smallStar from "../assets/icons/smallStar.svg"
+// import TriggerImg from "./TriggerImg"
 
 const useMousePosition = () => {
   const [ mousePosition, setMousePosition ] = React.useState({x:0,y:0})

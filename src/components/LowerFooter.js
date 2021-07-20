@@ -1,7 +1,7 @@
 import React from "react"
 import SocialLinks from "../constants/socialLinks"
-import arrow from "../assets/icons/right-arrow.svg"
-import orbitFooter from "../assets/icons/orbitFooter.png"
+// import arrow from "../assets/icons/right-arrow.svg"
+// import orbitFooter from "../assets/icons/orbitFooter.png"
 import TriggerText from "./TriggerText"
 const Footer = () => {
   return (

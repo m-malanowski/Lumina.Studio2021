@@ -8,7 +8,7 @@ import TriggerText from "../components/TriggerText"
 import { LocomotiveScrollProvider } from "react-locomotive-scroll"
 import TriggerLine from "../components/TriggerLine"
 import TriggerImg from "../components/TriggerImg"
-import smallStar from "../assets/icons/smallStar.svg"
+// import smallStar from "../assets/icons/smallStar.svg"
 import orbitAboutPage from "../assets/icons/orbitPortfolioPage.svg"
 import orbitMoreSection from "../assets/icons/orbitMoreSection.svg"
 

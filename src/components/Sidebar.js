@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from "react";
-import Links from "../constants/links"
+// import Links from "../constants/links"
 import Socials from "../constants/socialLinks"
-import orbitMain from "../assets/icons/orbitMain.png";
+// import orbitMain from "../assets/icons/orbitMain.png";
 import mickyHand1 from "../assets/imgs/starSmallBlack.svg"
 import mickyHand2 from "../assets/imgs/cloverSmallBlack.svg"
 import mickyHand3 from "../assets/imgs/smallStarBlack.svg"
