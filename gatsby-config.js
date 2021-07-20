@@ -31,6 +31,14 @@ module.exports = {
       resolve: `gatsby-plugin-google-gtag`,
       options: {
         trackingIds: [
+          "UA-169184236-1" // Google Analytics / GA
+        ],
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        trackingIds: [
           "G-0J0X0PC2C5" // Google Analytics / GA
         ],
       },
@@ -49,19 +57,22 @@ module.exports = {
         // singleTypes: [],
       },
     },
-    // {
-    //   resolve: `gatsby-plugin-webfonts`,
-    //   options: {
-    //     fonts: {
-    //       google: [
-    //         {
-    //           family: "Roboto",
-    //           variants: ["400", "700"],
-    //         },
-    //         { family: "Open Sans" },
-    //       ],
-    //     },
-    //   },
-    // },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Lumina - Studio`,
+        short_name: `lumina Studio`,
+        start_url: `/`,
+        background_color: `#00579d`,
+        theme_color: `#e8eef3`,
+        display: `standalone`,
+        icon: `src/assets/imgs/favIcon.png`,
+        icon_options: {
+          purpose: `maskable`,
+        },
+      },
+    },
+
+    `gatsby-plugin-offline`,
   ],
 }

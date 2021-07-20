@@ -3,10 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="5d55e401-15fe-43b2-810d-1da9c4f903b3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/components/hamburger.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/components/hamburger.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gatsby-config.js" beforeDir="false" afterPath="$PROJECT_DIR$/gatsby-config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/css/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/styles.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/o-nas.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/o-nas.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +80,9 @@
       <workItem from="1626294946416" duration="5561000" />
       <workItem from="1626364031850" duration="3592000" />
       <workItem from="1626443556198" duration="4582000" />
-      <workItem from="1626607776139" duration="15456000" />
+      <workItem from="1626607776139" duration="16169000" />
+      <workItem from="1626762021935" duration="4876000" />
+      <workItem from="1626805031539" duration="2249000" />
     </task>
     <servers />
   </component>

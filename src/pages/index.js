@@ -21,39 +21,52 @@ const HomePage = ()  => {
 
   const schema = {
     "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Lumina Studio Agencja Interaktywna",
-    "alternateName": "Lumina Studio Agencja Interaktywna"
-    // "url": "https://radcaprawnytomczak.pl",
-    // "logo": "https://radcaprawnytomczak.pl/MichałTomczakRadcaPrawny.png",
-    // "sameAs": [
-    //   "https://www.google.com/maps/d/u/0/edit?mid=1GCWjyo1AqP3O0iREMdxbuDu-HYKiDmeS&usp=sharing",
-    //   "https://www.facebook.com/Radca-Prawny-Gda%C5%84sk-Micha%C5%82-Tomczak-110583451087567"
-    // ]
+    "@type": "LocalBusiness",
+    "name": "lumina.studio - Tworzenie Stron Internetowych",
+    "hasMap": "https://www.google.com/maps/d/u/0/edit?mid=10Zl8pYoh3_82OvkSYeae7nnzrYM-XZAh&usp=sharing",
+    "image": "https://lumina.studio/facebook.jpg",
+    "@id": "",
+    "url": "https://lumina.studio",
+    "telephone": "+ 48 506 870 672",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Królewiecka 21B",
+      "addressLocality": "Elbląg",
+      "postalCode": "82-300",
+      "addressCountry": "PL"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 54.163358,
+      "longitude": 19.400674
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "opens": "08:30",
+      "closes": "18:00"
+    },
+    "sameAs": [
+      "https://twitter.com/luminastudio2",
+      "https://www.facebook.com/hello.lumina.studio",
+      "https://www.instagram.com/_luminastudio/",
+      "https://www.youtube.com/channel/UCwZ6P8-qBseEI32njO-8PcA",
+      "https://www.linkedin.com/company/luminastudio/",
+      "https://www.google.com/maps/d/u/0/edit?mid=10Zl8pYoh3_82OvkSYeae7nnzrYM-XZAh&usp=sharing"
+    ]
   }
-  // const  { scroll } = useLocomotiveScroll()
-  // console.log(scroll)
-  //
-  // React.useEffect(() => {
-  //   console.log(scroll)
-  //
-  //   setTimeout(() => {
-  //     console.log(scroll)
-  //     console.log('4 sek mineły')
-  //   }, 4000);
-  //
-  //   // scroll.on('scroll', (obj) => {
-  //   //   // updateScroll(obj.scroll.x, obj.scroll.y);
-  //   //   // render scene
-  //   //   console.log(scroll)
-  //   // });
-  //
-  // }, []);
+
   return (
 
     <>
       <SEO title="LUMINA STUDIO | Agencja Interaktywna"
-           description="LUMINA STUDIO | Agencja Interaktywna"
+           description="Na Czas Naszej Współpracy Stajemy Się Twoją Prywatną Agencją Interaktywną. Tworzymy Sklepy Internetowe Oraz Nowoczesne Strony WWW Dla Firm. Oferujemy Także Marketing Internetowy I Kampanie Reklamowe."
            schemaMarkup={schema}
       />
 
@@ -71,9 +84,7 @@ const HomePage = ()  => {
           }
         }
         watch={
-          [
-
-          ]
+          []
         }
         containerRef={containerRef}
       >
@@ -81,7 +92,6 @@ const HomePage = ()  => {
       <main className="index-page container-fluid"  data-scroll-container ref={containerRef}>
         <section className="section-main-container">
           <div className="main-container">
-
 
             <TriggerText threshold=".5" delay=".2">
               <h2
@@ -321,8 +331,6 @@ const HomePage = ()  => {
         {/*    </TriggerText>*/}
         {/*  </div>*/}
         {/*</section>*/}
-
-
 
         <SectionMarquee firstTape={false} secondTape={false} thirdTape={false} firstTapeScroll={true} secondTapeScroll={true}
                         thirdTapeScroll={true} dataScrollPosition="bottom" dataScrollSpeed="2"/>
