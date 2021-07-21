@@ -3,6 +3,8 @@ import LowerFooter from "../components/LowerFooter"
 import orbitAboutPage from "../assets/icons/orbitAboutPage.svg"
 import arrow from "../assets/icons/right-arrow.svg"
 import serviceStickers from "../assets/icons/serviceStickers.svg"
+import serviceStickersSmall from "../assets/icons/serviceStickersSmall.svg"
+
 import Worldwide from "../components/Worldwide"
 import SectionMarquee from "../components/SectionMarquee"
 import { motion } from "framer-motion"
@@ -771,7 +773,14 @@ const ONas = () => {
             // data-scroll
             // data-scroll-speed="-1"
             // data-scroll-position="bottom"
-            className="service-stickers " width="100%" src={serviceStickers} alt="" />
+            className="service-stickers" width="100%" src={serviceStickers} alt="" />
+
+          <img
+            // data-scroll
+            // data-scroll-speed="-1"
+            // data-scroll-position="bottom"
+            className="service-stickers-small " width="100%" src={serviceStickersSmall} alt="" />
+
         </TriggerImg>
 
 

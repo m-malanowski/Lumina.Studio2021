@@ -8,8 +8,18 @@ import TriggerLine from "../components/TriggerLine"
 import { LocomotiveScrollProvider } from 'react-locomotive-scroll'
 import orbitMain from "../assets/icons/orbitServicesViewNew.svg"
 import serviceStickers from "../assets/icons/serviceStickers.svg"
-import aboutServiceStar1 from "../assets/icons/aboutServiceStar1.svg"
-import aboutServiceStar2 from "../assets/icons/aboutServiceStar2.svg"
+import serviceStickersSmall from "../assets/icons/serviceStickersSmall.svg"
+// import aboutServiceStar1 from "../assets/icons/aboutServiceStar1.svg"
+// import aboutServiceStar2 from "../assets/icons/aboutServiceStar2.svg"
+
+import serviceOrbit1 from "../assets/icons/serviceOrbit1.svg"
+import serviceOrbit2 from "../assets/icons/serviceOrbit2.svg"
+import serviceOrbit3 from "../assets/icons/serviceOrbit3.svg"
+import serviceOrbit4 from "../assets/icons/serviceOrbit4.svg"
+import serviceOrbit5 from "../assets/icons/serviceOrbit5.svg"
+import serviceOrbit6 from "../assets/icons/serviceOrbit6.svg"
+
+
 // ...GatsbyImageSharpFluid
 const Uslugi = () => {
 
@@ -118,7 +128,7 @@ const Uslugi = () => {
 
               <div className="about-single-left">
                 <TriggerImg threshold="0" delay={1.2}>
-                  <img className="small-star" width="150" src={aboutServiceStar1} alt="" />
+                  <img className="small-star" width="150" src={serviceOrbit1} alt="" />
                 </TriggerImg>
               </div>
               <div className="about-single-right">
@@ -145,7 +155,7 @@ const Uslugi = () => {
 
               <div className="about-single-left">
                 <TriggerImg threshold="0" delay={1.2}>
-                  <img className="small-star" width="150" src={aboutServiceStar2} alt="" />
+                  <img className="small-star" width="150" src={serviceOrbit2} alt="" />
                 </TriggerImg>
               </div>
               <div className="about-single-right">
@@ -172,7 +182,7 @@ const Uslugi = () => {
 
               <div className="about-single-left">
                 <TriggerImg threshold="0" delay={1.2}>
-                  <img className="small-star" width="150" src={aboutServiceStar2} alt="" />
+                  <img className="small-star" width="150" src={serviceOrbit3} alt="" />
                 </TriggerImg>
               </div>
               <div className="about-single-right">
@@ -199,7 +209,7 @@ const Uslugi = () => {
 
               <div className="about-single-left">
                 <TriggerImg threshold="0" delay={1.2}>
-                  <img className="small-star" width="150" src={aboutServiceStar2} alt="" />
+                  <img className="small-star" width="150" src={serviceOrbit4} alt="" />
                 </TriggerImg>
               </div>
               <div className="about-single-right">
@@ -228,7 +238,7 @@ const Uslugi = () => {
 
               <div className="about-single-left">
                 <TriggerImg threshold="0" delay={1.2}>
-                  <img className="small-star" width="150" src={aboutServiceStar2} alt="" />
+                  <img className="small-star" width="150" src={serviceOrbit5} alt="" />
                 </TriggerImg>
               </div>
               <div className="about-single-right">
@@ -257,7 +267,7 @@ const Uslugi = () => {
 
               <div className="about-single-left">
                 <TriggerImg threshold="0" delay={1.2}>
-                  <img className="small-star" width="150" src={aboutServiceStar2} alt="" />
+                  <img className="small-star" width="150" src={serviceOrbit6} alt="" />
                 </TriggerImg>
               </div>
               <div className="about-single-right">
@@ -282,10 +292,10 @@ const Uslugi = () => {
 
         <TriggerImg threshold="0" delay={1}>
           <img
-            // data-scroll
-            // data-scroll-speed="-1"
-            // data-scroll-position="bottom"
             className="service-stickers" width="100%" src={serviceStickers} alt="" />
+
+          <img
+            className="service-stickers-small " width="100%" src={serviceStickersSmall} alt="" />
         </TriggerImg>
 
         <SectionMarquee firstTape={false} secondTape={false} thirdTape={false} firstTapeScroll={true} secondTapeScroll={true}

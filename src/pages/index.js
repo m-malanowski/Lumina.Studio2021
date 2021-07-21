@@ -253,7 +253,7 @@ const HomePage = ()  => {
 
         <ProjectsSubsectionNew/>
 
-        <section className="section-show-more">
+        <section className="section-show-more index">
           <div className="main-container">
             <TriggerText threshold=".5" delay=".2">
               <h2>Stwó</h2>

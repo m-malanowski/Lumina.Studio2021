@@ -2,8 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5d55e401-15fe-43b2-810d-1da9c4f903b3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/pages/identyfikacja-wizualna.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/marketing-internetowy.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/strony-internetowe-dla-hoteli-pensjonatow-i-apartamentow.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/tworzenie-sklepów-internetowych.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/tworzenie-stron-internetowych.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gatsby-config.js" beforeDir="false" afterPath="$PROJECT_DIR$/gatsby-config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/icons/serviceStickers.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/icons/serviceStickers.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ArticlesSlider.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ArticlesSlider.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/components/hamburger.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/components/hamburger.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/styles.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/o-nas.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/o-nas.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/uslugi.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/uslugi.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +42,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/templates" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/pages" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -42,6 +53,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/pages" />
       <recent name="$PROJECT_DIR$/src/templates" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -79,6 +91,7 @@
       <workItem from="1626607776139" duration="16169000" />
       <workItem from="1626762021935" duration="4876000" />
       <workItem from="1626805031539" duration="6075000" />
+      <workItem from="1626892407001" duration="6269000" />
     </task>
     <servers />
   </component>

@@ -3,7 +3,26 @@ import { useKeenSlider } from "keen-slider/react"
 import "keen-slider/keen-slider.min.css"
 
 const ServicesSlider = (props) => {
-  const [sliderRef] = useKeenSlider({ slidesPerView: 4, spacing: 15 })
+  const [sliderRef] = useKeenSlider({ slidesPerView: 4, spacing: 15,
+    breakpoints: {
+      "(max-width: 768px)": {
+        slidesPerView: 2,
+        mode: "free-snap",
+      },
+      "(max-width: 400px)": {
+        slidesPerView: 1,
+        mode: "free-snap",
+      },
+      "(max-width: 120px)": {
+        slidesPerView: 3,
+        mode: "free-snap",
+      },
+      // "(min-width: 1200px)": {
+      //   slidesPerView: 3,
+      //   mode: "free-snap",
+      // },
+    },
+  })
 
   return (
     <>
