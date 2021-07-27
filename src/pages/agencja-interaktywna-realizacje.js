@@ -11,16 +11,20 @@ import TriggerImg from "../components/TriggerImg"
 // import smallStar from "../assets/icons/smallStar.svg"
 import orbitAboutPage from "../assets/icons/orbitPortfolioPage.svg"
 import orbitMoreSection from "../assets/icons/orbitMoreSection.svg"
+import SEO from "../components/SEO"
 
 // ...GatsbyImageSharpFluid
-const Portfolio = ({ data }) => {
+const AgencjaInteraktywnaRealizacje = ({ data }) => {
 
   const containerRef = useRef(null)
   // const image = getImage(data.project.cover)
 
   return (
     <>
-
+      <SEO title="LUMINA STUDIO | Agencja Interaktywna - Realizacje"
+           description="Jesteśmy Kreatywną Agencją Interaktywną,  ☎ 506 870 672 ☎  Specjalizujemy Się W Tworzeniu Stron Internetowych Oraz Brandingu"
+        // schemaMarkup={schema}
+      />
       <LocomotiveScrollProvider
         options={{ smooth: true, lerp: 0.05 }}
         containerRef={containerRef}
@@ -78,7 +82,7 @@ const Portfolio = ({ data }) => {
                   <div
                     className="single-work">
                     <div className="singe-work-left">
-                      <p></p>
+                      <span></span>
 
                       <TriggerText threshold=".5" delay=".8">
                         <h2>{node.title}</h2>
@@ -100,7 +104,7 @@ const Portfolio = ({ data }) => {
                       <div className="learn-more">
 
                         <TriggerText threshold=".5" delay=".2">
-                          <Link className="" to={"/portfolio/" + node.slug}>
+                          <Link className="" to={"/agencja-interaktywna-realizacje/" + node.slug}>
                             <span>Sprawdź</span>
                             <span />
                             <span>Więcej</span>
@@ -194,4 +198,4 @@ export const query = graphql`
 }
 `
 
-export default Portfolio
+export default AgencjaInteraktywnaRealizacje

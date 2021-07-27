@@ -2,18 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5d55e401-15fe-43b2-810d-1da9c4f903b3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/pages/identyfikacja-wizualna.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/marketing-internetowy.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/strony-internetowe-dla-hoteli-pensjonatow-i-apartamentow.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/tworzenie-sklepów-internetowych.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/tworzenie-stron-internetowych.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/icons/serviceStickers.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/icons/serviceStickers.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ArticlesSlider.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ArticlesSlider.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/components/hamburger.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/components/hamburger.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gatsby-node.js" beforeDir="false" afterPath="$PROJECT_DIR$/gatsby-node.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SampleData.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SampleData.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Sidebar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/css/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/styles.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/404.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/404.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/blog.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/blog.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/identyfikacja-wizualna.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/identyfikacja-wizualna.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/kontakt.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/kontakt.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/marketing-internetowy.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/marketing-internetowy.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/o-nas.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/o-nas.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/portfolio.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/agencja-interaktywna-realizacje.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/strony-internetowe-dla-hoteli-pensjonatow-i-apartamentow.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/strony-internetowe-dla-hoteli-pensjonatow-i-apartamentow.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/tworzenie-sklepów-internetowych.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/tworzenie-sklepów-internetowych.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/tworzenie-stron-internetowych.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/tworzenie-stron-internetowych.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/uslugi.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/uslugi.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -91,7 +95,9 @@
       <workItem from="1626607776139" duration="16169000" />
       <workItem from="1626762021935" duration="4876000" />
       <workItem from="1626805031539" duration="6075000" />
-      <workItem from="1626892407001" duration="6269000" />
+      <workItem from="1626892407001" duration="7776000" />
+      <workItem from="1627305091498" duration="2278000" />
+      <workItem from="1627325624995" duration="6872000" />
     </task>
     <servers />
   </component>

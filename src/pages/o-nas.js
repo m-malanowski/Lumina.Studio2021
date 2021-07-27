@@ -4,6 +4,7 @@ import orbitAboutPage from "../assets/icons/orbitAboutPage.svg"
 import arrow from "../assets/icons/right-arrow.svg"
 import serviceStickers from "../assets/icons/serviceStickers.svg"
 import serviceStickersSmall from "../assets/icons/serviceStickersSmall.svg"
+import SEO from "../components/SEO"
 
 import Worldwide from "../components/Worldwide"
 import SectionMarquee from "../components/SectionMarquee"
@@ -22,7 +23,7 @@ const ONas = () => {
   const [isOpen4, setIsOpen4] = useState(false)
   const [isOpen5, setIsOpen5] = useState(false)
   const [isOpen6, setIsOpen6] = useState(false)
-  let background = useRef(null);
+  // let background = useRef(null);
 
 
   const transition = { delay: .1, duration: .4, ease: [0.6, 0.01, -0.05, 0.9] }
@@ -49,10 +50,10 @@ const ONas = () => {
 
   return (
     <>
-      {/*<SEO title="LUMINA STUDIO | Agencja Interaktywna"*/}
-      {/*     description="LUMINA STUDIO | Agencja Interaktywna"*/}
-      {/*     // schemaMarkup={schema}*/}
-      {/*/>*/}
+      <SEO title="LUMINA STUDIO | O NAS"
+           description="Jesteśmy Kreatywną Agencją Interaktywną,  ☎ 506 870 672 ☎  Specjalizujemy Się W Tworzeniu Stron Internetowych Oraz Brandingu"
+           // schemaMarkup={schema}
+      />
       <LocomotiveScrollProvider
         options={{
           smooth: true,

@@ -4,6 +4,7 @@ import orbitAboutPage from "../assets/icons/orbitAboutPage.svg"
 import arrow from "../assets/icons/right-arrow.svg"
 import serviceStickers from "../assets/icons/serviceStickers.svg"
 import serviceStickersSmall from "../assets/icons/serviceStickersSmall.svg"
+import SEO from "../components/SEO"
 
 import Worldwide from "../components/Worldwide"
 import SectionMarquee from "../components/SectionMarquee"
@@ -21,10 +22,10 @@ const ONas = () => {
 
   return (
     <>
-      {/*<SEO title="LUMINA STUDIO | Agencja Interaktywna"*/}
-      {/*     description="LUMINA STUDIO | Agencja Interaktywna"*/}
-      {/*     // schemaMarkup={schema}*/}
-      {/*/>*/}
+      <SEO title="LUMINA STUDIO | Marketing Internetowy"
+           description="LUMINA STUDIO | Marketing Internetowy"
+           // schemaMarkup={schema}
+      />
       <LocomotiveScrollProvider
         options={{
           smooth: true,

@@ -8,6 +8,7 @@ import TriggerText from "../components/TriggerText"
 import { LocomotiveScrollProvider } from 'react-locomotive-scroll'
 import TriggerImg from "../components/TriggerImg"
 import orbitAboutPage from "../assets/icons/orbitBlogPage.svg"
+import SEO from "../components/SEO"
 
 // ...GatsbyImageSharpFluid
 
@@ -16,6 +17,10 @@ const Blog = () => {
 
   return (
     <>
+      <SEO title="LUMINA STUDIO | Blog"
+           description="Jesteśmy Kreatywną Agencją Interaktywną,  ☎ 506 870 672 ☎  Specjalizujemy Się W Tworzeniu Stron Internetowych Oraz Brandingu"
+        // schemaMarkup={schema}
+      />
       <LocomotiveScrollProvider
         options={{ smooth: true, lerp: 0.05 }}
         containerRef={containerRef}

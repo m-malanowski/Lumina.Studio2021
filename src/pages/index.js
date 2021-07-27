@@ -102,16 +102,16 @@ const HomePage = ()  => {
             </TriggerText>
 
             <TriggerText threshold=".5" delay=".25">
-              <span
-                data-scroll
-                data-scroll-speed="2"
-                data-scroll-direction="horizontal"
-              >z</span>
+              {/*<span*/}
+              {/*  data-scroll*/}
+              {/*  data-scroll-speed="2"*/}
+              {/*  data-scroll-direction="horizontal"*/}
+              {/*>z</span>*/}
               <h2
                 data-scroll
                 data-scroll-speed="-3"
                 data-scroll-direction="horizontal"
-              >Duchem</h2>
+              >z Duchem</h2>
             </TriggerText>
 
 

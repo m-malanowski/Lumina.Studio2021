@@ -11,6 +11,7 @@ import serviceStickers from "../assets/icons/serviceStickers.svg"
 import serviceStickersSmall from "../assets/icons/serviceStickersSmall.svg"
 // import aboutServiceStar1 from "../assets/icons/aboutServiceStar1.svg"
 // import aboutServiceStar2 from "../assets/icons/aboutServiceStar2.svg"
+import SEO from "../components/SEO"
 
 import serviceOrbit1 from "../assets/icons/serviceOrbit1.svg"
 import serviceOrbit2 from "../assets/icons/serviceOrbit2.svg"
@@ -27,6 +28,10 @@ const Uslugi = () => {
 
   return (
     <>
+      <SEO title="LUMINA STUDIO | Usługi"
+           description="Zadzwoń I Umów Się Na Bezpłatną Konultację. Tel. 506 870 672. Sklepy internetowe. Projektowanie I Tworzenie Sklepów Internetowych, Profesjonalny Sklep Internetowy"
+        // schemaMarkup={schema}
+      />
       <LocomotiveScrollProvider
         options={{ smooth: true, lerp: 0.05 }}
         containerRef={containerRef}

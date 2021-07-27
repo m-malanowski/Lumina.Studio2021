@@ -4,6 +4,7 @@ import orbitAboutPage from "../assets/icons/orbitAboutPage.svg"
 import arrow from "../assets/icons/right-arrow.svg"
 import serviceStickers from "../assets/icons/serviceStickers.svg"
 import serviceStickersSmall from "../assets/icons/serviceStickersSmall.svg"
+import SEO from "../components/SEO"
 
 import Worldwide from "../components/Worldwide"
 import SectionMarquee from "../components/SectionMarquee"
@@ -21,10 +22,10 @@ const ONas = () => {
 
   return (
     <>
-      {/*<SEO title="LUMINA STUDIO | Agencja Interaktywna"*/}
-      {/*     description="LUMINA STUDIO | Agencja Interaktywna"*/}
-      {/*     // schemaMarkup={schema}*/}
-      {/*/>*/}
+      <SEO title="LUMINA STUDIO | Tworzenie Sklepów Internetowych"
+           description="LUMINA STUDIO | Agencja Interaktywna"
+           // schemaMarkup={schema}
+      />
       <LocomotiveScrollProvider
         options={{
           smooth: true,
@@ -110,7 +111,7 @@ const ONas = () => {
                 <h5 className="">01.</h5>
               </TriggerText>
               <TriggerText threshold=".5" delay=".45">
-                <h2 className="subsec-title">Nasza <br /> Misja</h2>
+                <h2 className="subsec-title">Pozostałe <br /> Usługi</h2>
               </TriggerText>
             </div>
 
@@ -140,19 +141,6 @@ const ONas = () => {
 
               </div>
 
-              <motion.div
-                className="about-process-single-bottom">
-                <div className="pt-1 pb-5">
-                  <div className="">
-                    <p>Artisan paleo cornhole try-hard dreamcatcher kale chips salvia. Thundercats plaid quinoa
-                      dreamcatcher, chambray mixtape hoodie messenger bag tumeric tilde polaroid banh mi tbh. Drinking
-                      vinegar waistcoat hoodie fanny pack before they sold out yr taxidermy four dollar toast ramps venmo
-                      intelligentsia cred. Migas meditation before they sold out vice live-edge flannel. Chillwave mixtape
-                      humblebrag cronut church-key bicycle rights whatever. Hashtag tousled ethical kogi poke selvage,
-                      vexillologist twee ramps sartorial asymmetrical vape locavore.</p>
-                  </div>
-                </div>
-              </motion.div>
             </div>
 
             <div className="about-process-single">
@@ -181,21 +169,6 @@ const ONas = () => {
                 </TriggerText>
               </div>
 
-              <motion.div
-                className="about-process-single-bottom">
-                <div className="pt-1 pb-5 ">
-                  <div className="">
-                    {/*<h5 >Kancelaria specjalizuje się w sprawach związanych z dochodzeniem odszkodowań, zadośćuczynień, a także rent cywilnych.</h5>*/}
-                    {/*<br />*/}
-                    <p>Artisan paleo cornhole try-hard dreamcatcher kale chips salvia. Thundercats plaid quinoa
-                      dreamcatcher, chambray mixtape hoodie messenger bag tumeric tilde polaroid banh mi tbh. Drinking
-                      vinegar waistcoat hoodie fanny pack before they sold out yr taxidermy four dollar toast ramps venmo
-                      intelligentsia cred. Migas meditation before they sold out vice live-edge flannel. Chillwave mixtape
-                      humblebrag cronut church-key bicycle rights whatever. Hashtag tousled ethical kogi poke selvage,
-                      vexillologist twee ramps sartorial asymmetrical vape locavore.</p>
-                  </div>
-                </div>
-              </motion.div>
             </div>
 
             <div className="about-process-single">
@@ -224,21 +197,6 @@ const ONas = () => {
 
               </div>
 
-              <motion.div
-                className="about-process-single-bottom">
-                <div className="pt-1 pb-5 ">
-                  <div className="">
-                    {/*<h5 >Kancelaria specjalizuje się w sprawach związanych z dochodzeniem odszkodowań, zadośćuczynień, a także rent cywilnych.</h5>*/}
-                    {/*<br />*/}
-                    <p>Artisan paleo cornhole try-hard dreamcatcher kale chips salvia. Thundercats plaid quinoa
-                      dreamcatcher, chambray mixtape hoodie messenger bag tumeric tilde polaroid banh mi tbh. Drinking
-                      vinegar waistcoat hoodie fanny pack before they sold out yr taxidermy four dollar toast ramps venmo
-                      intelligentsia cred. Migas meditation before they sold out vice live-edge flannel. Chillwave mixtape
-                      humblebrag cronut church-key bicycle rights whatever. Hashtag tousled ethical kogi poke selvage,
-                      vexillologist twee ramps sartorial asymmetrical vape locavore.</p>
-                  </div>
-                </div>
-              </motion.div>
             </div>
 
             <div className="about-process-single">
@@ -268,21 +226,6 @@ const ONas = () => {
 
               </div>
 
-              <motion.div
-                className="about-process-single-bottom">
-                <div className="pt-1 pb-5 ">
-                  <div className="">
-                    {/*<h5 >Kancelaria specjalizuje się w sprawach związanych z dochodzeniem odszkodowań, zadośćuczynień, a także rent cywilnych.</h5>*/}
-                    {/*<br />*/}
-                    <p>Artisan paleo cornhole try-hard dreamcatcher kale chips salvia. Thundercats plaid quinoa
-                      dreamcatcher, chambray mixtape hoodie messenger bag tumeric tilde polaroid banh mi tbh. Drinking
-                      vinegar waistcoat hoodie fanny pack before they sold out yr taxidermy four dollar toast ramps venmo
-                      intelligentsia cred. Migas meditation before they sold out vice live-edge flannel. Chillwave mixtape
-                      humblebrag cronut church-key bicycle rights whatever. Hashtag tousled ethical kogi poke selvage,
-                      vexillologist twee ramps sartorial asymmetrical vape locavore.</p>
-                  </div>
-                </div>
-              </motion.div>
             </div>
 
             <div className="about-process-single">
@@ -313,21 +256,6 @@ const ONas = () => {
 
               </div>
 
-              <motion.div
-                className="about-process-single-bottom">
-                <div className="pt-1 pb-5 ">
-                  <div className="">
-                    {/*<h5 >Kancelaria specjalizuje się w sprawach związanych z dochodzeniem odszkodowań, zadośćuczynień, a także rent cywilnych.</h5>*/}
-                    {/*<br />*/}
-                    <p>Artisan paleo cornhole try-hard dreamcatcher kale chips salvia. Thundercats plaid quinoa
-                      dreamcatcher, chambray mixtape hoodie messenger bag tumeric tilde polaroid banh mi tbh. Drinking
-                      vinegar waistcoat hoodie fanny pack before they sold out yr taxidermy four dollar toast ramps venmo
-                      intelligentsia cred. Migas meditation before they sold out vice live-edge flannel. Chillwave mixtape
-                      humblebrag cronut church-key bicycle rights whatever. Hashtag tousled ethical kogi poke selvage,
-                      vexillologist twee ramps sartorial asymmetrical vape locavore.</p>
-                  </div>
-                </div>
-              </motion.div>
             </div>
 
             <div className="about-process-single">
@@ -355,20 +283,6 @@ const ONas = () => {
                 </TriggerText>
               </div>
 
-              <motion.div
-                className="about-process-single-bottom">
-                <div className="pt-1 pb-5 ">
-                  <div className="">
-                    {/*<h5 >Kancelaria specjalizuje się w sprawach związanych z dochodzeniem odszkodowań, zadośćuczynień, a także rent cywilnych.</h5>*/}
-                    {/*<br />*/}
-                    <p> Z nami nie muszą Państwo martwić się o niewywiązanie się z terminu podczas wykonywania zlecenia.
-                      Możesz skontaktować się z nami bezpośrednio, o każdej porze dnia i nocy. Przykładamy bardzo dużą uwagę do długofalowych relacji, opartych na wzajemnym zaufaniu.
-                      Zawsze wywiązujemy się z umowy. Wybierając naszą firmę mają Państwo pewność inwestycji w projekt, który przyniesie zysk.
-                    </p>
-                  </div>
-                </div>
-              </motion.div>
-
               <TriggerLine threshold=".5" delay=".25">
                 <hr className="animated last" />
               </TriggerLine>
@@ -376,108 +290,6 @@ const ONas = () => {
             </div>
           </section>
 
-
-          <TriggerImg threshold="0" delay={1}>
-            <img
-              className="service-stickers" width="100%" src={serviceStickers} alt="" />
-
-            <img
-              className="service-stickers-small " width="100%" src={serviceStickersSmall} alt="" />
-
-          </TriggerImg>
-
-
-          <section className="section-main-works mt-5">
-            <div>
-              <div className="subsec-header">
-                <TriggerText threshold=".5" delay=".1">
-                  <h5 className="">02.</h5>
-                </TriggerText>
-                <TriggerText threshold=".5" delay=".1">
-                  <h2 className="subsec-title">Proces</h2>
-                </TriggerText>
-              </div>
-
-              <div className="subsec-body">
-                <div className="ss-body-second">
-                  <TriggerText threshold="0" delay=".6">
-                    <p>Z nami nie muszą Państwo martwić się o niewywiązanie się z terminu podczas wykonywania zlecenia.
-                      Możesz skontaktować się z nami bezpośrednio, o każdej porze dnia i nocy. Wybierając <em>Lumina Studio</em> mają Państwo pewność inwestycji w projekt, który przyniesie zysk.</p>
-                  </TriggerText>
-                  <TriggerText threshold="0" delay=".35">
-                    <span className="subsec-span">Jak działamy</span>
-                  </TriggerText>
-                </div>
-              </div>
-
-              <div className="main-about-services">
-                <div className="single-service">
-                  <TriggerLine threshold=".5" delay=".5">
-                    <hr className="animated" />
-                  </TriggerLine>
-
-                  <TriggerText threshold=".5" delay="1.0">
-                    <h3>Proces I</h3>
-                  </TriggerText>
-                  <TriggerText threshold=".5" delay="1.2">
-                    <p>
-                      Projektujemy logotypy, wizytówki oraz papier firmowy. Dbamy o to by wszystkie
-                      elementy identyfikacji wizualnej były spójne ze sobą jak również odzwierciedlały branżę lub
-                      sprzedawany produkt.
-                    </p>
-                  </TriggerText>
-                </div>
-                <div className="single-service">
-                  <TriggerLine threshold=".5" delay=".5">
-                    <hr className="animated" />
-                  </TriggerLine>
-                  <TriggerText threshold=".5" delay="1.0">
-                    <h3>Proces II</h3>
-                  </TriggerText>
-                  <TriggerText threshold=".5" delay="1.2">
-                    <p>
-                      W naszej agencji interaktywnej świadczymy kompleksowe usługi z zakresu projektowania
-                      responsywnych stron internetowych.
-                      Realizujemy projekty dla klientów korporacyjnych oraz małych firm.
-                      Wszystkie strony www wyposażamy w dedykowany system CMS do samodzielnego zarządzania
-                      treścią.
-                    </p>
-                  </TriggerText>
-                </div>
-                <div className="single-service">
-                  <TriggerLine threshold=".5" delay=".5">
-                    <hr className="animated" />
-                  </TriggerLine>
-                  <TriggerText threshold=".5" delay="1.0">
-                    <h3>Proces III</h3>
-                  </TriggerText>
-                  <TriggerText threshold=".5" delay="1.2">
-                    <p>
-                      Zajmujemy się tworzeniem profesjonalnych sklepów internetowych, dopracowanych pod względem
-                      mechanizmów sprzedażowych. Tworzone przez nas sklepy internetowe oparte są wyłącznie o
-                      sprawdze, a przy tym niezawodne, rozwiązania e-commerce.
-                    </p>
-                  </TriggerText>
-                </div>
-                <div className="single-service">
-                  <TriggerLine threshold=".5" delay=".5">
-                    <hr className="animated" />
-                  </TriggerLine>
-                  <TriggerText threshold=".5" delay="1.0">
-                    <h3>Proces IV</h3>
-                  </TriggerText>
-                  <TriggerText threshold=".5" delay="1.2">
-                    <p>
-                      Mając stronę lub sklep internetowy warto pomyśleć o skutecznej reklamie.
-                      Idealnym rozwiązaniem są kampanie Google Ads, Facebook oraz pozycjonowanie stron
-                      internetowych.
-                    </p>
-                  </TriggerText>
-                </div>
-              </div>
-
-            </div>
-          </section>
 
           <SectionMarquee firstTape={false} secondTape={false} thirdTape={false} firstTapeScroll={true} secondTapeScroll={true}
                           thirdTapeScroll={true} dataScrollPosition="bottom" dataScrollSpeed="2"/>

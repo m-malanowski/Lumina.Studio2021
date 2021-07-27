@@ -1,5 +1,4 @@
 @import "abstracts/variables";
-//@import "components/marquee";
 @import "components/hamburger";
 @import "components/locomotive-scroll.css";
 
@@ -586,6 +585,10 @@ Pages
 
   h2 {
     text-transform: uppercase;
+    font-family: var(--ff-primary);
+    font-size: 80px;
+    color: var(--clr-secondary);
+    font-style: italic;
   }
 
   p, a {
@@ -594,7 +597,7 @@ Pages
   }
 
   h5 {
-    padding: 0 0 2.5rem 0;
+    padding: 2.5rem 0 2.5rem 0;
 
   }
 }
@@ -1693,15 +1696,6 @@ SECTIONS ________________________ SECTIONS
   }
 }
 
-.eloelo{
-  position: absolute;
-  right: 0;
-  bottom: 10%;
-  width: 300px;
-  height: auto;
-}
-
-
 .about-page-process {
   margin: 10rem 0 0 0;
 
@@ -1950,7 +1944,7 @@ SECTIONS ________________________ SECTIONS
       }
     }
 
-    .singe-work-left {
+      .singe-work-left {
       display: flex;
       flex-direction: column;
       justify-content: space-between;

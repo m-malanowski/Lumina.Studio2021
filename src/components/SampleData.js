@@ -12,7 +12,7 @@ export default [
     title: "Carra",
     services: "Branding, website, strategy",
     src: img1,
-    imgPath: "/portfolio/carra",
+    imgPath: "/agencja-interaktywna-realizacje/carra",
     alt: "Galanteria skórzana"
   },
   {
@@ -20,7 +20,7 @@ export default [
     title: "Tomasz Elsner",
     services: "Branding",
     src: img2,
-    imgPath: "/portfolio/tomasz-elsner",
+    imgPath: "/agencja-interaktywna-realizacje/tomasz-elsner",
     alt: "Tomasz Elsner"
 
   },
@@ -29,7 +29,7 @@ export default [
     title: "Kopelat",
     services: "Branding",
     src: img3,
-    imgPath: "/portfolio/kopelat",
+    imgPath: "/agencja-interaktywna-realizacje/kopelat",
     alt: "Kopelat"
 
   },
@@ -38,7 +38,7 @@ export default [
     title: "Latyński",
     services: "Branding",
     src: img4,
-    imgPath: "/portfolio/latynski",
+    imgPath: "/agencja-interaktywna-realizacje/latynski",
     alt: "Latyński"
 
   },
@@ -47,7 +47,7 @@ export default [
     title: "Malva",
     services: "Branding",
     src: img5,
-    imgPath: "/portfolio/malva",
+    imgPath: "/agencja-interaktywna-realizacje/malva",
     alt: "Malva"
 
   },
@@ -56,7 +56,7 @@ export default [
     title: "Adwokat Mikulak",
     services: "Branding, website",
     src: img6,
-    imgPath: "/portfolio/adwokat-mikulak",
+    imgPath: "/agencja-interaktywna-realizacje/adwokat-mikulak",
     alt: "Adwokat Mikulak"
 
   },
@@ -65,7 +65,7 @@ export default [
     title: "Kancelaria Tomczak",
     services: "Branding, website",
     src: img7,
-    imgPath: "/portfolio/kancelaria-tomczak",
+    imgPath: "/agencja-interaktywna-realizacje/kancelaria-tomczak",
     alt: "Kancelaria Tomczak"
   }
 ]

@@ -84,7 +84,7 @@ const Sidebar = ({toggleSideBar, isOpen}) => {
               </div>
             </div>
             <div className="menu__item">
-              <Link to="/portfolio" className="menu__item-link"
+              <Link to="/agencja-interaktywna-realizacje" className="menu__item-link"
                     onClick={toggleSideBar}
                     ref={el => (line2.current = el)}
               >Projekty</Link>
