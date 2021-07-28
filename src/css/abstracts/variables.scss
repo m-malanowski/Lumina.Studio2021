@@ -34,7 +34,7 @@ $layout-breakpoint-xsmall: 480px;
 }
 
 @mixin for-big-desktop-up {
-  @media (min-width: 1800px) {
+  @media (min-width: 1921px) {
     @content;
   }
 }

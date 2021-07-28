@@ -56,7 +56,7 @@ const FirstTapeScroll = ({dataScrollPosition, dataScrollSpeed}) => {
              data-scroll-position={dataScrollPosition}
              data-scroll-direction="horizontal"
         >
-          <span className="marquee__inner"> <span>Together</span> <span>Together</span> <span>Together</span> <span>Together</span> <span>Together</span>  <span>Together</span>  </span>
+          <span className="marquee__inner"> <span>Together</span> <span>Together</span> <span>Together</span> <span>Together</span> <span>Together</span>  <span>Together</span>  <span>Together</span>  </span>
         </div>
       </div>
     </>
@@ -85,7 +85,7 @@ const SecondTapeScroll = ({dataScrollPosition, dataScrollSpeed}) => {
           data-scroll-position={dataScrollPosition}
           data-scroll-direction="horizontal"
         >
-          <span className="marquee__inner"> <span>Work</span> <span>Work</span>  <span>Work</span> <span>Work</span> <span>Work</span> <span>Work</span> <span>Work</span> <span>Work</span> </span>
+          <span className="marquee__inner"> <span>Work</span> <span>Work</span>  <span>Work</span> <span>Work</span> <span>Work</span> <span>Work</span> <span>Work</span> <span>Work</span> <span>Work</span> </span>
         </div>
       </div>
     </>
@@ -97,7 +97,7 @@ const ThirdTape = () => {
     <>
       <div className="third-tape-wrapper">
         <div className="third-tape">
-          <span className="marquee__inner "> <span>Lumina</span>  <span>Lumina</span> <span>Lumina</span> <span>Lumina</span>  <span>Lumina</span>  <span>Lumina</span> </span>
+          <span className="marquee__inner "> <span>Lumina</span>  <span>Lumina</span> <span>Lumina</span> <span>Lumina</span>  <span>Lumina</span>  <span>Lumina</span> <span>Lumina</span> </span>
         </div>
       </div>
     </>
@@ -113,7 +113,7 @@ const ThirdTapeScroll = ({dataScrollPosition, dataScrollSpeed}) => {
              data-scroll-speed={dataScrollSpeed}
              data-scroll-position={dataScrollPosition}
              data-scroll-direction="horizontal">
-          <span className="marquee__inner"> <span>Lumina</span>  <span>Lumina</span> <span>Lumina</span> <span>Lumina</span>  <span>Lumina</span>  <span>Lumina</span> </span>
+          <span className="marquee__inner"> <span>Lumina</span>  <span>Lumina</span> <span>Lumina</span> <span>Lumina</span>  <span>Lumina</span>  <span>Lumina</span>  <span>Lumina</span></span>
         </div>
       </div>
     </>

@@ -2359,14 +2359,14 @@ SECTIONS ________________________ SECTIONS
     }
     &>div:nth-child(2){
       //margin-left: auto;
-      margin-left: 25%;
+      margin-left: -15%;
       @include for-tablet-portrait-up {
         margin-left: 0;
       }
     }
     &>div:nth-child(3){
       //margin-left: auto;
-      margin-left: -5%;
+      margin-left: -10%;
       @include for-tablet-portrait-up {
         margin-left: 10%;
       }
@@ -2558,6 +2558,9 @@ SECTIONS ________________________ SECTIONS
     margin: 10rem 0 10rem 0;
   }
   .tapes-container {
+    @include for-big-desktop-up{
+      transform: translateX(-2.5%) !important;
+    }
     transform: translateX(-12.5%);
     font-size: 80px;
     text-transform: uppercase;
@@ -2571,8 +2574,11 @@ SECTIONS ________________________ SECTIONS
     }
   }
   .first-tape-wrapper {
-    transform: rotate(6deg);
+    transform: rotate(6deg) translateX(0);
     transform-origin: center ;
+    @include for-big-desktop-up{
+      transform: rotate(6deg) translateX(-5%);
+    }
   }
 
   .tapes-container .first-tape-wrapper > .first-tape {
@@ -2591,6 +2597,10 @@ SECTIONS ________________________ SECTIONS
     @include for-tablet-landscape-up {
       transform-origin: right;
     }
+    @include for-big-desktop-up{
+      transform: rotate(-10deg) translateX(-5%);
+    }
+
   }
 
   .tapes-container .second-tape-wrapper > .second-tape {
@@ -2604,10 +2614,13 @@ SECTIONS ________________________ SECTIONS
   }
 
   .third-tape-wrapper{
-    transform: rotate(13deg);
+    transform: rotate(13deg) translateX(0);
     transform-origin: center;
     @include for-tablet-landscape-up {
       transform: rotate(13deg) translateX(-50%);
+    }
+    @include for-big-desktop-up{
+      transform: rotate(13deg) translateX(-10%);
     }
   }
 
