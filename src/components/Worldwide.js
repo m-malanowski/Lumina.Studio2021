@@ -22,9 +22,9 @@ const Worldwide = () => {
     <section
       className="section-worldwide"
     >
-      <TriggerImg delay={1.2}>
-        <img width="85" className="thumb-up" src={thumbUp} alt="" />
-      </TriggerImg>
+      {/*<TriggerImg delay={1.2}>*/}
+      {/*  <img width="85" className="thumb-up" src={thumbUp} alt="" />*/}
+      {/*</TriggerImg>*/}
 
       <div className="worldwide-container">
         <TriggerImg delay={.15}>

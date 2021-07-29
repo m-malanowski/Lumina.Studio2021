@@ -2357,16 +2357,22 @@ SECTIONS ________________________ SECTIONS
         position: relative;
       }
     }
+    &>div:nth-child(1){
+      margin-left: -10%;
+      @include for-tablet-portrait-up {
+        margin-left: 0;
+      }
+    }
     &>div:nth-child(2){
       //margin-left: auto;
-      margin-left: -15%;
+      margin-left: -5%;
       @include for-tablet-portrait-up {
         margin-left: 0;
       }
     }
     &>div:nth-child(3){
       //margin-left: auto;
-      margin-left: -10%;
+      margin-left: 10%;
       @include for-tablet-portrait-up {
         margin-left: 10%;
       }
@@ -2710,7 +2716,7 @@ SECTIONS ________________________ SECTIONS
 }
 
 .section-worldwide {
-  margin: 20rem 0 0 0;
+  margin: 25rem 0 0 0;
   //padding: 15rem 0 5rem 0;
   display: flex;
   flex-direction: column;
