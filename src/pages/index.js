@@ -24,7 +24,7 @@ const HomePage = ()  => {
     "@type": "LocalBusiness",
     "name": "lumina.studio - Tworzenie Stron Internetowych",
     "hasMap": "https://www.google.com/maps/d/u/0/edit?mid=10Zl8pYoh3_82OvkSYeae7nnzrYM-XZAh&usp=sharing",
-    "image": "https://lumina.studio/facebook.jpg",
+    "image": "https://lumina.studio/facebook.png",
     "@id": "",
     "url": "https://lumina.studio",
     "telephone": "+ 48 506 870 672",

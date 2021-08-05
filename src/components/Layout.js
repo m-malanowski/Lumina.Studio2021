@@ -47,7 +47,6 @@ const Layout = ({ children, location }) => {
 
       <AnimatePresence initial={true} exitBeforeEnter>
         <motion.div
-          id="elo"
           location={location}
           key={location.key}
           variants={layoutVariants}
@@ -61,6 +60,8 @@ const Layout = ({ children, location }) => {
           {/*{console.log(location)}*/}
           {children}
         </motion.div>
+
+        <div className="site-loader"></div>
       </AnimatePresence>
     </>
   )

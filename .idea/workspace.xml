@@ -2,17 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5d55e401-15fe-43b2-810d-1da9c4f903b3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/assets/imgs/clouds-transition.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/abstracts/mixins.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/icons/globe.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/icons/globe.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/icons/handDown.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/icons/handDown.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Worldwide.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Worldwide.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/css/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/styles.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/twitter-img.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="SCSS File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -35,7 +45,8 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/pages" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/assets/imgs" />
+    <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -46,6 +57,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/assets/imgs" />
       <recent name="$PROJECT_DIR$/src/pages" />
       <recent name="$PROJECT_DIR$/src/templates" />
     </key>
@@ -92,7 +104,10 @@
       <workItem from="1627461172101" duration="1930000" />
       <workItem from="1627487504347" duration="708000" />
       <workItem from="1627540279651" duration="599000" />
-      <workItem from="1627581670912" duration="2657000" />
+      <workItem from="1627581670912" duration="8572000" />
+      <workItem from="1627816271151" duration="599000" />
+      <workItem from="1627842421960" duration="4294000" />
+      <workItem from="1627915390332" duration="388000" />
     </task>
     <servers />
   </component>

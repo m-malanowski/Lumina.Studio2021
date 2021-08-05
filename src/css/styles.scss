@@ -1,10 +1,11 @@
 @import "abstracts/variables";
+@import "abstracts/mixins";
 @import "components/hamburger";
 @import "components/locomotive-scroll.css";
 
 @font-face {
   font-family: "Schnyder M Light";
-  src: url("../assets/fonts/FontsFree-Net-NewYork.ttf") format("truetype");
+  src: url("../assets/fonts/NewCaledoniaLTStdRgIt.ttf") format("truetype");
   font-display: swap;
 }
 
@@ -3452,3 +3453,72 @@ Nav  Icon
     transform: rotate(0);
   }
 }
+
+
+.site-loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  z-index: 10000;
+  pointer-events: none;
+  background-color: transparent;
+  background-image: url(../assets/imgs/clouds-transition.png);
+  background-position: 0 0;
+  background-size: 122880px 100%;
+  //background-color: #fff;
+}
+.site-loader.in{
+  opacity: 1;
+  animation: 1.5s steps(33) forwards;
+  animation-name: in;
+  //animation-timing-function: steps(33, end);
+}
+
+.site-loader.out{
+  opacity: 1;
+  animation: 1.5s steps(31) forwards;
+  animation-name: out;
+  //animation-timing-function: steps(33, end);
+}
+
+@keyframes in {
+  0%, 1% {
+    background-color: transparent;
+    background-position: -59520px 0;
+  }
+  2%{
+    background-color: transparent;
+    background-position: -59520px 0;
+  }
+  99%{
+    background-color: transparent;
+    background-position: -122880px 0;
+  }
+  99%, 100% {
+    background-color: transparent;
+    background-position: -122880px 0;
+  }
+}
+@keyframes out {
+  0%, 1% {
+    background-color: transparent;
+    background-position: 0 0;
+  }
+  2% {
+    background-color: transparent;
+    background-position: 0 0;
+  }
+  99% {
+    background-color: transparent;
+    background-position: -59520px 0;
+  }
+  99%, 100% {
+    background-color: #fff;
+    background-position: -59520px 0;
+  }
+}
+
+
