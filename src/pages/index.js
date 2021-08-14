@@ -354,8 +354,9 @@ const HomePage = () => {
           <LowerFooter />
 
         </main>
+        <div className="site-loader in"></div>
+
       </LocomotiveScrollProvider>
-      <div className="site-loader in"></div>
 
     </>
   )
