@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
 import { motion, useAnimation } from "framer-motion";
-const TriggerText = ({children, threshold, delay}) => {
+const TriggerText = ({children, threshold, delay, cName}) => {
   const { ref, inView, entry } = useInView({
     /* Optional options */
     threshold: threshold,
@@ -21,6 +21,7 @@ const TriggerText = ({children, threshold, delay}) => {
 
   return (
     <motion.div
+      className={cName}
       ref={ref}
       animate={controls}
       initial="hidden"

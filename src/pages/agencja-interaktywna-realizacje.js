@@ -32,101 +32,110 @@ const AgencjaInteraktywnaRealizacje = ({ data }) => {
       >
 
         <main className="works-page container-fluid" data-scroll-container ref={containerRef}>
-          <section className="works-page-container">
-
-            {/*<div className="subsec-header">*/}
-            {/*  <TriggerText threshold=".5" delay=".1">*/}
-            {/*    <h5 className="">01.</h5>*/}
-            {/*  </TriggerText>*/}
-            {/*  <TriggerText threshold=".5" delay=".1">*/}
-            {/*    <h2 className="subsec-title">Nasze prace</h2>*/}
-            {/*  </TriggerText>*/}
-            {/*</div>*/}
+          <div className="works-page-container">
 
             <section className="section-portfolio-container">
               <div className="main-container">
 
-                <TriggerText threshold=".5" delay=".2">
-                  <h2
-                    data-scroll
-                    data-scroll-speed="-1"
-                    data-scroll-direction="horizontal"
-                  >Nasze</h2>
-                </TriggerText>
+                <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur doloremque nihil nulla quod sapiente! Aut culpa error esse expedita fuga illum itaque nesciunt obcaecati, placeat quod reiciendis, sint, veritatis voluptatibus?</h2>
 
-                <TriggerText threshold=".5" delay=".3">
-                  <h2
-                    data-scroll
-                    data-scroll-speed="1"
-                    data-scroll-direction="horizontal"
-                  >Prace</h2>
-                </TriggerText>
-
-                <TriggerImg delay={1}>
-                  <img
-                    data-scroll
-                    data-scroll-speed="1"
-                    data-scroll-position="top"
-                    className="orbit-blog" width="70%" src={orbitAboutPage} alt="" />
-                </TriggerImg>
+                {/*<TriggerText threshold=".5" delay=".2">*/}
+                {/*  <h2*/}
+                {/*    data-scroll*/}
+                {/*    data-scroll-speed="-1"*/}
+                {/*    data-scroll-direction="horizontal"*/}
+                {/*  >Nasze</h2>*/}
+                {/*</TriggerText>*/}
+                
+                {/*<TriggerText threshold=".5" delay=".3">*/}
+                {/*  <h2*/}
+                {/*    data-scroll*/}
+                {/*    data-scroll-speed="1"*/}
+                {/*    data-scroll-direction="horizontal"*/}
+                {/*  >Prace</h2>*/}
+                {/*</TriggerText>*/}
+                
+                {/*<TriggerImg delay={1}>*/}
+                {/*  <img*/}
+                {/*    data-scroll*/}
+                {/*    data-scroll-speed="1"*/}
+                {/*    data-scroll-position="top"*/}
+                {/*    className="orbit-blog" width="70%" src={orbitAboutPage} alt="" />*/}
+                {/*</TriggerImg>*/}
+                
               </div>
             </section>
 
-            <div className="main-works-container mt-5">
+            {/*<div className="main-works-container mt-5">*/}
+            
+            {/*  {data.allStrapiProjects.nodes.map(node => (*/}
+            {/*    <div     key={node.id}>*/}
+            {/*      /!*<TriggerLine threshold=".5" delay=".5">*!/*/}
+            {/*      /!*  <hr className="animated" />*!/*/}
+            {/*      /!*</TriggerLine>*!/*/}
+            {/*      <div*/}
+            {/*        className="single-work">*/}
+            {/*        <div className="singe-work-left">*/}
+            {/*          <span></span>*/}
+            
+            {/*          <TriggerText threshold=".5" delay=".8">*/}
+            {/*            <h2>{node.title}</h2>*/}
+            {/*          </TriggerText>*/}
+            
+            {/*          <TriggerText threshold=".5" delay=".9">*/}
+            {/*            <p>{node.services}</p>*/}
+            {/*          </TriggerText>*/}
+            
+            {/*        </div>*/}
+            
+            {/*        <TriggerImg threshold=".8" delay="1">*/}
+            {/*          <img width="100%" src={node.cover.url} alt="" />*/}
+            {/*        </TriggerImg>*/}
+            
+            {/*        /!*<GatsbyImage image={node.cover} alt="elo elo" />*!/*/}
+            
+            {/*        <div className="singe-work-right">*/}
+            {/*          <div className="learn-more">*/}
+            
+            {/*            <TriggerText threshold=".5" delay=".2">*/}
+            {/*              <Link className="" to={"/agencja-interaktywna-realizacje/" + node.slug}>*/}
+            {/*                <span>Sprawdź</span>*/}
+            {/*                <span />*/}
+            {/*                <span>Więcej</span>*/}
+            {/*              </Link>*/}
+            {/*            </TriggerText>*/}
+            
+            {/*          </div>*/}
+            {/*        </div>*/}
+            {/*      </div>*/}
+            
+            {/*      <TriggerLine threshold=".5" delay=".5">*/}
+            {/*        <hr className="animated" />*/}
+            {/*      </TriggerLine>*/}
+            {/*    </div>*/}
+            
+            {/*  ))}*/}
+            
+            {/*</div>*/}
 
+            <div className="new-section-works-container">
               {data.allStrapiProjects.nodes.map(node => (
-                <div     key={node.id}>
-                  {/*<TriggerLine threshold=".5" delay=".5">*/}
-                  {/*  <hr className="animated" />*/}
-                  {/*</TriggerLine>*/}
-                  <div
-                    className="single-work">
-                    <div className="singe-work-left">
-                      <span></span>
 
-                      <TriggerText threshold=".5" delay=".8">
-                        <h2>{node.title}</h2>
-                      </TriggerText>
-
-                      <TriggerText threshold=".5" delay=".9">
-                        <p>{node.services}</p>
-                      </TriggerText>
-
-                    </div>
-
-                    <TriggerImg threshold=".8" delay="1">
-                      <img width="100%" src={node.cover.url} alt="" />
-                    </TriggerImg>
-
-                    {/*<GatsbyImage image={node.cover} alt="elo elo" />*/}
-
-                    <div className="singe-work-right">
-                      <div className="learn-more">
-
-                        <TriggerText threshold=".5" delay=".2">
-                          <Link className="" to={"/agencja-interaktywna-realizacje/" + node.slug}>
-                            <span>Sprawdź</span>
-                            <span />
-                            <span>Więcej</span>
-                          </Link>
-                        </TriggerText>
-
-                      </div>
-                    </div>
-                  </div>
-
-                  <TriggerLine threshold=".5" delay=".5">
-                    <hr className="animated" />
-                  </TriggerLine>
+                // <TriggerImg threshold=".8" delay="1">
+                //   <img width="100%" src={node.cover.url} alt="" />
+                <div style={{ backgroundImage: `url(${node.cover.url})` }}>
+                  <Link to={"/agencja-interaktywna-realizacje/" + node.slug}>
+                    <h2>{node.title}</h2>
+                    <p>{node.services}</p>
+                    {/*<h2>{node.title}</h2>*/}
+                  </Link>
                 </div>
 
+                // </TriggerImg>
               ))}
-              {/*<TriggerLine threshold=".5" delay=".5">*/}
-              {/*  <hr className="animated" />*/}
-              {/*</TriggerLine>*/}
-
             </div>
-          </section>
+
+          </div>
 
           <section className="section-show-more">
             <div className="main-container">
@@ -138,8 +147,8 @@ const AgencjaInteraktywnaRealizacje = ({ data }) => {
               </TriggerText>
 
               <TriggerText threshold=".5" delay=".3">
-                <h2>Razem</h2>
-                <span className="ml-5">Coś</span>
+                <h2>Razem coś</h2>
+                {/*<span className="ml-5">Coś</span>*/}
               </TriggerText>
 
               <TriggerText threshold=".5" delay=".35">
@@ -150,7 +159,7 @@ const AgencjaInteraktywnaRealizacje = ({ data }) => {
               </TriggerText>
             </div>
 
-            <TriggerImg delay={.01} threshold={0}>
+            <TriggerImg delay={.01} threshold={0} cName="orbit-wrapper">
               <img
                 data-scroll
                 data-scroll-speed="1"

@@ -82,14 +82,10 @@ const ONas = () => {
               </TriggerText>
 
               <TriggerText threshold=".5" delay=".3">
-                <span
-                  data-scroll
-                  data-scroll-speed="2"
-                  data-scroll-direction="horizontal"> z </span>
                 <h2
                   data-scroll
                   data-scroll-speed="-1"
-                  data-scroll-direction="horizontal">duchem</h2>
+                  data-scroll-direction="horizontal">z duchem</h2>
               </TriggerText>
 
               {/*<TriggerText threshold=".5" delay=".3">*/}

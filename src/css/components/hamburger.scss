@@ -52,6 +52,9 @@
   .menu__item {
     position: relative;
     padding: 0 6vw;
+    a{
+      font-family: var(--ff-secondary-medium);
+    }
   }
 
   .menu__item-link {
@@ -155,6 +158,7 @@
   }
 
   .marquee span {
+    //font-family: var(--ff-primary) !important;
     font-style: italic;
     //font-family: var(--ff-primary);
   }
@@ -173,6 +177,9 @@
     font-size: 0.8rem;
     font-weight: 600;
     display: flex;
+    a{
+      font-family: var(--ff-secondary-bold);
+    }
     @include for-tablet-landscape-up{
       flex-direction: column;
       text-align: center;
@@ -184,6 +191,7 @@
       }
       li {
         padding-right: 5rem;
+
         @include for-tablet-landscape-up{
           //padding-right: 0;
           padding: .5rem 0;

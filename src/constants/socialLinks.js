@@ -18,7 +18,7 @@ const data = [
     id: 2,
     icon: <FaLinkedin className="social-icon"></FaLinkedin>,
     name: 'Behance',
-    url: "https://www.behance.net/luminastudio2",
+    url: "https://www.behance.net/lumina-studio",
   },
   {
     id: 3,

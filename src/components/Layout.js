@@ -61,7 +61,7 @@ const Layout = ({ children, location }) => {
           {children}
         </motion.div>
 
-        <div className="site-loader"></div>
+        {/*<div className="site-loader in"></div>*/}
       </AnimatePresence>
     </>
   )

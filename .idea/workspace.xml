@@ -2,8 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5d55e401-15fe-43b2-810d-1da9c4f903b3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/Editorial New Regular 400.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/Editorial New Ultrabold 800.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/Editorial New Ultralight 200.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/Moderat-Bold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/Moderat-Extended-Black.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/Moderat-Extended-Bold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/MonumentExtended-Bold.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/MonumentExtended-Light.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/Ogg-Italic.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/Ogg-Roman.otf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SEO.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SEO.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/icons/globe.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/icons/globe.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/icons/handDown.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/icons/handDown.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ProjectsSubsectionNew.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ProjectsSubsectionNew.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/TriggerImg.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TriggerImg.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants/socialLinks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/socialLinks.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/components/hamburger.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/components/hamburger.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/styles.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/agencja-interaktywna-realizacje.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/agencja-interaktywna-realizacje.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/o-nas.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/o-nas.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/uslugi.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/uslugi.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +62,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/assets/imgs" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/assets/fonts" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -50,6 +74,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/assets/fonts" />
       <recent name="$PROJECT_DIR$/src/assets/imgs" />
       <recent name="$PROJECT_DIR$/src/pages" />
       <recent name="$PROJECT_DIR$/src/templates" />
@@ -102,7 +127,13 @@
       <workItem from="1627842421960" duration="4294000" />
       <workItem from="1627915390332" duration="388000" />
       <workItem from="1628152507406" duration="2333000" />
-      <workItem from="1628183602810" duration="78000" />
+      <workItem from="1628183602810" duration="1087000" />
+      <workItem from="1628239199251" duration="1413000" />
+      <workItem from="1628423210332" duration="23328000" />
+      <workItem from="1628497650234" duration="1794000" />
+      <workItem from="1628758512247" duration="1210000" />
+      <workItem from="1628885933282" duration="2416000" />
+      <workItem from="1628958512328" duration="3688000" />
     </task>
     <servers />
   </component>

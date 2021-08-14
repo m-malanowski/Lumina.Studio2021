@@ -14,6 +14,8 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
+    "@react-three/drei": "^7.3.1",
+    "@react-three/fiber": "^7.0.6",
     "babel-plugin-glsl": "^1.0.0",
     "classnames": "^2.3.1",
     "framer-motion": "^4.1.17",
@@ -42,7 +44,9 @@
     "react-icons": "^4.2.0",
     "react-intersection-observer": "^8.32.0",
     "react-locomotive-scroll": "^0.1.8",
-    "react-markdown": "^6.0.2"
+    "react-markdown": "^6.0.2",
+    "react-three": "^0.9.7",
+    "three": "^0.131.3"
   },
   "devDependencies": {
     "prettier": "2.3.2"

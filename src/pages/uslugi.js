@@ -58,16 +58,11 @@ const Uslugi = () => {
             </TriggerText>
 
             <TriggerText threshold=".5" delay=".25">
-              <span
-                data-scroll
-                data-scroll-speed="3"
-                data-scroll-direction="horizontal"
-              >Się</span>
               <h2
                 data-scroll
-                data-scroll-speed="-2"
+                data-scroll-speed="2"
                 data-scroll-direction="horizontal"
-              >dla</h2>
+              >Się dla</h2>
             </TriggerText>
 
             <TriggerText threshold=".5" delay=".35">
