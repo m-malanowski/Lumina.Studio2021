@@ -3603,19 +3603,19 @@ Nav  Icon
   }
 }
 
-.initial{
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  z-index: 10000;
-  opacity: 1;
-  background-color: var(--clr-white);
-}
+//.initial{
+//  position: fixed;
+//  top: 0;
+//  left: 0;
+//  height: 100%;
+//  width: 100%;
+//  z-index: 10000;
+//  opacity: 1;
+//  background-color: var(--clr-white);
+//}
 
 .site-loader {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   height: 100%;
