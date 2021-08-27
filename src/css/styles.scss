@@ -3681,4 +3681,18 @@ Nav  Icon
   }
 }
 
+//Hand animations
 
+.index-hand{
+  animation: turn 6s ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes turn {
+  0%, 100% {
+    transform: rotate(45deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+}

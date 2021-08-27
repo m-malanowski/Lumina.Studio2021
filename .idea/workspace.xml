@@ -3,12 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="5d55e401-15fe-43b2-810d-1da9c4f903b3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gatsby-browser.js" beforeDir="false" afterPath="$PROJECT_DIR$/gatsby-browser.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Animations.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Animations.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ProjectsSubsectionNew.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ProjectsSubsectionNew.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/css/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/styles.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/agencja-interaktywna-realizacje.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/agencja-interaktywna-realizacje.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -118,7 +113,8 @@
       <workItem from="1628958512328" duration="5916000" />
       <workItem from="1629016513806" duration="1364000" />
       <workItem from="1630047450801" duration="1854000" />
-      <workItem from="1630049324940" duration="911000" />
+      <workItem from="1630049324940" duration="1075000" />
+      <workItem from="1630051134813" duration="503000" />
     </task>
     <servers />
   </component>

@@ -150,7 +150,7 @@ const HomePage = () => {
               </TriggerImg>
               <div className="scroll-down">
                 <TriggerImg delay={1.2}>
-                  <img width="100" src={handDown} alt="" />
+                  <img width="100" className="index-hand" src={handDown} alt="" />
                 </TriggerImg>
               </div>
             </div>
