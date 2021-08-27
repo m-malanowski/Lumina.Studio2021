@@ -37,32 +37,11 @@ const AgencjaInteraktywnaRealizacje = ({ data }) => {
             <section className="section-portfolio-container">
               <div className="main-container">
 
-                <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur doloremque nihil nulla quod sapiente! Aut culpa error esse expedita fuga illum itaque nesciunt obcaecati, placeat quod reiciendis, sint, veritatis voluptatibus?</h2>
+                <TriggerText threshold="0" delay=".2">
+                  <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur doloremque nihil nulla quod sapiente! Aut culpa error esse expedita fuga illum itaque nesciunt obcaecati, placeat quod reiciendis, sint, veritatis voluptatibus?</h3>
+                </TriggerText>
 
-                {/*<TriggerText threshold=".5" delay=".2">*/}
-                {/*  <h2*/}
-                {/*    data-scroll*/}
-                {/*    data-scroll-speed="-1"*/}
-                {/*    data-scroll-direction="horizontal"*/}
-                {/*  >Nasze</h2>*/}
-                {/*</TriggerText>*/}
-                
-                {/*<TriggerText threshold=".5" delay=".3">*/}
-                {/*  <h2*/}
-                {/*    data-scroll*/}
-                {/*    data-scroll-speed="1"*/}
-                {/*    data-scroll-direction="horizontal"*/}
-                {/*  >Prace</h2>*/}
-                {/*</TriggerText>*/}
-                
-                {/*<TriggerImg delay={1}>*/}
-                {/*  <img*/}
-                {/*    data-scroll*/}
-                {/*    data-scroll-speed="1"*/}
-                {/*    data-scroll-position="top"*/}
-                {/*    className="orbit-blog" width="70%" src={orbitAboutPage} alt="" />*/}
-                {/*</TriggerImg>*/}
-                
+
               </div>
             </section>
 
@@ -117,23 +96,21 @@ const AgencjaInteraktywnaRealizacje = ({ data }) => {
             {/*  ))}*/}
             
             {/*</div>*/}
+            <TriggerImg threshold="" delay="1">
 
             <div className="new-section-works-container">
               {data.allStrapiProjects.nodes.map(node => (
 
-                // <TriggerImg threshold=".8" delay="1">
-                //   <img width="100%" src={node.cover.url} alt="" />
+                // <TriggerImg threshold="" delay="1">
                 <div style={{ backgroundImage: `url(${node.cover.url})` }}>
                   <Link to={"/agencja-interaktywna-realizacje/" + node.slug}>
                     <h2>{node.title}</h2>
                     <p>{node.services}</p>
-                    {/*<h2>{node.title}</h2>*/}
                   </Link>
                 </div>
-
-                // </TriggerImg>
               ))}
             </div>
+           </TriggerImg>
 
           </div>
 

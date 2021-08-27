@@ -170,11 +170,11 @@ const ProjectsSubsection = () => {
 
         <TriggerText threshold=".5" delay=".4">
           <div className="learn-more">
-            <a href="/portfolio">
+            <Link to="/agencja-interaktywna-realizacje">
               <span>Sprawdź</span>
               <span />
               <span>Więcej</span>
-            </a>
+            </Link>
           </div>
         </TriggerText>
 

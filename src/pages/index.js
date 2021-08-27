@@ -104,7 +104,7 @@ const HomePage = () => {
           <section className="section-main-container">
             <div className="main-container">
           
-              <TriggerText threshold=".5" delay=".2">
+              <TriggerText threshold=".5" delay=".8">
                 <h2
                   data-scroll
                   data-scroll-speed="-1"
@@ -112,7 +112,7 @@ const HomePage = () => {
                 >Idziemy</h2>
               </TriggerText>
           
-              <TriggerText threshold=".5" delay=".25">
+              <TriggerText threshold=".5" delay=".85">
                 {/*<span*/}
                 {/*  data-scroll*/}
                 {/*  data-scroll-speed="2"*/}
@@ -126,7 +126,7 @@ const HomePage = () => {
               </TriggerText>
           
           
-              <TriggerText threshold=".5" delay=".3">
+              <TriggerText threshold=".5" delay=".9">
                 <h2
                   data-scroll
                   data-scroll-speed="1"

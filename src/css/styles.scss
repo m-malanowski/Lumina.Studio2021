@@ -245,8 +245,7 @@ em {
     //  opacity: 1;
     //  color: var(--clr-secondary);
     //}
-    opacity: 0.1;
-
+    opacity: 0.75;
   }
   &:hover > div:hover{
     transition:  .25s ease-in-out;
@@ -258,7 +257,6 @@ em {
       opacity: 1;
       color: var(--clr-black);
     }
-
   }
   div{
     a{
@@ -2327,6 +2325,9 @@ SECTIONS ________________________ SECTIONS
     &>div{
       display: flex;
       align-items: flex-end;
+      h3{
+        font-size: calc(22px + (35 - 22) * ((100vw - 320px) / (1900 - 320)));
+      }
       h2{
         text-transform: uppercase;
         font-size: calc(55px + (160 - 55) * ((100vw - 320px) / (1900 - 320)));
