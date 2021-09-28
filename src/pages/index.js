@@ -91,13 +91,12 @@ const HomePage = () => {
 
         <main className="index-page container-fluid" data-scroll-container ref={containerRef}>
           {/*<section className="new-section-main">*/}
-          {/*  <h2>*/}
-          {/*    We make <br/> your design <br/> experience*/}
-          {/*  </h2>*/}
-
-          {/*  /!*<h3>Post Familiar <span> (N.01 – SS21) </span>Wines for Expansion <span> (Domain) </span></h3>*!/*/}
-
-
+          {/*  /!*<h3>*!/*/}
+          {/*  /!*  We make <br/> your design <br/> experience*!/*/}
+          {/*    /!*<span> (N.01 – SS21) </span>*!/*/}
+          {/*  /!*</h3>*!/*/}
+          
+          {/*  <h3>Post Familiar <span> (N.01 – SS21) </span>Wines for Expansion <span> (Domain) </span></h3>*/}
           {/*</section>*/}
 
 
@@ -111,21 +110,15 @@ const HomePage = () => {
                   data-scroll-direction="horizontal"
                 >Idziemy</h2>
               </TriggerText>
-          
+
               <TriggerText threshold=".5" delay=".85">
-                {/*<span*/}
-                {/*  data-scroll*/}
-                {/*  data-scroll-speed="2"*/}
-                {/*  data-scroll-direction="horizontal"*/}
-                {/*>z</span>*/}
                 <h2
                   data-scroll
                   data-scroll-speed="-3"
                   data-scroll-direction="horizontal"
                 >z Duchem</h2>
               </TriggerText>
-          
-          
+
               <TriggerText threshold=".5" delay=".9">
                 <h2
                   data-scroll
@@ -133,8 +126,7 @@ const HomePage = () => {
                   data-scroll-direction="horizontal"
                 >Czasu</h2>
               </TriggerText>
-          
-          
+
               <TriggerImg delay={1}>
                 <img
                   data-scroll
@@ -156,8 +148,10 @@ const HomePage = () => {
             </div>
           </section>
 
-          <SectionMarquee firstTape={false} secondTape={true} thirdTape={true} secondTapeScroll={true}
-                          thirdTapeScroll={true} dataScrollSpeed="2" />
+
+
+          <SectionMarquee firstTape={false} secondTape={false} thirdTape={false} firstTapeScroll={true}
+                          secondTapeScroll={true} />
 
           <section className="section-main-process">
             <div className="">
@@ -264,8 +258,12 @@ const HomePage = () => {
             </div>
           </section>
 
+          {/*<SectionMarquee firstTape={false} secondTape={true} thirdTape={true} secondTapeScroll={true}*/}
+          {/*                thirdTapeScroll={true} dataScrollSpeed="2" />*/}
+
+
           <SectionMarquee firstTape={false} secondTape={false} thirdTape={false} firstTapeScroll={true}
-                          secondTapeScroll={true} />
+                          secondTapeScroll={false} />
 
           <ProjectsSubsectionNew />
 

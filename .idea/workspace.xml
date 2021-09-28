@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5d55e401-15fe-43b2-810d-1da9c4f903b3" name="Default Changelist" comment="">
+    <list default="true" id="fc8dcfe9-b12a-4fad-8cc7-dd90ee96e401" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/css/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/styles.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
     </list>
@@ -10,13 +11,6 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="SCSS File" />
-      </list>
-    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -29,7 +23,7 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
-  <component name="ProjectId" id="1v1wnZctoBLW0MpWChyntsh1aUz" />
+  <component name="ProjectId" id="1xYAMOmOjyp8uJyVJddYAC0SNFr" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -39,98 +33,46 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/assets/fonts" />
-    <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
-    <property name="settings.editor.selected.configurable" value="watcher.settings" />
-    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
     <property name="vue.rearranger.settings.migration" value="true" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/assets/fonts" />
-      <recent name="$PROJECT_DIR$/src/assets/imgs" />
-      <recent name="$PROJECT_DIR$/src/pages" />
-      <recent name="$PROJECT_DIR$/src/templates" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/pages" />
-      <recent name="$PROJECT_DIR$/src/css" />
-      <recent name="$PROJECT_DIR$/src/components" />
-    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="5d55e401-15fe-43b2-810d-1da9c4f903b3" name="Default Changelist" comment="" />
-      <created>1625743075989</created>
+      <changelist id="fc8dcfe9-b12a-4fad-8cc7-dd90ee96e401" name="Changes" comment="" />
+      <created>1630521604532</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1625743075989</updated>
-      <workItem from="1625743092635" duration="5287000" />
-      <workItem from="1625764599117" duration="12691000" />
-      <workItem from="1625819147961" duration="247000" />
-      <workItem from="1625824662696" duration="8269000" />
-      <workItem from="1625833757313" duration="9045000" />
-      <workItem from="1625852901833" duration="1598000" />
-      <workItem from="1625867134630" duration="2010000" />
-      <workItem from="1625909542508" duration="2651000" />
-      <workItem from="1625936363956" duration="4231000" />
-      <workItem from="1626005915354" duration="5718000" />
-      <workItem from="1626094971606" duration="11389000" />
-      <workItem from="1626160021001" duration="3224000" />
-      <workItem from="1626165778785" duration="836000" />
-      <workItem from="1626210637699" duration="637000" />
-      <workItem from="1626266092496" duration="12448000" />
-      <workItem from="1626294946416" duration="5561000" />
-      <workItem from="1626364031850" duration="3592000" />
-      <workItem from="1626443556198" duration="4582000" />
-      <workItem from="1626607776139" duration="16169000" />
-      <workItem from="1626762021935" duration="4876000" />
-      <workItem from="1626805031539" duration="6075000" />
-      <workItem from="1626892407001" duration="7776000" />
-      <workItem from="1627305091498" duration="2278000" />
-      <workItem from="1627325624995" duration="6872000" />
-      <workItem from="1627378024314" duration="2543000" />
-      <workItem from="1627415909214" duration="2854000" />
-      <workItem from="1627461172101" duration="1930000" />
-      <workItem from="1627487504347" duration="708000" />
-      <workItem from="1627540279651" duration="599000" />
-      <workItem from="1627581670912" duration="8572000" />
-      <workItem from="1627816271151" duration="599000" />
-      <workItem from="1627842421960" duration="4294000" />
-      <workItem from="1627915390332" duration="388000" />
-      <workItem from="1628152507406" duration="2333000" />
-      <workItem from="1628183602810" duration="1087000" />
-      <workItem from="1628239199251" duration="1413000" />
-      <workItem from="1628423210332" duration="23328000" />
-      <workItem from="1628497650234" duration="1794000" />
-      <workItem from="1628758512247" duration="1210000" />
-      <workItem from="1628885933282" duration="2416000" />
-      <workItem from="1628958512328" duration="5916000" />
-      <workItem from="1629016513806" duration="1364000" />
-      <workItem from="1630047450801" duration="1854000" />
-      <workItem from="1630049324940" duration="1075000" />
-      <workItem from="1630051134813" duration="503000" />
+      <updated>1630521604532</updated>
+      <workItem from="1630521635512" duration="1956000" />
+      <workItem from="1630677725660" duration="2186000" />
+      <workItem from="1630744803814" duration="638000" />
+      <workItem from="1630771883220" duration="2451000" />
+      <workItem from="1630838623079" duration="1990000" />
+      <workItem from="1630941396980" duration="10000" />
+      <workItem from="1631565124615" duration="282000" />
+      <workItem from="1631607896056" duration="660000" />
+      <workItem from="1632495745607" duration="359000" />
+      <workItem from="1632847487249" duration="200000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-    <option name="oldMeFiltersMigrated" value="true" />
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/pages/index.js</url>
+          <line>99</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

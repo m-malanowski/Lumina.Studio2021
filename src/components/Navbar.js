@@ -2,7 +2,9 @@ import React from "react"
 import PageLinks from "../constants/links"
 import { motion } from "framer-motion"
 import contrast from "../assets/icons/contrast.svg"
-import logo from "../assets/imgs/lumina-logo.png"
+// import logo from "../assets/imgs/lumina-logo.png"
+import logo from "../assets/imgs/lumina-logo.svg"
+
 import TriggerText from "../components/TriggerText"
 
 const Navbar = ({ toggleSideBar, isOpen }) => {

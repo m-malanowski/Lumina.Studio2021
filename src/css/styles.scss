@@ -87,7 +87,7 @@ body {
   //overflow: hidden;
   overflow-x: hidden;
   //cursor: url("../assets/icons/pointer.png") 11 11, auto;
-  cursor: url("../assets/icons/pointer.png") 11 11, auto;
+  cursor: url("../assets/icons/customCursor.png") 11 11, auto;
 
   -webkit-user-select: none;
 
@@ -141,7 +141,7 @@ a {
   outline: 0;
   font-family: var(--ff-secondary);
   &:hover{
-    cursor: url("../assets/icons/pointerMIckey.png"), pointer;
+    cursor: url("../assets/icons/pointer.png"), pointer;
   }
 }
 
@@ -252,7 +252,7 @@ em {
     opacity: 1;
     background-image: none !important;
     background-color: var(--clr-secondary) !important;
-    cursor: url("../assets/icons/pointerMIckey.png") 20 10, pointer;
+    cursor: url("../assets/icons/pointer.png") 20 10, pointer;
     h2,p{
       opacity: 1;
       color: var(--clr-black);
@@ -328,16 +328,15 @@ em {
 }
 
 .new-section-main{
-  height: 150vh;
+  height: 100vh;
   display: flex;
   align-items: center;
 
   h3{
     text-align: center;
-    font-size: calc(25px + (180 - 25) * ((100vw - 320px) / (1900 - 320)));
+    font-size: calc(25px + (120 - 25) * ((100vw - 320px) / (1900 - 320)));
     line-height: 1;
     font-family: var(--ff-secondary-bold);
-
     span{
       font-family: var(--ff-primary);
     }
@@ -398,9 +397,9 @@ h1.page-title em, h2.page-title em {
 
 
 .subsec-title {
-  font-family: var(--ff-secondary-bold) !important;
+  font-family: var(--ff-secondary-medium) !important;
   //font-family: var(--ff-secondary-medium);
-  font-size: calc(45px + (100 - 45) * ((100vw - 320px) / (1900 - 320)));
+  font-size: calc(45px + (80 - 45) * ((100vw - 320px) / (1900 - 320)));
   text-transform: uppercase;
   text-align: right;
   &.w-100 {
@@ -629,7 +628,7 @@ nav {
     //display: none;
   }
   &:hover{
-    cursor: url("../assets/icons/pointerMIckey.png"), pointer;
+    cursor: url("../assets/icons/pointer.png"), pointer;
   }
 }
 
@@ -786,7 +785,7 @@ Pages
   .ss-body-second {
     position: relative;
     flex-basis: 0;
-    flex-grow: 2;
+    flex-grow: 1;
     //border: 1px solid white;
     div:nth-of-type(2){
       position: absolute;
@@ -960,7 +959,7 @@ Service Slide
   &:hover {
     background-color: var(--clr-secondary);
     color: var(--clr-black) !important;
-    cursor: url("../assets/icons/pointerMIckey.png"), pointer;
+    cursor: url("../assets/icons/pointer.png"), pointer;
     transform: rotate(11.01deg);
     p {
       color: var(--clr-black);
@@ -1165,7 +1164,7 @@ Page single project
   }
   .more-projects-single {
     &:hover{
-      cursor: url("../assets/icons/pointerMIckey.png") 20 10, pointer;
+      cursor: url("../assets/icons/pointer.png") 20 10, pointer;
       .more-left{
         opacity: 1;
       }
@@ -1177,7 +1176,7 @@ Page single project
     //  pointer-events: none;
     //}
     a:hover{
-      cursor: url("../assets/icons/pointerMIckey.png") 20 10 , pointer;
+      cursor: url("../assets/icons/pointer.png") 20 10 , pointer;
     }
     position: relative;
     z-index: 1;
@@ -1390,7 +1389,7 @@ Contact Page
     background: transparent;
     border-radius: 50%;
     //display: inline;
-    cursor: url("../assets/icons/pointerMIckey.png"), pointer;
+    cursor: url("../assets/icons/pointer.png"), pointer;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1901,6 +1900,16 @@ SECTIONS ________________________ SECTIONS
       pointer-events: none;
       background: var(--clr-secondary);
       transition:  0.25s ease-in-out;
+
+      -moz-box-shadow: 0px 0px var(--clr-secondary),
+      0 0 20px var(--clr-secondary),
+      0 0 40px var(--clr-secondary),
+      0 0 80px var(--clr-secondary);
+      -webkit-box-shadow: 0px 0px var(--clr-secondary),
+      0 0 20px var(--clr-secondary),
+      0 0 40px var(--clr-secondary),
+      0 0 80px var(--clr-secondary);
+
     }
 
     .about-process-single-top {
@@ -1916,7 +1925,7 @@ SECTIONS ________________________ SECTIONS
 
       img:hover {
         //cursor: pointer;
-        cursor: url("../assets/icons/pointerMIckey.png") 20 10, pointer;
+        cursor: url("../assets/icons/pointer.png") 20 10, pointer;
       }
 
       p {
@@ -1926,7 +1935,7 @@ SECTIONS ________________________ SECTIONS
 
         &:hover {
           //cursor: pointer;
-          cursor: url("../assets/icons/pointerMIckey.png") 20 10, pointer;
+          cursor: url("../assets/icons/pointer.png") 20 10, pointer;
         }
       }
     }
@@ -2213,7 +2222,7 @@ SECTIONS ________________________ SECTIONS
         text-transform: uppercase;
         font-size: calc(55px + (160 - 55) * ((100vw - 320px) / (1900 - 320)));
         line-height: 1;
-        font-family: var(--ff-secondary-bold);
+        font-family: var(--ff-secondary-medium);
       }
       span{
         font-size: calc(35px + (120 - 35) * ((100vw - 320px) / (1900 - 320)));
@@ -2886,7 +2895,7 @@ SECTIONS ________________________ SECTIONS
     text-align: center;
 
     h2 {
-      font-size: calc(25px + (100 - 25) * ((100vw - 320px) / (1900 - 320)));
+      font-size: calc(25px + (80 - 25) * ((100vw - 320px) / (1900 - 320)));
       text-transform: uppercase;
       line-height: 1.2;
       z-index: 100;
@@ -3429,7 +3438,7 @@ Outline  Button
   cursor: pointer;
   outline: none;
   &:hover{
-    cursor: url("../assets/icons/pointerMIckey.png"), pointer;
+    cursor: url("../assets/icons/pointer.png"), pointer;
   }
   &.outline {
     position: relative;
